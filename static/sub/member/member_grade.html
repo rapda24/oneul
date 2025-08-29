@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>미스터아빠 통합몰_사용자</title>
+
+    <!-- 메타태그 -->
+    <meta name="viewport" content="widdh=device-widdh, initial-scale=1.0 maximum-scale=1.5">
+
+    <meta name="keyword" content="미스터아빠">
+    <meta name="description" content="미스터아빠 통합몰">
+
+    <meta http-equiv="refresh" content="30">
+
+    <!-- css -->
+    <link rel="stylesheet " href="../../css/reset.css" />
+    <link rel="stylesheet " href="../../css/swiper.css" />
+    <link rel="stylesheet " href="../../css/font.css" />
+    <link rel="stylesheet " href="../../css/common.css" />
+    <link rel="stylesheet " href="../../css/layout.css" />
+    <link rel="stylesheet " href="../../css/popup.css" />
+    <link rel="stylesheet " href="../../css/sub.css" />
+    <link rel="stylesheet " href="../../css/sub_member.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="member setting">
+    <div class="wrap">
+
+        <header class="header" id="header"></header>
+
+        <div class="container">
+            <aside id="aside" class="aside"></aside>
+            <div class="contents">
+                <div class="tab_history" id="tab_history"></div>
+
+                <div class="main_area">
+                    <section class="sub_top" id="sub_top"></section>
+
+                    <div class="section_wrap">
+
+                        <div class="grade_auto_setting">
+                            <dt>회원등급 자동변경 설정</dt>
+                            <section>
+                                <div class="tit">
+                                    <div class="tit_l">
+                                        <dd>회원등급 자동변경</dd>
+                                        <p>사용대기</p>
+                                    </div>
+                                    <div class="tit_r">
+                                        <button class="btn">설정변경</button>
+                                        <button class="btn btn_submit">자동변경적용</button>
+                                    </div>
+                                </div>
+                                <div class="gas_content">
+                                    <ul class="grid gt2">
+                                        <li>
+                                            <p class="txt_tit">회원등급 기준</p>
+                                            <p>구매금액 (총실결제금액)</p>
+                                        </li>
+                                        <li>
+                                            <p class="txt_tit">자동변경 주기</p>
+                                            <p>매월 1일</p>
+                                        </li>
+                                        <li>
+                                            <p class="txt_tit">구매 기준</p>
+                                            <p>결제완료 (취소/환불금액(건) 차감)</p>
+                                        </li>
+                                        <li>
+                                            <p class="txt_tit">집계 누적기간</p>
+                                            <p>최근 1개월</p>
+                                        </li>
+                                    </ul>
+                                </div><!-- //gas_content -->
+                                <p class="notice">
+                                    <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                                    우선순위 입력 값을 확인해주세요. 최상위(1)-중간순위(2)-하위순위(3) 순으로 입력 되어야 합니다.</p>
+                                
+                            </section>
+                        </div>
+
+                        <div class="grade_list">
+                            <dt>회원등급 목록</dt>
+                            <section>
+                                <div class="tit">
+                                    <div class="tit_l">
+                                        <button class="btn">선택 삭제</button>
+                                    </div>
+                                    <div class="tit_r">
+                                        <button class="btn btn_cs2">등급 추가</button>
+                                    </div>
+                                </div>
+                                <div class="grid_template">
+                                    <div class="grid_table">
+                                        <ul class="gh">
+                                            <li><label><input type="checkbox"><span class="box_check"></span></label>
+                                            </li>
+                                            <li>우선순위</li>
+                                            <li>회원등급</li>
+                                            <li>회원등급 기준</li>
+                                            <li>구매금액(이상)</li>
+                                            <li>적립</li>
+                                            <li>구매금액(이상)</li>
+                                            <li>할인</li>
+                                            <li>혜택 결재조건</li>
+                                            <li>회원수</li>
+                                        </ul>
+                                        <ul class="gc">
+                                            <!-- // grid 행 반복 -->
+                                            <li>
+                                                <label><input type="checkbox" checked><span
+                                                        class="box_check"></span></label>
+                                                <input type="text" value="1" />
+                                                <p>가맹점</p>
+                                                <p>구매금액 5,000,000원 이상</p>
+                                                <p>-</p>
+                                                <p>-</p>
+                                                <p>-</p>
+                                                <p>-</p>
+                                                <p>모든결제</p>
+                                                <p lang="en">20</p>
+                                            </li>
+                                            <!-- // grid 행 반복 -->
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="2" />
+                                                <p>골드인(GOLD)</p>
+                                                <p>구매금액 100,000원 이상<br />
+                                                    구매금액 300,000원 미만</p>
+                                                <p>10,000원</p>
+                                                <p>2%</p>
+                                                <p>-</p>
+                                                <p>-</p>
+                                                <p>모든결제</p>
+                                                <p lang="en">67</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="3" />
+                                                <p>실버인(SILVER)</p>
+                                                <p>구매금액 10,000원 이상<br />
+                                                    구매금액 100,000원 미만</p>
+                                                <p>10,000원</p>
+                                                <p>1%</p>
+                                                <p>-</p>
+                                                <p>-</p>
+                                                <p>모든결제</p>
+                                                <p lang="en">52</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="4" />
+                                                <p>사업자회원</p>
+                                                <p>구매금액 1,000,000원 이상</p>
+                                                <p>-</p>
+                                                <p>-</p>
+                                                <p>-</p>
+                                                <p>-</p>
+                                                <p>모든결제</p>
+                                                <p lang="en">150</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="5" />
+                                                <p>일반인(NEW)</p>
+                                                <p>구매금액 10,000원 미만</p>
+                                                <p>-</p>
+                                                <p>-</p>
+                                                <p>-</p>
+                                                <p>-</p>
+                                                <p>모든결제</p>
+                                                <p lang="en">220</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <section class="section_notice">
+                            <dd>회원등급 설정 도움말</dd>
+                            <p>
+                                - 등급을 자동으로 바꿀 경우, 우선 순위를 입력해야 해요. 상위 등급일수록 낮은 숫자를 입력해 주세요.<br />
+                                - 등급 기준과 우선 순위를 설정하고, '자동변경 적용'을 눌러주세요. 가장 빠른 예정일에 등급 변경이 시작되어요.<br />
+                                - 자동변경을 사용할 경우, 등급이 바뀌는 고객에게 SMS 또는 카카오알림톡으로 메시지를 보내 드려요. 메시지 내용과 설정은 [메시지 > 알림 메시지 > 자동
+                                알림 메시지 관리]에서 바꿀 수 있어요.
+                            </p>
+                        </section>
+
+                        <div class="grade_basic">
+                            <dt>회원등급 기본 설정</dt>
+                            <section>
+                                <p class="txt_tit">기본 회원등급</p>
+                                <div class="gb_set">
+                                    <p>회원가입 시 회원등급을</p>
+
+                                    <div class="custom-select">
+                                        <div class="select-box">
+                                            <span>일반인(NEW)</span><img src="../../../static/img/icon_down.svg" />
+                                        </div>
+                                        <ul class="options-list">
+                                            <li class="option" data-value="1">일반인(NEW)</li>
+                                            <li class="option" data-value="2">실버인(SILVER)</li>
+                                            <li class="option" data-value="3">골드인(GOLD)</li>
+                                            <li class="option" data-value="4">사업자회원</li>
+                                            <li class="option" data-value="5">가맹점</li>
+                                        </ul>
+                                    </div>
+                                    <p>(으)로 설정합니다.</p>
+                                    <button class="btn btn_submit">저장</button>
+                                </div>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup"></div>
+
+    <!-- js -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/swiper.js"></script>
+    <script src="../../js/import.js"></script>
+    <script>
+        /* header와 aside 로드 */
+        loadComponent('header', '../../layout/header_sub.html');
+        loadComponent('aside', '../../layout/aside_sub.html');
+        loadComponent('sub_top', 'member_top.html');
+        loadComponent('popup', '../../layout/popup_sub.html');
+        loadComponent('tab_history', '../../layout/tab_history.html');
+    </script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/setting.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+
+.contents .sub_top {grid-template-columns: repeat(4, 1fr);}
+.contents .sub_top > div {align-self: center;}
+.contents .sub_top > div.st_04 {display: flex; flex-direction: column; gap: 0.25em; padding-right: unset;}
+.contents .sub_top > div.st_04 > div {display: flex; flex-direction: row; align-self: flex-start;  width: 100%;}
+.contents .sub_top > div.st_04 > div .txt_tit {width: 5em; font-weight: initial;}
+.contents .sub_top > div.st_04 > div > div {display: flex; flex-grow: 1; justify-content: flex-end; align-items: center; gap: 0.5em;}
+.contents .sub_top > div.st_04 > div > div p {display: flex; align-items: flex-end;}
+.contents .sub_top > div.st_04 > div > div p strong {font-size: 1.125em; font-weight: 600;}
+
+.control_wrap {display: flex; gap: var(--gap-common); width: 100%;}
+.control_wrap > section {flex: 1;}
+.search_wrap.sw_01 {display: flex; gap:1em; flex-direction: column;}
+.search_wrap.sw_01 .grid {grid-template-columns: repeat(1, 1fr);}
+
+.search_wrap.sw_02 {display: flex; flex-direction: column; gap: 1em;}
+.search_wrap.sw_02 > .grid {grid-template-columns: auto 80px;}
+.search_wrap.sw_02 > .grid button {height: 100%;}
+.search_wrap.sw_02 > .grid .flex.a_bd {align-self: center;}
+.search_wrap.sw_02 > .grid .flex.a_bd p {width: 5em; color: var(--mid-black);}
+.search_wrap.sw_02 > .grid .flex.a_bd input {border: unset; padding: unset; font-size: 0.875em; line-height: 1;}
+.search_wrap.sw_02 .excel_wrap {display: flex; gap: 0.5em; width: 100%; align-items: center;}
+.search_wrap.sw_02 .excel_wrap .txt_tit {width: 7em;}
+.search_wrap.sw_02 .excel_wrap .filebox {display: flex; flex-grow: 1; gap: 0.5em; align-items: center; border: 1px solid var(--border-gray); border-radius: 0.75em; padding: 0.5em; align-self: center;}
+.search_wrap.sw_02 .excel_wrap .filebox p {padding-right: 0.5em; border-right: 1px solid var(--border-gray); color: var(--mid-black); font-size: 0.875em;}
+.search_wrap.sw_02 .excel_wrap .filebox input {border: unset; padding: unset; font-size: 0.875em; line-height: 1;}
+.search_wrap.sw_02 .excel_wrap label {width: 80px;}
+
+.grid_table .gh,
+.grid_table .gc > li {grid-template-columns: 1.5em 10% 10% 5em 7em 10% 15% 7em 5em auto; width: 100%; min-width: 1200px;}
+.grid_table .grade {display: flex; gap: 0.5em; color: var(--mid-black); align-self: center; font-size: 0.875em; justify-content: center;}
+.grid_table .button_wrap {gap: 0.5em;}
+.grid_table .button_wrap > button {flex: 1; width: auto;}
+.grid_table .gc > li p {gap: unset;}
+
+
+/* 회원등급 관리 */
+.contents .section_wrap > div {gap: var(--pd-common); display: flex; flex-direction: column; width: 100%;}
+.contents .section_wrap > div section {flex-direction: column; gap: var(--pd-common); justify-content: flex-start; display: flex;}
+.contents .grade_auto_setting .tit {width: 100%;}
+.contents .grade_auto_setting .tit .tit_l p {font-weight: 600; color: var(--mid-black);}
+
+.contents .grade_auto_setting .gas_content {border-top : 1px solid var(--border-gray); border-bottom: 1px solid var(--border-gray); padding: var(--pd-common) 0; gap: var(--pd-common); display: flex; width: 100%;}
+.contents .grade_auto_setting .gas_content > .grid {width: 100%;}
+.contents .grade_auto_setting .gas_content > .grid > li {display: flex; gap: 0.5em;}
+.contents .grade_auto_setting .gas_content > .grid > li p {font-size: 0.875em;}
+.contents .grade_auto_setting .gas_content > .grid > li p.txt_tit {width: 7em;}
+.contents .grade_auto_setting .notice {align-self: flex-start;}
+.contents .grade_list .grid_template .gh,
+.contents .grade_list .grid_template .gc > li {display: grid; grid-template-columns: 1.5em 3em 10em 15em 10em 5em 7em 5em 7em 5em; width: 100%;}
+
+.contents .grade_list .grid_template .gc > li > input {text-align: center; padding: 0.5em; border-radius: 0.75em; border: 1px solid var(--border-gray); font-size: 0.75em;}
+
+
+.section_notice {flex-direction: column; gap: var(--pd-common);}
+.section_notice > * {font-size: 0.875em;}
+
+.contents .section_wrap > div.grade_basic section {display: flex; gap: 0.5em; flex-direction: row; align-items: center;}
+.contents .section_wrap > div.grade_basic > section .gb_set {display: flex;  gap: 0.5em; align-items: center;}
+.contents .section_wrap > div.grade_basic > section .gb_set p {font-size: 0.875em; color: var(--mid-black)}
+.contents .section_wrap > div.grade_basic > section .gb_set p.txt_tit {color: initial;}
+.contents .section_wrap > div.grade_basic > section .gb_set .custom-select .select-box {width: 10em;}
+
+@media screen and (max-width: 1365px){
+    .contents .sub_top {grid-template-columns: repeat(2, 1fr);}
+    .contents .sub_top > div.st_02 {border-right: 0;}
+}

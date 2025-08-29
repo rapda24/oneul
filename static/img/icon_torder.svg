@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 468.1 335">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#linear-gradient2);
+      }
+
+      .st1 {
+        mask: url(#mask-1);
+      }
+
+      .st2 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st2, .st3 {
+        mix-blend-mode: multiply;
+      }
+
+      .st4 {
+        fill: #fff;
+      }
+
+      .st5 {
+        mask: url(#mask);
+      }
+
+      .st6 {
+        fill: none;
+      }
+
+      .st7 {
+        mask: url(#mask-2);
+      }
+
+      .st8 {
+        fill: url(#linear-gradient4);
+      }
+
+      .st9 {
+        filter: url(#luminosity-noclip2);
+      }
+
+      .st3 {
+        fill: url(#linear-gradient3);
+      }
+
+      .st10 {
+        fill: url(#linear-gradient);
+      }
+
+      .st11 {
+        clip-path: url(#clippath);
+      }
+
+      .st12 {
+        mask: url(#mask-3);
+      }
+
+      .st13 {
+        filter: url(#luminosity-noclip);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="536.5" y1="104" x2="134.8" y2="384.9" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff7a33"/>
+      <stop offset="1" stop-color="#ff3000"/>
+    </linearGradient>
+    <clipPath id="clippath">
+      <rect class="st6" x=".5" y=".5" width="392.8" height="267.4" rx="44.1" ry="44.1"/>
+    </clipPath>
+    <filter id="luminosity-noclip" x=".5" y=".5" width="392.8" height="267.4" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <filter id="luminosity-noclip1" x=".5" y="-8870.8" width="392.8" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-1" x=".5" y="-8870.8" width="392.8" height="32766" maskUnits="userSpaceOnUse"/>
+    <linearGradient id="linear-gradient1" x1=".5" y1="134.2" x2="393.3" y2="134.2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b3b3b3"/>
+      <stop offset="1" stop-color="gray"/>
+    </linearGradient>
+    <mask id="mask" x=".5" y=".5" width="392.8" height="267.4" maskUnits="userSpaceOnUse">
+      <g class="st13">
+        <g class="st1">
+          <rect class="st2" x=".5" y=".5" width="392.8" height="267.4" rx="44.1" ry="44.1"/>
+        </g>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient2" x1=".5" y1="134.2" x2="393.3" y2="134.2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d3ffff"/>
+      <stop offset="1" stop-color="#b0dbdb"/>
+    </linearGradient>
+    <filter id="luminosity-noclip2" x="0" y="0" width="393.8" height="268.4" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <filter id="luminosity-noclip3" x="0" y="-8870.8" width="393.8" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-3" x="0" y="-8870.8" width="393.8" height="32766" maskUnits="userSpaceOnUse"/>
+    <linearGradient id="linear-gradient3" x1="0" y1="134.2" x2="393.8" y2="134.2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#999"/>
+      <stop offset="1" stop-color="#e6e6e6"/>
+    </linearGradient>
+    <mask id="mask-2" x="0" y="0" width="393.8" height="268.4" maskUnits="userSpaceOnUse">
+      <g class="st9">
+        <g class="st12">
+          <path class="st3" d="M349.2,268.4H44.6c-24.6,0-44.6-20-44.6-44.6V44.6C0,20,20,0,44.6,0h304.6c24.6,0,44.6,20,44.6,44.6v179.2c0,24.6-20,44.6-44.6,44.6ZM44.6,1C20.5,1,1,20.5,1,44.6v179.2c0,24,19.5,43.6,43.6,43.6h304.6c24,0,43.6-19.5,43.6-43.6V44.6c0-24-19.5-43.6-43.6-43.6H44.6Z"/>
+        </g>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient4" x1="0" y1="134.2" x2="393.8" y2="134.2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c5ffff"/>
+      <stop offset="1" stop-color="#b3d6d6"/>
+    </linearGradient>
+  </defs>
+  <path class="st10" d="M468.1,104.6v188.9c0,22.9-18.6,41.5-41.5,41.5H110.1c-22.9,0-41.5-18.6-41.5-41.5v-25.7h280.6c24.3,0,44.1-19.7,44.1-44.1V63.1h33.3c22.9,0,41.5,18.6,41.5,41.5Z"/>
+  <g class="st11">
+    <image width="410" height="301" transform="translate(11.2 12.2)" xlink:href="icon_torder-1.png"/>
+  </g>
+  <g>
+    <g class="st5">
+      <rect class="st0" x=".5" y=".5" width="392.8" height="267.4" rx="44.1" ry="44.1"/>
+    </g>
+    <g class="st7">
+      <path class="st8" d="M349.2,268.4H44.6c-24.6,0-44.6-20-44.6-44.6V44.6C0,20,20,0,44.6,0h304.6c24.6,0,44.6,20,44.6,44.6v179.2c0,24.6-20,44.6-44.6,44.6ZM44.6,1C20.5,1,1,20.5,1,44.6v179.2c0,24,19.5,43.6,43.6,43.6h304.6c24,0,43.6-19.5,43.6-43.6V44.6c0-24-19.5-43.6-43.6-43.6H44.6Z"/>
+    </g>
+  </g>
+  <path class="st4" d="M278.1,208.8H60.9c-7,0-12.7-5.7-12.7-12.7h0c0-7,5.7-12.7,12.7-12.7h217.2c7,0,12.7,5.7,12.7,12.7h0c0,7-5.7,12.7-12.7,12.7Z"/>
+  <rect class="st4" x="48.9" y="87.6" width="66.5" height="45.2" rx="15.3" ry="15.3"/>
+</svg>

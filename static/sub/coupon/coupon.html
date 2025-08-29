@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>미스터아빠 통합몰_사용자</title>
+
+    <!-- 메타태그 -->
+    <meta name="viewport" content="widdh=device-widdh, initial-scale=1.0 maximum-scale=1.5">
+
+    <meta name="keyword" content="미스터아빠">
+    <meta name="description" content="미스터아빠 통합몰">
+
+    <meta http-equiv="refresh" content="30">
+
+    <!-- css -->
+    <link rel="stylesheet " href="../../css/reset.css" />
+    <link rel="stylesheet " href="../../css/swiper.css" />
+    <link rel="stylesheet " href="../../css/font.css" />
+    <link rel="stylesheet " href="../../css/common.css" />
+    <link rel="stylesheet " href="../../css/layout.css" />
+    <link rel="stylesheet " href="../../css/popup.css" />
+    <link rel="stylesheet " href="../../css/sub.css" />
+    <link rel="stylesheet " href="../../css/sub_coupon.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="coupon">
+    <div class="wrap">
+
+        <header class="header" id="header"></header>
+
+        <div class="container">
+            <aside id="aside" class="aside"></aside>
+            <div class="contents">
+                <div class="tab_history" id="tab_history"></div>
+                <div class="main_area">
+                    <section class="sub_top" id="sub_top"></section>
+                    <div class="tit_wrap">
+                        <dt>쿠폰 관리</dt>
+                        <div class="button_wrap">
+                            <button class="btn btn_cs2">조회</button>
+                            <button class="btn btn_cm">저장</button>
+                            <button class="btn btn_cs2">삭제</button>
+                            <button class="btn btn_cs2">엑셀</button>
+                        </div>
+                    </div>
+
+                    <section class="search_wrap">
+                        <ul class="grid">
+                            <li>
+                                <p class="txt_tit">검색어</p>
+                                <input type="text" placeholder="쿠폰번호 / 쿠폰명 다중 검색시 콤마(,)로 구분해서 검색하세요." />
+                            </li>
+                            <li>
+                                <p class="txt_tit">등록기간</p>
+                                <button class="btn">전체</button>
+                                <button class="btn btn_cs2"><div class="icon"><img src="../../img/icon_calendar.svg" /></div></button>
+                                <div class="custom-datepicker">
+                                    <div class="flex">
+                                        <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+                                    </div>
+                                    <p>~</p>
+                                    <div class="flex">
+                                        <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                                    </div>
+                                    <div id="calendar" class="calendar hidden"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="txt_tit">쿠폰구분</p>
+                                <div class="radio_wrap">
+                                    <label><input type="radio" class="" name="division_coupon" checked /><span class="box_radio"></span>할인금액</label>
+                                    <label><input type="radio" class="" name="division_coupon" /><span class="box_radio"></span>할인율</label>
+                                    <label><input type="radio" class="" name="division_coupon"  /><span class="box_radio"></span>대상자 지정 발급</label>
+                                    <label><input type="radio" class="" name="division_coupon" /><span class="box_radio"></span>조건부 자동 발급</label>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="txt_tit">상태</p>
+                                <div class="radio_wrap">
+                                    <label><input type="radio" class="" name="state_coupon" checked /><span class="box_radio"></span>진행중</label>
+                                    <label><input type="radio" class="" name="state_coupon" /><span class="box_radio"></span>발급중지</label>
+                                    <label><input type="radio" class="" name="state_coupon"  /><span class="box_radio"></span>사용기간 만료</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="section_grid">
+                        <div class="control_box">
+                            <div class="control_l">
+                                <button class="btn">선택 삭제(발급쿠폰유지)</button>
+                                <button class="btn">선택 완전 삭제(발급쿠폰회수)</button>
+                            </div>
+                            <div class="control_r">
+                                <div class="custom-select">
+                                    <div class="select-box">
+                                        <span>50개씩보기</span><img src="../../../static/img/icon_down.svg" />
+                                    </div>
+                                    <ul class="options-list">
+                                        <li class="option" data-value="1">50개씩보기</li>
+                                        <li class="option" data-value="2">100개씩보기</li>
+                                        <li class="option" data-value="3">200개씩보기</li>
+                                        <li class="option" data-value="4">300개씩보기</li>
+                                    </ul>
+                                </div>
+                                <button class="btn"><span class="icon"><img src='../../../static/img/icon_excel.svg' /></span>엑셀다운로드</button>
+                            </div>
+                        </div>
+                        <div class="grid_template" id="grid_oderlist"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup"></div>
+
+    <!-- js -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/swiper.js"></script>
+    <script src="../../js/import.js"></script>
+    <script src="../../js/popup.js"></script>
+    <script>
+        /* header와 aside 로드 */
+        loadComponent('header', '../../layout/header_sub.html');
+        loadComponent('aside', '../../layout/aside_sub.html');
+        loadComponent('sub_top', 'coupon_top.html');
+        loadComponent('popup', '../../layout/popup_sub.html');
+        loadComponent('tab_history', '../../layout/tab_history.html');
+        loadComponent('grid_oderlist', 'coupon_list.html');
+    </script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/coupon.js"></script>
+
+</body>
+
+</html>

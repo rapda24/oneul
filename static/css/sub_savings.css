@@ -1,0 +1,64 @@
+.contents .sub_top {grid-template-columns: repeat(2, 1fr);}
+
+.control_wrap {display: flex; gap: var(--gap-common);}
+.control_wrap > div {display: flex; gap: var(--gap-common); flex-direction: column;flex-grow: 1;}
+.control_wrap > section {display: flex; gap: 0.5em;}
+
+.search_wrap .grid {display: grid; grid-template-columns: repeat(1, 1fr); gap: 1em;}
+.search_wrap .grid .review_point_wrap {width: 100%;}
+.search_wrap .grid .review_point_wrap .radio_wrap {flex-grow: 1; align-items: center;}
+.search_wrap .grid .review_point_wrap .radio_wrap > label {flex: 1; align-items: center;}
+.search_wrap .grid .review_point_wrap .radio_wrap > label span.star {flex-grow: 1;}
+
+.search_wrap.sw_02 {display: flex;}
+.search_wrap.sw_02 .grid > li {display: flex; flex-direction: column; align-items: flex-start;}
+.search_wrap.sw_02 .grid > li > * {flex-basis: 100%;}
+.search_wrap.sw_02 .grid > li > div.flex {display: flex; gap: 0.5em; width: 100%; align-items: center;}
+.search_wrap.sw_02 .grid > li > div.flex > p {flex-grow: 1;}
+.search_wrap.sw_02 .grid > li > button {width: 100%;}
+.search_wrap.sw_02 .grid > li .notice {align-self: flex-start;}
+
+.search_wrap.sw_01 .custom-select {width: 10em;}
+
+
+.contents .sub_top > div > div.st_r {gap: 1em;}
+.sub_top .st_r > div {display: flex; gap: 0.5em; align-items: flex-end;}
+
+.type_savings.custom-select .select-box {width: 20em;}
+.type_savings.custom-select .options-list {height: 200px; overflow-y: scroll;}
+
+/* grid_table */
+.grid_table .gh,
+.grid_table .gc > li {grid-template-columns: 10em 10em 20em 10em 5em 15em; max-width: 1500px;}
+.grid_table .gc > li .s_content {width: 100%; justify-content: flex-start;}
+.grid_table .gh li {flex-direction: column; width: 100%; align-self: center;}
+.grid_table .gh li .savings_data p {font-size: 0.875em;}
+.savings_data {display: flex; width: 100%;}
+.savings_data > p {flex: 1;}
+
+.s_id {display: flex; flex-direction: column; gap: 0.5em;}
+.s_id > .flex {color: var(--mid-black);}
+
+.filebox .upload-name {width: 100%;}
+
+
+@media screen and (max-width: 1560px) {
+    .contents .sub_top {grid-template-columns: repeat(1, 1fr);}
+    .contents .sub_top > div {padding-right: unset; border-right: unset;}
+
+    .btn_date_wrap,
+    .calendar_wrap {width: 100%;}
+    .btn_date_wrap button {flex: 1;}
+
+    .search_wrap .grid > li.date {flex-direction: column; align-items: flex-start;}
+    
+
+}
+
+@media screen and (max-width: 1460px) {
+
+    .control_wrap {flex-direction: row;}
+    
+
+}
+

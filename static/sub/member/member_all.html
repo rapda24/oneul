@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>미스터아빠 통합몰_사용자</title>
+
+    <!-- 메타태그 -->
+    <meta name="viewport" content="widdh=device-widdh, initial-scale=1.0 maximum-scale=1.5">
+
+    <meta name="keyword" content="미스터아빠">
+    <meta name="description" content="미스터아빠 통합몰">
+
+    <meta http-equiv="refresh" content="30">
+
+    <!-- css -->
+    <link rel="stylesheet " href="../../css/reset.css" />
+    <link rel="stylesheet " href="../../css/swiper.css" />
+    <link rel="stylesheet " href="../../css/font.css" />
+    <link rel="stylesheet " href="../../css/common.css" />
+    <link rel="stylesheet " href="../../css/layout.css" />
+    <link rel="stylesheet " href="../../css/popup.css" />
+    <link rel="stylesheet " href="../../css/sub.css" />
+    <link rel="stylesheet " href="../../css/sub_member.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="review">
+    <div class="wrap">
+
+        <header class="header" id="header"></header>
+
+        <div class="container">
+            <aside id="aside" class="aside"></aside>
+            <div class="contents">
+                <div class="tab_history" id="tab_history"></div>
+                
+                <div class="main_area">
+                    <section class="sub_top" id="sub_top"></section>
+                    <div class="tit_wrap">
+                        <dt>회원 관리</dt>
+                        <div class="button_wrap">
+                            <button class="btn btn_cs2">조회</button>
+                            <button class="btn btn_cm">저장</button>
+                            <button class="btn btn_cs2">삭제</button>
+                            <button class="btn btn_cs2">엑셀</button>
+                        </div>
+                    </div>
+
+                    <div class="control_wrap">
+                        <section class="search_wrap sw_01">
+                            <ul class="grid">
+                                <li>
+                                    <p class="txt_tit">가입일자</p>
+                                    <button class="btn btn_cs2">
+                                        <div class="icon"><img src="../../img/icon_calendar.svg" /></div>
+                                    </button>
+                                    <div class="custom-datepicker">
+                                        <div class="flex">
+                                            <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+                                        </div>
+                                        <p>~</p>
+                                        <div class="flex">
+                                            <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                                        </div>
+                                        <div id="calendar" class="calendar hidden"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="txt_tit">검색어</p>
+                                    <input type="text" placeholder="아이디 / 이름 / 상호 / 핸드폰 / 배송지 다중 검색시 콤마(,)로 구분해서 검색하세요." />
+                                </li>
+                                <li>
+                                    <p class="txt_tit">회원등급</p>
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="mb_grade" checked><span class="box_radio"></span>새별회원</label>
+                                        <label><input type="radio" class="" name="mb_grade"><span class="box_radio"></span>동별회원</label>
+                                        <label><input type="radio" class="" name="mb_grade"><span class="box_radio"></span>은별회원</label>
+                                        <label><input type="radio" class="" name="mb_grade"><span class="box_radio"></span>금별회원</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="search_wrap sw_02">
+                                <div class="flex">
+                                    <span class="icon"><img src="../../../static/img/icon_mnew_bk.svg" /></span>
+                                    <p class="txt_tit">개별 회원 등록</p>
+                                </div>
+                                <div class="grid">
+                                    <ul class="grid gt2">
+                                        <li class="flex a_bd">
+                                            <p>이름</p>
+                                            <input type="text" value="홍길동" />
+                                        </li>
+                                        <li class="flex a_bd">
+                                            <p>상호</p>
+                                            <input type="text" value="미스터아빠" />
+                                        </li>
+                                        <li class="flex a_bd">
+                                            <p>핸드폰</p>
+                                            <input type="text" value="010.1234.5678" />
+                                        </li>
+                                        <li class="radio_wrap">
+                                            <label><input type="radio" class="" name="ag_ms" checked><span class="box_radio"></span>수신동의</label>
+                                            <label><input type="radio" class="" name="ag_ms"><span class="box_radio"></span>수신거부</label>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn_cs2">회원등록</button>
+                                </div>
+                                <div class="excel_wrap">
+                                    <div class="flex">
+                                        <span class="icon"><img src="../../../static/img/icon_excel_bk.svg" /></span>
+                                        <p class="txt_tit">엑셀 회원등록</p>
+                                    </div>
+                                    <div class="filebox">
+                                        <p>파일첨부</p>
+                                        <input class="upload-name" value="파일첨부을 첨부해주세요." placeholder="파일첨부을 첨부해주세요.">
+                                        <input type="file" id="file">
+                                    </div>
+                                    <label class="btn btn_cs2" for="file">등록</label> 
+                                </div>
+                        </section>
+                    </div>
+                    <section class="section_grid">
+                        <div class="control_box">
+                            <div class="control_l">
+                                <button class="btn btn_sm">알림톡 발송 예약</button>
+                                <button class="btn btn_mc">알림톡 즉시 발송</button>
+                                <button class="btn btn_sl">알림톡 발송 이력조회</button>
+                                <button class="btn btn_st">선택 회원 알림톡 발송</button>
+                                <button class="btn">선택 회원 삭제</button>
+                            </div>
+                            <div class="control_r">
+                                <div class="custom-select">
+                                    <div class="select-box">
+                                        <span>50개씩보기</span><img src="../../../static/img/icon_down.svg" />
+                                    </div>
+                                    <ul class="options-list">
+                                        <li class="option" data-value="1">10개씩보기</li>
+                                        <li class="option" data-value="2">20개씩보기</li>
+                                        <li class="option" data-value="3">30개씩보기</li>
+                                        <li class="option" data-value="4">40개씩보기</li>
+                                        <li class="option" data-value="5">50개씩보기</li>
+                                        <li class="option" data-value="6">100개씩보기</li>
+                                    </ul>
+                                </div>
+                                <button class="btn"><span class="icon"><img src='../../../static/img/icon_excel.svg' /></span>엑셀다운로드</button>
+                            </div>
+                        </div>
+                        <div class="grid_template" id="grid_oderlist"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup"></div>
+
+    <!-- js -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/swiper.js"></script>
+    <script src="../../js/import.js"></script>
+    <script src="../../js/popup.js"></script>
+    <script>
+        /* header와 aside 로드 */
+        loadComponent('header', '../../layout/header_sub.html');
+        loadComponent('aside', '../../layout/aside_sub.html');
+        loadComponent('sub_top', 'member_top.html');
+        loadComponent('popup', '../../layout/popup_sub.html');
+        loadComponent('tab_history', '../../layout/tab_history.html');
+        loadComponent('grid_oderlist', 'member_list.html');
+    </script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/member.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+.contents {display: flex; gap: var(--gap-common); flex-direction: column; overflow: hidden;}
+
+.main_area {display: flex; flex-grow: 1; flex-direction: column; gap: var(--gap-common); overflow-y: scroll; overflow-x: hidden;}
+
+.tit_wrap {display: flex; gap: 1em; justify-content: space-between;}
+.tit_wrap .button_wrap {display: flex; gap: 0.5em;}
+
+.section_wrap {display: flex; flex-direction: column; gap: var(--pd-common); }
+.section_wrap .button_wrap {display: flex; flex-direction: row; gap: 0.5em; align-self: center; justify-content: space-between;}
+.section_wrap .button_wrap .btn {width: 7em;}
+
+/* sub_top */
+.contents .sub_top {display: grid; background-color: var(--sub02-color); border-radius: 1em; padding: var(--pd-common); grid-gap: 0.5em;}
+.contents .sub_top > * {color: #fff;}
+.contents .sub_top > div {display: flex; gap: 1em; justify-content: space-between; padding-right: var(--pd-common); border-right: 1px solid var(--border-gray); flex: auto;}
+.contents .sub_top > div:last-child {border: unset;}
+.contents .sub_top > div > div {display: flex; gap: 0.5em; align-self: center;}
+.contents .sub_top > div > div.st_r {gap: 0.25em; align-self: flex-end; align-items: center;}
+.contents .sub_top > div > div dd {font-size: 1.5em; font-weight: 700;}
+.contents .sub_top > div > div.st_r p {font-size: 0.875em;}
+.contents .sub_top > div button {display: flex; gap: 0.5em;}
+.contents button.btn_plus .icon {width: 0.5em;}
+.contents .sub_top .icon {width: 1.5em;}
+
+.contents .section_wrap > div.control_wrap {flex-direction: row;}
+
+/* search_wrap */
+.search_wrap .grid {display: grid; gap: 1em; grid-template-columns: repeat(2, 1fr); width: 100%;}
+.search_wrap .grid > li {display: flex; align-items: center; gap: 0.5em;}
+.search_wrap .grid > li p.txt_tit {width: 4.5em; font-size: 0.875em;}
+.search_wrap .grid > li > input {border: 1px solid var(--border-gray); flex: 1; padding: 0.5em; border-radius: 0.75em; font-size: 0.875em;}
+.search_wrap .grid > li .radio_wrap {flex-grow: 1; width: auto;}
+.search_wrap .grid > li .custom-datepicker > input {flex-grow: 1;}
+.search_wrap .grid > li .input_wrap input {font-size: 0.875em;}
+.search_wrap .grid > li .btn {font-size: 0.875em;}
+
+
+/* section_grid */
+.section_grid {display: flex; flex-direction: column; gap: var(--pd-common);  flex-grow: 1;}
+
+/* control_box */
+.control_box {display: flex; justify-content: space-between; gap: var(--pd-common);}
+.control_box > div {display: flex; flex-direction: row; gap: 0.5em;}
+
+
+
+/* grid_template */
+.grid_template {display: flex; flex-direction: column; flex-grow: 1;}
+
+
+.grid_table .thum {overflow: hidden; border-radius: 40%; border: 1px solid var(--border-gray); height: 2.5em; width: 2.5em;}
+.grid_table .thum img {object-fit: cover; width: 2.5em;}
+
+.grid_table .name {display: flex; gap: 0.25em; justify-content: flex-start;}
+.grid_table .name > p {overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; word-wrap: break-word; word-break: break-all; -webkit-line-clamp: 1;}
+.gc > li p.r_content {justify-content: flex-start; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; word-wrap: break-word; word-break: break-all; -webkit-line-clamp: 1;}
+
+p.s_price {font-weight: 600;}
+
+/* btn_date_wrap */
+.btn_date_wrap,
+.calendar_wrap {display: flex; gap: 0.5em; flex-grow: 1;}
+.btn_date_wrap > div {flex: 1;}
+.calendar_wrap input {flex-grow: 1;}
+
+
+@media screen and (max-width: 1460px) {
+    .contents .sub_top > div {align-items: center;}
+    .control_wrap {display: flex; flex-direction: column;}
+}
+
+@media screen and (max-width: 1265px) {
+    .contents .sub_top > div p {font-size: 0.875em;}
+}
+@media screen and (max-width: 1220px) {
+    .tit_wrap .btn {font-size: 0.875em; padding: 0.5em 1em;}
+}

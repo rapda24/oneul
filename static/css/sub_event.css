@@ -1,0 +1,40 @@
+.contents .sub_top {grid-template-columns: 28% 28% 28% auto;}
+.contents .sub_top > div.st_03 {border-right: unset;}
+.contents .sub_top > div.st_04 {justify-content: flex-end; padding-right: unset;}
+
+.section_wrap {overflow-y: scroll;}
+
+.r_event {display: flex; gap: var(--pd-common); flex-direction: column;}
+.r_event .tit_r {display: flex; gap: 0.5em;}
+.r_event .tit_r label {display: flex; gap: 0.5em; font-size: 0.875em; color: var(--mid-black);}
+.r_event .grid {display: grid; gap: var(--pd-common); grid-template-columns: repeat(2, 1fr);}
+.r_event .grid .img_wrap {display: flex; width: 100%; border-radius: 1.5em; background-color: #f7f7f7; height: 310px; overflow-y: scroll; align-items: flex-start;}
+.r_event .grid .img_wrap img {width: 100%; height: auto; max-height: none; display: block; min-height: auto; object-fit: cover; ;}
+.r_event .grid .img_wrap.no_img {flex-direction: column;  align-items: center; justify-content: center; gap: var(--pd-common);}
+.r_event .grid .img_wrap .notice {display: flex; flex-direction: row; gap: 0.5em;}
+.r_event .grid .img_wrap .notice p {color: var(--mid-black); font-size: 0.875em;}
+.r_event .button_wrap {display: flex; gap: 1em; justify-content: center;}
+.r_event .grid > .button_wrap {display: flex; gap: 1em; justify-content: flex-start;}
+.r_event .button_wrap.flex {justify-content: space-between;}
+
+.event_info {display: flex; flex-direction: column; gap: var(--pd-common);}
+.event_info .flex {display: flex; align-items: center; gap: 0.5em;}
+.event_info .flex.a_bd input {border: unset; padding: unset;}
+.event_info .flex p {color: var(--mid-black); font-size: 0.875em;}
+.event_info .flex input {padding: 0.5em; border-radius: 0.75em; border: 1px solid var(--border-gray); color: var(--mid-black);}
+.event_info .flex .custom-select {flex-grow: 1;}
+.event_info .flex:last-child .custom-select {flex-grow: unset;}
+.event_info .flex:last-child input {flex-grow: 1;}
+
+.event_info .notice {align-self: flex-start;}
+
+
+@media screen and (max-width: 1270px) {
+    .r_event .button_wrap.flex {flex-direction: column;}
+}
+
+
+@media screen and (max-width: 1170px) {
+    .contents .sub_top {grid-template-columns: repeat(2, 1fr);}
+    .contents .sub_top > div.st_02 {border-right: unset;padding-right: unset;}
+}

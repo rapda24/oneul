@@ -1,0 +1,179 @@
+.contents > .section_wrap {overflow-y: scroll;}
+
+.setting .contents section {display: flex; padding: var(--pd-common); flex-direction: column; gap: var(--gap-common);}
+
+.setting .contents section  .flex {width : 100%; border-bottom: 1px solid var(--border-gray); padding-bottom: var(--pd-common )}
+.setting .contents section  .flex:last-child {border-bottom: unset; padding-bottom: unset;}
+.setting .contents section  .flex > div {display: flex; gap: 1em; flex-direction: column; width: 100%;}
+.setting .contents section  .flex .list_tit {width: 10em;}
+.setting .contents section  .flex > div > a {display: flex; justify-content: space-between; width: 100%;}
+.setting .contents section  .flex > div > a > .icon {width: 0.785em; transform: rotate(90deg);}
+
+
+.balance section,
+.set_join section {display: flex; flex-direction: column; gap: var(--gap-common);}
+.balance section .grid,
+.set_join section .grid {display: grid; grid-template-columns: 15em auto; width: 100%;}
+.balance section .grid > input,
+.set_join section .grid > input {font-size: 0.875em; color: var(--mid-black); border-radius: 0.75em; border: 1px solid var(--border-gray); padding: 0.5em; width: 15em;}
+
+
+
+.button_wrap {display: flex; justify-content: center;}
+.button_wrap .btn {padding: 0.5em 2em;}
+
+/* 기본 설정 */
+.basis_set .contents > .section_wrap {display: flex; flex-direction: row; gap: var(--gap-common); overflow-y: scroll;}
+.basis_set .contents > .section_wrap > div {flex: 1;}
+.basis_set .contents > .section_wrap > div section {display: flex; flex-direction: column; gap: 1em;}
+.basis_set .contents > .section_wrap > div section .notice {display: flex; flex-direction: column; gap: 0.5em; align-self: flex-start;}
+.basis_set .contents > .section_wrap > div section .notice li {display: flex; gap: 0.25em; align-items: flex-start; align-self: flex-start;}
+.basis_set .contents > .section_wrap > div section .notice li .icon {width: 0.875em; align-items: flex-start; align-self: flex-start; padding-top: 0.2em;}
+.basis_set .contents > .section_wrap > div section .notice li p {flex-grow: 1; font-size: 0.875em; color: var(--mid-black);}
+
+.basis_set .contents > .section_wrap > div section ul.st_con {display: flex; flex-direction: column; gap: 1em;}
+.basis_set .contents > .section_wrap > div section ul.st_con .flex {align-items: center; border-bottom: unset; padding: 0;}
+.basis_set .contents > .section_wrap > div section ul.st_con .flex.a_bd {border-bottom: 1px solid var(--border-gray); flex-direction: row; padding: 0.5em;}
+.basis_set .contents > .section_wrap > div section ul.st_con li {gap: 0.5em; padding: 0.5em;}
+.basis_set .contents > .section_wrap > div section ul.st_con li input {font-size: 0.875em; flex-grow: 1;}
+.basis_set .contents > .section_wrap > div section ul.st_con li p {font-size: 0.875em;}
+.basis_set .contents > .section_wrap > div section ul.st_con li span {font-size: 0.875em; color: var(--light-black);}
+.basis_set .contents > .section_wrap > div section ul.st_con li .filebox {width: auto; flex-direction: row;}
+
+.basis_set .contents > .section_wrap > div section ul.sc_cb {display: flex; flex-direction: row; gap: 1em; justify-content: space-between;}
+.basis_set .contents > .section_wrap > div section ul.sc_cb label {display: flex; flex-direction: row; gap: 0.5em; align-items: center;}
+.basis_set .contents > .section_wrap > div section ul.sc_cb label .sc_box {display: block; width: 2.5em; height: 2.5em; border-radius: 40%; display: block;}
+
+.sc_box.sc_c01 {background-color: #5f41e0;}
+.sc_box.sc_c02 {background-color: #3a6ad4;}
+.sc_box.sc_c03 {background-color: #a35dd0;}
+.sc_box.sc_c04 {background-color: #00af80;}
+.sc_box.sc_c05 {background-color: #22bdff;}
+.sc_box.sc_c06 {background-color: #ff3a7d;}
+
+
+
+/* 적립금 */
+.contents .section_wrap > div {display: flex; flex-direction: column; gap: 1em;}
+.contents .section_wrap > div section {width: 100%;}
+.contents .section_wrap > div section > ul.flex {display: flex; flex-direction: column; gap: var(--gap-common); width: 100%;}
+.contents .section_wrap > div section > ul.flex li {display: flex; gap: 0.5em;}
+.contents .section_wrap > div section > ul.flex li .txt_tit {font-size: 0.875em; width: 140px;}
+.contents .section_wrap > div section > ul.flex li.exclusion_savings .txt_tit {width: 200px;}
+.contents .section_wrap > div section > ul.flex li p {font-size: 0.875em; color: var(--mid-black);}
+.contents .section_wrap > div section > ul.flex li > ul {display: flex; flex-direction: column; gap: 0.5em; flex-grow: 1; width: auto;}
+.contents .section_wrap > div section > ul.flex li > div {display: flex; flex-direction: row; gap: 0.5em; align-items: center; flex-grow: 1; width: auto;}
+.contents .section_wrap > div section > ul.flex li > div.custom-select {flex-grow: unset;}
+.contents .section_wrap > div section > ul.flex li input {font-size: 0.875em; padding: 0.5em; border-radius: 0.75em; border: 1px solid var(--border-gray); width: 100%;}
+.contents .section_wrap > div section > ul.flex li > ul li {display: flex; align-items: center; width: 100%;}
+
+.contents .section_wrap > div section > ul.flex li.rate_basic_amount ul {gap: 1em;}
+.contents .section_wrap > div section > ul.flex li.rate_basic_amount ul li {flex-direction: column; align-items: flex-start; gap: 0.5em; width: 100%;}
+.contents .section_wrap > div section > ul.flex li.rate_basic_amount ul.grid {display:grid; width: 100%;}
+.contents .section_wrap > div section > ul.flex li.rate_basic_amount ul.grid li {display: flex; flex-direction: row; gap: 0.5em; align-items: center;}
+.contents .section_wrap > div section > ul.flex li.rate_basic_amount ul.grid li > p.txt_tit {width: 7em;}
+
+
+.contents .section_wrap > div section > ul.flex li.reservation_savings div {display: flex; flex-direction: column; gap: 1em; width: 100%;  flex-grow: 1}
+.contents .section_wrap > div section > ul.flex li.reservation_savings div ul.button_wrap {justify-content: space-between; width: 100%;}
+
+.reservation_savings .grid_template .grid_table {border-bottom: 1px solid var(--border-gray);}
+.reservation_savings .grid_template .grid_table .gh,
+.reservation_savings .grid_template.open .grid_table .gc li {grid-template-columns: 1.5em 20% auto 20% 20%;}
+.reservation_savings .grid_template .grid_table .gc li {display: none;}
+
+.reservation_savings .grid_template .grid_table .gc.gc_non li {grid-template-columns: 100%; display: grid; padding-bottom: 2em;}
+.reservation_savings .grid_template.open .grid_table .gc.gc_non li {display: none;}
+
+.contents .section_wrap > div section > ul.flex li .radio_wrap {align-items: flex-start; align-self: flex-start;}
+
+.contents .section_wrap > div section > ul.flex li.rule_saving_grade > div {display: flex; flex-direction: column; align-items: flex-start;}
+.contents .section_wrap > div section > ul.flex li.rule_saving_grade > div > div {display: flex; gap: 1em; width: 100%;}
+.contents .section_wrap > div section > ul.flex li.rule_saving_grade > div > div p {width: 7em; color: var(--mid-black);}
+.contents .section_wrap > div section > ul.flex li.rule_saving_grade > div > div > ul {flex-direction: column; align-items: flex-start;}
+.contents .section_wrap > div section > ul.flex li.rule_saving_grade > div > div > ul li {flex-direction: column;}
+.contents .section_wrap > div section > ul.flex li.rule_saving_grade > div > div > ul li > ul li {display: flex; flex-direction: column; align-items: flex-start; padding: 0 1em;}
+
+.contents .section_wrap > div section > ul.flex li.rule_savings .radio_wrap,
+.contents .section_wrap > div section > ul.flex li.non_use_savings .radio_wrap,
+.contents .section_wrap > div section > ul.flex li.once_use_saving .radio_wrap,
+.contents .section_wrap > div section > ul.flex li.rule_savings > div {display: flex; flex-direction: column; align-items: flex-start;}
+
+.contents .section_wrap > div section > ul.flex li.sms_saving,
+.contents .section_wrap > div section > ul.flex li.sms_saving > div  {display: flex; gap: 0.5em; align-self: flex-start;}
+.contents .section_wrap > div section > ul.flex li.sms_saving > div > div {display: flex; gap: 1em; flex-direction: row;}
+.contents .section_wrap > div section > ul.flex li.sms_saving > div > div label {display: flex; flex-direction: row; gap: 1em; font-size: 0.875em; color: var(--mid-black)}
+
+.contents .section_wrap > div section > ul.flex li.board_savings div.radio_wrap,
+.contents .section_wrap > div section > ul.flex li.non_used_savings div.radio_wrap {display: flex; flex-direction: column; }
+
+.contents .section_wrap > div section > ul.flex li.once_use_saving .radio_wrap label {display: block;}
+.contents .section_wrap > div section > ul.flex li.once_use_saving .radio_wrap label > * {display: inline-block;}
+.contents .section_wrap > div section > ul.flex li.once_use_saving .radio_wrap label > input[type="radio"] {display: none;}
+.contents .section_wrap > div section > ul.flex li.once_use_saving .radio_wrap label > .box_radio {margin-right: 0.25em;}
+.contents .section_wrap > div section > ul.flex li.once_use_saving .radio_wrap label input {width: 30%;}
+
+.contents .section_wrap > div section > ul.flex li.setting_rpe > ul,
+.contents .section_wrap > div section > ul.flex li.setting_rpe > ul li {display: flex; flex-direction: column; align-items: flex-start; align-self: flex-start;}
+.contents .section_wrap > div section > ul.flex li.setting_rpe > ul li > ul.check_wrap li {display: flex; flex-direction: row; gap: 1em; flex-wrap: wrap;}
+.contents .section_wrap > div section > ul.flex li.setting_rpe > ul li > ul.check_wrap li label {display: flex; flex-direction: row; gap: 1em; flex-wrap: wrap; font-size: 0.875em; color: var(--mid-black); flex-direction: row;}
+
+.contents .section_wrap > div section > ul.flex li.exclusion_savings > ul {display: flex; gap: 1em; flex-direction: row; align-items: flex-start; align-self: flex-start;  flex-grow: unset;}
+.contents .section_wrap > div section > ul.flex li.exclusion_savings > ul li {display: flex; flex-direction: column; gap: 0.5em; align-items: flex-start; align-self: flex-start;}
+.contents .section_wrap > div section > ul.flex li.exclusion_savings > ul li ul {display: flex; border: 1px solid var(--border-gray); border-radius: 0.75em; padding: 0.5em; width: 100%; height: 150px; overflow-y: scroll;}
+.contents .section_wrap > div section > ul.flex li.exclusion_savings > ul li.button_wrap {align-self: center;}
+.contents .section_wrap > div section > ul.flex li.exclusion_savings > ul li.button_wrap button {width: 1.5em; height: 1.5em; padding: unset; border-radius: 40%;}
+.contents .section_wrap > div section > ul.flex li.exclusion_savings > ul li.button_wrap button .icon {width: 0.5em;}
+.contents .section_wrap > div section > ul.flex li.exclusion_savings > ul li ul li {font-size: 0.875em; color: var(--mid-black);}
+
+
+
+.contents .section_wrap > div section textarea {width: 100%; border: 1px solid var(--border-gray); border-radius: 0.75em; height: 345px; overflow-y: scroll; padding: 0.5em; font-size: 0.875em; color: var(--mid-black);}
+
+
+.contents .section_wrap > div section.delivery_info .st_con .radio_wrap {display: flex; flex-direction: row; gap: 0.5em; width: unset}
+.contents .section_wrap > div section.ex_re_info .st_con .radio_wrap {display: flex; flex-direction: row; gap: 0.5em; width: unset}
+.contents .section_wrap > div section.mg_set .st_con .grid {display: grid; grid-template-columns: 2em 7em auto;}
+.contents .section_wrap > div section.mg_set .st_con .grid .icon {width: 1.5em;}
+.contents .section_wrap > div section.mg_set .st_con .grid input {padding: 0.5em; border-radius: 0.75em; border: 1px solid var(--border-gray); width: auto; text-align: center}
+.contents .section_wrap > div section.mg_set .st_con .grid > div.mb_rule {display: flex; gap: 0.5em; font-size: 0.875em; color: var(--mid-black); align-items: center;}
+.contents .section_wrap > div section.mg_set .st_con .grid > div input {text-align: right; width: 8em; flex-grow: unset;}
+.contents .section_wrap > div section.mg_set .st_con .grid > div input:last-child {width: 3em;}
+
+.contents .section_wrap > div section.sv_set .st_con li {display: flex; gap: 0.5em;}
+.contents .section_wrap > div section.sv_set .st_con li p.txt_tit {width: unset;}
+.contents .section_wrap > div section.sv_set .st_con li div {flex-direction: row; gap: 0.5em; align-items: center; width: unset; font-size: 0.875em; color: var(--mid-black);}
+.contents .section_wrap > div section.sv_set ul.st_con li input {flex-grow: unset; padding: 0.5em; border-radius: 0.75em; border: 1px solid var(--border-gray);}
+.contents .section_wrap > div section.sv_set ul.st_con li label {display: flex; flex-direction: row; gap: 0.5em; font-size: 1em; align-items: center; color:var(--mid-black);}
+.contents .section_wrap > div section.sv_set ul.st_con li div .custom-select,
+.contents .section_wrap > div section.sv_set ul.st_con li div .custom-select .select-box,
+.contents .section_wrap > div section.sv_set ul.st_con li span {color: inherit; font-size: unset;}
+.contents .section_wrap > div section.sv_set .button_wrap,
+.contents .section_wrap > div section.mg_set .button_wrap {justify-content: flex-end; align-self: flex-end;}
+.contents .section_wrap > div section.sv_set .button_wrap > .btn,
+.contents .section_wrap > div section.mg_set .button_wrap > .btn {width: auto;}
+
+.basis_set .contents > .section_wrap > div section.dvp_set ul.st_con .flex {display: flex; flex-direction: column; gap: 0.5em; align-items: flex-start;}
+.basis_set .contents > .section_wrap > div section.dvp_set ul.st_con .flex .radio_wrap {display: flex; flex-direction: row; gap: 0.5em; align-items: center;}
+section.dvp_set ul.st_con .flex .radio_wrap label {display: flex; align-items: center;}
+.basis_set .contents > .section_wrap > div section.dvp_set ul.st_con li input {font-size: inherit; padding: 0.5em; border-radius: 0.75em; border: 1px solid var(--border-gray);}
+
+.setting .contents section.dvp_set .flex > div.limit_date {display: flex; gap: 1em; align-items: center; font-size: 0.875em; color: var(--mid-black); flex-direction: row; flex-wrap: wrap;}
+.setting .contents section.dvp_set .flex > div.limit_date label {display: flex; flex-direction: row; gap: 0.5em; align-items: center; font-size: inherit;}
+.setting .contents section.dvp_set .flex > .less_dv {display: flex; font-size: 0.875em; color: var(--mid-black); gap: 0.5em; flex-direction: row; align-items: center;}
+.setting .contents section.dvp_set .flex > .less_dv input {width: auto; flex-grow: unset;}
+
+
+.contents .section_wrap > div section.pi_policy textarea,
+.contents .section_wrap > div section.agree_ad textarea {height: 80px;}
+
+
+@media screen and (max-width: 1575px) {
+    .basis_set .contents > .section_wrap {flex-direction: column;}
+}
+
+
+
+@media screen and (max-width: 1200px) {
+.balance section .grid .radio_wrap {flex-direction: column;}
+}

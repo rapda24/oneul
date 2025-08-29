@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>미스터아빠 통합몰_사용자</title>
+
+    <!-- 메타태그 -->
+    <meta name="viewport" content="widdh=device-widdh, initial-scale=1.0 maximum-scale=1.5">
+
+    <meta name="keyword" content="미스터아빠">
+    <meta name="description" content="미스터아빠 통합몰">
+
+    <meta http-equiv="refresh" content="30">
+
+    <!-- css -->
+    <link rel="stylesheet " href="../../css/reset.css" />
+    <link rel="stylesheet " href="../../css/swiper.css" />
+    <link rel="stylesheet " href="../../css/font.css" />
+    <link rel="stylesheet " href="../../css/common.css" />
+    <link rel="stylesheet " href="../../css/layout.css" />
+    <link rel="stylesheet " href="../../css/popup.css" />
+    <link rel="stylesheet " href="../../css/sub.css" />
+    <link rel="stylesheet " href="../../css/sub_banner.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="banner">
+    <div class="wrap">
+
+        <header class="header" id="header"></header>
+
+        <div class="container">
+            <aside id="aside" class="aside"></aside>
+            <div class="contents">
+                <div class="tab_history" id="tab_history"></div>
+                <div class="main_area">
+                    <section class="sub_top" id="sub_top"></section>
+                    <div class="tit_wrap">
+                        <dt>배너 관리</dt>
+                        <div class="button_wrap">
+                            <button class="btn btn_cs2">조회</button>
+                            <button class="btn btn_cm">저장</button>
+                            <button class="btn btn_cs2">삭제</button>
+                            <button class="btn btn_cs2">엑셀</button>
+                        </div>
+                    </div>
+
+
+                    <section class="r_banner">
+                        <div class="grid">
+                            <div class="img_wrap no_img">
+                                <button class="btn btn_cs2">이미지 등록</button>
+                                <p class="notice">
+                                    <span class="icon"><img src="../../img/icon_expoint.svg"></span>
+                                    가로 800픽셀 X 355픽셀 / jpg, png, gif 등록가능
+                                </p>
+                            </div>
+                            <ul class="banner_info">
+                                <li class="tit">
+                                    <div class="tit_l">
+                                        <div class="icon"><img src="../../../static/img/icon_all_banner_02_bk.svg" /></div>
+                                        <dd>배너 등록</dd>
+                                    </div>
+                                </li>
+                                <li class="flex a_bd">
+                                    <p>배너명</p>
+                                    <input type="text" placeholder="배너명을 입력하세요." />
+                                </li>
+                                <li class="flex">
+                                    <label><input type="radio" class="" name="show_dt" /><span class="box_radio"></span></label>
+                                    <p>노출 기간지정</p>
+                                    <div class="custom-datepicker">
+                                        <div class="flex">
+                                            <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+                                        </div>
+                                        <p>~</p>
+                                        <div class="flex">
+                                            <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                                        </div>
+                                        <div id="calendar" class="calendar hidden"></div>
+                                    </div>
+                                </li>
+                                <li class="flex link">
+                                    <label><input type="radio" class="" name="l_date" /><span class="box_radio"></span></label>
+                                    <p>배너 링크연결</p>
+                                    <div class="custom-select">
+                                        <div class="select-box">
+                                            <span>현재창</span><img src="../../../static/img/icon_down.svg" />
+                                        </div>
+                                        <ul class="options-list">
+                                            <li class="option" data-value="1">현재창</li>
+                                            <li class="option" data-value="2">새창</li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" placeholder="클릭 시 이동할 주소를 입력하세요." />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="button_wrap">
+                            <button class="btn btn_submit">등록</button>
+                            <button class="btn">취소</button>
+                        </div>
+                    </section>
+
+                    <section class="r_banner registered">
+                        <div class="grid">
+                            <div class="img_wrap">
+                                <img src="../../../static/img/banner_img_01.jpg" />
+                            </div>
+                            <ul class="banner_info">
+                                <li class="tit">
+                                    <div class="tit_l">
+                                        <div class="icon"><img src="../../../static/img/icon_all_banner_02_bk.svg" /></div>
+                                        <dd>01번 배너</dd>
+                                        <ul class="adj_order">
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_up_gr.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_down.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_top_gr.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_bottom.svg" /></div></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tit_r">
+                                        <label><input type="radio" class="" name="show_un_01" checked /><span class="box_radio"></span>노출</label>
+                                        <label><input type="radio" class="" name="show_un" /><span class="box_radio"></span>미노출</label>
+                                    </div>
+                                </li>
+                                <li class="flex a_bd">
+                                    <p>배너명</p>
+                                    <input type="text" value="신규회원 첫구매 1만원 쿠폰" />
+                                </li>
+                                <li class="flex">
+                                    <label><input type="radio" class="" name="show_dt" checked /><span class="box_radio"></span></label>
+                                    <p>노출 기간지정</p>
+                                    <div class="custom-datepicker">
+                                        <div class="flex">
+                                            <input type="text" id="start-date" placeholder="시작 날짜" value="23.11.23 11:23" readonly />
+                                        </div>
+                                        <p>~</p>
+                                        <div class="flex">
+                                            <input type="text" id="end-date" placeholder="종료 날짜" value="23.11.23 11:23" readonly />
+                                        </div>
+                                        <div id="calendar" class="calendar hidden"></div>
+                                    </div>
+                                </li>
+                                <li class="flex link">
+                                    <label><input type="radio" class="" name="c_link" checked /><span class="box_radio"></span></label>
+                                    <p>링크연결</p>
+                                    <div class="custom-select">
+                                        <div class="select-box">
+                                            <span>현재창</span><img src="../../../static/img/icon_down.svg" />
+                                        </div>
+                                        <ul class="options-list">
+                                            <li class="option" data-value="1">현재창</li>
+                                            <li class="option" data-value="2">새창</li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" placeholder="클릭 시 이동할 주소를 입력하세요." />
+                                </li>
+                            </ul>
+                            <div class="flex button_wrap">
+                                <p class="notice">
+                                    <span class="icon"><img src="../../img/icon_expoint.svg"></span>
+                                    권장사이즈 : 800픽셀 X 355픽셀 / jpg, png, gif 등록가능
+                                </p>
+                                <button class="btn btn_cs2">이미지 변경</button>
+                            </div>
+                            <div class="button_wrap">
+                                <button class="btn btn_submit">수정</button>
+                                <button class="btn">취소</button>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="r_banner registered">
+                        <div class="grid">
+                            <div class="img_wrap">
+                                <img src="../../../static/img/banner_img_02.jpg" />
+                            </div>
+                            <ul class="banner_info">
+                                <li class="tit">
+                                    <div class="tit_l">
+                                        <div class="icon"><img src="../../../static/img/icon_all_banner_02_bk.svg" /></div>
+                                        <dd>02번 배너</dd>
+                                        <ul class="adj_order">
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_up.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_down.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_top.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_bottom.svg" /></div></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tit_r">
+                                        <label><input type="radio" class="" name="show_un_02" checked /><span class="box_radio"></span>노출</label>
+                                        <label><input type="radio" class="" name="show_un" /><span class="box_radio"></span>미노출</label>
+                                    </div>
+                                </li>
+                                <li class="flex a_bd">
+                                    <p>배너명</p>
+                                    <input type="text" value="사업자를 위한 특별한 혜택" />
+                                </li>
+                                <li class="flex">
+                                    <label><input type="radio" class="" name="show_dt" checked /><span class="box_radio"></span></label>
+                                    <p>노출 기간지정</p>
+                                    <div class="custom-datepicker">
+                                        <div class="flex">
+                                            <input type="text" id="start-date" placeholder="시작 날짜" value="23.11.23 11:23" readonly />
+                                        </div>
+                                        <p>~</p>
+                                        <div class="flex">
+                                            <input type="text" id="end-date" placeholder="종료 날짜" value="23.11.23 11:23" readonly />
+                                        </div>
+                                        <div id="calendar" class="calendar hidden"></div>
+                                    </div>
+                                </li>
+                                <li class="flex link">
+                                    <label><input type="radio" class="" name="c_link" checked /><span class="box_radio"></span></label>
+                                    <p>링크연결</p>
+                                    <div class="custom-select">
+                                        <div class="select-box">
+                                            <span>현재창</span><img src="../../../static/img/icon_down.svg" />
+                                        </div>
+                                        <ul class="options-list">
+                                            <li class="option" data-value="1">현재창</li>
+                                            <li class="option" data-value="2">새창</li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" placeholder="클릭 시 이동할 주소를 입력하세요." />
+                                </li>
+                            </ul>
+                            <div class="flex button_wrap">
+                                <p class="notice">
+                                    <span class="icon"><img src="../../img/icon_expoint.svg"></span>
+                                    권장사이즈 : 800픽셀 X 355픽셀 / jpg, png, gif 등록가능
+                                </p>
+                                <button class="btn btn_cs2">이미지 변경</button>
+                            </div>
+                            <div class="button_wrap">
+                                <button class="btn btn_submit">수정</button>
+                                <button class="btn">취소</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="r_banner registered">
+                        <div class="grid">
+                            <div class="img_wrap">
+                                <img src="../../../static/img/banner_img_03.jpg" />
+                            </div>
+                            <ul class="banner_info">
+                                <li class="tit">
+                                    <div class="tit_l">
+                                        <div class="icon"><img src="../../../static/img/icon_all_banner_02_bk.svg" /></div>
+                                        <dd>03번 배너</dd>
+                                        <ul class="adj_order">
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_up.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_down_gr.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_top.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_bottom_gr.svg" /></div></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tit_r">
+                                        <label><input type="radio" class="" name="show_un_03" checked /><span class="box_radio"></span>노출</label>
+                                        <label><input type="radio" class="" name="show_un" /><span class="box_radio"></span>미노출</label>
+                                    </div>
+                                </li>
+                                <li class="flex a_bd">
+                                    <p>배너명</p>
+                                    <input type="text" value="신규회원 첫구매 1만원 쿠폰" />
+                                </li>
+                                <li class="flex">
+                                    <label><input type="radio" class="" name="show_dt" checked /><span class="box_radio"></span></label>
+                                    <p>노출 기간지정</p>
+                                    <div class="custom-datepicker">
+                                        <div class="flex">
+                                            <input type="text" id="start-date" placeholder="시작 날짜" value="23.11.23 11:23" readonly />
+                                        </div>
+                                        <p>~</p>
+                                        <div class="flex">
+                                            <input type="text" id="end-date" placeholder="종료 날짜" value="23.11.23 11:23" readonly />
+                                        </div>
+                                        <div id="calendar" class="calendar hidden"></div>
+                                    </div>
+                                </li>
+                                <li class="flex link">
+                                    <label><input type="radio" class="" name="c_link" checked /><span class="box_radio"></span></label>
+                                    <p>링크연결</p>
+                                    <div class="custom-select">
+                                        <div class="select-box">
+                                            <span>현재창</span><img src="../../../static/img/icon_down.svg" />
+                                        </div>
+                                        <ul class="options-list">
+                                            <li class="option" data-value="1">현재창</li>
+                                            <li class="option" data-value="2">새창</li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" placeholder="클릭 시 이동할 주소를 입력하세요." />
+                                </li>
+                            </ul>
+                            <div class="flex button_wrap">
+                                <p class="notice">
+                                    <span class="icon"><img src="../../img/icon_expoint.svg"></span>
+                                    권장사이즈 : 800픽셀 X 355픽셀 / jpg, png, gif 등록가능
+                                </p>
+                                <button class="btn btn_cs2">이미지 변경</button>
+                            </div>
+                            <div class="button_wrap">
+                                <button class="btn btn_submit">수정</button>
+                                <button class="btn">취소</button>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="popup"></div>
+
+    <!-- js -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/swiper.js"></script>
+    <script src="../../js/import.js"></script>
+    <script src="../../js/popup.js"></script>
+    <script>
+        /* header와 aside 로드 */
+        loadComponent('header', '../../layout/header_sub.html');
+        loadComponent('aside', '../../layout/aside_sub.html');
+        loadComponent('sub_top', 'banner_top.html');
+        loadComponent('popup', '../../layout/popup_sub.html');
+        loadComponent('tab_history', '../../layout/tab_history.html');
+    </script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/banner.js"></script>
+
+</body>
+
+</html>

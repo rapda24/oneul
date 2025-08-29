@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.txt_w {color: #fff;}
+.txt_w * {color: inherit;}
+.txt_gy,
+.txt_gy * {color: var(--light-black);}
+.txt_main {color: var(--main-color)}
+.txt_sub {color: var(--sub-color)}
+.txt_l {font-weight: 400;}
+strong,
+.txt_tit {font-weight: 600;}
+
+:lang(en) {letter-spacing: 0.02em; font-size: 1.025em;}
+
+
+h2 {font-size: 5em; font-weight: 600;}
+h3 {font-size: 4em; font-weight: 600;}
+h4 {font-size: 3em; font-weight: 600;}
+h5 {font-size: 2.5em; font-weight: 600;}
+h6 {font-size: 2em; font-weight: 600;}
+
+h2:lang(en) {font-size: 5.13em;}
+h3:lang(en) {font-size: 4.1em;}
+h4:lang(en) {font-size: 2.56em;}
+h5:lang(en) {font-size: 3.08em;}
+h6:lang(en) {font-size: 2.05em;}
+
+dt {font-size: 1.5em; font-weight: 600;}
+dd {font-size: 1em; font-weight: 500;}
+
+
+strong {font-weight: 500;}

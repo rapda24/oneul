@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 440.2 467.6">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#linear-gradient2);
+      }
+
+      .st1 {
+        mask: url(#mask-1);
+      }
+
+      .st2 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st2, .st3 {
+        mix-blend-mode: multiply;
+      }
+
+      .st4 {
+        fill: #fff;
+      }
+
+      .st5 {
+        mask: url(#mask);
+      }
+
+      .st6 {
+        fill: none;
+      }
+
+      .st7 {
+        mask: url(#mask-2);
+      }
+
+      .st8 {
+        fill: url(#linear-gradient4);
+      }
+
+      .st9 {
+        filter: url(#luminosity-noclip2);
+      }
+
+      .st3 {
+        fill: url(#linear-gradient3);
+      }
+
+      .st10 {
+        fill: url(#linear-gradient);
+      }
+
+      .st11 {
+        clip-path: url(#clippath);
+      }
+
+      .st12 {
+        mask: url(#mask-3);
+      }
+
+      .st13 {
+        filter: url(#luminosity-noclip);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="82.4" y1="195.9" x2="440.2" y2="195.9" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#18b7f1"/>
+      <stop offset="1" stop-color="#185ef1"/>
+    </linearGradient>
+    <clipPath id="clippath">
+      <circle class="st6" cx="174.2" cy="293.4" r="173.4"/>
+    </clipPath>
+    <filter id="luminosity-noclip" x=".8" y="120" width="346.9" height="346.9" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <filter id="luminosity-noclip1" x=".8" y="-8934.9" width="346.9" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-1" x=".8" y="-8934.9" width="346.9" height="32766" maskUnits="userSpaceOnUse"/>
+    <linearGradient id="linear-gradient1" x1=".8" y1="293.4" x2="347.6" y2="293.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b3b3b3"/>
+      <stop offset="1" stop-color="#666"/>
+    </linearGradient>
+    <mask id="mask" x=".8" y="120" width="346.9" height="346.9" maskUnits="userSpaceOnUse">
+      <g class="st13">
+        <g class="st1">
+          <circle class="st2" cx="174.2" cy="293.4" r="173.4"/>
+        </g>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient2" x1=".8" y1="293.4" x2="347.6" y2="293.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d3ffff"/>
+      <stop offset="1" stop-color="#b0dbdb"/>
+    </linearGradient>
+    <filter id="luminosity-noclip2" x="0" y="119.2" width="348.4" height="348.4" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <filter id="luminosity-noclip3" x="0" y="-8934.9" width="348.4" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-3" x="0" y="-8934.9" width="348.4" height="32766" maskUnits="userSpaceOnUse"/>
+    <linearGradient id="linear-gradient3" x1="0" y1="293.4" x2="348.4" y2="293.4" xlink:href="#linear-gradient1"/>
+    <mask id="mask-2" x="0" y="119.2" width="348.4" height="348.4" maskUnits="userSpaceOnUse">
+      <g class="st9">
+        <g class="st12">
+          <path class="st3" d="M174.2,467.6C78.1,467.6,0,389.4,0,293.4S78.1,119.2,174.2,119.2s174.2,78.1,174.2,174.2-78.1,174.2-174.2,174.2ZM174.2,120.7C79,120.7,1.5,198.2,1.5,293.4s77.5,172.7,172.7,172.7,172.7-77.5,172.7-172.7-77.5-172.7-172.7-172.7Z"/>
+        </g>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient4" x1="0" y1="293.4" x2="348.4" y2="293.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c5ffff"/>
+      <stop offset="1" stop-color="#d5ffff"/>
+    </linearGradient>
+  </defs>
+  <path class="st10" d="M387.8,34h-8.5V15c0-8.3-6.7-15-15-15h-13c-8.3,0-15,6.7-15,15v19h-53.3V15c0-8.3-6.7-15-15-15h-13c-8.3,0-15,6.7-15,15v19h-50.4V15c0-8.3-6.7-15-15-15h-13c-8.3,0-15,6.7-15,15v19h-11.4c-29,0-52.5,23.5-52.5,52.5v252.8c0,29,23.5,52.5,52.5,52.5h252.8c29,0,52.5-23.5,52.5-52.5V86.5c0-29-23.5-52.5-52.5-52.5Z"/>
+  <g class="st11">
+    <image width="397" height="435" transform="translate(62.7 -21.7)" xlink:href="icon_dving-1.png"/>
+  </g>
+  <g>
+    <g class="st5">
+      <circle class="st0" cx="174.2" cy="293.4" r="173.4"/>
+    </g>
+    <g class="st7">
+      <path class="st8" d="M174.2,467.6C78.1,467.6,0,389.4,0,293.4S78.1,119.2,174.2,119.2s174.2,78.1,174.2,174.2-78.1,174.2-174.2,174.2ZM174.2,120.7C79,120.7,1.5,198.2,1.5,293.4s77.5,172.7,172.7,172.7,172.7-77.5,172.7-172.7-77.5-172.7-172.7-172.7Z"/>
+    </g>
+  </g>
+  <path class="st4" d="M254.1,305.9h-82.6c-6.9,0-12.5-5.6-12.5-12.5v-110.2c0-6.9,5.6-12.5,12.5-12.5s12.5,5.6,12.5,12.5v97.7h70.1c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5Z"/>
+</svg>

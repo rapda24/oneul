@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>미스터아빠 통합몰_사용자</title>
+
+    <!-- 메타태그 -->
+    <meta name="viewport" content="widdh=device-widdh, initial-scale=1.0 maximum-scale=1.5">
+
+    <meta name="keyword" content="미스터아빠">
+    <meta name="description" content="미스터아빠 통합몰">
+
+    <meta http-equiv="refresh" content="30">
+
+    <!-- css -->
+    <link rel="stylesheet " href="../../css/reset.css" />
+    <link rel="stylesheet " href="../../css/swiper.css" />
+    <link rel="stylesheet " href="../../css/font.css" />
+    <link rel="stylesheet " href="../../css/common.css" />
+    <link rel="stylesheet " href="../../css/layout.css" />
+    <link rel="stylesheet " href="../../css/popup.css" />
+    <link rel="stylesheet " href="../../css/sub.css" />
+    <link rel="stylesheet " href="../../css/sub_product.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="product product_main">
+    <div class="wrap">
+
+        <header class="header" id="header"></header>
+
+        <div class="container">
+            <aside id="aside" class="aside"></aside>
+            <div class="contents">
+                <div class="tab_history" id="tab_history"></div>
+                
+                <div class="main_area">
+                    <section class="sub_top" id="sub_top"></section>
+                    <div class="tit_wrap">
+                        <dt>메인 관리</dt>
+                        <div class="button_wrap">
+                            <button class="btn btn_cs2">조회</button>
+                            <button class="btn btn_cm">저장</button>
+                            <button class="btn btn_cs2">삭제</button>
+                            <button class="btn btn_cs2">엑셀</button>
+                        </div>
+                    </div>
+
+                    <!-- 영역 추가 시작 -->
+                    <div class="box_mprd open">
+                        <section class="new_mprd">
+                            <div class="tit_l">
+                                <span class="icon"></span>
+                                <p>영역 정보내용을 입력하세요.</p>
+                            </div>
+                        </section>
+                        <div class="mprd_set">
+                            <section class="mprd_info">
+                                <div class="flex a_bd">
+                                    <p>배너명</p>
+                                    <input type="text" placeholder="배너명을 입력하세요.">
+                                </div>
+                                <div class="flex a_bd">
+                                    <p>추가 설명</p>
+                                    <input type="text" placeholder="배너명을 입력하세요.">
+                                </div>
+                                <div class="select_dp">
+                                    <p>진열방식</p>
+                                    
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="select_dp_1" checked /><span class="box_radio"></span>슬라이드</label>
+                                        <label><input type="radio" class="" name="select_dp_1" /><span class="box_radio"></span>갤러리2</label>
+                                        <label><input type="radio" class="" name="select_dp_1" /><span class="box_radio"></span>갤러리3</label>
+                                        <label><input type="radio" class="" name="select_dp_1" /><span class="box_radio"></span>리스트</label>
+                                    </div>
+                                    <div class="calendar_wrap">
+                                        <label><input type="radio" class="" name="select_list_1" /><span class="box_radio"></span>타임지정</label>
+                                        <div class="custom-datepicker">
+                                            <div class="flex">
+                                                <input type="text" id="start-date" placeholder="년.월.일 시:분" readonly />
+                                            </div>
+                                            <p>~</p>
+                                            <div class="flex">
+                                                <input type="text" id="end-date" placeholder="년.월.일 시:분" readonly />
+                                            </div>
+                                            <div id="calendar" class="calendar hidden"></div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="deco_icon">
+                                    <p>꾸미기 아이콘</p>
+                                    <div class="icon_box">
+                                        <span class="icon icon_1"></span>
+                                        <span class="icon icon_2"></span>
+                                        <span class="icon icon_3"></span>
+                                        <span class="icon icon_4"></span>
+                                        <span class="icon icon_5"></span>
+                                        <span class="icon icon_6"></span>
+                                        <span class="icon icon_7"></span>
+                                        <span class="icon icon_8"></span>
+                                        <span class="icon icon_9"></span>
+                                        <span class="icon icon_10"></span>
+                                        <span class="icon icon_11"></span>
+                                        <span class="icon icon_12"></span>
+                                        <span class="icon icon_13"></span>
+                                        <span class="icon icon_14"></span>
+                                        <span class="icon icon_15"></span>
+                                        <span class="icon icon_16"></span>
+                                        <span class="icon icon_17"></span>
+                                        <span class="icon icon_18"></span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mprd_lprd">
+                                <div class="lprd_control">
+                                    <div class="move_pdo_box">
+                                        <p>선택상품 이동</p>
+                                        <ul class="adj_order">
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_up.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_down.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_top.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_bottom.svg" /></div></li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn_dpp btn btn_cs1">상품 추가</button>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="button_wrap">
+                            <button class="btn btn_submit">추가</button>
+                            <button class="btn">취소</button>
+                        </div>
+                    </div>
+                    <!-- 영역 추가 꿑 -->
+                    
+                    <!-- 영역 시작 / 열림 -->
+                    <div class="box_mprd open">
+                        <section class="new_mprd">
+                            <div class="tit_l">
+                                <span class="icon"></span>
+                                <p>타임세일</p>
+                                <ul class="adj_order">
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_up_gr.svg" /></div></li>
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_down.svg" /></div></li>
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_top_gr.svg" /></div></li>
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_bottom.svg" /></div></li>
+                                </ul>
+                            </div>
+                            <div class="tit_r">
+                                <label><input type="radio" class="" name="show_un_02" checked /><span class="box_radio"></span>노출</label>
+                                <label><input type="radio" class="" name="show_un_02" /><span class="box_radio"></span>미노출</label>
+                                <button class="btn btn_cs1">삭제</button>
+                            </div>
+                        </section>
+                        <div class="mprd_set">
+                            <section class="mprd_info">
+                                <div class="flex a_bd">
+                                    <p>배너명</p>
+                                    <input type="text" placeholder="배너명을 입력하세요.">
+                                </div>
+                                <div class="flex a_bd">
+                                    <p>추가 설명</p>
+                                    <input type="text" placeholder="배너명을 입력하세요.">
+                                </div>
+                                <div class="select_dp">
+                                    <p>진열방식</p>
+                                    
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="select_dp_2" checked /><span class="box_radio"></span>슬라이드</label>
+                                        <label><input type="radio" class="" name="select_dp_2" /><span class="box_radio"></span>갤러리2</label>
+                                        <label><input type="radio" class="" name="select_dp_2" /><span class="box_radio"></span>갤러리3</label>
+                                        <label><input type="radio" class="" name="select_dp_2" /><span class="box_radio"></span>리스트</label>
+                                    </div>
+                                    <div class="calendar_wrap">
+                                        <label><input type="radio" class="" name="select_list_2" /><span class="box_radio"></span>타임지정</label>
+                                        <div class="custom-datepicker">
+                                            <div class="flex">
+                                                <input type="text" id="start-date" placeholder="년.월.일 시:분" readonly />
+                                            </div>
+                                            <p>~</p>
+                                            <div class="flex">
+                                                <input type="text" id="end-date" placeholder="년.월.일 시:분" readonly />
+                                            </div>
+                                            <div id="calendar" class="calendar hidden"></div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="deco_icon">
+                                    <p>꾸미기 아이콘</p>
+                                    <div class="icon_box">
+                                        <span class="icon icon_1 active"></span>
+                                        <span class="icon icon_2"></span>
+                                        <span class="icon icon_3"></span>
+                                        <span class="icon icon_4"></span>
+                                        <span class="icon icon_5"></span>
+                                        <span class="icon icon_6"></span>
+                                        <span class="icon icon_7"></span>
+                                        <span class="icon icon_8"></span>
+                                        <span class="icon icon_9"></span>
+                                        <span class="icon icon_10"></span>
+                                        <span class="icon icon_11"></span>
+                                        <span class="icon icon_12"></span>
+                                        <span class="icon icon_13"></span>
+                                        <span class="icon icon_14"></span>
+                                        <span class="icon icon_15"></span>
+                                        <span class="icon icon_16"></span>
+                                        <span class="icon icon_17"></span>
+                                        <span class="icon icon_18"></span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mprd_lprd">
+                                <div class="lprd_control">
+                                    <div class="move_pdo_box">
+                                        <p>선택상품 이동</p>
+                                        <ul class="adj_order">
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_up.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_down.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_top.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_bottom.svg" /></div></li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn_dpp btn btn_cs1">상품 추가</button>
+                                </div>
+                                
+                                <div class="grid_template" id="grid_oderlist">
+                                    <div class="grid_table">
+                                        <ul class="gh">
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                            </li>
+                                            <li>진열순서</li>
+                                            <li>상품번호</li>
+                                            <li>바코드</li>
+                                            <li>상품명</li>
+                                            <li>판매가</li>
+                                        </ul>
+                                        <ul class="gc">
+                                            <!-- // grid 행 반복 -->
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="1" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_01.png" /></div>
+                                                    <p>껍질째먹는 사과 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">31,900</p>
+                                            </li>
+                                            <!-- // grid 행 반복 -->
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="2" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_02.png" /></div>
+                                                    <p>무농약 양배추 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">21,900</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="3" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_03.png" /></div>
+                                                    <p>남해 시금치 1단</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">3,900</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="4" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_01.png" /></div>
+                                                    <p>껍질째먹는 사과 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">31,900</p>
+                                            </li>
+                                            <!-- // grid 행 반복 -->
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="5" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_02.png" /></div>
+                                                    <p>무농약 양배추 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">21,900</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="6" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_03.png" /></div>
+                                                    <p>남해 시금치 1단</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">3,900</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="button_wrap">
+                            <button class="btn btn_submit">수정</button>
+                            <button class="btn">닫기</button>
+                        </div>
+                    </div>
+                    <!-- 영역 끝 -->
+    
+    
+    
+                    <!-- 영역 시작 / 닫힘 -->
+                    <div class="box_mprd">
+                        <section class="new_mprd">
+                            <div class="tit_l">
+                                <span class="icon"></span>
+                                <p>오늘의 특가</p>
+                                <ul class="adj_order">
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_up.svg" /></div></li>
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_down.svg" /></div></li>
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_top.svg" /></div></li>
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_bottom.svg" /></div></li>
+                                </ul>
+                            </div>
+                            <div class="tit_r">
+                                <label><input type="radio" class="" name="show_un_03" checked /><span class="box_radio"></span>노출</label>
+                                <label><input type="radio" class="" name="show_un_03" /><span class="box_radio"></span>미노출</label>
+                                <button class="btn btn_cs1">삭제</button>
+                            </div>
+                        </section>
+                        <div class="mprd_set">
+                            <section class="mprd_info">
+                                <div class="flex a_bd">
+                                    <p>배너명</p>
+                                    <input type="text" placeholder="배너명을 입력하세요.">
+                                </div>
+                                <div class="flex a_bd">
+                                    <p>추가 설명</p>
+                                    <input type="text" placeholder="배너명을 입력하세요.">
+                                </div>
+                                <div class="select_dp">
+                                    <p>진열방식</p>
+                                    
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="select_dp_3" checked /><span class="box_radio"></span>슬라이드</label>
+                                        <label><input type="radio" class="" name="select_dp_3" /><span class="box_radio"></span>갤러리2</label>
+                                        <label><input type="radio" class="" name="select_dp_3" /><span class="box_radio"></span>갤러리3</label>
+                                        <label><input type="radio" class="" name="select_dp_3" /><span class="box_radio"></span>리스트</label>
+                                    </div>
+                                    <div class="calendar_wrap">
+                                        <label><input type="radio" class="" name="select_list_3" /><span class="box_radio"></span>타임지정</label>
+                                        <div class="custom-datepicker">
+                                            <div class="flex">
+                                                <input type="text" id="start-date" placeholder="년.월.일 시:분" readonly />
+                                            </div>
+                                            <p>~</p>
+                                            <div class="flex">
+                                                <input type="text" id="end-date" placeholder="년.월.일 시:분" readonly />
+                                            </div>
+                                            <div id="calendar" class="calendar hidden"></div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="deco_icon">
+                                    <p>꾸미기 아이콘</p>
+                                    <div class="icon_box">
+                                        <span class="icon icon_1"></span>
+                                        <span class="icon icon_2 active"></span>
+                                        <span class="icon icon_3"></span>
+                                        <span class="icon icon_4"></span>
+                                        <span class="icon icon_5"></span>
+                                        <span class="icon icon_6"></span>
+                                        <span class="icon icon_7"></span>
+                                        <span class="icon icon_8"></span>
+                                        <span class="icon icon_9"></span>
+                                        <span class="icon icon_10"></span>
+                                        <span class="icon icon_11"></span>
+                                        <span class="icon icon_12"></span>
+                                        <span class="icon icon_13"></span>
+                                        <span class="icon icon_14"></span>
+                                        <span class="icon icon_15"></span>
+                                        <span class="icon icon_16"></span>
+                                        <span class="icon icon_17"></span>
+                                        <span class="icon icon_18"></span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mprd_lprd">
+                                <div class="lprd_control">
+                                    <div class="move_pdo_box">
+                                        <p>선택상품 이동</p>
+                                        <ul class="adj_order">
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_up.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_down.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_top.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_bottom.svg" /></div></li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn_dpp btn btn_cs1">상품 추가</button>
+                                </div>
+                                
+                                <div class="grid_template" id="grid_oderlist">
+                                    <div class="grid_table">
+                                        <ul class="gh">
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                            </li>
+                                            <li>진열순서</li>
+                                            <li>상품번호</li>
+                                            <li>바코드</li>
+                                            <li>상품명</li>
+                                            <li>판매가</li>
+                                        </ul>
+                                        <ul class="gc">
+                                            <!-- // grid 행 반복 -->
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="1" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_01.png" /></div>
+                                                    <p>껍질째먹는 사과 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">31,900</p>
+                                            </li>
+                                            <!-- // grid 행 반복 -->
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="2" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_02.png" /></div>
+                                                    <p>무농약 양배추 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">21,900</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="3" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_03.png" /></div>
+                                                    <p>남해 시금치 1단</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">3,900</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="4" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_01.png" /></div>
+                                                    <p>껍질째먹는 사과 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">31,900</p>
+                                            </li>
+                                            <!-- // grid 행 반복 -->
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="5" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_02.png" /></div>
+                                                    <p>무농약 양배추 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">21,900</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="6" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_03.png" /></div>
+                                                    <p>남해 시금치 1단</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">3,900</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="button_wrap">
+                            <button class="btn btn_submit">수정</button>
+                            <button class="btn">닫기</button>
+                        </div>
+                    </div>
+                    <!-- 영역 끝 -->
+    
+    
+                    <!-- 영역 시작 / 닫힘 -->
+                    <div class="box_mprd">
+                        <section class="new_mprd">
+                            <div class="tit_l">
+                                <span class="icon"></span>
+                                <p>1+1</p>
+                                <ul class="adj_order">
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_up.svg" /></div></li>
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_down.svg" /></div></li>
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_top.svg" /></div></li>
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_bottom.svg" /></div></li>
+                                </ul>
+                            </div>
+                            <div class="tit_r">
+                                <label><input type="radio" class="" name="show_un_04" checked /><span class="box_radio"></span>노출</label>
+                                <label><input type="radio" class="" name="show_un_04" /><span class="box_radio"></span>미노출</label>
+                                <button class="btn btn_cs1">삭제</button>
+                            </div>
+                        </section>
+                        <div class="mprd_set">
+                            <section class="mprd_info">
+                                <div class="flex a_bd">
+                                    <p>배너명</p>
+                                    <input type="text" placeholder="배너명을 입력하세요.">
+                                </div>
+                                <div class="flex a_bd">
+                                    <p>추가 설명</p>
+                                    <input type="text" placeholder="배너명을 입력하세요.">
+                                </div>
+                                <div class="select_dp">
+                                    <p>진열방식</p>
+                                    
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="select_dp_4" checked /><span class="box_radio"></span>슬라이드</label>
+                                        <label><input type="radio" class="" name="select_dp_4" /><span class="box_radio"></span>갤러리2</label>
+                                        <label><input type="radio" class="" name="select_dp_4" /><span class="box_radio"></span>갤러리3</label>
+                                        <label><input type="radio" class="" name="select_dp_4" /><span class="box_radio"></span>리스트</label>
+                                    </div>
+                                    <div class="calendar_wrap">
+                                        <label><input type="radio" class="" name="select_list_4" /><span class="box_radio"></span>타임지정</label>
+                                        <div class="custom-datepicker">
+                                            <div class="flex">
+                                                <input type="text" id="start-date" placeholder="년.월.일 시:분" readonly />
+                                            </div>
+                                            <p>~</p>
+                                            <div class="flex">
+                                                <input type="text" id="end-date" placeholder="년.월.일 시:분" readonly />
+                                            </div>
+                                            <div id="calendar" class="calendar hidden"></div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="deco_icon">
+                                    <p>꾸미기 아이콘</p>
+                                    <div class="icon_box">
+                                        <span class="icon icon_1 active"></span>
+                                        <span class="icon icon_2"></span>
+                                        <span class="icon icon_3"></span>
+                                        <span class="icon icon_4"></span>
+                                        <span class="icon icon_5"></span>
+                                        <span class="icon icon_6"></span>
+                                        <span class="icon icon_7"></span>
+                                        <span class="icon icon_8"></span>
+                                        <span class="icon icon_9"></span>
+                                        <span class="icon icon_10"></span>
+                                        <span class="icon icon_11"></span>
+                                        <span class="icon icon_12"></span>
+                                        <span class="icon icon_13"></span>
+                                        <span class="icon icon_14"></span>
+                                        <span class="icon icon_15"></span>
+                                        <span class="icon icon_16"></span>
+                                        <span class="icon icon_17"></span>
+                                        <span class="icon icon_18"></span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mprd_lprd">
+                                <div class="lprd_control">
+                                    <div class="move_pdo_box">
+                                        <p>선택상품 이동</p>
+                                        <ul class="adj_order">
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_up.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_down.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_top.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_bottom.svg" /></div></li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn_dpp btn btn_cs1">상품 추가</button>
+                                </div>
+                                
+                                <div class="grid_template" id="grid_oderlist">
+                                    <div class="grid_table">
+                                        <ul class="gh">
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                            </li>
+                                            <li>진열순서</li>
+                                            <li>상품번호</li>
+                                            <li>바코드</li>
+                                            <li>상품명</li>
+                                            <li>판매가</li>
+                                        </ul>
+                                        <ul class="gc">
+                                            <!-- // grid 행 반복 -->
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="1" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_01.png" /></div>
+                                                    <p>껍질째먹는 사과 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">31,900</p>
+                                            </li>
+                                            <!-- // grid 행 반복 -->
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="2" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_02.png" /></div>
+                                                    <p>무농약 양배추 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">21,900</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="3" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_03.png" /></div>
+                                                    <p>남해 시금치 1단</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">3,900</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="4" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_01.png" /></div>
+                                                    <p>껍질째먹는 사과 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">31,900</p>
+                                            </li>
+                                            <!-- // grid 행 반복 -->
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="5" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_02.png" /></div>
+                                                    <p>무농약 양배추 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">21,900</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="6" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_03.png" /></div>
+                                                    <p>남해 시금치 1단</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">3,900</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="button_wrap">
+                            <button class="btn btn_submit">수정</button>
+                            <button class="btn">닫기</button>
+                        </div>
+                    </div>
+                    <!-- 영역 끝 -->
+    
+    
+                    <!-- 영역 시작 / 닫힘 -->
+                    <div class="box_mprd">
+                        <section class="new_mprd">
+                            <div class="tit_l">
+                                <span class="icon"></span>
+                                <p>임박상품</p>
+                                <ul class="adj_order">
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_up_gr.svg" /></div></li>
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_down.svg" /></div></li>
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_top_gr.svg" /></div></li>
+                                    <li><div class="icon"><img src="../../../static/img/icon_order_bottom.svg" /></div></li>
+                                </ul>
+                            </div>
+                            <div class="tit_r">
+                                <label><input type="radio" class="" name="show_un_05" checked /><span class="box_radio"></span>노출</label>
+                                <label><input type="radio" class="" name="show_un_05" /><span class="box_radio"></span>미노출</label>
+                                <button class="btn btn_cs1">삭제</button>
+                            </div>
+                        </section>
+                        <div class="mprd_set">
+                            <section class="mprd_info">
+                                <div class="flex a_bd">
+                                    <p>배너명</p>
+                                    <input type="text" placeholder="배너명을 입력하세요.">
+                                </div>
+                                <div class="flex a_bd">
+                                    <p>추가 설명</p>
+                                    <input type="text" placeholder="배너명을 입력하세요.">
+                                </div>
+                                <div class="select_dp">
+                                    <p>진열방식</p>
+                                    
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="select_dp_5" checked /><span class="box_radio"></span>슬라이드</label>
+                                        <label><input type="radio" class="" name="select_dp_5" /><span class="box_radio"></span>갤러리2</label>
+                                        <label><input type="radio" class="" name="select_dp_5" /><span class="box_radio"></span>갤러리3</label>
+                                        <label><input type="radio" class="" name="select_dp_5" /><span class="box_radio"></span>리스트</label>
+                                    </div>
+                                    <div class="calendar_wrap">
+                                        <label><input type="radio" class="" name="select_list_5" /><span class="box_radio"></span>타임지정</label>
+                                        <div class="custom-datepicker">
+                                            <div class="flex">
+                                                <input type="text" id="start-date" placeholder="년.월.일 시:분" readonly />
+                                            </div>
+                                            <p>~</p>
+                                            <div class="flex">
+                                                <input type="text" id="end-date" placeholder="년.월.일 시:분" readonly />
+                                            </div>
+                                            <div id="calendar" class="calendar hidden"></div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="deco_icon">
+                                    <p>꾸미기 아이콘</p>
+                                    <div class="icon_box">
+                                        <span class="icon icon_1 active"></span>
+                                        <span class="icon icon_2"></span>
+                                        <span class="icon icon_3"></span>
+                                        <span class="icon icon_4"></span>
+                                        <span class="icon icon_5"></span>
+                                        <span class="icon icon_6"></span>
+                                        <span class="icon icon_7"></span>
+                                        <span class="icon icon_8"></span>
+                                        <span class="icon icon_9"></span>
+                                        <span class="icon icon_10"></span>
+                                        <span class="icon icon_11"></span>
+                                        <span class="icon icon_12"></span>
+                                        <span class="icon icon_13"></span>
+                                        <span class="icon icon_14"></span>
+                                        <span class="icon icon_15"></span>
+                                        <span class="icon icon_16"></span>
+                                        <span class="icon icon_17"></span>
+                                        <span class="icon icon_18"></span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mprd_lprd">
+                                <div class="lprd_control">
+                                    <div class="move_pdo_box">
+                                        <p>선택상품 이동</p>
+                                        <ul class="adj_order">
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_up.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_down.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_top.svg" /></div></li>
+                                            <li><div class="icon"><img src="../../../static/img/icon_order_bottom.svg" /></div></li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn_dpp btn btn_cs1">상품 추가</button>
+                                </div>
+                                
+                                <div class="grid_template" id="grid_oderlist">
+                                    <div class="grid_table">
+                                        <ul class="gh">
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                            </li>
+                                            <li>진열순서</li>
+                                            <li>상품번호</li>
+                                            <li>바코드</li>
+                                            <li>상품명</li>
+                                            <li>판매가</li>
+                                        </ul>
+                                        <ul class="gc">
+                                            <!-- // grid 행 반복 -->
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="1" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_01.png" /></div>
+                                                    <p>껍질째먹는 사과 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">31,900</p>
+                                            </li>
+                                            <!-- // grid 행 반복 -->
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="2" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_02.png" /></div>
+                                                    <p>무농약 양배추 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">21,900</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="3" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_03.png" /></div>
+                                                    <p>남해 시금치 1단</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">3,900</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="4" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_01.png" /></div>
+                                                    <p>껍질째먹는 사과 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">31,900</p>
+                                            </li>
+                                            <!-- // grid 행 반복 -->
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="5" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_02.png" /></div>
+                                                    <p>무농약 양배추 1박스</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">21,900</p>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox"><span class="box_check"></span></label>
+                                                <input type="text" value="6" />
+                                                <p lang="en">B012576</p>
+                                                <p lang="en">8801039909324</p>
+                                                <div class="prd_tit">
+                                                    <div class="thum"><img src="../../../static/img/prd_03.png" /></div>
+                                                    <p>남해 시금치 1단</p>
+                                                </div>
+                                                <p class="list_pprice" lang="en">3,900</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="button_wrap">
+                            <button class="btn btn_submit">수정</button>
+                            <button class="btn">닫기</button>
+                        </div>
+                    </div>
+                    <!-- 영역 끝 -->
+    
+    
+    
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup"></div>
+
+    <!-- js -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/swiper.js"></script>
+    <script src="../../js/import.js"></script>
+    <script src="../../js/popup.js"></script>
+    <script>
+        /* header와 aside 로드 */
+        loadComponent('header', '../../layout/header_sub.html');
+        loadComponent('aside', '../../layout/aside_sub.html');
+        loadComponent('sub_top', 'product_top_main.html');
+        loadComponent('popup', '../../layout/popup_sub.html');
+        loadComponent('tab_history', '../../layout/tab_history.html');
+
+        
+        document.addEventListener('componentLoaded', (event) => {
+            if (event.detail === 'aside') {
+                $('aside .p_main_product').addClass('active')
+            }
+        });
+
+    </script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/product.js"></script>
+
+</body>
+
+</html>

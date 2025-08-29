@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 507.9 651.8">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#linear-gradient2);
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st3 {
+        fill: url(#linear-gradient4);
+      }
+
+      .st4 {
+        fill: #a8a8a8;
+      }
+
+      .st5 {
+        fill: url(#linear-gradient3);
+      }
+
+      .st6 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="253.9" y1="299.9" x2="253.9" y2="606.1" gradientUnits="userSpaceOnUse">
+      <stop offset=".8" stop-color="#ef1b38"/>
+      <stop offset="1" stop-color="#f7546f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient1" x1="175.8" y1="383.2" x2="175.8" y2="534.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bababa"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient2" x1="332.1" x2="332.1" xlink:href="#linear-gradient1"/>
+    <linearGradient id="linear-gradient3" x1="498.5" y1="9.4" x2="174.9" y2="332.9" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ebecec"/>
+      <stop offset="1" stop-color="#cacaca"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient4" x1="147.5" y1="392" x2="275.7" y2="225.7" xlink:href="#linear-gradient3"/>
+  </defs>
+  <g>
+    <polygon class="st6" points="449.3 368.4 449.3 559.7 293 633.4 253.9 651.8 214.9 633.4 58.6 559.7 58.6 368.4 449.3 368.4"/>
+    <polygon class="st2" points="214.9 368.4 214.9 633.4 136.7 596.5 136.7 368.4 214.9 368.4"/>
+    <polygon class="st0" points="371.1 368.4 371.1 596.5 293 633.4 293 368.4 371.1 368.4"/>
+  </g>
+  <circle class="st5" cx="253.9" cy="253.9" r="253.9"/>
+  <circle class="st4" cx="253.9" cy="253.9" r="189.3" transform="translate(-105.2 253.9) rotate(-45)"/>
+  <circle class="st3" cx="253.9" cy="253.9" r="173.2"/>
+  <path class="st1" d="M265,174.5l19.9,31.3c1.8,2.8,4.6,4.9,7.8,5.7l35.9,9.2c9.3,2.4,13,13.7,6.8,21.1l-23.7,28.6c-2.1,2.6-3.2,5.9-3,9.2l2.4,37c.6,9.6-9,16.6-17.9,13l-34.5-13.7c-3.1-1.2-6.6-1.2-9.7,0l-34.5,13.7c-8.9,3.5-18.5-3.4-17.9-13l2.4-37c.2-3.3-.9-6.6-3-9.2l-23.7-28.6c-6.1-7.4-2.5-18.7,6.8-21.1l35.9-9.2c3.2-.8,6-2.9,7.8-5.7l19.9-31.3c5.1-8.1,17-8.1,22.1,0Z"/>
+</svg>

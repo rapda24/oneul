@@ -1,0 +1,2826 @@
+<!-- // 
+    popup_01 : 기본 팝업
+    popup_02 : grid(table 형식)이 들어있는 팝업
+    popup_03 : 등록/상세보기 팝업
+    popup_04 : 영수증 팝업
+    popup_05 : 게시판 연결 팝업
+-->
+
+<!-- 게시판 연결 : 알림 -->
+<div class="popup popup_05 pop_binform">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_alarm.svg" /></div>
+                <dt>알림</dt>
+            </div>
+        </div>
+        <div class="content">
+            <ul class="con_01">
+                <li>
+                    <dt class="txt_tit" lang="en">
+                        <div class="icon"><img src="../../../static/img/icon_date.svg" /></div>2023. 08. 03. 15:21
+                    </dt>
+                    <p>2023년 09월 11일 03시부터 05시까지 시스템 점검으로 인하여 서비스 이용이 제한될 수 있습니다. 양해부탁드리며 점검 완료 후 공지해드리겠습니다. 미스터아빠 서비스를
+                        이용해 주셔서 감사드리며 더 나은 서비스를 위해 항상 노력하는 미스터아빠가 되겠습니다.</p>
+                </li>
+                <li>
+
+                    <dt class="txt_tit" lang="en">
+                        <div class="icon"><img src="../../../static/img/icon_date.svg" /></div>2023. 08. 06. 10:21
+                    </dt>
+                    <p>캐쉬 정기결제 시스템이 업그레이드 되었습니다. 정기결제 이용시 캐쉬 할인 이벤트를 진행중이니 카드등록 후 이용하시면 됩니다.</p>
+                </li>
+            </ul>
+        </div>
+        <ul class="p_pnb">
+            <li class="prev"><img src="../../../static/img/prev.svg" /></li>
+            <li class="active">1</li>
+            <li class="">2</li>
+            <li class="">3</li>
+            <li class="">4</li>
+            <li class="next"><img src="../../../static/img/next.svg" /></li>
+        </ul>
+    </div>
+</div>
+
+<!-- 알림톡 발송 완료 -->
+<div class="popup popup_01 pop_mc">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="content">
+            <p lang="en">2023.08.11 11:01:02</p>
+            <dt><strong>4,523</strong>건의 알림톡이 발송되었습니다.</dt>
+        </div>
+        <button class="btn btn_submit">확인</button>
+    </div>
+</div>
+
+<!-- 상품 등록 -->
+<div class="popup popup_01 pop_reexc">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="content">
+            <dt><strong class="txt_m">4,523</strong>건의 등록 성공 / <strong class="txt_m">4,523</strong>건 등록 실패</dt>
+        </div>
+        <button class="btn btn_submit">확인</button>
+        <p class="notice">
+            <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+            
+                필수항목 미기입이나 형식에 맞지 않는 내용이 포함되어 있는 경우<br />
+                등록 실패가 됩니다. 수정 후 재 등록 해주세요.
+            
+        </p>
+    </div>
+</div>
+
+
+<!-- 알림톡 발송 -->
+<div class="popup popup_02 pop_st">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_talk.svg" /></div>
+                <dt>알림톡 발송</dt>
+            </div>
+            <div class="tit_r"></div>
+        </div>
+        <div class="content">
+            <div class="con_01">수신자<span>김하나 외 15명</span></div>
+            <div class="con_02">
+                <textarea class="comment-content" placeholder="내용을 입력해주세요." maxlength="1000"></textarea>
+                <span class="length">
+                    <span class="comment_length">0</span>
+                    / 1000자
+                </span>
+            </div>
+        </div>
+        <button class="btn btn_submit">알림톡 발송</button>
+    </div>
+</div>
+
+
+<!-- 알림톡 발송이력 -->
+<div class="popup popup_02 pop_sl ">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_talk.svg" /></div>
+                <dt>알림톡 발송이력</dt>
+            </div>
+            <div class="tit_r">
+                <button class="btn">
+                    <div class="icon"><img src="../../../static/img/icon_excel.svg" /></div>엑셀 다운로드
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <ul class="custom-datepicker">
+                    <div class="flex">
+
+                        <div class="icon"><img src="../../../static/img/icon_calendar_wh.svg" /></div>
+                        <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+
+                    </div>
+                    <p>~</p>
+                    <div class="flex">
+                        <div class="icon"><img src="../../../static/img/icon_calendar_wh.svg" /></div>
+                        <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                    </div>
+                    <div id="calendar" class="calendar hidden"></div>
+
+                </ul>
+                <button class="btn btn_cs2">조회</button>
+            </div>
+            <div class="con_02">
+                <div class="grid_table">
+                    <ul class="gh">
+                        <li>발송일자</li>
+                        <li>총 발송건수</li>
+                        <li>발송성공</li>
+                        <li>발송실패</li>
+                    </ul>
+                    <ul class="gc">
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p lang="en">2023.08.11 11:01:02</p>
+                            <p>4,523</p>
+                            <p><strong>4,500</strong></p>
+                            <p>23</p>
+                        </li>
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p lang="en">2023.08.10 11:01:02</p>
+                            <p>4,523</p>
+                            <p><strong>4,500</strong></p>
+                            <p>23</p>
+                        </li>
+                        <li>
+                            <p lang="en">2023.08.09 11:01:02</p>
+                            <p>4,523</p>
+                            <p><strong>4,500</strong></p>
+                            <p>23</p>
+                        </li>
+                        <li>
+                            <p lang="en">2023.08.08 11:01:02</p>
+                            <p>4,523</p>
+                            <p><strong>4,500</strong></p>
+                            <p>23</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 주문 관리자 등록 -->
+<div class="popup popup_02 pop_om">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <dt>주문관리자 등록</dt>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <ul class="input_wrap">
+                    <li class="flex a_bd">
+                        <p>이름</p>
+                        <input type="text" value="홍길동" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>핸드폰</p>
+                        <input type="text" value="010.1234.5678" />
+                    </li>
+                </ul>
+                <button class="btn btn_submit">등록하기</button>
+            </div>
+            <div class="tit">
+                <div class="tit_l">
+                    <dt>관리자 알림톡 대상자</dt>
+                </div>
+                <p class="tit_r notice">
+                    <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                    
+                        주문관리자를 등록하면 주문시 알림톡이 발송됩니다.
+                    
+                </p>
+            </div>
+            <div class="con_02">
+                <div class="grid_table">
+                    <ul class="gh">
+                        <li lang="en">no</li>
+                        <li>이름</li>
+                        <li>전화번호</li>
+                        <li>삭제</li>
+                    </ul>
+                    <ul class="gc">
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p lang="en">01</p>
+                            <p>김하나</p>
+                            <p lang="en">010.1234.5678</p>
+                            <p><span class="icon"><img src="../../../static/img/close_02.svg" /></span></p>
+                        </li>
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p lang="en">02</p>
+                            <p>박아린</p>
+                            <p lang="en">010.1234.5678</p>
+                            <p><span class="icon"><img src="../../../static/img/close_02.svg" /></span></p>
+                        </li>
+                        <li>
+                            <p lang="en">03</p>
+                            <p>하은우</p>
+                            <p lang="en">010.1234.5678</p>
+                            <p><span class="icon"><img src="../../../static/img/close_02.svg" /></span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 알림톡 발송예약 -->
+<div class="popup popup_02 pop_sm">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_talk.svg" /></div>
+                <dt>알림톡 발송예약</dt>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <div class="radio_wrap">
+                    <label><input type="radio" class="" name="r_talk" checked /><span class="box_radio"></span>알림톡 발송예약
+                        사용</label>
+                    <label><input type="radio" class="" name="r_talk"><span class="box_radio"></span>알림톡 발송예약 사용
+                        안함</label>
+                </div>
+                <ul class="input_wrap">
+                    <li class="flex">
+                        <p class="txt_tit">예약시간 등록</p>
+                        <input type="text" placeholder="00:00:00" />
+                    </li>
+                    <li>
+                        <button class="btn btn_submit">등록하기</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="tit">
+                <p class="tit_r notice">
+                    <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                    
+                        발송여부 체크한 시간대에 알림톡이 발송됩니다.
+                    
+                </p>
+            </div>
+            <div class="con_02">
+                <div class="grid_table">
+                    <ul class="gh">
+                        <li>발송여부</li>
+                        <li>시간</li>
+                        <li>삭제</li>
+                    </ul>
+                    <ul class="gc">
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p>
+                                <label><input type="checkbox" checked /><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">07:00:00</p>
+                            <p><span class="icon"><img src="../../../static/img/close_02.svg" /></span></p>
+                        </li>
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">07:00:00</p>
+                            <p><span class="icon"><img src="../../../static/img/close_02.svg" /></span></p>
+                        </li>
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">07:00:00</p>
+                            <p><span class="icon"><img src="../../../static/img/close_02.svg" /></span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 상품 찾기 -->
+<div class="popup popup_02 pop_sprd ">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_prd_search.svg" /></div>
+                <dt>상품 찾기</dt>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <ul class="input_wrap">
+                    <li class="flex">
+                        <input type="text" placeholder="상품명 / 상품번호 / 바코드 다중 검색시 콤마(,)로 구분해서 검색하세요." />
+                    </li>
+                    <li>
+                        <button class="btn btn_cs2">검색</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="con_02">
+                <div class="grid_table">
+                    <ul class="gh">
+                        <li><label><input type="checkbox"><span class="box_check"></span></label></li>
+                        <li>상품번호</li>
+                        <li>바코드</li>
+                        <li>상품명</li>
+                    </ul>
+                    <ul class="gc">
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">B012576</p>
+                            <p lang="en">8801039909324</p>
+                            <p><span class="thum"><img src="../../../static/img/prd_01.png" /></span>껍질째먹는 사과 1박스</p>
+                        </li>
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">B012576</p>
+                            <p lang="en">8801039909324</p>
+                            <p><span class="thum"><img src="../../../static/img/prd_02.png" /></span>[해피바스] 주스 스무디 옐로우
+                                바디워시
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn_submit">선택 상품 등록</button>
+        <p class="notice">
+            <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+            
+                상품등록 후 상품의 기본정보 및 가격 등은 수정해야 합니다.
+        </p>
+    </div>
+</div>
+
+
+
+
+
+<!-- 상품 진열 추가 -->
+<div class="popup popup_02 pop_dpp ">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_prd_search.svg" /></div>
+                <dt>상품 진열 추가</dt>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <ul class="input_wrap">
+                    <li class="flex">
+                        <input type="text" placeholder="상품명 / 상품번호 / 바코드 다중 검색시 콤마(,)로 구분해서 검색하세요." />
+                    </li>
+                    <li>
+                        <button class="btn btn_cs2">검색</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="con_02">
+                <div class="grid_table">
+                    <ul class="gh">
+                        <li><label><input type="checkbox"><span class="box_check"></span></label></li>
+                        <li>상품번호</li>
+                        <li>바코드</li>
+                        <li>상품명</li>
+                    </ul>
+                    <ul class="gc">
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">B012576</p>
+                            <p lang="en">8801039909324</p>
+                            <p><span class="thum"><img src="../../../static/img/prd_01.png" /></span>껍질째먹는 사과 1박스</p>
+                        </li>
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">B012576</p>
+                            <p lang="en">8801039909324</p>
+                            <p><span class="thum"><img src="../../../static/img/prd_02.png" /></span>[해피바스] 주스 스무디 옐로우
+                                바디워시
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn_submit">선택 상품 추가</button>
+    </div>
+</div>
+
+
+
+<!-- 발급쿠폰 조회 -->
+<div class="popup popup_02 pop_scp ">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_prd_search.svg" /></div>
+                <dt>발급쿠폰 조회</dt>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <ul class="input_wrap">
+                    <li class="flex">
+                        <p class="txt_tit">검색어</p>
+                        <input type="text" placeholder="상품명 / 상품번호 / 바코드 다중 검색시 콤마(,)로 구분해서 검색하세요." />
+                    </li>
+                    <li class="flex">
+                        <p class="txt_tit">발급일자</p>
+
+                        <ul class="custom-datepicker">
+                            <div class="flex">
+
+                                <div class="icon"><img src="../../../static/img/icon_calendar_wh.svg" /></div>
+                                <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+
+                            </div>
+                            <p>~</p>
+                            <div class="flex">
+                                <div class="icon"><img src="../../../static/img/icon_calendar_wh.svg" /></div>
+                                <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                            </div>
+                            <div id="calendar" class="calendar hidden"></div>
+
+                        </ul>
+                        <p class="txt_tit">사용여부</p>
+                        <div class="radio_wrap">
+                            <label><input type="radio" class="" name="s_used" checked ><span class="box_radio"></span>사용</label>
+                            <label><input type="radio" class="" name="s_used"><span class="box_radio"></span>미사용</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn_submit">조회</button>
+            <div class="con_02">
+                <div class="grid_table">
+                    <ul class="gh">
+                        <li><label><input type="checkbox"><span class="box_check"></span></label></li>
+                        <li>아이디</li>
+                        <li>이름</li>
+                        <li>상호</li>
+                        <li>발급일자</li>
+                        <li>사용일자</li>
+                    </ul>
+                    <ul class="gc">
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">Kimhana</p>
+                            <p>김하나</p>
+                            <p>미스터아빠</p>
+                            <p lang="en">23.08.03 11:45</p>
+                            <p lang="en">23.08.03 11:45</p>
+                        </li>
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">Kimhana</p>
+                            <p>박아린</p>
+                            <p>새마을식자재마트</p>
+                            <p lang="en">23.08.03 11:45</p>
+                            <p lang="en">미사용</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="p_pnb">
+                <li class="prev"><img src="../../../static/img/prev.svg" /></li>
+                <li class="active">1</li>
+                <li class="">2</li>
+                <li class="">3</li>
+                <li class="">4</li>
+                <li class="next"><img src="../../../static/img/next.svg" /></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 회원 찾기 -->
+<div class="popup popup_02 pop_smb">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_prd_search.svg" /></div>
+                <dt>회원 찾기</dt>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <ul class="input_wrap">
+                    <li class="flex">
+                        <input type="text" placeholder="아이디 / 상호 / 이름 / 핸드폰 다중 검색시 콤마(,)로 구분해서 검색하세요." />
+                    </li>
+                    <li class="flex">
+                        <p class="txt_tit">가입일자</p>
+
+                        <div class="custom-datepicker">
+                            <div class="flex">
+
+                                <div class="icon"><img src="../../../static/img/icon_calendar_wh.svg" /></div>
+                                <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+
+                            </div>
+                            <p>~</p>
+                            <div class="flex">
+                                <div class="icon"><img src="../../../static/img/icon_calendar_wh.svg" /></div>
+                                <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                            </div>
+                            <div id="calendar" class="calendar hidden"></div>
+
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn btn_cs2">조회</button>
+            </div>
+            <div class="con_02">
+                <div class="grid_table">
+                    <ul class="gh">
+                        <li><label><input type="checkbox"><span class="box_check"></span></label></li>
+                        <li>아이디</li>
+                        <li>이름</li>
+                        <li>상호</li>
+                        <li>등급</li>
+                        <li>핸드폰</li>
+                    </ul>
+                    <ul class="gc">
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">Kimhana</p>
+                            <p>김하나</p>
+                            <p>미스터아빠</p>
+                            <p>새별회원</p>
+                            <p lang="en">010.1234.5678</p>
+                        </li>
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">parkarin</p>
+                            <p>박아린</p>
+                            <p>새마을식자재마트</p>
+                            <p>동별회원</p>
+                            <p lang="en">010.1234.5678</p>
+                        </li>
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">haeunwoo</p>
+                            <p>하은우</p>
+                            <p>창원할인마트</p>
+                            <p>은별회원</p>
+                            <p lang="en">010.1234.5678</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn btn_submit">선택 회원 지정</button>
+        </div>
+    </div>
+</div>
+
+<!-- 회원등급 조정 -->
+<div class="popup popup_02 pop_admg">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_member.svg" /></div>
+                <dt>회원등급 조정</dt>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <ul class="input_wrap">
+                    <li class="flex">
+                        <p class="txt_tit">검색어</p>
+                        <input type="text" placeholder="아이디 / 상호 / 이름 / 핸드폰 다중 검색시 콤마(,)로 구분해서 검색하세요." />
+                    </li>
+                    <li class="flex">
+                        <p class="txt_tit">누적결제금액</p>
+                        <ul class="flex">
+                            <li><input type="text" placeholder="" /></li>
+                            <li>원 이상 ~</li>
+                            <li><input type="text" placeholder="" /></li>
+                            <li>원 미만</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn_submit">조회</button>
+            <div class="con_02">
+                <div class="ct_area">
+                    <ul class="ct_l">
+                        <li>선택</li>
+                        <li class="custom-select">
+                            <div class="select-box">
+                                <span>회원등급 변경</span><img src="../../../static/img/icon_down.svg" />
+                            </div>
+                            <ul class="options-list">
+                                <li class="option" data-value="1">새별회원</li>
+                                <li class="option" data-value="2">동별회원</li>
+                                <li class="option" data-value="3">은별회원</li>
+                                <li class="option" data-value="4">금별회원</li>
+                            </ul>
+                        </li>
+                        <li class="custom-select">
+                            <div class="select-box">
+                                <span>회원등급 고정</span><img src="../../../static/img/icon_down.svg" />
+                            </div>
+                            <ul class="options-list">
+                                <li class="option" data-value="1">새별회원</li>
+                                <li class="option" data-value="2">동별회원</li>
+                                <li class="option" data-value="3">은별회원</li>
+                                <li class="option" data-value="4">금별회원</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="ct_r">
+                        <li class="custom-select">
+                            <div class="select-box">
+                                <span>50명씩보기</span><img src="../../../static/img/icon_down.svg" />
+                            </div>
+                            <ul class="options-list">
+                                <li class="option" data-value="1">50명씩보기</li>
+                                <li class="option" data-value="2">100명씩보기</li>
+                                <li class="option" data-value="3">200명씩보기</li>
+                                <li class="option" data-value="4">300명씩보기</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="btn">
+                                <div class="icon"><img src="../../../static/img/icon_excel.svg" /></div>엑셀
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_table">
+                    <ul class="gh">
+                        <li><label><input type="checkbox"><span class="box_check"></span></label></li>
+                        <li>아이디</li>
+                        <li>이름</li>
+                        <li>상호</li>
+                        <li>이번달 결제금액</li>
+                        <li>누적 결제금액</li>
+                    </ul>
+                    <ul class="gc">
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">Kimhana</p>
+                            <p>김하나</p>
+                            <p>미스터아빠</p>
+                            <p>새별회원</p>
+                            <p lang="en">010.1234.5678</p>
+                        </li>
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">parkarin</p>
+                            <p>박아린</p>
+                            <p>새마을식자재마트</p>
+                            <p>동별회원</p>
+                            <p lang="en">010.1234.5678</p>
+                        </li>
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">haeunwoo</p>
+                            <p>하은우</p>
+                            <p>창원할인마트</p>
+                            <p>은별회원</p>
+                            <p lang="en">010.1234.5678</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="p_pnb">
+                <li class="prev"><img src="../../../static/img/prev.svg" /></li>
+                <li class="active">1</li>
+                <li class="">2</li>
+                <li class="">3</li>
+                <li class="">4</li>
+                <li class="next"><img src="../../../static/img/next.svg" /></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- 회원 적립금 지급 / 차감 -->
+<div class="popup popup_02 pop_mpoint">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_point.svg" /></div>
+                <dt>회원 적립금 지급 / 차감</dt>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <ul class="input_wrap">
+                    <li class="flex">
+                        <p class="txt_tit">검색어</p>
+                        <input type="text" placeholder="아이디 / 상호 / 이름 / 핸드폰 다중 검색시 콤마(,)로 구분해서 검색하세요." />
+                    </li>
+                    <li class="flex">
+                        <p class="txt_tit">적립금액</p>
+                        <ul class="flex">
+                            <li><input type="text" placeholder="" /></li>
+                            <li>원 이상 ~</li>
+                            <li><input type="text" placeholder="" /></li>
+                            <li>원 미만</li>
+                        </ul>
+                    </li>
+                    <li class="flex">
+                        <p class="txt_tit">회원등급</p>
+                        <div class="radio_wrap">
+                            <label><input type="radio" class="" name="m_grade"><span
+                                    class="box_radio"></span>새별회원</label>
+                            <label><input type="radio" class="" name="m_grade"><span
+                                    class="box_radio"></span>동별회원</label>
+                            <label><input type="radio" class="" name="m_grade"><span
+                                    class="box_radio"></span>은별회원</label>
+                            <label><input type="radio" class="" name="m_grade"><span
+                                    class="box_radio"></span>금별회원</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn_submit">조회</button>
+            <div class="con_02">
+                <div class="ct_area">
+                    <ul class="ct_r">
+                        <li class="custom-select">
+                            <div class="select-box">
+                                <span>50명씩보기</span><img src="../../../static/img/icon_down.svg" />
+                            </div>
+                            <ul class="options-list">
+                                <li class="option" data-value="1">50명씩보기</li>
+                                <li class="option" data-value="2">100명씩보기</li>
+                                <li class="option" data-value="3">200명씩보기</li>
+                                <li class="option" data-value="4">300명씩보기</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="btn">
+                                <div class="icon"><img src="../../../static/img/icon_excel.svg" /></div>엑셀
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ct_area">
+                    <ul class="ct_l">
+                        <li>선택</li>
+                        <li class="radio_wrap">
+                            <label><input type="radio" class="" name="adj_point"><span
+                                    class="box_radio"></span>+</label>
+                            <label><input type="radio" class="" name="adj_point"><span
+                                    class="box_radio"></span>-</label>
+                        </li>
+                        <li><input type="text" placeholder="지급(차감)사유" /></li>
+                        <li><input type="text" placeholder="지급 금액" /></li>
+                        <li><button class="btn btn_cs2">적립금 지급</button></li>
+                    </ul>
+                </div>
+                <div class="grid_table">
+                    <ul class="gh">
+                        <li><label><input type="checkbox"><span class="box_check"></span></label></li>
+                        <li>아이디</li>
+                        <li>이름</li>
+                        <li>상호</li>
+                        <li>이번달 결제금액</li>
+                        <li>누적 결제금액</li>
+                    </ul>
+                    <ul class="gc">
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">Kimhana</p>
+                            <p>김하나</p>
+                            <p>미스터아빠</p>
+                            <p lang="en">3,000</p>
+                            <p lang="en">56,550</p>
+                        </li>
+                        <!-- // grid 행 반복 -->
+                        <li>
+                            <p>
+                                <label><input type="checkbox"><span class="box_check"></span></label>
+                            </p>
+                            <p lang="en">parkarin</p>
+                            <p>박아린</p>
+                            <p>새마을식자재마트</p>
+                            <p lang="en">15,000</p>
+                            <p lang="en">50,3300</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="p_pnb">
+                <li class="prev"><img src="../../../static/img/prev.svg" /></li>
+                <li class="active">1</li>
+                <li class="">2</li>
+                <li class="">3</li>
+                <li class="">4</li>
+                <li class="next"><img src="../../../static/img/next.svg" /></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- 혜택 등록 -->
+<div class="popup popup_03 pop_br">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_benefit.svg" /></div>
+                <dt>혜택등록</dt>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <div class="tit">
+                    <dt>상품구매시 적립금 예약설정</dt>
+                </div>
+                <ul class="input_wrap">
+                    <li>
+                        <p class="txt_tit">기간설정</p>
+                        <div class="radio_wrap">
+                            <label><input type="radio" class="" name="b_used"><span class="box_radio"></span>사용함</label>
+                            <label><input type="radio" class="" name="b_used"><span
+                                    class="box_radio"></span>사용안함</label>
+                        </div>
+                    </li>
+                    <li class="custom-datepicker">
+
+                        <div class="icon"><img src="../../../static/img/icon_calendar.svg" /></div>
+                        <div class="flex">
+                            <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+                        </div>
+
+                        <div class="custom-select">
+                            <div class="select-box">
+                                <span>00</span><img src="../../../static/img/icon_down.svg" />
+                            </div>
+                            <ul class="options-list">
+                                <li class="option" data-value="1">00</li>
+                                <li class="option" data-value="2">01</li>
+                                <li class="option" data-value="3">02</li>
+                                <li class="option" data-value="4">03</li>
+                                <li class="option" data-value="5">04</li>
+                                <li class="option" data-value="6">05</li>
+                                <li class="option" data-value="7">06</li>
+                                <li class="option" data-value="8">07</li>
+                                <li class="option" data-value="9">08</li>
+                                <li class="option" data-value="10">09</li>
+                                <li class="option" data-value="11">10</li>
+                                <li class="option" data-value="12">11</li>
+                                <li class="option" data-value="13">12</li>
+                            </ul>
+                        </div>
+                        <p>시</p>
+
+                        <div class="custom-select">
+                            <div class="select-box">
+                                <span>00</span><img src="../../../static/img/icon_down.svg" />
+                            </div>
+                            <ul class="options-list">
+                                <li class="option" data-value="1">00</li>
+                                <li class="option" data-value="2">05</li>
+                                <li class="option" data-value="3">10</li>
+                                <li class="option" data-value="4">15</li>
+                                <li class="option" data-value="5">20</li>
+                                <li class="option" data-value="6">25</li>
+                                <li class="option" data-value="7">30</li>
+                                <li class="option" data-value="8">35</li>
+                                <li class="option" data-value="9">40</li>
+                                <li class="option" data-value="10">45</li>
+                                <li class="option" data-value="11">50</li>
+                                <li class="option" data-value="12">55</li>
+                            </ul>
+                        </div>
+                        <p>분 ~</p>
+                        <div class="flex">
+                            <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                        </div>
+
+                        <div class="custom-select">
+                            <div class="select-box">
+                                <span>00</span><img src="../../../static/img/icon_down.svg" />
+                            </div>
+                            <ul class="options-list">
+                                <li class="option" data-value="1">00</li>
+                                <li class="option" data-value="2">01</li>
+                                <li class="option" data-value="3">02</li>
+                                <li class="option" data-value="4">03</li>
+                                <li class="option" data-value="5">04</li>
+                                <li class="option" data-value="6">05</li>
+                                <li class="option" data-value="7">06</li>
+                                <li class="option" data-value="8">07</li>
+                                <li class="option" data-value="9">08</li>
+                                <li class="option" data-value="10">09</li>
+                                <li class="option" data-value="11">10</li>
+                                <li class="option" data-value="12">11</li>
+                                <li class="option" data-value="13">12</li>
+                            </ul>
+                        </div>
+                        <p>시</p>
+
+                        <div class="custom-select">
+                            <div class="select-box">
+                                <span>00</span><img src="../../../static/img/icon_down.svg" />
+                            </div>
+                            <ul class="options-list">
+                                <li class="option" data-value="1">00</li>
+                                <li class="option" data-value="2">05</li>
+                                <li class="option" data-value="3">10</li>
+                                <li class="option" data-value="4">15</li>
+                                <li class="option" data-value="5">20</li>
+                                <li class="option" data-value="6">25</li>
+                                <li class="option" data-value="7">30</li>
+                                <li class="option" data-value="8">35</li>
+                                <li class="option" data-value="9">40</li>
+                                <li class="option" data-value="10">45</li>
+                                <li class="option" data-value="11">50</li>
+                                <li class="option" data-value="12">55</li>
+                            </ul>
+                        </div>
+                        <p>분</p>
+                        <div id="calendar" class="calendar hidden"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="con_02">
+                <div class="tit">
+                    <dt>적립금 설정</dt>
+                </div>
+                <ul class="input_wrap">
+                    <li>상품 구매금액을
+
+                        <div class="custom-select">
+                            <div class="select-box">
+                                <span>판매가</span><img src="../../../static/img/icon_down.svg" />
+                            </div>
+                            <ul class="options-list">
+                                <li class="option" data-value="1">판매가</li>
+                                <li class="option" data-value="2">할인가</li>
+                            </ul>
+                        </div>
+                        을(를) 기준으로
+                    </li>
+                    <li class="radio_wrap">
+                        <label><input type="radio" class="" name="set_used"><span class="box_radio"></span>기본적립금 설정
+                            사용</label>
+                        <label><input type="radio" class="" name="set_used"><span class="box_radio"></span>상품 값의 <input
+                                type="text" placeholder="0.00" />%</label>
+                        <label><input type="radio" class="" name="set_used"><span class="box_radio"></span>결제방식에 따른 적립
+                            사용</label>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn_submit">등록</button>
+        </div>
+    </div>
+</div>
+
+<!-- 쿠폰 생성 -->
+<div class="popup popup_03 pop_ncoupon">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_coupon.svg" /></div>
+                <dt>쿠폰생성</dt>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <ul class="input_wrap">
+                    <li class="flex a_bd">
+                        <p>쿠폰명</p>
+                        <input type="text" placeholder="쿠폰명을 입력하세요." />
+                    </li>
+                </ul>
+            </div>
+            <div class="con_02">
+                <div class="tit">
+                    <dt>혜택구분</dt>
+                    <p class="notice">
+                        <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                        쿠폰은 기본적으로 주문 당 1개만 사용가능합니다.
+                    </p>
+                </div>
+                <ul class="input_wrap">
+                    <li class="radio_wrap">
+                        <div>
+                            <label><input type="radio" class="" name="s_dc"><span class="box_radio"></span></label>
+                            <p>할인금액</p>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label><input type="radio" class="" name="s_dc"><span class="box_radio"></span></label>
+                            <p>할인율</p>
+                            <span class="flex"><input type="text" />%</span>
+                            <p>최대할인금액</p>
+                            <span class="flex"><input type="text" />원</span>
+                            <div class="custom-select">
+                                <div class="select-box">
+                                    <span>절사안함</span><img src="../../../static/img/icon_down.svg" />
+                                </div>
+                                <ul class="options-list">
+                                    <li class="option" data-value="1">절사안함</li>
+                                    <li class="option" data-value="2">1원단위 절사</li>
+                                    <li class="option" data-value="3">10원단위 절사</li>
+                                    <li class="option" data-value="4">100원단위 절사</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="con_03">
+                <div class="tit">
+                    <dt>발급구분</dt>
+                </div>
+                <ul class="input_wrap">
+                    <li class="radio_wrap">
+                        <div>
+                            <label><input type="radio" class="" name="s_mb"><span class="box_radio"></span>대상자 지정
+                                발급</label>
+                            <div class="checkbox_add">
+                                <label><input type="checkbox" class=""><span class="box_check"></span>전체회원</label>
+                                <label><input type="checkbox" class=""><span class="box_check"></span>새별회원</label>
+                                <label><input type="checkbox" class=""><span class="box_check"></span>동별회원</label>
+                                <label><input type="checkbox" class=""><span class="box_check"></span>은별회원</label>
+                                <label><input type="checkbox" class=""><span class="box_check"></span>금별회원</label>
+                                <div>
+                                    <label><input type="checkbox" class=""><span class="box_check"></span>회원지정</label>
+                                    <button class="btn btn_smb">회원검색</button>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="issue_auto">
+                            <label><input type="radio" class="" name="s_mb"><span class="box_radio"></span>조건부 자동
+                                발급</label>
+                            <div class="radio_add">
+                                <label><input type="radio" class="" name="s_con"><span
+                                        class="box_radio"></span>회원가입</label>
+                                <label><input type="radio" class="" name="s_con"><span
+                                        class="box_radio"></span>첫구매</label>
+                                <label><input type="radio" class="" name="s_con"><span class="box_radio"></span>결제 금액
+                                    <input type="text" />원 이상 배송완료 시</label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="con_04">
+                <div class="tit">
+                    <dt>사용기간</dt>
+                    <p class="notice">
+                        <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                        사용기간이 지난 쿠폰은 자동으로 삭제됩니다.
+                    </p>
+                </div>
+                <ul class="input_wrap">
+                    <li class="radio_wrap">
+                        <div>
+                            <label><input type="radio" class="" name="s_date"><span class="box_radio"></span></label>
+                            <p>발급일 기준</p>
+                            <input type="text">
+                            <p>일 간 사용가능</p>
+                        </div>
+                        <div>
+                            <label><input type="radio" class="" name="s_date"><span class="box_radio"></span></label>
+                            <p>기간 설정</p>
+
+                            <div class="custom-datepicker">
+                                <div class="flex">
+
+                                    <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+
+                                </div>
+                                <p>~</p>
+                                <div class="flex">
+                                    <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                                </div>
+                                <div id="calendar" class="calendar hidden"></div>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="con_05">
+                <div class="tit">
+                    <dt>발급 수 제한</dt>
+                    <p class="notice">
+                        <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                        발급 수 제한은 조건부 자동 발급시에만 적용됩니다.
+                    </p>
+                </div>
+                <ul class="input_wrap">
+                    <li class="radio_wrap">
+                        <div>
+                            <label><input type="radio" class="" name="l_date"><span
+                                    class="box_radio"></span>제한없음</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" class="" name="l_date"><span class="box_radio"></span></label>
+                            <p>선착순 최대</p>
+                            <input type="text">
+                            <p>매</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="con_06">
+                <div class="tit">
+                    <dt>쿠폰 사용 가능 금액</dt>
+                </div>
+                <ul class="input_wrap">
+                    <li class="radio_wrap">
+                        <div>
+                            <label><input type="radio" class="" name="l_date"><span
+                                    class="box_radio"></span>제한없음</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" class="" name="l_date"><span class="box_radio"></span></label>
+                            <p>결제금액</p>
+                            <input type="text">
+                            <p>원 이상 구매 시 사용가능</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex btn_wrap">
+            <button class="btn btn_submit">쿠폰생성</button>
+            <button class="btn">취소</button>
+        </div>
+    </div>
+</div>
+
+<!-- 쿠폰 정보 확인 -->
+<div class="popup popup_03 pop_icoupon">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_coupon.svg" /></div>
+                <dt>쿠폰 정보 확인</dt>
+            </div>
+            <div class="tit_r">
+                <p>쿠폰번호 : <span lang="eng">2307200015</span></p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <ul class="input_wrap">
+                    <li class="flex a_bd">
+                        <p>쿠폰명</p>
+                        <input type="text" value="신규회원 첫구매 1만원 쿠폰" />
+                    </li>
+                </ul>
+            </div>
+            <div class="con_02">
+                <div class="tit">
+                    <dt>혜택구분</dt>
+                    <p class="notice">
+                        <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                        쿠폰은 기본적으로 주문 당 1개만 사용가능합니다.
+                    </p>
+                </div>
+                <ul class="input_wrap">
+                    <li class="radio_wrap">
+                        <div>
+                            <label><input type="radio" class="" name="s_dc"><span class="box_radio"></span></label>
+                            <p>할인금액</p>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label><input type="radio" class="" name="s_dc" checked /><span
+                                    class="box_radio"></span></label>
+                            <p>할인율</p>
+                            <span class="flex"><input type="text" value="10" />%</span>
+                            <p>최대할인금액</p>
+                            <span class="flex"><input type="text" value="10,000" />원</span>
+                            <div class="custom-select">
+                                <div class="select-box">
+                                    <span>절사안함</span><img src="../../../static/img/icon_down.svg" />
+                                </div>
+                                <ul class="options-list">
+                                    <li class="option" data-value="1">절사안함</li>
+                                    <li class="option" data-value="2">1원단위 절사</li>
+                                    <li class="option" data-value="3">10원단위 절사</li>
+                                    <li class="option" data-value="4">100원단위 절사</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="con_03">
+                <div class="tit">
+                    <dt>발급구분</dt>
+                </div>
+                <ul class="input_wrap">
+                    <li class="radio_wrap">
+                        <div>
+                            <label><input type="radio" class="" name="s_mb" checked /><span class="box_radio"></span>대상자
+                                지정 발급</label>
+                            <div class="checkbox_add">
+                                <label><input type="checkbox" class=""><span class="box_check"></span>전체회원</label>
+                                <label><input type="checkbox" class=""><span class="box_check"></span>새별회원</label>
+                                <label><input type="checkbox" class=""><span class="box_check"></span>동별회원</label>
+                                <label><input type="checkbox" class=""><span class="box_check"></span>은별회원</label>
+                                <label><input type="checkbox" class=""><span class="box_check"></span>금별회원</label>
+                                <div>
+                                    <label><input type="checkbox" class="" checked /><span
+                                            class="box_check"></span>회원지정</label>
+                                    <button class="btn btn_smb">회원검색</button>
+                                    <p>kimhana 외 10명</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="issue_auto">
+                            <label><input type="radio" class="" name="s_mb"><span class="box_radio"></span>조건부 자동
+                                발급</label>
+                            <div class="radio_add">
+                                <label><input type="radio" class="" name="s_con"><span
+                                        class="box_radio"></span>회원가입</label>
+                                <label><input type="radio" class="" name="s_con"><span
+                                        class="box_radio"></span>첫구매</label>
+                                <label><input type="radio" class="" name="s_con"><span class="box_radio"></span>결제 금액
+                                    <input type="text" />원 이상 배송완료 시</label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="con_04">
+                <div class="tit">
+                    <dt>사용기간</dt>
+                    <p class="notice">
+                        <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                        사용기간이 지난 쿠폰은 자동으로 삭제됩니다.
+                    </p>
+                </div>
+                <ul class="input_wrap">
+                    <li class="radio_wrap">
+                        <div>
+                            <label><input type="radio" class="" name="s_date"><span class="box_radio"></span></label>
+                            <p>발급일 기준</p>
+                            <input type="text">
+                            <p>일 간 사용가능</p>
+                        </div>
+                        <div>
+                            <label><input type="radio" class="" name="s_date" checked /><span
+                                    class="box_radio"></span></label>
+                            <p>기간 설정</p>
+
+                            <div class="custom-datepicker">
+                                <div class="flex">
+
+                                    <input type="text" id="start-date" value="23.11.23. 11:23" />
+
+                                </div>
+                                <p>~</p>
+                                <div class="flex">
+                                    <input type="text" id="end-date" value="23.12.23. 11:23" />
+                                </div>
+                                <div id="calendar" class="calendar hidden"></div>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="con_05">
+                <div class="tit">
+                    <dt>발급 수 제한</dt>
+                    <p class="notice">
+                        <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                        발급 수 제한은 조건부 자동 발급시에만 적용됩니다.
+                    </p>
+                </div>
+                <ul class="input_wrap">
+                    <li class="radio_wrap">
+                        <div>
+                            <label><input type="radio" class="" name="l_date"><span
+                                    class="box_radio"></span>제한없음</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" class="" name="l_date" checked /><span
+                                    class="box_radio"></span></label>
+                            <p>선착순 최대</p>
+                            <input type="text" value="50">
+                            <p>매</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="con_06">
+                <div class="tit">
+                    <dt>쿠폰 사용 가능 금액</dt>
+                </div>
+                <ul class="input_wrap">
+                    <li class="radio_wrap">
+                        <div>
+                            <label><input type="radio" class="" name="l_date"><span
+                                    class="box_radio"></span>제한없음</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" class="" name="l_date" checked /><span
+                                    class="box_radio"></span></label>
+                            <p>결제금액</p>
+                            <input type="text" value="50,000">
+                            <p>원 이상 구매 시 사용가능</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex btn_wrap">
+            <button class="btn btn_submit">쿠폰생성</button>
+            <button class="btn">취소</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- 회원 정보 확인 -->
+<div class="popup popup_03 pop_imb">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="content">
+            <div class="con_01">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_smile_wh.svg" /></div>
+                        <dt>회원정보</dt>
+                    </div>
+                </div>
+                <ul class="input_wrap">
+                    <li class="flex ">
+                        <div class="flex a_bd">
+                            <p>이름</p>
+                            <input type="text" value="홍길동" />
+                        </div>
+
+                        <div class="custom-select">
+                            <div class="select-box">
+                                <span>새별회원</span><img src="../../../static/img/icon_down.svg" />
+                            </div>
+                            <ul class="options-list">
+                                <li class="option" data-value="1">새별회원</li>
+                                <li class="option" data-value="2">동별회원</li>
+                                <li class="option" data-value="3">은별회원</li>
+                                <li class="option" data-value="4">금별회원</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="flex a_bd">
+                        <p>상호</p>
+                        <input type="text" value="새마을식자재마트" />
+                    </li>
+                    <li class="flex">
+                        <div class="flex a_bd">
+                            <p>핸드폰</p>
+                            <input type="text" value="010.1234.5678" />
+                        </div>
+                        <button class="btn">알림톡 보내기</button>
+                    </li>
+                    <li class="flex a_bd">
+                        <p>배송지</p>
+                        <input type="text" value="서울특별시 중구 세종대로 110 514호" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>주문요청사항</p>
+                        <input type="text" value="비밀번호 1234* 카운터 앞에 놓고 전화주세요." />
+                    </li>
+                    <li class="flex">
+                        <div class="flex a_bd">
+                            <p>핸드폰</p>
+                            <input type="text" value="국민은행 0000-123-4567" />
+                        </div>
+                        <button class="btn btn_cs2">회원정보변경</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="con_02">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_coupon_wh.svg" /></div>
+                        <dt>회원정보</dt>
+                    </div>
+                    <div class="tit_r">
+                        <p class="notice">
+                            <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                            쿠폰관리에서 생성된 쿠폰을 개별로 지급할 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="input_wrap">
+                    <div class="custom-select">
+                        <div class="select-box">
+                            <span>선택</span><img src="../../../static/img/icon_down.svg" />
+                        </div>
+                        <ul class="options-list">
+                            <li class="option" data-value="1">신규회원 첫 구매 1만원 쿠폰</li>
+                            <li class="option" data-value="2">8월 고객감사 10% 쿠폰</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn_cs2">쿠폰지급</button>
+                </div>
+                <div class="grid_table">
+                    <ul class="gc">
+                        <li>
+                            <div class="cp_tit">
+                                <div class="icon"><img src="../../../static/img/icon_coupon.svg" /></div>신규회원 첫구매 1만원 쿠폰
+                                <div class="icon"><img src="../../../static/img/icon_sclose.svg" /></div>
+                            </div>
+                            <p lang="en"><span lang="en">23.08.03</span> 발급</p>
+                            <p>사용기한 : <span lang="en">23.08.15</span></p>
+                        </li>
+                        <li class="txt_gy">
+                            <div class="cp_tit">
+                                <div class="icon"><img src="../../../static/img/icon_coupon_gr.svg" /></div>월 고객감사 10%
+                                쿠폰
+                            </div>
+                            <p lang="en"><span lang="en">23.08.01</span> 발급</p>
+                            <p><span lang="en">23.08.03</span> 사용</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="con_03">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_coin_wh.svg" /></div>
+                        <dt>적립금 내역</dt>
+                        <p>총 보유 적립금 <strong lang="en">27,300</strong>원</p>
+                    </div>
+                </div>
+                <ul class="input_wrap">
+                    <li class="radio_wrap">
+                        <label><input type="radio" class="" name="adj_point"><span class="box_radio"></span>+</label>
+                        <label><input type="radio" class="" name="adj_point"><span class="box_radio"></span>-</label>
+                    </li>
+                    <li class="li_input">
+                        <input type="text" placeholder="지급사유" />
+                    </li>
+                    <li class="li_input">
+                        <input type="text" placeholder="지급금액" />
+                    </li>
+                    <li>
+                        <button class="btn btn_cs2">적립금 지급</button>
+                    </li>
+                </ul>
+                <div class="grid_table">
+                    <ul class="gc">
+                        <li>
+                            <div class="cp_tit">
+                                <div class="icon"><img src="../../../static/img/icon_coin.svg" /></div>주문적립금<div
+                                    class="icon"><img src="../../../static/img/icon_sclose.svg" /></div>
+                            </div>
+                            <p lang="en">23.08.03</p>
+                            <p><span lang="en">+ 1,300</span>원</p>
+                        </li>
+                        <li>
+                            <div class="cp_tit">
+                                <div class="icon"><img src="../../../static/img/icon_coin.svg" /></div>결제 사용
+                            </div>
+                            <p lang="en">23.08.03</p>
+                            <p><span lang="en">- 5,000</span>원</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="con_04">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_coin_wh.svg" /></div>
+                        <dt>예치금 내역</dt>
+                        <p>총 보유 예치금 <strong lang="en">70,000</strong>원</p>
+                    </div>
+                </div>
+                <ul class="input_wrap">
+                    <li class="radio_wrap">
+                        <label><input type="radio" class="" name="adj_point_pm"><span class="box_radio"></span>+</label>
+                        <label><input type="radio" class="" name="adj_point_pm"><span class="box_radio"></span>-</label>
+                    </li>
+                    <li class="li_input">
+                        <input type="text" placeholder="지급사유" />
+                    </li>
+                    <li class="li_input">
+                        <input type="text" placeholder="지급금액" />
+                    </li>
+                    <li>
+                        <button class="btn btn_cs2">예치금 지급</button>
+                    </li>
+                </ul>
+                <div class="grid_table">
+                    <ul class="gc">
+                        <li>
+                            <div class="cp_tit">
+                                <div class="icon"><img src="../../../static/img/icon_coin.svg" /></div>예치금 추가
+                            </div>
+                            <p lang="en">23.06.23</p>
+                            <p><span lang="en">+ 20,000</span>원</p>
+                        </li>
+                        <li>
+                            <div class="cp_tit">
+                                <div class="icon"><img src="../../../static/img/icon_coin.svg" /></div>결제 사용
+                            </div>
+                            <p lang="en">23.04.20</p>
+                            <p><span lang="en">- 8,000</span>원</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="con_05">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_card_wh.svg" /></div>
+                        <dt>주문 내역</dt>
+                        <p>총 <strong lang="en">15</strong>건</p>
+                        <p>결제금액 <strong lang="en">531,900</strong>원</p>
+                    </div>
+                </div>
+                <ul class="order_list">
+                    <li class="">
+                        <div class="list_bd">
+                            <ul class="bd_prd">
+                                <div class="icon"><img src="../../../static/img/icon_up.svg"></div>
+                                <p lang="en">23.08.03 11:45</p>
+                                <p lang="en">230804-0003</p>
+                                <p><span>국산 유기농 양배추 10kg</span> 외 <span>1</span>건</p>
+                                <p lang="en"><span>344,150</span>원</p>
+                            </ul>
+                            <ul class="prd_list">
+                                <li class="flex">
+                                    <div class="prd_info">
+                                        <div class="thum"><img src="../../../static/img/prd_01.png" /></div>
+                                        <ul class="prd_name">
+                                            <li>껍질째먹는 사과 1박스</li>
+                                            <li class="prd_code">8801234567890</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="prd_price">
+                                            <li class="unit_count">1</li>
+                                            <li>/</li>
+                                            <li class="total_price">31,900</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="flex">
+                                    <div class="prd_info">
+                                        <div class="thum"><img src="../../../static/img/prd_02.png" /></div>
+                                        <ul class="prd_name">
+                                            <li>국산 유기농 양배추 10kg</li>
+                                            <li class="prd_code">8801234567890</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="prd_price">
+                                            <li class="unit_count">10</li>
+                                            <li>/</li>
+                                            <li class="total_price">33,000</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="price_area">
+                                    <div class="tit">
+                                        <div class="tit_l">
+                                            <div class="icon"><img src="../../../static/img/icon_card.svg" /></div>
+                                            <dd>결제 금액 <strong lang="en">112,900</strong>원</dd>
+                                            <p>(<span>카드결제</span>)</p>
+                                        </div>
+                                        <div class="tit_r">
+                                            <button class="btn">영수증 출력</button>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <p>할인금액 <span lang="en">15,850</span>원</p>
+                                        <p>- 쿠폰 <span lang="en">15,850</span>원</p>
+                                        <p>- 적립금 <span lang="en">15,850</span>원</p>
+                                        <p>- 회원등급할인 <span lang="en">15,850</span>원</p>
+                                        <p>- 배송비 <span lang="en">0</span>원</p>
+                                        <p>- 포장비 <span lang="en">0</span>원</p>
+                                        <p>= <span lang="en">344,150</span>원</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list_bd">
+                            <ul class="bd_prd">
+                                <div class="icon"><img src="../../../static/img/icon_up.svg"></div>
+                                <p lang="en">23.08.03 11:45</p>
+                                <p lang="en">230804-0003</p>
+                                <p><span>껍질째먹는 사과 1박스</span> 외 <span>1</span>건</p>
+                                <p lang="en"><span>344,150</span>원</p>
+                            </ul>
+                            <ul class="prd_list">
+                                <li class="flex">
+                                    <div class="prd_info">
+                                        <div class="thum"><img src="../../../static/img/prd_01.png" /></div>
+                                        <ul class="prd_name">
+                                            <li>껍질째먹는 사과 1박스</li>
+                                            <li class="prd_code">8801234567890</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="prd_price">
+                                            <li class="unit_count">1</li>
+                                            <li>/</li>
+                                            <li class="total_price">31,900</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="flex">
+                                    <div class="prd_info">
+                                        <div class="thum"><img src="../../../static/img/prd_02.png" /></div>
+                                        <ul class="prd_name">
+                                            <li>국산 유기농 양배추 10kg</li>
+                                            <li class="prd_code">8801234567890</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="prd_price">
+                                            <li class="unit_count">10</li>
+                                            <li>/</li>
+                                            <li class="total_price">33,000</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="price_area">
+                                    <div class="tit">
+                                        <div class="tit_l">
+                                            <div class="icon"><img src="../../../static/img/icon_card.svg" /></div>
+                                            <dd>결제 금액 <strong lang="en">112,900</strong>원</dd>
+                                            <p>(<span>카드결제</span>)</p>
+                                        </div>
+                                        <div class="tit_r">
+                                            <button class="btn">영수증 출력</button>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <p>할인금액 <span lang="en">15,850</span>원</p>
+                                        <p>- 쿠폰 <span lang="en">15,850</span>원</p>
+                                        <p>- 적립금 <span lang="en">15,850</span>원</p>
+                                        <p>- 회원등급할인 <span lang="en">15,850</span>원</p>
+                                        <p>- 배송비 <span lang="en">0</span>원</p>
+                                        <p>- 포장비 <span lang="en">0</span>원</p>
+                                        <p>= <span lang="en">344,150</span>원</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 리뷰등록 -->
+<div class="popup popup_03 pop_rrv">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_coin.svg" /></div>
+                <dt>리뷰등록</dt>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <ul class="input_wrap">
+                    <li class="flex a_bd">
+                        <p>상품명</p>
+                        <input type="text" placeholder="" />
+                    </li>
+                    <li><button class="btn btn_cs2 btn_sprd">상품찾기</button></li>
+                </ul>
+                <ul class="input_wrap grid">
+                    <li class="flex a_bd">
+                        <p>상품번호</p>
+                        <input type="text" placeholder="" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>바코드</p>
+                        <input type="text" placeholder="" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>이름</p>
+                        <input type="text" placeholder="이름을 입력해주세요." />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>아이디</p>
+                        <input type="text" placeholder="아이디를 입력해주세요." />
+                    </li>
+                    <li class="flex a_bd review_point">
+                        <p>별점</p>
+                        <div class=""><img src="../../../static/img/star_review_5.svg" /></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tit">
+                <div class="tit_l">
+                    <div class="icon"><img src="../../../static/img/icon_gallery.svg" /></div>
+                    <dt>리뷰 이미지</dt>
+                </div>
+            </div>
+
+            <div class="con_02">
+                <div class="filebox">
+                    <input class="upload-name" value="첨부파일" placeholder="첨부파일">
+                    <label class="btn btn_cs2" for="file">파일찾기</label>
+                    <input type="file" id="file">
+                </div>
+                <p class="notice">
+                    <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                    
+                        리뷰 이미지 등록시 다중선택이 가능합니다.
+                    </p>
+                <ul class="img_wrap">
+                    <li><img src="../../../static/img/review_01.jpg"></li>
+                    <li><img src="../../../static/img/review_02.jpg"></li>
+                </ul>
+            </div>
+
+            <div class="tit">
+                <div class="tit_l">
+                    <div class="icon"><img src="../../../static/img/icon_gallery_view.svg" /></div>
+                    <dt>리뷰 내용</dt>
+                </div>
+            </div>
+
+            <div class="con_03">
+                <div class="input_wrap">
+                    <textarea placeholder="리뷰 내용을 입력해주세요."></textarea>
+                </div>
+
+
+            </div>
+        </div>
+        <button class="btn btn_submit">등록</button>
+    </div>
+</div>
+
+<!-- 리뷰 상세 -->
+<div class="popup popup_03 pop_drv">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_coin.svg" /></div>
+                <dt>리뷰 상세</dt>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <ul class="input_wrap">
+                    <li class="flex a_bd">
+                        <p>상품명</p>
+                        <p>껍질째먹는 사과 1박스</p>
+                    </li>
+                </ul>
+                <ul class="input_wrap grid">
+                    <li class="flex a_bd">
+                        <p>상품번호</p>
+                        <p lang="en">B012576</p>
+                    </li>
+                    <li class="flex a_bd">
+                        <p>바코드</p>
+                        <p lang="en">8801052742038</p>
+                    </li>
+                    <li class="flex a_bd">
+                        <p>이름</p>
+                        <p>김하나</p>
+                    </li>
+                    <li class="flex a_bd">
+                        <p>아이디</p>
+                        <p lang="en">kimhana</p>
+                    </li>
+                    <li class="flex a_bd">
+                        <p>등록일</p>
+                        <p lang="en">23.08.03 11:45</p>
+                    </li>
+                    <li class="flex a_bd review_point">
+                        <p>별점</p>
+                        <div class=""><img src="../../../static/img/star_review_5.svg" /></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tit">
+                <div class="tit_l">
+                    <div class="icon"><img src="../../../static/img/icon_gallery.svg" /></div>
+                    <dt>리뷰 이미지</dt>
+                </div>
+            </div>
+
+            <div class="con_02">
+                <ul class="img_wrap">
+                    <li><img src="../../../static/img/review_01.jpg"></li>
+                    <li><img src="../../../static/img/review_02.jpg"></li>
+                    <li><img src="../../../static/img/review_03.jpg"></li>
+                </ul>
+            </div>
+            <div class="tit">
+                <div class="tit_l">
+                    <div class="icon"><img src="../../../static/img/icon_gallery_view.svg" /></div>
+                    <dt>리뷰 내용</dt>
+                </div>
+            </div>
+
+            <div class="con_03">
+                <div class="input_wrap">
+                    <p>
+                        아삭아삭 달콤달콤 사과가 맛나고 배송도 빠르고 꼼꼼하게 포장되어 있네요~<br />
+                        만족합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn_submit">등록</button>
+    </div>
+</div>
+
+
+<!-- 상품 기본정보 -->
+<div class="popup popup_03 pop_dpd">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_coin.svg" /></div>
+                <dt>상품 기본정보</dt>
+            </div>
+            <div class="tit_r">
+                <p><span lang="en">23.04.10</span> 등록 / Total <strong lang="en">253</strong>개 판매</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <ul class="input_wrap">
+                    <li class="radio_wrap">
+                        <label><input type="radio" class="" name="dpd_dp" checked><span
+                                class="box_radio"></span>진열</label>
+                        <label><input type="radio" class="" name="dpd_dp"><span class="box_radio"></span>미진열</label>
+                        <label><input type="radio" class="" name="dpd_dp"><span class="box_radio"></span>품절</label>
+                    </li>
+                    <li class="flex a_bd">
+                        <p>상품명</p>
+                        <input type="text" placeholder="" value="껍질째먹는 사과 1박스" />
+                    </li>
+                </ul>
+                <ul class="input_wrap grid">
+                    <li class="flex a_bd">
+                        <p>상품번호</p>
+                        <input type="text" placeholder="" value="B012576" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>바코드</p>
+                        <input type="text" placeholder="" value="8801052742038" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>소비자가</p>
+                        <input type="text" value="49,000" />
+                        원
+                    </li>
+                    <li class="flex a_bd">
+                        <p>판매가</p>
+                        <input type="text" value="31,900" />
+                        원
+                    </li>
+                    <li class="flex">
+                        <div class="flex a_bd">
+                            <p>최대구매수</p>
+                            <input type="text" value="10" />
+                            개
+                        </div>
+                        <div class="radio_wrap">
+                            <label><input type="radio" class="" name="l_max" checked><span
+                                    class="box_radio"></span>제한</label>
+                        </div>
+                    </li>
+                    <li class="flex a_bd">
+                        <p>안전재고</p>
+                        <input type="text" value="933" />
+                        개
+                    </li>
+                </ul>
+                <p class="notice">
+                    <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                    
+                        상품번호는 자동생성됩니다. 등록상품 / 기본상품과 중복되는 바코드는 입력이 되지 않습니다.<br />
+                        최대구매수 제한을 체크하고 개수를 입력하면 한 사람당 구매할 수 있는 상품수가 제한됩니다.<br />
+                        안전재고는 지정한 개수만큼 판매된 후 자동 품절처리됩니다.
+                    </p>
+            </div>
+
+            <div class="con_02">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_cate.svg" /></div>
+                        <dt>카테고리 지정</dt>
+                    </div>
+                    <div class="tit_r">
+                        <button class="btn">
+                            <div class="icon"><img src="../../../static/img/plus.svg"></div>카테고리 추가
+                        </button>
+                    </div>
+                </div>
+                <div class="input_wrap">
+                    <div class="custom-select">
+                        <div class="select-box">
+                            <span>채소</span><img src="../../../static/img/icon_down.svg" />
+                        </div>
+                        <ul class="options-list">
+                            <li class="option" data-value="1">채소</li>
+                            <li class="option" data-value="2">과일·견과·쌀</li>
+                            <li class="option" data-value="3">수산·해산·건어물</li>
+                            <li class="option" data-value="4">정육·계란</li>
+                        </ul>
+                    </div>
+                    <div class="custom-select">
+                        <div class="select-box">
+                            <span>친환경·무농약</span><img src="../../../static/img/icon_down.svg" />
+                        </div>
+                        <ul class="options-list">
+                            <li class="option" data-value="1">친환경·무농약</li>
+                            <li class="option" data-value="2">고구마·감자·당근</li>
+                            <li class="option" data-value="3">시금치·쌈채소·나물</li>
+                            <li class="option" data-value="4">브로콜리·파프리카·양배추</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="input_wrap add">
+                    <div class="custom-select">
+                        <div class="select-box">
+                            <span>1차 분류 선택</span><img src="../../../static/img/icon_down.svg" />
+                        </div>
+                        <ul class="options-list">
+                            <li class="option" data-value="1">채소</li>
+                            <li class="option" data-value="2">과일·견과·쌀</li>
+                            <li class="option" data-value="3">수산·해산·건어물</li>
+                            <li class="option" data-value="4">정육·계란</li>
+                        </ul>
+                    </div>
+                    <div class="custom-select">
+                        <div class="select-box">
+                            <span>2차 분류 선택</span><img src="../../../static/img/icon_down.svg" />
+                        </div>
+                        <ul class="options-list">
+                            <li class="option" data-value="1">친환경·무농약</li>
+                            <li class="option" data-value="2">고구마·감자·당근</li>
+                            <li class="option" data-value="3">시금치·쌈채소·나물</li>
+                            <li class="option" data-value="4">브로콜리·파프리카·양배추</li>
+                        </ul>
+                    </div>
+                    <button class="btn">
+                        <div class="icon del"><img src="../../../static/img/icon_del.svg" /></div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="con_03">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_gallery.svg" /></div>
+                        <dt>상품이미지</dt>
+                    </div>
+                    <div class="tit_r">
+                        <button class="btn">
+                            <div class="icon"><img src="../../../static/img/plus.svg"></div>이미지 추가
+                        </button>
+                    </div>
+                </div>
+                <ul class="img_wrap">
+                    <li class="open"> <!-- // class에 open이 들어가면 등록 버튼 대신 변경 삭제 버튼이 노출 -->
+                        <div class="add_thum"><img src="../../../static/img/thum_apple_01.jpg" /></div>
+                        <div class="btn_wrap">
+                            <button class="btn">등록</button>
+                            <div class="sub_btn_wrap">
+                                <button class="btn btn_cg">변경</button>
+                                <button class="btn btn_del">
+                                    <div class="icon del"><img src="../../../static/img/icon_del.svg" /></div>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="open">
+                        <div class="add_thum"><img src="../../../static/img/thum_apple_02.jpg" /></div>
+                        <div class="btn_wrap">
+                            <button class="btn">등록</button>
+                            <div class="sub_btn_wrap">
+                                <button class="btn btn_cg">변경</button>
+                                <button class="btn btn_del">
+                                    <div class="icon del"><img src="../../../static/img/icon_del.svg" /></div>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="add_thum"><img src="../../../static/img/no_img.jpg" /></div>
+                        <div class="btn_wrap">
+                            <button class="btn">등록</button>
+                            <div class="sub_btn_wrap">
+                                <button class="btn btn_cg">변경</button>
+                                <button class="btn btn_del">
+                                    <div class="icon del"><img src="../../../static/img/icon_del.svg" /></div>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="add_thum"><img src="../../../static/img/no_img.jpg" /></div>
+                        <div class="btn_wrap">
+                            <button class="btn">등록</button>
+                            <div class="sub_btn_wrap">
+                                <button class="btn btn_cg">변경</button>
+                                <button class="btn btn_del">
+                                    <div class="icon del"><img src="../../../static/img/icon_del.svg" /></div>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="add_thum"><img src="../../../static/img/no_img.jpg" /></div>
+                        <div class="btn_wrap">
+                            <button class="btn">등록</button>
+                            <div class="sub_btn_wrap">
+                                <button class="btn btn_cg">변경</button>
+                                <button class="btn btn_del">
+                                    <div class="icon del"><img src="../../../static/img/icon_del.svg" /></div>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="con_04">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_event.svg" /></div>
+                        <dt>상품 아이콘</dt>
+                        <p class="notice">
+                            <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                            상품아이콘은 2개까지 지정 가능합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="icon_wrap">
+                    <label><input type="checkbox" class="" checked><span class="box_check"></span>
+                        <div class="icon"><img src="../../../static/img/prd_icon_01.png" /></div>
+                    </label>
+                    <label><input type="checkbox" class="" checked><span class="box_check"></span>
+                        <div class="icon"><img src="../../../static/img/prd_icon_02.png" /></div>
+                    </label>
+                    <label><input type="checkbox" class=""><span class="box_check"></span>
+                        <div class="icon"><img src="../../../static/img/prd_icon_03.png" /></div>
+                    </label>
+                    <label><input type="checkbox" class=""><span class="box_check"></span>
+                        <div class="icon"><img src="../../../static/img/prd_icon_04.png" /></div>
+                    </label>
+                    <label><input type="checkbox" class=""><span class="box_check"></span>
+                        <div class="icon"><img src="../../../static/img/prd_icon_05.png" /></div>
+                    </label>
+                    <label><input type="checkbox" class=""><span class="box_check"></span>
+                        <div class="icon"><img src="../../../static/img/prd_icon_06.png" /></div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="con_05">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_prd_add.svg" /></div>
+                        <dt>상품 추가정보</dt>
+                    </div>
+                    <div class="tit_r">
+                        <button class="btn">
+                            <div class="icon"><img src="../../../static/img/plus.svg"></div>정보항목 추가
+                        </button>
+                    </div>
+                </div>
+                <ul class="input_wrap grid">
+                    <li class="flex a_bd">
+                        <p>제조사</p>
+                        <input type="text" placeholder="" value="CJ제일제당" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>브랜드</p>
+                        <input type="text" placeholder="" value="비비고" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>중량/용량</p>
+                        <input type="text" placeholder="" value="1kg" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>원산지</p>
+                        <input type="text" placeholder="" value="국내산" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>유통기한</p>
+                        <input type="text" placeholder="" value="제품 별도기재일" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>보관방법</p>
+                        <input type="text" placeholder="" value="신선선" />
+                    </li>
+                </ul>
+                <ul class="input_wrap">
+                    <li class="flex a_bd">
+                        <p>안내사항</p>
+                        <textarea>상품특성상 3% 내외의 중량차이가 있을 수 있습니다.
+신선식품 특성상 원물마다 크기 및 형태가 일정하지 않을 수 있습니다.</textarea>
+                    </li>
+                </ul>
+                <ul class="input_wrap add">
+                    <li class="flex a_bd">
+                        <p>항목명</p>
+                        <input value="당도">
+                    </li>
+                    <li class="flex a_bd">
+                        <p>내용</p>
+                        <input value="9.1Brix 이상">
+                    </li>
+                    <button class="btn btn_del">
+                        <div class="icon del"><img src="../../../static/img/icon_del.svg" /></div>
+                    </button>
+                </ul>
+                <ul class="input_wrap add">
+                    <li class="flex a_bd">
+                        <p>항목명</p>
+                        <input value="">
+                    </li>
+                    <li class="flex a_bd">
+                        <p>내용</p>
+                        <input value="">
+                    </li>
+                    <button class="btn btn_del">
+                        <div class="icon del"><img src="../../../static/img/icon_del.svg" /></div>
+                    </button>
+                </ul>
+            </div>
+
+            <div class="con_06">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_gallery_view.svg" /></div>
+                        <dt>상품 상세설명</dt>
+                    </div>
+                    <div class="tit_r">
+                        <button class="btn">
+                            <div class="icon"><img src="../../../static/img/plus.svg"></div>정보항목 추가
+                        </button>
+                    </div>
+                </div>
+
+                <div class="filebox flex">
+                    <div class="flex">
+                        <p>파일첨부</p>
+                        <input class="upload-name" value="jpg / png / gif 파일을 첨부해주세요." placeholder="">
+                    </div>
+                    <label class="btn btn_cs2" for="file">등록</label>
+                    <input type="file" id="file">
+                </div>
+                <ul class="img_wrap">
+                    <li class=""><img src="../../../static/img/prd_detail_01.jpg" /></li>
+                    <li class=""><img src="../../../static/img/prd_detail_02.jpg" /></li>
+                    <li class=""><img src="../../../static/img/prd_detail_03.jpg" /></li>
+                </ul>
+            </div>
+
+        </div>
+        <button class="btn btn_submit">등록</button>
+    </div>
+</div>
+
+<!-- 상품 기본정보 -->
+<div class="popup popup_03 pop_rdpd">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+        <div class="tit">
+            <div class="tit_l">
+                <div class="icon"><img src="../../../static/img/icon_coin.svg" /></div>
+                <dt>상품 기본정보</dt>
+            </div>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <ul class="input_wrap">
+                    <li class="radio_wrap">
+                        <label><input type="radio" class="" name="dpd_dp"><span class="box_radio"></span>진열</label>
+                        <label><input type="radio" class="" name="dpd_dp"><span class="box_radio"></span>미진열</label>
+                        <label><input type="radio" class="" name="dpd_dp"><span class="box_radio"></span>품절</label>
+                    </li>
+                    <li class="flex a_bd">
+                        <p>상품명</p>
+                        <input type="text" placeholder="" />
+                    </li>
+                </ul>
+                <ul class="input_wrap grid">
+                    <li class="flex a_bd">
+                        <p>상품번호</p>
+                        <input type="text" placeholder="" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>바코드</p>
+                        <input type="text" placeholder="" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>소비자가</p>
+                        <input type="text" />
+                        원
+                    </li>
+                    <li class="flex a_bd">
+                        <p>판매가</p>
+                        <input type="text" />
+                        원
+                    </li>
+                    <li class="flex">
+                        <div class="flex a_bd">
+                            <p>최대구매수</p>
+                            <input type="text" />
+                            개
+                        </div>
+                        <div class="radio_wrap">
+                            <label><input type="radio" class="" name="l_max"><span class="box_radio"></span>제한</label>
+                        </div>
+                    </li>
+                    <li class="flex a_bd">
+                        <p>안전재고</p>
+                        <input type="text" />
+                        개
+                    </li>
+                </ul>
+                <p class="notice">
+                    <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                    
+                        상품번호는 자동생성됩니다. 등록상품 / 기본상품과 중복되는 바코드는 입력이 되지 않습니다.<br />
+                        최대구매수 제한을 체크하고 개수를 입력하면 한 사람당 구매할 수 있는 상품수가 제한됩니다.<br />
+                        안전재고는 지정한 개수만큼 판매된 후 자동 품절처리됩니다.
+                    </p>
+            </div>
+
+            <div class="con_02">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_cate.svg" /></div>
+                        <dt>카테고리 지정</dt>
+                    </div>
+                    <div class="tit_r">
+                        <button class="btn">
+                            <div class="icon"><img src="../../../static/img/plus.svg"></div>카테고리 추가
+                        </button>
+                    </div>
+                </div>
+                <div class="input_wrap">
+                    <div class="custom-select">
+                        <div class="select-box">
+                            <span>1차 분류 선택</span><img src="../../../static/img/icon_down.svg" />
+                        </div>
+                        <ul class="options-list">
+                            <li class="option" data-value="1">채소</li>
+                            <li class="option" data-value="2">과일·견과·쌀</li>
+                            <li class="option" data-value="3">수산·해산·건어물</li>
+                            <li class="option" data-value="4">정육·계란</li>
+                        </ul>
+                    </div>
+                    <div class="custom-select">
+                        <div class="select-box">
+                            <span>2차 분류 선택</span><img src="../../../static/img/icon_down.svg" />
+                        </div>
+                        <ul class="options-list">
+                            <li class="option" data-value="1">친환경·무농약</li>
+                            <li class="option" data-value="2">고구마·감자·당근</li>
+                            <li class="option" data-value="3">시금치·쌈채소·나물</li>
+                            <li class="option" data-value="4">브로콜리·파프리카·양배추</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="con_03">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_gallery.svg" /></div>
+                        <dt>상품이미지</dt>
+                    </div>
+                    <div class="tit_r">
+                        <button class="btn">
+                            <div class="icon"><img src="../../../static/img/plus.svg"></div>이미지 추가
+                        </button>
+                    </div>
+                </div>
+                <ul class="img_wrap">
+                    <li class=""> <!-- // class에 open이 들어가면 등록 버튼 대신 변경 삭제 버튼이 노출 -->
+                        <div class="add_thum"><img src="../../../static/img/no_img.jpg" /></div>
+                        <div class="btn_wrap">
+                            <button class="btn">등록</button>
+                            <div class="sub_btn_wrap">
+                                <button class="btn btn_cg">변경</button>
+                                <button class="btn btn_del">
+                                    <div class="icon del"><img src="../../../static/img/icon_del.svg" /></div>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="add_thum"><img src="../../../static/img/no_img.jpg" /></div>
+                        <div class="btn_wrap">
+                            <button class="btn">등록</button>
+                            <div class="sub_btn_wrap">
+                                <button class="btn btn_cg">변경</button>
+                                <button class="btn btn_del">
+                                    <div class="icon del"><img src="../../../static/img/icon_del.svg" /></div>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="add_thum"><img src="../../../static/img/no_img.jpg" /></div>
+                        <div class="btn_wrap">
+                            <button class="btn">등록</button>
+                            <div class="sub_btn_wrap">
+                                <button class="btn btn_cg">변경</button>
+                                <button class="btn btn_del">
+                                    <div class="icon del"><img src="../../../static/img/icon_del.svg" /></div>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="add_thum"><img src="../../../static/img/no_img.jpg" /></div>
+                        <div class="btn_wrap">
+                            <button class="btn">등록</button>
+                            <div class="sub_btn_wrap">
+                                <button class="btn btn_cg">변경</button>
+                                <button class="btn btn_del">
+                                    <div class="icon del"><img src="../../../static/img/icon_del.svg" /></div>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="add_thum"><img src="../../../static/img/no_img.jpg" /></div>
+                        <div class="btn_wrap">
+                            <button class="btn">등록</button>
+                            <div class="sub_btn_wrap">
+                                <button class="btn btn_cg">변경</button>
+                                <button class="btn btn_del">
+                                    <div class="icon del"><img src="../../../static/img/icon_del.svg" /></div>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="con_04">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_event.svg" /></div>
+                        <dt>상품 아이콘</dt>
+                        <p class="notice">
+                            <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                            상품아이콘은 2개까지 지정 가능합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="icon_wrap">
+                    <label><input type="checkbox" class=""><span class="box_check"></span>
+                        <div class="icon"><img src="../../../static/img/prd_icon_01.png" /></div>
+                    </label>
+                    <label><input type="checkbox" class=""><span class="box_check"></span>
+                        <div class="icon"><img src="../../../static/img/prd_icon_02.png" /></div>
+                    </label>
+                    <label><input type="checkbox" class=""><span class="box_check"></span>
+                        <div class="icon"><img src="../../../static/img/prd_icon_03.png" /></div>
+                    </label>
+                    <label><input type="checkbox" class=""><span class="box_check"></span>
+                        <div class="icon"><img src="../../../static/img/prd_icon_04.png" /></div>
+                    </label>
+                    <label><input type="checkbox" class=""><span class="box_check"></span>
+                        <div class="icon"><img src="../../../static/img/prd_icon_05.png" /></div>
+                    </label>
+                    <label><input type="checkbox" class=""><span class="box_check"></span>
+                        <div class="icon"><img src="../../../static/img/prd_icon_06.png" /></div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="con_05">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_prd_add.svg" /></div>
+                        <dt>상품 추가정보</dt>
+                    </div>
+                    <div class="tit_r">
+                        <button class="btn">
+                            <div class="icon"><img src="../../../static/img/plus.svg"></div>정보항목 추가
+                        </button>
+                    </div>
+                </div>
+                <ul class="input_wrap grid">
+                    <li class="flex a_bd">
+                        <p>제조사</p>
+                        <input type="text" placeholder="" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>브랜드</p>
+                        <input type="text" placeholder="" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>중량/용량</p>
+                        <input type="text" placeholder="" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>원산지</p>
+                        <input type="text" placeholder="" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>유통기한</p>
+                        <input type="text" placeholder="" />
+                    </li>
+                    <li class="flex a_bd">
+                        <p>보관방법</p>
+                        <input type="text" placeholder="" />
+                    </li>
+                </ul>
+                <ul class="input_wrap">
+                    <li class="flex a_bd">
+                        <p>안내사항</p>
+                        <textarea></textarea>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="con_06">
+                <div class="tit">
+                    <div class="tit_l">
+                        <div class="icon"><img src="../../../static/img/icon_gallery_view.svg" /></div>
+                        <dt>상품 상세설명</dt>
+                    </div>
+                    <div class="tit_r">
+                        <button class="btn">
+                            <div class="icon"><img src="../../../static/img/plus.svg"></div>정보항목 추가
+                        </button>
+                    </div>
+                </div>
+
+                <div class="filebox flex">
+                    <div class="flex">
+                        <p>파일첨부</p>
+                        <input class="upload-name" value="jpg / png / gif 파일을 첨부해주세요." placeholder="">
+                    </div>
+                    <label class="btn btn_cs2" for="file">등록</label>
+                    <input type="file" id="file">
+                </div>
+            </div>
+
+        </div>
+        <button class="btn btn_submit">등록</button>
+    </div>
+</div>
+
+
+
+
+<!-- 영수증 출력 -->
+<div class="popup popup_04 pop_ptr">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+
+        <div class="tit">
+            <div class="tit_l">
+                <button class="btn btn_submit"><span lang="en">9</span>건 영수증 출력</button>
+            </div>
+        </div>
+        <div class="num_receipt">
+            <p class="" lang="">Order No.<span class="order_num" lang="en">230804 - 0001</span></p>
+            <p class="date" lang="en">2023-08-03 (목) 오후 10:26</p>
+        </div>
+        <div class="content">
+            <div class="con_01">
+                <div class="tit">
+                    <dt>주문정보</dt>
+                </div>
+                <ul class="flex">
+                    <li class="flex">
+                        <p class="txt_tit">이름</p>
+                        <p class="flex"><span>홍길동</span> ( <span class="flex"><span class="icon"><img
+                                        src="../../../static/img/icon_grade1.svg" /></span>새별회원</span> )</p>
+                    </li>
+                    <li class="flex">
+                        <p class="txt_tit">상호</p>
+                        <p class="flex"><span>미스터아빠</span></p>
+                    </li>
+                    <li class="flex">
+                        <p class="txt_tit">핸드폰</p>
+                        <p class="flex"><span lang="en">010.1234.5678</span></p>
+                    </li>
+                    <li class="flex">
+                        <p class="txt_tit">배송지</p>
+                        <p class="flex"><span>서울특별시 중구 세종대로 110 514호</span></p>
+                    </li>
+                    <li class="flex">
+                        <p class="txt_tit">주문요청사항</p>
+                        <p class="flex"><span>비밀번호 1234* 카운터 앞에 놓고 전화주세요.</span></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="con_02">
+                <div class="tit">
+                    <dt>주문상품(<span>2</span>)</dt>
+                </div>
+                <ul class="prd_list">
+                    <li class="flex">
+                        <ul class="prd_name">
+                            <li>껍질째먹는 사과 1박스</li>
+                            <li class="prd_code">8801234567890</li>
+                        </ul>
+                        <ul class="prd_price">
+                            <li class="unit_count">1</li>
+                            <li>/</li>
+                            <li class="init_price">31,900</li>
+                        </ul>
+                    </li>
+                    <li class="flex">
+                        <ul class="prd_name">
+                            <li>국산유기농양배추 10kg</li>
+                            <li class="prd_code">8801234567890</li>
+                        </ul>
+                        <ul class="prd_price">
+                            <li class="unit_count">1</li>
+                            <li>/</li>
+                            <li class="init_price">27,900</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="price_area">
+                <dd>총 상품 금액 <strong lang="en">112,900</strong>원</dd>
+                <div>
+                    <p>할인금액 <span lang="en">15,850</span>원</p>
+                    <p>- 쿠폰 <span lang="en">15,850</span>원</p>
+                    <p>- 적립금 <span lang="en">15,850</span>원</p>
+                    <p>- 회원등급할인 <span lang="en">15,850</span>원</p>
+                    <p>- 배송비 <span lang="en">0</span>원</p>
+                    <p>- 포장비 <span lang="en">0</span>원</p>
+                </div>
+                <dt>결제금액 <strong lang="en">97,050</strong>원 (<span>카드결제</span>)</dt>
+            </div>
+            <div class="info_company">
+                <div class="logo"><img src="../../../static/img/logo_h_b.svg" /></div>
+                <p>경상남도 창원시 마산회원구 내서읍 유통단지로 35-4 / 문의전화 0000-0000<br />
+                    영업시간 07:00 ~ 22:00 (연중무휴 / 일요일 정상영업)</p>
+            </div>
+        </div>
+        <div class="num_receipt">
+            <p class="" lang="">Order No.<span class="order_num">230804 - 0001</span></p>
+            <p class="date" lang="en">2023-08-03 (목) 오후 10:26</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- 영수증 출력 -->
+<div class="popup popup_04 pop_cod">
+    <div class="popup_box">
+        <button class="btn_close btn"><img src="../../../static/img/close.svg" /></button>
+
+        <div class="num_receipt">
+            <p class="" lang="">Order No.<span class="order_num" lang="en">230804 - 0001</span></p>
+            <p class="date" lang="en">2023-08-03 (목) 오후 10:26</p>
+        </div>
+
+        <div class="tit">
+            <div class="tit_l">
+                <div class="custom-select">
+                    <div class="select-box">
+                        <span>상품준비중</span><img src="../../../static/img/icon_down.svg" />
+                    </div>
+                    <ul class="options-list">
+                        <li class="option" data-value="1">상품 준비중</li>
+                        <li class="option" data-value="2">배송 준비중</li>
+                        <li class="option" data-value="3">배송 중</li>
+                        <li class="option" data-value="4">배송 완료</li>
+                    </ul>
+                </div>
+                <button class="btn">상태변경</button>
+                <button class="btn">영수증 출력</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="con_01">
+                <div class="tit">
+                    <dt>주문정보</dt>
+                </div>
+                <ul class="flex">
+                    <li class="flex">
+                        <p class="txt_tit">이름</p>
+                        <p class="flex"><span>홍길동</span> ( <span class="flex"><span class="icon"><img
+                                        src="../../../static/img/icon_grade1.svg" /></span>새별회원</span> )</p>
+                    </li>
+                    <li class="flex">
+                        <p class="txt_tit">상호</p>
+                        <p class="flex"><span>미스터아빠</span></p>
+                    </li>
+                    <li class="flex">
+                        <p class="txt_tit">핸드폰</p>
+                        <p class="flex"><span lang="en">010.1234.5678</span></p>
+                    </li>
+                    <li class="flex">
+                        <p class="txt_tit">배송지</p>
+                        <p class="flex"><span>서울특별시 중구 세종대로 110 514호</span></p>
+                    </li>
+                    <li class="flex">
+                        <p class="txt_tit">주문요청사항</p>
+                        <p class="flex"><span>비밀번호 1234* 카운터 앞에 놓고 전화주세요.</span></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="con_02">
+                <div class="tit">
+                    <dt>주문상품(<span>2</span>)</dt>
+                </div>
+                <ul class="prd_list">
+                    <li class="flex">
+                        <div class="prd_info">
+                            <div class="thum"><img src="../../../static/img/prd_01.png" /></div>
+                            <ul class="prd_name">
+                                <li>껍질째먹는 사과 1박스</li>
+                                <li class="prd_code">8801234567890</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="prd_price">
+                                <li class="unit_count">1</li>
+                                <li>/</li>
+                                <li class="total_price">31,900</li>
+                            </ul>
+                            <p class="unit_price">31,900</p>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <div class="prd_info">
+                            <div class="thum"><img src="../../../static/img/prd_02.png" /></div>
+                            <ul class="prd_name">
+                                <li>국산 유기농 양배추 10kg</li>
+                                <li class="prd_code">8801234567890</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="prd_price">
+                                <li class="unit_count">1</li>
+                                <li>/</li>
+                                <li class="total_price">27,000</li>
+                            </ul>
+                            <p class="unit_price">27,000</p>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <div class="prd_info">
+                            <div class="thum"><img src="../../../static/img/prd_03.png" /></div>
+                            <ul class="prd_name">
+                                <li>시금치 1단</li>
+                                <li class="prd_code">8801234567890</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="prd_price">
+                                <li class="unit_count">10</li>
+                                <li>/</li>
+                                <li class="total_price">29,000</li>
+                            </ul>
+                            <p class="unit_price">2,900</p>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <div class="prd_info">
+                            <div class="thum"><img src="../../../static/img/prd_04.png" /></div>
+                            <ul class="prd_name">
+                                <li>청도 새송이 버섯 400g</li>
+                                <li class="prd_code">8801234567890</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="prd_price">
+                                <li class="unit_count">10</li>
+                                <li>/</li>
+                                <li class="total_price">25,000</li>
+                            </ul>
+                            <p class="unit_price">2,500</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="price_area">
+                <dd>총 상품 금액 <strong lang="en">112,900</strong>원</dd>
+                <div>
+                    <p>할인금액 <span lang="en">15,850</span>원</p>
+                    <p>- 쿠폰 <span lang="en">15,850</span>원</p>
+                    <p>- 적립금 <span lang="en">15,850</span>원</p>
+                    <p>- 회원등급할인 <span lang="en">15,850</span>원</p>
+                    <p>- 배송비 <span lang="en">0</span>원</p>
+                    <p>- 포장비 <span lang="en">0</span>원</p>
+                </div>
+                <dt>결제금액 <strong lang="en">97,050</strong>원 (<span>카드결제</span>)</dt>
+            </div>
+        </div>
+        <buton class="btn btn_cancel">주문취소</buton>
+    </div>
+</div>

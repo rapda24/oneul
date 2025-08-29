@@ -1,0 +1,48 @@
+.contents {overflow: hidden;}
+.contents .sub_top {grid-template-columns: repeat(4, 1fr);}
+.contents .sub_top > div.st_03 {border-right: unset;}
+.contents .sub_top > div.st_04 {justify-content: flex-end; padding-right: 0;}
+
+
+.section_wrap {overflow-y: scroll; display: flex; flex-direction: column; gap: var(--pd-common);}
+
+.r_banner {display: flex; gap: var(--pd-common); flex-direction: column;}
+.r_banner .tit_r {display: flex; gap: 0.5em;}
+.r_banner .tit_r label {display: flex; gap: 0.5em; font-size: 0.875em; color: var(--mid-black);}
+.r_banner .grid {display: grid; gap: var(--pd-common); grid-template-columns: 40% calc(60% - 20px); width: 100%;}
+.r_banner .grid .img_wrap {display: flex; width: 100%; border-radius: 1.5em; background-color: #f7f7f7; align-items: flex-start; overflow: hidden;}
+.r_banner .grid .img_wrap img {height: 100%;}
+.r_banner .grid .img_wrap.no_img {flex-direction: column;  align-items: center; justify-content: center; gap: var(--pd-common); padding: 0.5em;}
+.r_banner .grid .button_wrap {justify-content: flex-end; position: relative;}
+
+.r_banner > .button_wrap {display: flex; gap: 1em; justify-content: center;}
+.r_banner .grid .button_wrap {display: flex; gap: 1em; justify-content: flex-start;}
+.r_banner .grid .flex.button_wrap {justify-content: space-between;}
+
+.banner_info {display: flex; flex-direction: column; gap: var(--pd-common);}
+.banner_info .flex {display: flex; align-items: center; gap: 0.5em;}
+.banner_info .flex.a_bd input {border: unset; padding: unset;}
+.banner_info .flex p {color: var(--mid-black); font-size: 0.875em;}
+.banner_info .flex input {padding: 0.5em; border-radius: 0.75em; border: 1px solid var(--border-gray); color: var(--mid-black); width: 100%;}
+.banner_info .flex .custom-select {flex-grow: 1;}
+.banner_info .flex:last-child .custom-select {flex-grow: unset;}
+.banner_info .flex:last-child input {flex-grow: 1; width: 100%;}
+
+
+@media screen and (max-width: 1650px){
+    .r_banner .grid .flex.button_wrap {flex-direction: column;}
+}
+
+@media screen and (max-width: 1180px){
+    .contents .sub_top {grid-template-columns: repeat(2, 1fr);}
+    .contents .sub_top > div.st_02 {border-right: 0; padding-right: 0;}
+
+    .banner_info .flex p,
+    .banner_info .flex.a_bd input,
+    .banner_info .flex:last-child input,
+    .banner_info .flex input {font-size: 0.875rem;}
+
+    .notice {font-size: 0.75em;}
+
+}
+

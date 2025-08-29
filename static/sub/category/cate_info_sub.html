@@ -1,0 +1,120 @@
+
+
+<div class="tit">
+    <div class="tit_l">
+        <div class="icon"><img src="../../../static/img/icon_cate_info.svg" /></div>
+        <dd>카테고리 정보</dd>
+    </div>
+</div>
+
+
+<div class="cate_top">
+    <div class="radio_wrap">
+        <label><input type="radio" class="" name="show_dp" checked /><span class="box_radio"></span>노출</label>
+        <label><input type="radio" class="" name="show_dp" /><span class="box_radio"></span>숨김</label>
+    </div>
+    <div class="cate_tit_wrap">
+        <div class="cate_tit_box">채소</div>
+        <div class="flex a_bd">
+            <p>2차 분류명</p>
+            <input type="text" value="채소" />
+        </div>
+    </div>
+    <ul class="set_dpo">
+        <li class="">
+            <p class="txt_tit">진열순서</p>
+            <div class="radio_wrap">
+                <label><input type="radio" class="" name="list_dpo" checked /><span class="box_radio"></span>사용자 지정
+                    순서</label>
+                <label><input type="radio" class="" name="list_dpo" /><span class="box_radio"></span>최근 추가상품 위로</label>
+                <label><input type="radio" class="" name="list_dpo" /><span class="box_radio"></span>최근 추가상품 아래로</label>
+            </div>
+        </li>
+
+        <li class="">
+            <p class="txt_tit">품절상품</p>
+            <div class="radio_wrap">
+                <label><input type="radio" class="" name="so_o" checked /><span class="box_radio"></span>품절상품 상관없이
+                    진열</label>
+                <label><input type="radio" class="" name="so_o" /><span class="box_radio"></span>품절상품 맨 뒤로</label>
+                <label><input type="radio" class="" name="so_o" /><span class="box_radio"></span>품절상품 숨기기</label>
+            </div>
+        </li>
+    </ul>
+    <p class="notice">
+        <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+            진열순서의 사용자 지정 순서 선택 시 아래 상품목록에서 지정한 순서대로 노출되게 됩니다.<br />
+            하위분류 진열은 1차분류에서만 해당되며 하위분류 상품 진열을 선택하면 2차 분류에 등록된 상품이 1차 분류에도 노출됩니다.
+    </p>
+</div>
+
+
+<div class="control_box">
+    <div class="control_l">
+        <div class="move_pdo_box">
+            <p>선택상품 이동</p>
+            <ul class="adj_order">
+                <li><div class="icon"><img src="../../../static/img/icon_order_up.svg" /></div></li>
+                <li><div class="icon"><img src="../../../static/img/icon_order_down.svg" /></div></li>
+                <li><div class="icon"><img src="../../../static/img/icon_order_top.svg" /></div></li>
+                <li><div class="icon"><img src="../../../static/img/icon_order_bottom.svg" /></div></li>
+            </ul>
+        </div>
+        <button class="btn">선택 진열 삭제</button>
+    </div>
+    <div class="control_r">
+        <button class="btn btn_cs2 btn_dpd">상품 추가</button>
+    </div>
+</div>
+
+<div class="grid_template" id="grid_oderlist">
+    <div class="grid_table">
+        <ul class="gh">
+            <li>
+                <label><input type="checkbox"><span class="box_check"></span></label>
+            </li>
+            <li>진열순서</li>
+            <li>상품번호</li>
+            <li>바코드</li>
+            <li>상품명</li>
+            <li>판매가</li>
+        </ul>
+        <ul class="gc">
+            <!-- // grid 행 반복 -->
+            <li>
+                <label><input type="checkbox"><span class="box_check"></span></label>
+                <input type="text" value="1" />
+                <p lang="en">B012576</p>
+                <p lang="en">8801039909324</p>
+                <div class="prd_tit">
+                    <div class="thum"><img src="../../../static/img/prd_01.png" /></div>
+                    <p>껍질째먹는 사과 1박스</p>
+                </div>
+                <p class="list_pprice" lang="en">31,900</p>
+            </li>
+            <!-- // grid 행 반복 -->
+            <li>
+                <label><input type="checkbox"><span class="box_check"></span></label>
+                <input type="text" value="2" />
+                <p lang="en">B012576</p>
+                <p lang="en">8801039909324</p>
+                <div class="prd_tit">
+                    <div class="thum"><img src="../../../static/img/prd_02.png" /></div>
+                    <p>무농약 양배추 1박스</p>
+                </div>
+                <p class="list_pprice" lang="en">21,900</p>
+            </li>
+            <li>
+                <label><input type="checkbox"><span class="box_check"></span></label>
+                <input type="text" value="3" />
+                <p lang="en">B012576</p>
+                <p lang="en">8801039909324</p>
+                <div class="prd_tit">
+                    <div class="thum"><img src="../../../static/img/prd_03.png" /></div>
+                    <p>남해 시금치 1단</p>
+                </div>
+                <p class="list_pprice" lang="en">3,900</p>
+            </li>
+        </ul>
+    </div>
+</div>

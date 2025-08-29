@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>미스터아빠 통합몰_사용자</title>
+
+    <!-- 메타태그 -->
+    <meta name="viewport" content="widdh=device-widdh, initial-scale=1.0 maximum-scale=1.5">
+
+    <meta name="keyword" content="미스터아빠">
+    <meta name="description" content="미스터아빠 통합몰">
+
+    <meta http-equiv="refresh" content="30">
+
+    <!-- css -->
+    <link rel="stylesheet " href="../../css/reset.css" />
+    <link rel="stylesheet " href="../../css/swiper.css" />
+    <link rel="stylesheet " href="../../css/font.css" />
+    <link rel="stylesheet " href="../../css/common.css" />
+    <link rel="stylesheet " href="../../css/layout.css" />
+    <link rel="stylesheet " href="../../css/popup.css" />
+    <link rel="stylesheet " href="../../css/sub.css" />
+    <link rel="stylesheet " href="../../css/sub_setting.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="setting">
+    <div class="wrap">
+
+        <header class="header" id="header"></header>
+
+        <div class="container">
+            <aside id="aside" class="aside"></aside>
+            <div class="contents">
+                <div class="tab_history" id="tab_history"></div>
+                <dt class="txt_tit">회원등급 자동변경 설정</dt>
+                <section>
+                    <div class="flex">
+                        <div class="list_tit">
+                            <dd>회원 정책 설정</dd>
+                        </div>
+                        <div class="">
+                            <a href="../../../static/sub/setting/setting_01.html" class="">
+                                <span>회원 관련 설정</span>
+                                <div class="icon"><img src="../../img/icon_order_up_gr.svg"></div>
+                            </a>
+                            <a href="../../../static/sub/member/member_grade.html" class="">
+                                <span>회원 등급 관리</span>
+                                <div class="icon"><img src="../../img/icon_order_up_gr.svg"></div>
+                            </a>
+                            <a href="../../../static/sub/setting/setting_03.html" class="">
+                                <span>적립금 설정</span>
+                                <div class="icon"><img src="../../img/icon_order_up_gr.svg"></div>
+                            </a>
+                            <a href="../../../static/sub/setting/setting_04.html" class="">
+                                <span>예치금 설정</span>
+                                <div class="icon"><img src="../../img/icon_order_up_gr.svg"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="list_tit">
+                            <dd>회원가입·로그인</dd>
+                        </div>
+                        <div class="">
+                            <a href="../../../static/sub/setting/setting_05.html" class="">
+                                <span>회원 가입 항목 설정</span>
+                                <div class="icon"><img src="../../img/icon_order_up_gr.svg"></div>
+                            </a>
+                            <a href="../../../static/sub/setting/setting_06.html" class="">
+                                <span>본인 인증 서비스 설정</span>
+                                <div class="icon"><img src="../../img/icon_order_up_gr.svg"></div>
+                            </a>
+                            <a href="../../../static/sub/setting/setting_07.html" class="">
+                                <span>SNS 로그인 연동 관리</span>
+                                <div class="icon"><img src="../../img/icon_order_up_gr.svg"></div>
+                            </a>
+                            <a href="../../../static/sub/setting/setting_08.html" class="">
+                                <span>SSO 로그인 연동 관리</span>
+                                <div class="icon"><img src="../../img/icon_order_up_gr.svg"></div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="popup"></div>
+
+    <!-- js -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/swiper.js"></script>
+    <script src="../../js/import.js"></script>
+    <script src="../../js/popup.js"></script>
+    <script>
+        /* header와 aside 로드 */
+        loadComponent('header', '../../layout/header_sub.html');
+        loadComponent('aside', '../../layout/aside_sub.html');
+        loadComponent('popup', '../../layout/popup_sub.html');
+        loadComponent('tab_history', '../../layout/tab_history.html');
+    </script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/setting.js"></script>
+
+</body>
+
+</html>

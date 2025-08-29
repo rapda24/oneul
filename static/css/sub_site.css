@@ -1,0 +1,30 @@
+.search_wrap .grid {grid-template-columns: repeat(4, 1fr);}
+.search_wrap .grid > li p.txt_tit {width: 6.5em;}
+.search_wrap .grid > li .custom-select {flex-grow: 1;}
+.search_wrap .grid > li input {border: 1px solid var(--border-gray); border-radius: 0.75em; padding: 0.5em 1em; width: 100%;}
+
+.input_wrap {flex-grow: 1;}
+
+
+.control_box > div button {font-size: 1em; color: var(--light-black); font-weight: 600;}
+.control_box > div button.on {color: var(--basic-black);}
+
+.grid_table .gh,
+.grid_table .gc li {grid-template-columns: 1.5em 7em 7em 7em auto 10% 10% 10% 7em;}
+
+.grid_table .gc li p.txt_l {text-align: left; justify-content: flex-start;}
+
+
+.section_wrap > .control_box > .control_l dd {font-weight: 600;}
+.section_wrap > .control_box > .control_r .btn {background-color: var(--mid-black); border: 1px solid var(--mid-black); font-size: 0.875em; color:#fff; padding: 0.25em 2em;}
+.section_wrap > .control_box > .control_r .btn.btn_red {background-color: var(--red-color); border: 1px solid var(--red-color);}
+.section_wrap > .control_box > .control_r .btn.btn_red:hover,
+.section_wrap > .control_box > .control_r .btn:hover {background-color: var(--main-color);}
+
+
+@media screen and (max-width: 1430px){
+    .search_wrap .grid {grid-template-columns: repeat(3, 1fr);}
+}
+@media screen and (max-width: 1240px){
+    .search_wrap .grid {grid-template-columns: repeat(2, 1fr);}
+}

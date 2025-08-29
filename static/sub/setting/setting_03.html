@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>미스터아빠 통합몰_사용자</title>
+
+    <!-- 메타태그 -->
+    <meta name="viewport" content="widdh=device-widdh, initial-scale=1.0 maximum-scale=1.5">
+
+    <meta name="keyword" content="미스터아빠">
+    <meta name="description" content="미스터아빠 통합몰">
+
+    <meta http-equiv="refresh" content="30">
+
+    <!-- css -->
+    <link rel="stylesheet " href="../../css/reset.css" />
+    <link rel="stylesheet " href="../../css/swiper.css" />
+    <link rel="stylesheet " href="../../css/font.css" />
+    <link rel="stylesheet " href="../../css/common.css" />
+    <link rel="stylesheet " href="../../css/layout.css" />
+    <link rel="stylesheet " href="../../css/popup.css" />
+    <link rel="stylesheet " href="../../css/sub.css" />
+    <link rel="stylesheet " href="../../css/sub_setting.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body class="setting">
+    <div class="wrap">
+
+        <header class="header" id="header"></header>
+
+        <div class="container">
+            <aside id="aside" class="aside"></aside>
+            <div class="contents">
+                <div class="tab_history" id="tab_history"></div>
+                <div class="section_wrap">
+
+                    <div class="saving_basic_setting">
+                        <dt>기본 설정</dt>
+                        <section>
+                            <ul class="flex">
+
+                                <li class="">
+                                    <p class="txt_tit">적립금 지급 시점</p>
+                                    <ul class="">
+                                        <li class="">
+                                            <p>주문상태 :</p>
+                                            <div class="custom-select">
+                                                <div class="select-box">
+                                                    <span>배송완료 후</span><img src="../../../static/img/icon_down.svg" />
+                                                </div>
+                                                <ul class="options-list">
+                                                    <li class="option" data-value="1">배송완료 후</li>
+                                                    <li class="option" data-value="2">주문완료 후</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <p>적립시점 :</p>
+                                            <div class="custom-select">
+                                                <div class="select-box">
+                                                    <span>3일 후</span><img src="../../../static/img/icon_down.svg" />
+                                                </div>
+                                                <ul class="options-list">
+                                                    <li class="option" data-value="1">즉시 지급</li>
+                                                    <li class="option" data-value="2">3일 후</li>
+                                                    <li class="option" data-value="3">5일 후</li>
+                                                    <li class="option" data-value="4">7일 후</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="">
+                                    <p class="txt_tit">적립금 명칭</p>
+                                    <input type="text" value="적립금" />
+                                </li>
+
+                                <li class="">
+                                    <p class="txt_tit">적립금 표시방식</p>
+                                    <ul>
+                                        <li><input type="text" value="[:PRICE]원" /></li>
+                                        <li><p>· [:PRICE]는 금액으로 자동 변환되니 삭제하시면 안되며, 원하는 위치에 단위를 입력하여 노출 설정이 가능합니다.</p></li>
+                                    </ul>
+                                    
+                                </li>
+
+                                <li class="">
+                                    <p class="txt_tit">적립금 절사</p>
+                                    <div class="">
+                                        <p>적립금을 %단위로 입력하는 경우에</p>
+                                        
+                                        <div class="custom-select">
+                                            <div class="select-box">
+                                                <span>1</span><img src="../../../static/img/icon_down.svg" />
+                                            </div>
+                                            <ul class="options-list">
+                                                <li class="option" data-value="1">1</li>
+                                                <li class="option" data-value="2">10</li>
+                                                <li class="option" data-value="3">100</li>
+                                            </ul>
+                                        </div>
+                                        <p>KRW 단위에서</p>
+                                        
+                                        <div class="custom-select">
+                                            <div class="select-box">
+                                                <span>올림</span><img src="../../../static/img/icon_down.svg" />
+                                            </div>
+                                            <ul class="options-list">
+                                                <li class="option" data-value="1">올림</li>
+                                                <li class="option" data-value="2">내림</li>
+                                            </ul>
+                                        </div>
+                                        <p>하여 지급</p>
+                                    </div>
+                                </li>
+
+                                <li class="">
+                                    <p class="txt_tit">적립금 항목 노출 설정</p>
+                                    <div class="custom-select">
+                                        <div class="select-box">
+                                            <span>정액/정율 동시 표기 (100원(1%))</span><img src="../../../static/img/icon_down.svg" />
+                                        </div>
+                                        <ul class="options-list">
+                                            <li class="option" data-value="1">즉시 지급</li>
+                                            <li class="option" data-value="2">3일 후</li>
+                                            <li class="option" data-value="3">5일 후</li>
+                                            <li class="option" data-value="4">7일 후</li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div class="saving_give_setting">
+                        <dt>지급 설정</dt>
+                        <section>
+                            <ul class="flex">
+
+                                <li class="">
+                                    <p class="txt_tit">상품구매금액 기준 설정</p>
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="basic_amount" checked /><span class="box_radio"></span>사용함</label>
+                                        <label><input type="radio" class="" name="basic_amount"><span class="box_radio"></span>사용안함</label>
+                                    </div>
+                                </li>
+
+                                <li class="rate_basic_amount">
+                                    <p class="txt_tit">
+                                        상품구매시 <br />
+                                        적립금 지급 비율 설정
+                                    </p>
+                                    <ul class="radio_wrap">
+                                        <li>
+                                            <label><input type="radio" class="" name="basic_amount" checked /><span class="box_radio"></span>기본 설정 적립금 비율</label>
+                                            <div>
+                                                <p>상품값의</p>
+                                                <input type="text" value="1.00" />
+                                                <p>%</p>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <label><input type="radio" class="" name="basic_amount"><span class="box_radio"></span>결제시에 따른 적립금 지급 비율 설정</label>
+                                            <ul class="grid gt3">
+                                                <li>
+                                                    <p class="txt_tit">무통장 입금</p>
+                                                    <input type="text" value="0.00" />
+                                                    <p>%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt_tit">신용카드</p>
+                                                    <input type="text" value="0.00" />
+                                                    <p>%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt_tit">적립금</p>
+                                                    <input type="text" value="0.00" />
+                                                    <p>%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt_tit">계좌이체</p>
+                                                    <input type="text" value="0.00" />
+                                                    <p>%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt_tit">휴대폰</p>
+                                                    <input type="text" value="0.00" />
+                                                    <p>%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt_tit">예치금</p>
+                                                    <input type="text" value="0.00" />
+                                                    <p>%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt_tit">가상계좌</p>
+                                                    <input type="text" value="0.00" />
+                                                    <p>%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt_tit">페이코</p>
+                                                    <input type="text" value="0.00" />
+                                                    <p>%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt_tit">카카오페이</p>
+                                                    <input type="text" value="0.00" />
+                                                    <p>%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt_tit">스마일페이</p>
+                                                    <input type="text" value="0.00" />
+                                                    <p>%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt_tit">네이버페이</p>
+                                                    <input type="text" value="0.00" />
+                                                    <p>%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt_tit">편의점</p>
+                                                    <input type="text" value="0.00" />
+                                                    <p>%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="txt_tit">토스</p>
+                                                    <input type="text" value="0.00" />
+                                                    <p>%</p>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="reservation_savings">
+                                    <p class="txt_tit">
+                                        상품구매시<br />
+                                        적립금 예약설정
+                                    </p>
+                                    <div class="">
+                                        <ul class="button_wrap">
+                                            <li class="btn_l">
+                                                <button class="btn">삭제</button>
+                                            </li>
+                                            <li class="btn_r">
+                                                <button class="btn btn_cs2 btn_br">예약설정</button>
+                                            </li>
+                                        </ul>
+                                        <div class="grid_template" id="grid_oderlist">
+                                            <div class="grid_table">
+                                                <ul class="gh">
+                                                    <li><label><input type="checkbox"><span class="box_check"></span></label></li>
+                                                    <li>진행여부</li>
+                                                    <li>예약내용</li>
+                                                    <li>예약 시작일 ~ 예약 종료일</li>
+                                                    <li>설정일</li>
+                                                </ul>
+                                                <ul class="gc">
+                                                    <!-- // grid 행 반복 -->
+                                                    <li>
+                                                        <label><input type="checkbox"><span class="box_check"></span></label>
+                                                        <p></p>
+                                                        <p></p>
+                                                        <p lang="en"></p>
+                                                        <p lang="en"></p>
+                                                    </li>
+                                                    <!-- // grid 행 반복 -->
+                                                </ul>
+                                                <ul class="gc gc_non">
+                                                    <!-- // grid 행 반복 -->
+                                                    <li>
+                                                        <p>예약된 적립금 설정 내역이 없습니다.</p>
+                                                    </li>
+                                                    <!-- // grid 행 반복 -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="rule_saving_grade">
+                                    <p class="txt_tit">
+                                        회원등급<br />
+                                        기본 적립금 지급 기준
+                                    </p>
+                                    <div class="">
+                                        <p>* 총 상품 구매금액 (회원등급 적립 대상 상품만) - 할인금액</p>
+                                        <div>
+                                            <p>할인금액 범위</p>
+                                            <ul class="radio_wrap">
+                                                <li>
+                                                    <label><input type="radio" class="" name="basic_amount" checked /><span class="box_radio"></span>상품별 할인금액</label>
+                                                    <ul class="radio_wrap">
+                                                        <li><label><input type="radio" class="" name="unit_prd" checked><span class="box_radio"></span>전체 주문 상품</label></li>
+                                                        <li><label><input type="radio" class="" name="unit_prd"><span class="box_radio"></span>회원등급 적립 대상 상품만</label></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <label><input type="radio" class="" name="basic_amount"><span class="box_radio"></span>상품별 쿠폰</label>
+                                                </li>
+                                                <li>
+                                                    <label><input type="radio" class="" name="basic_amount"><span class="box_radio"></span>주문서 쿠폰</label>
+                                                </li>
+                                                <li>
+                                                    <label><input type="radio" class="" name="basic_amount"><span class="box_radio"></span>적립금</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="rule_savings">
+                                    <p class="txt_tit">
+                                        적립금으로 구매시<br />
+                                        적립기준 설정
+                                    </p>
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="rule_savings_save" checked /><span class="box_radio"></span>적립금 그대로 적립 (적립금 사용으로 구매시에도 원래의 상품적립금 그대로 적립)</label>
+                                        <label><input type="radio" class="" name="rule_savings_save" /><span class="box_radio"></span>적립안함 (적립금 사용 구매시 해당 구매건에 대한 적립금 적립 불가)</label>
+                                        <label><input type="radio" class="" name="rule_savings_save" /><span class="box_radio"></span>금액대비 차등 적립 (적립금 사용 구매로 인하여 할인받은 할인율을 해당 구매건의 적립률에서 차감)</label>
+                                        <label><input type="radio" class="" name="rule_savings_save" /><span class="box_radio"></span>실 결제금액 기준 적립</label>
+                                    </div>
+                                </li>
+
+                                <li class="">
+                                    <p class="txt_tit">회원가입 적립금 설정</p>
+                                    <div class="">
+                                        <p>신규 회원가입 시</p>
+                                        <input type="text" value="1000" />
+                                        <p>KRW 적립</p>
+                                    </div>
+                                </li>
+
+                                <li class="sms_saving">
+                                    <p class="txt_tit">
+                                        회원가입 시 <br />
+                                        이메일/SMS수신동의 <br />
+                                        적립금 설정
+                                    </p>
+                                    <div class="">
+                                        <p>지급대상자</p>
+                                        <div class="check_wrap">
+                                            <label><input type="checkbox" checked /><span class="box_check"></span>이메일 수신동의</label>
+
+                                            <label><input type="checkbox" checked /><span class="box_check"></span>SMS 수신동의</label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="board_savings">
+                                    <p class="txt_tit">
+                                        게시판 적립금<br />
+                                        중복 적용 허용
+                                    </p>
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="rule_board_savings" /><span class="box_radio"></span>적립금을 적용한 게시물에도 계속 적립금을 적용할 수 있습니다.</label>
+                                        <label><input type="radio" class="" name="rule_board_savings" checked /><span class="box_radio"></span>한번 적립금을 적용한 게시물에도 계속 적립금을 적용할 수 있습니다.</label>
+                                    </div>
+                                </li>
+
+                                <li class="non_used_savings">
+                                    <p class="txt_tit">
+                                        미가용 적립금<br />
+                                        변환 기준 설정
+                                    </p>
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="nu_savings" checked /><span class="box_radio"></span>최초 상품 배송 완료일 기준으로 적립</label>
+                                        <label><input type="radio" class="" name="nu_savings"  /><span class="box_radio"></span>마지막 상품 배송완료일 기준으로 적립</label>
+                                    </div>
+                                </li>
+
+                                <li class="manager_default">
+                                    <p class="txt_tit">
+                                        관리자 지급 적립금<br />
+                                        기본값 설정
+                                    </p>
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="mg_default" /><span class="box_radio"></span>사용함</label>
+                                        <label><input type="radio" class="" name="mg_default" checked /><span class="box_radio"></span>사용안함</label>
+                                    </div>
+                                </li>
+
+                                <li class="manager_type">
+                                    <p class="txt_tit">
+                                        관리자 지급 적립금<br />
+                                        유형 설정
+                                    </p>
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="mg_type" /><span class="box_radio"></span>사용함</label>
+                                        <label><input type="radio" class="" name="mg_type" checked /><span class="box_radio"></span>사용안함</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="saving_setting">
+                        <dt>사용/제한 설정</dt>
+                        <section>
+                            <ul class="flex">
+
+                                <li class="">
+                                    <p class="txt_tit">결제 시 적립금 노출설정</p>
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="show_set" /><span class="box_radio"></span>사용함</label>
+                                        <label><input type="radio" class="" name="show_set" checked /><span class="box_radio"></span>사용안함</label>
+                                    </div>
+                                </li>
+
+                                <li class="">
+                                    <p class="txt_tit">
+                                        적립금 사용 가능<br />
+                                        최소 상품 구매 합계액 설정
+                                    </p>
+                                    <div class="">
+                                        <p>상품 구매 합계액 최소</p>
+                                        <input type="text" value="30000" />
+                                        <p>KRW 이상일 때 적립금 사용 가능</p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <p class="txt_tit">
+                                        적립금 사용 가능<br />
+                                        최소 누적 적립금액 설정
+                                    </p>
+                                    <div class="">
+                                        <p>누적 적립금액 최소</p>
+                                        <input type="text" value="0" />
+                                        <p>KRW 이상일 때 적립금 사용 가능</p>
+                                    </div>
+                                </li>
+
+                                <li class="non_use_savings">
+                                    <p class="txt_tit">적립금 사용불가시 설정</p>
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="nu_savings" checked /><span class="box_radio"></span>적립금 입력 항목 표시함 (적립금 입력시 사용불가 안내 메시지 연결)</label>
+                                        <label><input type="radio" class="" name="no_used_savings" /><span class="box_radio"></span>적립금 입력항목 표시안함</label>
+                                    </div>
+                                </li>
+
+                                <li class="once_use_saving">
+                                    <p class="txt_tit">1회 사용 적립금<br />회대 사용한도 설정</p>
+                                    <div class="radio_wrap">
+                                        <label><input type="radio" class="" name="limit_once" checked /><span class="box_radio"></span>한도제한 없음 (회원 1회 사용제한 없음)</label>
+                                        <label><input type="radio" class="" name="limit_once" /><span class="box_radio"></span>1회 최대 <input type="text" value="0" /> KRW 까지만 사용가능</label>
+                                        <label><input type="radio" class="" name="limit_once" /><span class="box_radio"></span>상품구매 합계액의 <input type="text" value="0" /> % 까지만 사용가능(최대 100%까지만 설정/배송비 제외한 순수 물품 가격)</label>
+                                        <label><input type="radio" class="" name="limit_once" /><span class="box_radio"></span>총 결제예정금액에 따른 적립금 사용한도 설정</label>
+                                    </div>
+                                </li>
+
+
+                                <li class="exclusion_savings">
+                                    <p class="txt_tit">적립금 지급제외<br />회원등급 설정</p>
+                                    <ul class="">
+                                        <li>
+                                            <p class="txt_tit">회원등급 목록</p>
+                                            <ul class="list_box">
+                                                <li>실버인(SLIVER)</li>
+                                                <li>골드인(GOLD)</li>
+                                                <li>일반인(NEW)</li>
+                                                <li>사업자회원</li>
+                                            </ul>
+                                        </li>
+                                        <li class="button_wrap">
+                                            <button class="btn d_left"><div class="icon"><img src="../../../static/img/icon_order_up_gr.svg"></div></button>
+                                            <button class="btn d_right"><div class="icon"><img src="../../../static/img/icon_order_up_gr.svg"></div></button>
+                                        </li>
+                                        <li>
+                                            <p class="txt_tit">적립금 지급제외 회원등급 목록</p>
+                                            <ul class="list_box">
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="">
+                                    <p class="txt_tit">적립금 지급 제외 설정</p>
+                                    <ul>
+                                        <li>
+                                            <p>전액 결제시 적립금 미지급 설정 :</p>
+                                            <div class="radio_wrap">
+                                                <label><input type="radio" class="" name="es_saving_01" checked /><span class="box_radio"></span>쿠폰할인</label>
+                                                <label><input type="radio" class="" name="es_saving_01" /><span class="box_radio"></span>회원등급 할인</label>
+                                                <label><input type="radio" class="" name="es_saving_01" /><span class="box_radio"></span>예치금</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>할인혜택 적용된 상품의 미지급 설정 :</p>
+                                            <div class="radio_wrap">
+                                                <label><input type="radio" class="" name="es_saving_02" checked /><span class="box_radio"></span>사용함</label>
+                                                <label><input type="radio" class="" name="es_saving_03" /><span class="box_radio"></span>사용안함</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="setting_rpe">
+                                    <p class="txt_tit">적립금 지급 예외 설정</p>
+                                    <ul>
+                                        <li>
+                                            <p>적립금 사용가능 결제수단</p>
+                                            <ul class="check_wrap">
+                                                <li>
+                                                    <label><input type="checkbox" checked /><span class="box_check"></span>전체</label>
+                                                </li>
+                                                <li>
+                                                    <label><input type="checkbox" checked /><span class="box_check"></span>무통장입금</label>
+                                                    <label><input type="checkbox" checked /><span class="box_check"></span>신용카드</label>
+                                                    <label><input type="checkbox" checked /><span class="box_check"></span>계좌이체</label>
+                                                    <label><input type="checkbox" checked /><span class="box_check"></span>휴대폰</label>
+                                                    <label><input type="checkbox" checked /><span class="box_check"></span>예치금</label>
+                                                    <label><input type="checkbox" checked /><span class="box_check"></span>가상계좌</label>
+                                                    <label><input type="checkbox" checked /><span class="box_check"></span>페이코</label>
+                                                    <label><input type="checkbox" checked /><span class="box_check"></span>카카오페이</label>
+                                                    <label><input type="checkbox" checked /><span class="box_check"></span>스마일페이</label>
+                                                    <label><input type="checkbox" checked /><span class="box_check"></span>네이버페이</label>
+                                                    <label><input type="checkbox" checked /><span class="box_check"></span>편의점</label>
+                                                    <label><input type="checkbox" checked /><span class="box_check"></span>토스</label>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="radio_wrap">
+                                            <p>적립금 사용제한 :</p>
+                                            <label><input type="radio" class="" name="limit_use" /><span class="box_radio"></span>회원등급할인 사용시 적립금 사용제한</label>
+                                            <label><input type="radio" class="" name="limit_use" /><span class="box_radio"></span>지정된 분류에 포함된 상품 적립금 사용 제한</label>
+                                            <label><input type="radio" class="" name="limit_use" checked /><span class="box_radio"></span>지정된 상품 적립금 사용제한</label>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </section>
+                    </div>
+                    
+                    <div class="button_wrap">
+                        <button class="btn btn_submit">저장</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup"></div>
+
+    <!-- js -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/swiper.js"></script>
+    <script src="../../js/import.js"></script>
+    <script>
+        /* header와 aside 로드 */
+        loadComponent('header', '../../layout/header_sub.html');
+        loadComponent('aside', '../../layout/aside_sub.html');
+        loadComponent('popup', '../../layout/popup_sub.html');
+        loadComponent('tab_history', '../../layout/tab_history.html');
+    </script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/popup.js"></script>
+    <script src="../../js/setting.js"></script>
+
+</body>
+
+</html>

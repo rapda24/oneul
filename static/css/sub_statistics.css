@@ -1,0 +1,109 @@
+
+
+.main_area {display: grid; grid-template-columns: 1fr 1fr 1fr 300px; grid-template-areas: "stt_01 stt_01 stt_01 stt_03" "stt_02 stt_02 stt_02 stt_03" "stt_04 stt_04 stt_05 stt_05" "stt_06 stt_06 stt_07 stt_07";}
+
+.stt_01 {grid-area: stt_01;}
+.stt_02 {grid-area: stt_02;}
+.stt_03 {grid-area: stt_03; display: flex; flex-direction: column; gap: 0.5em;}
+.stt_04 {grid-area: stt_04; display: flex; flex-direction: column; gap: 0.5em;}
+.stt_05 {grid-area: stt_05; display: flex; flex-direction: column; gap: 0.5em;}
+.stt_06 {grid-area: stt_06; display: flex; flex-direction: column; gap: 0.5em;}
+.stt_07 {grid-area: stt_07; display: flex; flex-direction: column; gap: 0.5em;}
+
+
+.contents .flex {gap: var(--pd-common); width: 100%; gap: 1em;}
+.contents .flex > li {flex: auto; border-right: 1px solid var(--border-gray); padding-right: var(--pd-common); align-self: center; display: flex; flex-direction: column; gap: 0.5em;}
+.contents .flex > li:last-child {border-right: unset; padding-right: unset;}
+.stt_01 .flex li h5 {text-align: right;}
+.stt_01 .flex li h5::after {content: '명'; font-size: 0.35em; padding-left: 0.25em;}
+
+.stt_02 .st_con {flex-grow: 1; overflow: scroll; display: flex; gap: 0.5em; width: 100%; height: 200px;}
+.stt_02 .st_con > li .date {font-size: 0.75em;}
+.stt_02 .st_con > li .gh {display: block; border-radius: 0.5em; background-color: #ebeff0;  position: relative;}
+.stt_02 .st_con > li .gh.best {background-color: var(--sub01-color)!important;}
+.stt_02 .gp_day {padding-right: var(--pd-common); flex-wrap: unset; width: 40%;}
+.stt_02  .gp_mon {padding-left: var(--pd-common); flex-wrap: unset;}
+.stt_02 .gp_day .st_con > li {height: 100%; display: flex; flex-direction: column; justify-content: flex-end; gap: 0.5em; text-align: center;}
+.stt_02 .gp_day .st_con > li .gh {width : 2.5em;}
+.stt_02 .gp_day .st_con > li .gh.gh_01 {height: 45%;}
+.stt_02 .gp_day .st_con > li .gh.gh_02 {height: 35%;}
+.stt_02 .gp_day .st_con > li .gh.gh_03 {height: 25%;}
+.stt_02 .gp_day .st_con > li .gh.gh_04 {height: 60%;}
+.stt_02 .gp_day .st_con > li .gh.gh_05 {height: 40%;}
+.stt_02 .gp_day .st_con > li .gh.gh_06 {height: 50%;}
+.stt_02 .gp_day .st_con > li .gh.gh_07 {height: 40%;}
+.stt_02 .gp_day .st_con > li .gh.gh_08 {height: 20%;}
+.stt_02 .gp_day .st_con > li .gh.gh_09 {height: 15%;}
+.stt_02 .gp_day .st_con > li .gh.gh_10 {height: 55%;}
+.stt_02 .gp_day .st_con > li .price {position: absolute; top: -2.5em; background-color: var(--basic-black); padding: 0.5em; border-radius: 0.5em; opacity: 0; z-index: 10;}
+.stt_02 .gp_day .st_con > li:hover .price {opacity: 1;}
+.stt_02 .gp_day .st_con > li .price::after {content:''; position: absolute; bottom: -5px; left: 1em; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid var(--basic-black);}
+.stt_02 .gp_day .st_con > li .price > p,
+.stt_02 .gp_mon .st_con > li .gh.best p {color: #fff; font-size: 0.75em;}
+.stt_02 .gp_mon .st_con > li .gh p {color: var(--mid-black); font-size: 0.75em; word-break: normal; white-space: nowrap; }
+.stt_02 .gp_mon .st_con {display: flex; flex-direction: column;}
+.stt_02 .gp_mon .st_con > li .gh {height : auto; padding: 0.5em 1em; overflow: visible; height: 33px;}
+.stt_02 .gp_mon .st_con > li .gh.gh_01 {width: 100%;}
+.stt_02 .gp_mon .st_con > li .gh.gh_02 {width: 80%;}
+.stt_02 .gp_mon .st_con > li .gh.gh_03 {width: 90%;}
+.stt_02 .gp_mon .st_con > li .gh.gh_04 {width: 60%;}
+.stt_02 .gp_mon .st_con > li .gh.gh_05 {width: 40%;}
+.stt_02 .gp_mon .st_con > li .gh.gh_06 {width: 50%;}
+.stt_02 .gp_mon .st_con > li .gh.gh_07 {width: 40%;}
+.stt_02 .gp_mon .st_con > li .gh.gh_08 {width: 20%;}
+.stt_02 .gp_mon .st_con > li .gh.gh_09 {width: 15%;}
+.stt_02 .gp_mon .st_con > li .gh.gh_10 {width: 55%;}
+
+.stt_03 .st_con {overflow: scroll; display: flex; gap: 0.5em; height: 400px; width: 300px;}
+.stt_03 .st_con > li .date {font-size: 0.75em;}
+.stt_03 .st_con > li .gh {display: block; border-radius: 0.5em; background-color: #ebeff0;  position: relative;}
+.stt_03 .st_con > li .gh.best {background-color: var(--sub01-color)!important;}
+.stt_03 .gp_con_bd {width: 100%; overflow: scroll;}
+.stt_03 .gp_con_bd .st_con > li {height: 100%; display: flex; flex-direction: column; justify-content: flex-end; gap: 0.5em; text-align: center;}
+.stt_03 .gp_con_bd .st_con > li .gh {width : 2.5em;}
+.stt_03 .gp_con_bd .st_con > li .gh.gh_01 {height: 45%;}
+.stt_03 .gp_con_bd .st_con > li .gh.gh_02 {height: 35%;}
+.stt_03 .gp_con_bd .st_con > li .gh.gh_03 {height: 25%;}
+.stt_03 .gp_con_bd .st_con > li .gh.gh_04 {height: 60%;}
+.stt_03 .gp_con_bd .st_con > li .gh.gh_05 {height: 40%;}
+.stt_03 .gp_con_bd .st_con > li .gh.gh_06 {height: 50%;}
+.stt_03 .gp_con_bd .st_con > li .gh.gh_07 {height: 40%;}
+.stt_03 .gp_con_bd .st_con > li .gh.gh_08 {height: 20%;}
+.stt_03 .gp_con_bd .st_con > li .gh.gh_09 {height: 15%;}
+.stt_03 .gp_con_bd .st_con > li .gh.gh_10 {height: 55%;}
+.stt_03 .gp_con_bd .st_con > li .price {position: absolute; top: -2.5em; background-color: var(--basic-black); padding: 0.5em; border-radius: 0.5em; opacity: 0; z-index: 10;}
+.stt_03 .gp_con_bd .st_con > li:hover .price {opacity: 1;}
+.stt_03 .gp_con_bd .st_con > li .price::after {content:''; position: absolute; bottom: -5px; left: 1em; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid var(--basic-black);}
+.stt_03 .gp_con_bd .st_con > li .price > p {color: #fff; font-size: 0.75em;}
+
+.stt_04 .st_con {display: flex; flex-wrap: wrap; gap: 1em;}
+.stt_05 .st_con {display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em;}
+.stt_04 .st_con > li p,
+.stt_05 .st_con > li p {display: flex; align-items: flex-end; font-weight: 600;}
+.stt_04 .st_con > li p span,
+.stt_05 .st_con > li p span {font-size: 1.25em; padding-left: 1em; font-weight: 700;}
+
+.stt_06 .icon {width: 1.11em;}
+
+.stt_06 .st_con,
+.stt_07 .st_con {overflow: hidden; width: 100%;}
+.stt_06 .st_con ul,
+.stt_07 .st_con ul {width: 100%; display: flex; flex-direction: column; gap: 0.5em; overflow-y: scroll; height: 200px;}
+.stt_06 .st_con ul li,
+.stt_07 .st_con ul li {display: flex; justify-content: space-between; align-items: center; cursor: pointer;}
+.stt_06 .st_con ul li .lank_prd,
+.stt_07 .st_con ul li .lank_prd {display: flex; gap: 0.3em; flex-direction: row;}
+.stt_06 .st_con ul li .lank_prd > img,
+.stt_07 .st_con ul li .lank_prd > img {width: 2em; height: auto;}
+.stt_06 .st_con ul li .lank_prd > p,
+.stt_07 .st_con ul li .lank_prd > p {font-size: 0.875em;}
+.stt_06 .st_con ul li .lank_prd > span.num,
+.stt_07 .st_con ul li .lank_prd > span.num {color: var(--sub01-color); font-weight: 600; font-size: 0.875em;}
+.stt_06 .st_con ul li > p.count,
+.stt_07 .st_con ul li > p.count {font-size: 0.75em; padding-right: 0.5em;}
+
+@media screen and (max-width: 1200px) {
+    .main_area {grid-template-columns:  1fr 1fr; grid-template-areas: "stt_01 stt_01" "stt_02 stt_02" "stt_03 stt_03" "stt_04 stt_04" "stt_05  stt_05" "stt_06 stt_06" "stt_07 stt_07"}
+
+    .stt_03 .st_con {width: 100%;}
+}

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>미스터아빠 통합몰_사용자</title>
+
+    <!-- 메타태그 -->
+    <meta name="viewport" content="widdh=device-widdh, initial-scale=1.0 maximum-scale=1.5">
+
+    <meta name="keyword" content="미스터아빠">
+    <meta name="description" content="미스터아빠 통합몰">
+
+    <meta http-equiv="refresh" content="30">
+
+    <!-- css -->
+    <link rel="stylesheet " href="../../css/reset.css" />
+    <link rel="stylesheet " href="../../css/swiper.css" />
+    <link rel="stylesheet " href="../../css/font.css" />
+    <link rel="stylesheet " href="../../css/common.css" />
+    <link rel="stylesheet " href="../../css/layout.css" />
+    <link rel="stylesheet " href="../../css/popup.css" />
+    <link rel="stylesheet " href="../../css/sub.css" />
+    <link rel="stylesheet " href="../../css/sub_statistics.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="statistics">
+    <div class="wrap">
+
+        <header class="header" id="header"></header>
+
+        <div class="container">
+            <aside id="aside" class="aside"></aside>
+            <div class="contents">
+
+                <div class="tab_history" id="tab_history"></div>
+                <div class="main_area">
+                    <section class="stt_01">
+                        <ul class="flex">
+                            <li class="">
+                                <p class="txt_tit">총 회원</p>
+                                <h5>150,000</h5>
+                            </li>
+                            <li class="">
+                                <p class="txt_tit">이번달 신규회원</p>
+                                <h5>40</h5>
+                            </li>
+                            <li class="">
+                                <p class="txt_tit">이번달 탈퇴 회원</p>
+                                <h5>5</h5>
+                            </li>
+                        </ul>
+                    </section><!-- //총 회원 -->
+                    <section class="stt_02">
+                        <ul class="flex">
+                            <li class="gp_day">
+                                <div class="tit">
+                                    <div class="tit_l">
+                                        <dd>일별 매출 현황</dd>
+                                    </div>
+                                    <div class="tit_r">
+                                        <button class="btn"><span class="icon"><img
+                                                    src='../../../static/img/icon_excel.svg' /></span>엑셀다운로드</button>
+                                    </div>
+                                </div>
+
+                                <div class="calendar_wrap">
+                                    <button class="btn">전체</button>
+                                    <div class="custom-datepicker">
+                                        <div class="flex">
+                                            <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+                                        </div>
+                                        <p>~</p>
+                                        <div class="flex">
+                                            <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                                        </div>
+                                        <button class="btn btn_cs2">조회</button>
+                                        <div id="calendar" class="calendar hidden"></div>
+                                    </div>
+                                </div>
+
+                                <ul class="st_con">
+                                    <li>
+                                        <div class="gh gh_01">
+                                            <div class="price">
+                                                <p lang="en">1,525,000</p>
+                                            </div>
+                                        </div>
+                                        <p class="date">11.17</p>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_02">
+                                            <div class="price">
+                                                <p lang="en">1,525,000</p>
+                                            </div>
+                                        </div>
+                                        <p class="date">11.18</p>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_03">
+                                            <div class="price">
+                                                <p lang="en">1,525,000</p>
+                                            </div>
+                                        </div>
+                                        <p class="date">11.19</p>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_04 best">
+                                            <div class="price">
+                                                <p lang="en">1,525,000</p>
+                                            </div>
+                                        </div>
+                                        <p class="date">11.20</p>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_05">
+                                            <div class="price">
+                                                <p lang="en">1,525,000</p>
+                                            </div>
+                                        </div>
+                                        <p class="date">11.21</p>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_06">
+                                            <div class="price">
+                                                <p lang="en">1,525,000</p>
+                                            </div>
+                                        </div>
+                                        <p class="date">11.22</p>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_07">
+                                            <div class="price">
+                                                <p lang="en">1,525,000</p>
+                                            </div>
+                                        </div>
+                                        <p class="date">11.23</p>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_08">
+                                            <div class="price">
+                                                <p lang="en">1,525,000</p>
+                                            </div>
+                                        </div>
+                                        <p class="date">11.24</p>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_09">
+                                            <div class="price">
+                                                <p lang="en">1,525,000</p>
+                                            </div>
+                                        </div>
+                                        <p class="date">11.25</p>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_10">
+                                            <div class="price">
+                                                <p lang="en">1,525,000</p>
+                                            </div>
+                                        </div>
+                                        <p class="date">11.26</p>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_01">
+                                            <div class="price">
+                                                <p lang="en">1,525,000</p>
+                                            </div>
+                                        </div>
+                                        <p class="date">11.27</p>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_02">
+                                            <div class="price">
+                                                <p lang="en">1,525,000</p>
+                                            </div>
+                                        </div>
+                                        <p class="date">11.28</p>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_03">
+                                            <div class="price">
+                                                <p lang="en">1,525,000</p>
+                                            </div>
+                                        </div>
+                                        <p class="date">11.29</p>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_04">
+                                            <div class="price">
+                                                <p lang="en">1,525,000</p>
+                                            </div>
+                                        </div>
+                                        <p class="date">11.30</p>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="gp_mon">
+
+                                <div class="tit">
+                                    <div class="tit_l">
+                                        <dd>일별 매출 현황</dd>
+                                    </div>
+                                    <div class="tit_r">
+                                        <button class="btn"><span class="icon"><img
+                                                    src='../../../static/img/icon_excel.svg' /></span>엑셀다운로드</button>
+                                    </div>
+                                </div>
+
+                                <div class="calendar_wrap">
+                                    <button class="btn">전체</button>
+                                    <div class="custom-datepicker">
+                                        <div class="flex">
+                                            <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+                                        </div>
+                                        <p>~</p>
+                                        <div class="flex">
+                                            <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                                        </div>
+                                        <button class="btn btn_cs2">조회</button>
+                                        <div id="calendar" class="calendar hidden"></div>
+                                    </div>
+                                </div>
+                                <ul class="st_con">
+                                    <li>
+                                        <div class="gh gh_01 best">
+                                            <p lang="en">11월 11,525,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_02">
+                                            <p lang="en">10월 10,635,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_03">
+                                            <p lang="en">09월 11,005,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_04">
+                                            <p lang="en">08월 9,565,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_05">
+                                            <p lang="en">07월 8,525,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_06">
+                                            <p lang="en">06월 8,505,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_07">
+                                            <p lang="en">05월 7,525,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_08">
+                                            <p lang="en">04월 10,525,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_09">
+                                            <p lang="en">03월 6,525,000원</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="gh gh_10">
+                                            <p lang="en">02월 11,000,000원</p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </section><!-- //일별/월별 매출 현황-->
+                    <section class="stt_03">
+
+
+                        <div class="tit">
+                            <div class="tit_l">
+                                <dd>접속자 현황</dd>
+                            </div>
+                            <div class="tit_r">
+                                <button class="btn"><span class="icon"><img src='../../../static/img/icon_excel.svg' /></span>엑셀다운로드</button>
+                            </div>
+                        </div>
+
+                        <div class="calendar_wrap">
+                            <button class="btn">전체</button>
+                            <div class="custom-datepicker">
+                                <div class="flex">
+                                    <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+                                </div>
+                                <p>~</p>
+                                <div class="flex">
+                                    <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                                </div>
+                                <button class="btn btn_cs2">조회</button>
+                                <div id="calendar" class="calendar hidden"></div>
+                            </div>
+                        </div>
+                        <div class="gp_con_bd">
+
+
+                            <ul class="st_con">
+                                <li>
+                                    <div class="gh gh_01">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.17</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_02">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.18</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_03">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.19</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_04 best">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.20</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_05">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.21</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_06">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.22</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_07">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.23</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_08">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.24</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_09">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.25</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_10">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.26</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_01">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.27</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_02">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.28</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_03">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.29</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_04">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.30</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_05">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.21</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_06">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.22</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_07">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.23</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_08">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.24</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_09">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.25</p>
+                                </li>
+                                <li>
+                                    <div class="gh gh_10">
+                                        <div class="price">
+                                            <p lang="en">1,525,000</p>
+                                        </div>
+                                    </div>
+                                    <p class="date">11.26</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </section><!-- //접속자 현황 -->
+                    <section class="stt_04">
+                        <div class="tit">
+                            <div class="tit_l">
+                                <div class="icon"><img src="../../../static/img/icon_coupon.svg" /></div>
+                                <dd>쿠폰</dd>
+                            </div>
+                            <div class="tit_r">
+                                <button class="btn"><span class="icon"><img src='../../../static/img/icon_excel.svg' /></span>엑셀다운로드</button>
+                            </div>
+                        </div>
+
+                        <div class="calendar_wrap">
+                            <button class="btn">전체</button>
+                            <button class="btn">이번달</button>
+                            <div class="custom-datepicker">
+                                <div class="flex">
+                                    <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+                                </div>
+                                <p>~</p>
+                                <div class="flex">
+                                    <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                                </div>
+                                <button class="btn btn_cs2">조회</button>
+                                <div id="calendar" class="calendar hidden"></div>
+                            </div>
+                        </div>
+
+
+                        <ul class="st_con">
+                            <li class="">
+                                <p>발행된 쿠폰 <span>5,524</span>개</p>
+                            </li>
+                            <li class="">
+                                <p>사용 쿠폰 <span>3,657</span>개</p>
+                            </li>
+                            <li class="">
+                                <p>미사용 쿠폰 <span>1,444</span>개</p>
+                            </li>
+                            <li class="">
+                                <p>소멸 쿠폰 <span>423</span>개</p>
+                            </li>
+                            <li class="">
+                                <p>사용쿠폰 총금액 <span>1,500,000</span>원</p>
+                            </li>
+                        </ul>
+
+                    </section><!-- //쿠폰 -->
+
+
+                    <section class="stt_05">
+                        <div class="tit">
+                            <div class="tit_l">
+                                <div class="icon"><img src="../../../static/img/icon_sv_bk.svg" /></div>
+                                <dd>적립금</dd>
+                            </div>
+                            <div class="tit_r">
+                                <button class="btn"><span class="icon"><img src='../../../static/img/icon_excel.svg' /></span>엑셀다운로드</button>
+                            </div>
+                        </div>
+
+                        <div class="calendar_wrap">
+                            <button class="btn">전체</button>
+                            <button class="btn">이번달</button>
+                            <div class="custom-datepicker">
+                                <div class="flex">
+                                    <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+                                </div>
+                                <p>~</p>
+                                <div class="flex">
+                                    <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                                </div>
+                                <button class="btn btn_cs2">조회</button>
+                                <div id="calendar" class="calendar hidden"></div>
+                            </div>
+                        </div>
+
+                        <ul class="st_con">
+                            <li class="">
+                                <p>발행된 적립금 <span>1,500,000</span>원</p>
+                            </li>
+                            <li class="">
+                                <p>사용 적립금 <span>1,000,000</span>원</p>
+                            </li>
+                            <li class="">
+                                <p>미사용 적립금 <span>300,000</span>원</p>
+                            </li>
+                            <li class="">
+                                <p>소멸 적립금 <span>200,000</span>원</p>
+                            </li>
+                        </ul>
+                    </section><!-- //적립금 -->
+
+                    <section class="stt_06">
+                        <div class="tit">
+                            <div class="tit_l">
+                                <div class="icon"><img src="../../../static/img/icon_lank.svg" /></div>
+                                <dd>상품 판매 순위</dd>
+                            </div>
+                            <div class="tit_r">
+                                <button class="btn"><span class="icon"><img src='../../../static/img/icon_excel.svg' /></span>엑셀다운로드</button>
+                            </div>
+                        </div>
+
+                        <div class="calendar_wrap">
+                            <button class="btn">전체</button>
+                            <button class="btn">이번달</button>
+                            <div class="custom-datepicker">
+                                <div class="flex">
+                                    <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+                                </div>
+                                <p>~</p>
+                                <div class="flex">
+                                    <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                                </div>
+                                <button class="btn btn_cs2">조회</button>
+                                <div id="calendar" class="calendar hidden"></div>
+                            </div>
+                        </div>
+
+                        <div class="st_con">
+                            <ul class="">
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_01.png" /><span class="num" lang="en">01.</span>
+                                        <p>냉동 대패삼겹 1kg</p>
+                                    </div>
+                                    <p class="count" lang="en">115건</p>
+                                </li>
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_02.png" /><span class="num" lang="en">02.</span>
+                                        <p>시금치 1단</p>
+                                    </div>
+                                    <p class="count" lang="en">105건</p>
+                                </li>
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_03.png" /><span class="num" lang="en">03.</span>
+                                        <p>국산 유기농 양배추 10kg</p>
+                                    </div>
+                                    <p class="count" lang="en">75건</p>
+                                </li>
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_04.png" /><span class="num" lang="en">04.</span>
+                                        <p>껍질째 먹는 사과 1박스</p>
+                                    </div>
+                                    <p class="count" lang="en">53건</p>
+                                </li>
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_01.png" /><span class="num" lang="en">01.</span>
+                                        <p>냉동 대패삼겹 1kg</p>
+                                    </div>
+                                    <p class="count" lang="en">115건</p>
+                                </li>
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_02.png" /><span class="num" lang="en">02.</span>
+                                        <p>시금치 1단</p>
+                                    </div>
+                                    <p class="count" lang="en">105건</p>
+                                </li>
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_03.png" /><span class="num" lang="en">03.</span>
+                                        <p>국산 유기농 양배추 10kg</p>
+                                    </div>
+                                    <p class="count" lang="en">75건</p>
+                                </li>
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_04.png" /><span class="num" lang="en">04.</span>
+                                        <p>껍질째 먹는 사과 1박스</p>
+                                    </div>
+                                    <p class="count" lang="en">53건</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section><!-- //상품 판매 순위 -->
+
+                    <section class="stt_07">
+                        <div class="tit">
+                            <div class="tit_l">
+                                <div class="icon"><img src="../../../static/img/icon_cart_bk.svg" /></div>
+                                <dd>장바구니 상품 순위</dd>
+                            </div>
+                            <div class="tit_r">
+                                <button class="btn"><span class="icon"><img src='../../../static/img/icon_excel.svg' /></span>엑셀다운로드</button>
+                            </div>
+                        </div>
+
+                        <div class="calendar_wrap">
+                            <button class="btn">전체</button>
+                            <button class="btn">이번달</button>
+                            <div class="custom-datepicker">
+                                <div class="flex">
+                                    <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+                                </div>
+                                <p>~</p>
+                                <div class="flex">
+                                    <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                                </div>
+                                <button class="btn btn_cs2">조회</button>
+                                <div id="calendar" class="calendar hidden"></div>
+                            </div>
+                        </div>
+
+                        <div class="st_con">
+                            <ul class="">
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_01.png" /><span class="num" lang="en">01.</span>
+                                        <p>냉동 대패삼겹 1kg</p>
+                                    </div>
+                                    <p class="count" lang="en">115건</p>
+                                </li>
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_02.png" /><span class="num" lang="en">02.</span>
+                                        <p>시금치 1단</p>
+                                    </div>
+                                    <p class="count" lang="en">105건</p>
+                                </li>
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_03.png" /><span class="num" lang="en">03.</span>
+                                        <p>국산 유기농 양배추 10kg</p>
+                                    </div>
+                                    <p class="count" lang="en">75건</p>
+                                </li>
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_04.png" /><span class="num" lang="en">04.</span>
+                                        <p>껍질째 먹는 사과 1박스</p>
+                                    </div>
+                                    <p class="count" lang="en">53건</p>
+                                </li>
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_01.png" /><span class="num" lang="en">01.</span>
+                                        <p>냉동 대패삼겹 1kg</p>
+                                    </div>
+                                    <p class="count" lang="en">115건</p>
+                                </li>
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_02.png" /><span class="num" lang="en">02.</span>
+                                        <p>시금치 1단</p>
+                                    </div>
+                                    <p class="count" lang="en">105건</p>
+                                </li>
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_03.png" /><span class="num" lang="en">03.</span>
+                                        <p>국산 유기농 양배추 10kg</p>
+                                    </div>
+                                    <p class="count" lang="en">75건</p>
+                                </li>
+                                <li>
+                                    <div class="lank_prd">
+                                        <img src="../../../static/img/icon_lank_04.png" /><span class="num" lang="en">04.</span>
+                                        <p>껍질째 먹는 사과 1박스</p>
+                                    </div>
+                                    <p class="count" lang="en">53건</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section><!-- //장바구니 상품 순위 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup"></div>
+
+    <!-- js -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/swiper.js"></script>
+    <script src="../../js/import.js"></script>
+    <script src="../../js/popup.js"></script>
+    <script>
+        /* header와 aside 로드 */
+        loadComponent('header', '../../layout/header_sub.html');
+        loadComponent('aside', '../../layout/aside_sub.html');
+        loadComponent('popup', '../../layout/popup_sub.html');
+        loadComponent('tab_history', '../../layout/tab_history.html');
+    </script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/statistics.js"></script>
+
+</body>
+
+</html>

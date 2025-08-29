@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>미스터아빠 통합몰_사용자</title>
+
+    <!-- 메타태그 -->
+    <meta name="viewport" content="widdh=device-widdh, initial-scale=1.0 maximum-scale=1.5">
+
+    <meta name="keyword" content="미스터아빠">
+    <meta name="description" content="미스터아빠 통합몰">
+
+    <meta http-equiv="refresh" content="30">
+
+    <!-- css -->
+    <link rel="stylesheet " href="../../css/reset.css" />
+    <link rel="stylesheet " href="../../css/swiper.css" />
+    <link rel="stylesheet " href="../../css/font.css" />
+    <link rel="stylesheet " href="../../css/common.css" />
+    <link rel="stylesheet " href="../../css/layout.css" />
+    <link rel="stylesheet " href="../../css/popup.css" />
+    <link rel="stylesheet " href="../../css/sub.css" />
+    <link rel="stylesheet " href="../../css/sub_savings.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="savings">
+    <div class="wrap">
+
+        <header class="header" id="header"></header>
+
+        <div class="container">
+            <aside id="aside" class="aside"></aside>
+            <div class="contents">
+                <div class="tab_history" id="tab_history"></div>
+                <div class="main_area">
+                    <div class="tit_wrap">
+                        <dt>적립금 관리</dt>
+                        <div class="button_wrap">
+                            <button class="btn btn_cs2">조회</button>
+                            <button class="btn btn_cm">저장</button>
+                            <button class="btn btn_cs2">삭제</button>
+                            <button class="btn btn_cs2">엑셀</button>
+                        </div>
+                    </div>
+
+                    <div class="control_wrap">
+                        <div>
+                            <section class="search_wrap sw_01">
+                                <ul class="grid">
+                                    <li>
+                                        <p class="txt_tit">등급</p>
+                                        <div class="custom-select">
+                                            <div class="select-box">
+                                                <span>전체</span><img src="../../../static/img/icon_down.svg" />
+                                            </div>
+                                            <ul class="options-list">
+                                                <li class="option" data-value="1">전체</li>
+                                                <li class="option" data-value="2">새별회원</li>
+                                                <li class="option" data-value="3">동별회원</li>
+                                                <li class="option" data-value="4">은별회원</li>
+                                                <li class="option" data-value="5">금별회원</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="flex date">
+                                        <p class="txt_tit">기간</p>
+                                        <div class="btn_date_wrap">
+                                            <button class="btn btn_cs2">전체</button>
+                                            <button class="btn">오늘</button>
+                                            <button class="btn">7일</button>
+                                            <button class="btn">15일</button>
+                                            <button class="btn">1개월</button>
+                                            <button class="btn">3개월</button>
+                                            <button class="btn">6개월</button>
+                                            <button class="btn">1년</button>
+                                        </div>
+                                        <div class="calendar_wrap">
+                                            <button class="btn btn_cs2"><div class="icon"><img src="../../img/icon_calendar.svg" /></div></button>
+                                            <div class="custom-datepicker">
+                                                <div class="flex">
+                                                    <input type="text" id="start-date" placeholder="시작 날짜" readonly />
+                                                </div>
+                                                <p>~</p>
+                                                <div class="flex">
+                                                    <input type="text" id="end-date" placeholder="종료 날짜" readonly />
+                                                </div>
+                                                <div id="calendar" class="calendar hidden"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="txt_tit">아이디</p>
+                                        <input type="text" placeholder="다중 검색시 콤마(,)로 구분해서 검색하세요." />
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <section class="search_wrap sw_02">
+                            <ul class="grid">
+                                <li>
+                                    <div class="flex">
+                                        <span class="icon"><img src="../../../static/img/icon_excel_bk.svg" /></span>
+                                        <p class="txt_tit">엑셀 다운로드</p>
+                                    </div>
+                                    <button class="btn btn_cs2">다운로드</button>
+                                </li>
+                                <li>
+                                    <div class="flex">
+                                        <div class="icon"><img src="../../../static/img/icon_excel_bk.svg" /></div>
+                                        <p class="txt_tit">적립금 일괄 조정</p>
+                                    </div>
+                                    <div class="filebox">
+                                        <input class="upload-name" value="파일 첨부" placeholder="파일 첨부">
+                                        <label class="btn btn_cs2" for="file">등록</label>
+                                        <input type="file" id="file">
+                                    </div>
+                                    <p class="notice">
+                                        <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span>
+                                        엑셀로 대량 적립금 등록이 가능합니다.
+
+                                        </p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <dt>조회기간 내 적립금 내역 통계</dt>
+                    <section class="sub_top" id="sub_top"></section>
+                    <section class="section_grid">
+                        <div class="control_box">
+                            <div class="control_l">
+                                <dd>회원 적립금 내역</dd>
+                            </div>
+                            <div class="control_r">
+                                <div class="custom-select type_savings">
+                                    <div class="select-box">
+                                        <span>적립금타입</span><img src="../../../static/img/icon_down.svg" />
+                                    </div>
+                                    <ul class="options-list">
+                                        <li class="option" data-value="1">적립금타입</li>
+                                        <li class="option" data-value="2">주문시 구매한 상품에 대한 적립금 부여</li>
+                                        <li class="option" data-value="3">주문시 사용한 적립금 차감</li>
+                                        <li class="option" data-value="4">신규가입시 적립금 부여</li>
+                                        <li class="option" data-value="5">추천한 신규 가입자에게 적립금 부여</li>
+                                        <li class="option" data-value="6">추천받은 기존 가입자에게 적립금 부여</li>
+                                        <li class="option" data-value="7">주문취소시 구매에 사용한 적립금 부여</li>
+                                        <li class="option" data-value="8">관리자 직접 적립금 부여</li>
+                                        <li class="option" data-value="9">주문시 회원등급에 따른 적립금 부여</li>
+                                        <li class="option" data-value="10">적립금 지급 쿠폰</li>
+                                        <li class="option" data-value="11">주문취소로 인한 환불시 환불금을 적립금으로 부여</li>
+                                    </ul>
+                                </div>
+                                <div class="custom-select">
+                                    <div class="select-box">
+                                        <span>50개씩보기</span><img src="../../../static/img/icon_down.svg" />
+                                    </div>
+                                    <ul class="options-list">
+                                        <li class="option" data-value="1">10개씩보기</li>
+                                        <li class="option" data-value="2">20개씩보기</li>
+                                        <li class="option" data-value="3">30개씩보기</li>
+                                        <li class="option" data-value="4">40개씩보기</li>
+                                        <li class="option" data-value="5">50개씩보기</li>
+                                        <li class="option" data-value="6">100개씩보기</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid_template" id="grid_oderlist"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup"></div>
+
+    <!-- js -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/swiper.js"></script>
+    <script src="../../js/import.js"></script>
+    <script src="../../js/popup.js"></script>
+    <script>
+        /* header와 aside 로드 */
+        loadComponent('header', '../../layout/header_sub.html');
+        loadComponent('aside', '../../layout/aside_sub.html');
+        loadComponent('sub_top', 'savings_top.html');
+        loadComponent('popup', '../../layout/popup_sub.html');
+        loadComponent('tab_history', '../../layout/tab_history.html');
+        loadComponent('grid_oderlist', 'savings_list.html');
+    </script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/savings.js"></script>
+
+</body>
+
+</html>
