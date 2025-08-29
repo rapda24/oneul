@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+
+
+@font-face {
+    font-family: 'ChangwonDanggamAsak';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
 .txt_w {color: #fff;}
 .txt_w * {color: inherit;}
 .txt_gy,
@@ -12,7 +21,7 @@ strong,
 
 :lang(en) {letter-spacing: 0.02em; font-size: 1.025em;}
 
-
+h1 {font-family: 'ChangwonDanggamAsak';}
 h2 {font-size: 5em; font-weight: 600;}
 h3 {font-size: 4em; font-weight: 600;}
 h4 {font-size: 3em; font-weight: 600;}
