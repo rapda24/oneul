@@ -77,11 +77,11 @@
 .stt_03 .gp_con_bd .st_con > li .price > p {color: #fff; font-size: 0.75em;}
 
 .stt_04 .st_con {display: flex; flex-wrap: wrap; gap: 1em;}
-.stt_05 .st_con {display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em;}
+.stt_05 .st_con {display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em; flex-grow: 1;}
 .stt_04 .st_con > li p,
-.stt_05 .st_con > li p {display: flex; align-items: flex-end; font-weight: 600;}
+.stt_05 .st_con > li p {display: flex; align-items: flex-end; font-weight: 400; font-size:  0.875em;}
 .stt_04 .st_con > li p span,
-.stt_05 .st_con > li p span {font-size: 1.25em; padding-left: 1em; font-weight: 700;}
+.stt_05 .st_con > li p span {font-size: 1.25em; padding-left: 1em; font-weight: 600;}
 
 .stt_06 .icon {width: 1.11em;}
 

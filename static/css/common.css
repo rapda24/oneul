@@ -65,7 +65,7 @@ body {background-color: #f4f4f4; width: 100%; min-width: 1024px; margin: 0 auto;
 .btn_submit:hover {border-color: var(--light-black); color: #fff; background-color: var(--light-black);}
 
 /* icon */
-.icon {display: flex; width: 1em; align-items: center; justify-content: center; align-self: center;}
+.icon {display: flex; width: 1em; align-items: center; justify-content: center; align-self: center; flex-shrink: 0;}
 .icon img {width: 100%;}
 
 /* thum */
@@ -101,8 +101,8 @@ body {background-color: #f4f4f4; width: 100%; min-width: 1024px; margin: 0 auto;
 
 /* 캘린더 커스텀 */
 /* input date 커스텀 */
-.custom-datepicker { position: relative; display: flex; gap: 0.5em; flex: 1;}
-.custom-datepicker > .flex {font-size: 0.875em; border: 1px solid var(--border-gray); border-radius: 0.75em; padding: 0.5em!important; width: 100%;}
+.custom-datepicker { position: relative; display: flex; gap: 0.5em; flex: 1; height: fit-content; align-items: center;}
+.custom-datepicker > .flex {font-size: 0.875em; border: 1px solid var(--border-gray); border-radius: 0.75em; padding: 0.5em!important; width: 100%; height: fit-content; align-items: center;}
 .custom-datepicker > p {display: flex; justify-self: center; align-self: center;}
 .custom-datepicker > .flex input {border: unset!important; padding: unset!important; width: 100%;}
 

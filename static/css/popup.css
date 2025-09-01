@@ -89,6 +89,9 @@ p.unit_price::after {content: '원';}
 .popup.pop_sm .popup_box .content .con_02 .grid_table .gc > li p:lang(en) {font-weight: 500;}
 .popup.pop_sm .popup_box .content p.txt_tit {width: 7em;}
 
+
+.btn_submit {background-color: var(--sub01-color); border-color: var(--sub01-color);}
+
 /* pop_sprd, pop_dpp */
 .popup.pop_sprd {z-index: 110;}
 .popup.pop_sprd .popup_box .content .con_01,
@@ -493,3 +496,6 @@ p.unit_price::after {content: '원';}
 
 /* pop_ptr */
 .popup.pop_ptr .popup_box .content {height: auto; max-height: calc(80vh - 200px);}
+
+
+.popup .popup_box .content .con_02 .grid_table .gc > li {min-width: unset;}

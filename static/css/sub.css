@@ -61,7 +61,7 @@ p.s_price {font-weight: 600;}
 
 /* btn_date_wrap */
 .btn_date_wrap,
-.calendar_wrap {display: flex; gap: 0.5em; flex-grow: 1;}
+.calendar_wrap {display: flex; gap: 0.5em; height: fit-content; margin-bottom: 0.5em;}
 .btn_date_wrap > div {flex: 1;}
 .calendar_wrap input {flex-grow: 1;}
 
