@@ -24,7 +24,7 @@
 .header .cnt .hd_icon > li > a > img {width: 50%; height: auto;}
 
 .header .cnt .hd_icon > li.hd_alarm > a {background-color: var(--sub02-color);}
-.header .cnt .hd_icon > li.hd_shop > a {background-color: var(--sub01-color);}
+.header .cnt .hd_icon > li.hd_shop > a {background-color: var(--main-color);}
 .header .cnt .hd_icon > li.hd_message > a {background-color: var(--sub02-color);}
 .header .cnt .hd_icon > li.hd_logout > a {background-color: #bcd3e4;}
 
@@ -37,18 +37,19 @@ aside > .cnt {display: flex; flex-direction: column; gap: 0.5em;}
 aside > .cnt > li > a {color: #fff; padding: 0.5rem 0.7rem; display: flex; border-radius: 0.8rem; align-items: center;  font-size: 0.875em;}
 aside > .cnt > li > a > span.aside_icon {width: 1.4rem; height: 1.4rem; display: block; margin-right: 1rem;}
 aside > .cnt > li:nth-child(1) > a > span.aside_icon {background: url(../img/aside_01.svg) no-repeat 50% 50%;}
-aside > .cnt > li:nth-child(2) > a > span.aside_icon {background: url(../img/aside_02.svg) no-repeat 50% 50%;}
-aside > .cnt > li:nth-child(3) > a > span.aside_icon {background: url(../img/aside_03.svg) no-repeat 50% 50%;}
-aside > .cnt > li:nth-child(4) > a > span.aside_icon {background: url(../img/aside_04.svg) no-repeat 50% 50%;}
-aside > .cnt > li:nth-child(5) > a > span.aside_icon {background: url(../img/aside_05.svg) no-repeat 50% 50%;}
-aside > .cnt > li:nth-child(6) > a > span.aside_icon {background: url(../img/aside_06.svg) no-repeat 50% 50%;}
-aside > .cnt > li:nth-child(7) > a > span.aside_icon {background: url(../img/aside_07.svg) no-repeat 50% 50%;}
-aside > .cnt > li:nth-child(8) > a > span.aside_icon {background: url(../img/aside_08.svg) no-repeat 50% 50%;}
-aside > .cnt > li:nth-child(9) > a > span.aside_icon {background: url(../img/aside_09.svg) no-repeat 50% 50%;}
+aside > .cnt > li:nth-child(2) > a > span.aside_icon {background: url(../img/aside_13.svg) no-repeat 50% 50%;}
+aside > .cnt > li:nth-child(3) > a > span.aside_icon {background: url(../img/aside_02.svg) no-repeat 50% 50%;}
+aside > .cnt > li:nth-child(4) > a > span.aside_icon {background: url(../img/aside_03.svg) no-repeat 50% 50%;}
+aside > .cnt > li:nth-child(5) > a > span.aside_icon {background: url(../img/aside_04.svg) no-repeat 50% 50%;}
+aside > .cnt > li:nth-child(6) > a > span.aside_icon {background: url(../img/aside_05.svg) no-repeat 50% 50%;}
+aside > .cnt > li:nth-child(7) > a > span.aside_icon {background: url(../img/aside_06.svg) no-repeat 50% 50%;}
+aside > .cnt > li:nth-child(8) > a > span.aside_icon {background: url(../img/aside_07.svg) no-repeat 50% 50%;}
+aside > .cnt > li:nth-child(9) > a > span.aside_icon {background: url(../img/aside_08.svg) no-repeat 50% 50%;}
 aside > .cnt > li:nth-child(10) > a > span.aside_icon {background: url(../img/aside_09.svg) no-repeat 50% 50%;}
-aside > .cnt > li:nth-child(11) > a > span.aside_icon {background: url(../img/aside_10.svg) no-repeat 50% 50%;}
-aside > .cnt > li:nth-child(12) > a > span.aside_icon {background: url(../img/aside_11.svg) no-repeat 50% 50%;}
-aside > .cnt > li:nth-child(13) > a > span.aside_icon {background: url(../img/aside_12.svg) no-repeat 50% 50%;}
+aside > .cnt > li:nth-child(11) > a > span.aside_icon {background: url(../img/aside_09.svg) no-repeat 50% 50%;}
+aside > .cnt > li:nth-child(12) > a > span.aside_icon {background: url(../img/aside_10.svg) no-repeat 50% 50%;}
+aside > .cnt > li:nth-child(13) > a > span.aside_icon {background: url(../img/aside_11.svg) no-repeat 50% 50%;}
+aside > .cnt > li:nth-child(14) > a > span.aside_icon {background: url(../img/aside_12.svg) no-repeat 50% 50%;}
 
 aside > .cnt > li:hover > a,
 aside > .cnt > li.active > a {background-color: #fff; color: var(--basic-black);}
@@ -68,29 +69,31 @@ aside > .cnt .sub_nav_wrap > li.active > a {background-color: var(--main-color);
 aside > .cnt > li:nth-child(1):hover > a > span.aside_icon,
 aside > .cnt > li.active:nth-child(1) > a > span.aside_icon {background: url(../img/aside_01_active.svg) no-repeat 50% 50%;}
 aside > .cnt > li:nth-child(2):hover > a > span.aside_icon,
-aside > .cnt > li.active:nth-child(2) > a > span.aside_icon {background: url(../img/aside_02_active.svg) no-repeat 50% 50%;}
+aside > .cnt > li.active:nth-child(2) > a > span.aside_icon {background: url(../img/aside_13_active.svg) no-repeat 50% 50%;}
 aside > .cnt > li:nth-child(3):hover > a > span.aside_icon,
-aside > .cnt > li.active:nth-child(3) > a > span.aside_icon {background: url(../img/aside_03_active.svg) no-repeat 50% 50%;}
+aside > .cnt > li.active:nth-child(3) > a > span.aside_icon {background: url(../img/aside_02_active.svg) no-repeat 50% 50%;}
 aside > .cnt > li:nth-child(4):hover > a > span.aside_icon,
-aside > .cnt > li.active:nth-child(4) > a > span.aside_icon {background: url(../img/aside_04_active.svg) no-repeat 50% 50%;}
+aside > .cnt > li.active:nth-child(4) > a > span.aside_icon {background: url(../img/aside_03_active.svg) no-repeat 50% 50%;}
 aside > .cnt > li:nth-child(5):hover > a > span.aside_icon,
-aside > .cnt > li.active:nth-child(5) > a > span.aside_icon {background: url(../img/aside_05_active.svg) no-repeat 50% 50%;}
+aside > .cnt > li.active:nth-child(5) > a > span.aside_icon {background: url(../img/aside_04_active.svg) no-repeat 50% 50%;}
 aside > .cnt > li:nth-child(6):hover > a > span.aside_icon,
-aside > .cnt > li.active:nth-child(6) > a > span.aside_icon {background: url(../img/aside_06_active.svg) no-repeat 50% 50%;}
+aside > .cnt > li.active:nth-child(6) > a > span.aside_icon {background: url(../img/aside_05_active.svg) no-repeat 50% 50%;}
 aside > .cnt > li:nth-child(7):hover > a > span.aside_icon,
-aside > .cnt > li.active:nth-child(7) > a > span.aside_icon {background: url(../img/aside_07_active.svg) no-repeat 50% 50%;}
+aside > .cnt > li.active:nth-child(7) > a > span.aside_icon {background: url(../img/aside_06_active.svg) no-repeat 50% 50%;}
 aside > .cnt > li:nth-child(8):hover > a > span.aside_icon,
-aside > .cnt > li.active:nth-child(8) > a > span.aside_icon {background: url(../img/aside_08_active.svg) no-repeat 50% 50%;}
+aside > .cnt > li.active:nth-child(8) > a > span.aside_icon {background: url(../img/aside_07_active.svg) no-repeat 50% 50%;}
 aside > .cnt > li:nth-child(9):hover > a > span.aside_icon,
-aside > .cnt > li.active:nth-child(9) > a > span.aside_icon {background: url(../img/aside_09_active.svg) no-repeat 50% 50%;}
+aside > .cnt > li.active:nth-child(9) > a > span.aside_icon {background: url(../img/aside_08_active.svg) no-repeat 50% 50%;}
 aside > .cnt > li:nth-child(10):hover > a > span.aside_icon,
 aside > .cnt > li.active:nth-child(10) > a > span.aside_icon {background: url(../img/aside_09_active.svg) no-repeat 50% 50%;}
 aside > .cnt > li:nth-child(11):hover > a > span.aside_icon,
-aside > .cnt > li.active:nth-child(11) > a > span.aside_icon {background: url(../img/aside_10_active.svg) no-repeat 50% 50%;}
+aside > .cnt > li.active:nth-child(11) > a > span.aside_icon {background: url(../img/aside_09_active.svg) no-repeat 50% 50%;}
 aside > .cnt > li:nth-child(12):hover > a > span.aside_icon,
-aside > .cnt > li.active:nth-child(12) > a > span.aside_icon {background: url(../img/aside_11_active.svg) no-repeat 50% 50%;}
+aside > .cnt > li.active:nth-child(12) > a > span.aside_icon {background: url(../img/aside_10_active.svg) no-repeat 50% 50%;}
 aside > .cnt > li:nth-child(13):hover > a > span.aside_icon,
-aside > .cnt > li.active:nth-child(13) > a > span.aside_icon {background: url(../img/aside_12_active.svg) no-repeat 50% 50%;}
+aside > .cnt > li.active:nth-child(13) > a > span.aside_icon {background: url(../img/aside_11_active.svg) no-repeat 50% 50%;}
+aside > .cnt > li:nth-child(14):hover > a > span.aside_icon,
+aside > .cnt > li.active:nth-child(14) > a > span.aside_icon {background: url(../img/aside_12_active.svg) no-repeat 50% 50%;}
 
 aside > .nav_close {display: flex; width: 2em; height: 2em; align-items: center; justify-content: center; position: absolute; top: -0.5em; right: -0.5em; border: 3px solid #fff; background-color: var(--main-color); border-radius: 50%; z-index : 10;}
 aside > .nav_close img {width: 35%; margin-left: -0.1em;}
@@ -108,7 +111,7 @@ aside.hide > .nav_close img {transform: rotate(180deg); margin-left: 0.125em;}
 .tab_history > ul > li a span.btn_close {display: flex; background: url(../img/close_gr.svg) no-repeat 50% 50%; width: 0.5em; height: 0.5em; justify-content: center; align-self: center;}
 
 .tab_history > ul > li.active,
-.tab_history > ul > li:hover {background-color: var(--main-color);}
+.tab_history > ul > li:hover {background-color: var(--sub01-color);}
 .tab_history > ul > li.active a,
 .tab_history > ul > li:hover a {color: #fff;}
 

@@ -9,6 +9,10 @@
 .st_06 {grid-area: st_06;}
 .contents .sub_top > div.st_01 {border-right: unset;}
 
+
+.order_center .contents .sub_top {grid-template-columns: repeat(5, 1fr); grid-template-areas: "st_01 st_02 st_03 st_04 st_05";}
+.order_center .contents .sub_top > div.st_01 {border-right: 1px solid var(--border-gray);}
+
 .search_wrap .grid > li {display: flex; align-items: center;}
 .search_wrap .grid > li .input_wrap {display: flex; gap: 0.5em; align-self: center;}
 .search_wrap .grid > li .input_wrap input {border: 1px solid var(--border-gray); border-radius: 0.75em; padding: 0.5em; width: 8em; font-size: 0.875em;}
