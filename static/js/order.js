@@ -37,3 +37,26 @@ $(document).ready(function () {
         }
     });
 });
+
+
+
+$(document).ready(function(){
+    // 드롭다운 열기/닫기
+    $('.center_info .select-box .cni_tit').click(function(e){
+        e.stopPropagation();
+        $('.select-box').not($(this).parent()).removeClass('on'); // 다른 select 닫기
+        $(this).parent('.select-box').toggleClass('on');
+    });
+
+    // 옵션 클릭 시 값 넣기
+    $('.center_info .select-box .cni_info li').click(function(){
+        let selectedText = $(this).text();
+        $(this).parents('.select-box').find('.cni_tit').html(selectedText + ' <img src="../../../static/img/icon_down.svg">');
+        $(this).parents('.select-box').removeClass('on');
+    });
+
+    // 바깥 클릭 시 닫기
+    $(document).click(function(){
+        $('.select-box').removeClass('on');
+    });
+});

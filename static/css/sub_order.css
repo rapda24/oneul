@@ -19,7 +19,7 @@
 .search_wrap .grid > li .notice {flex-grow: 1;}
 
 
-.order_center .search_wrap {display: flex; flex-direction: column; gap: 1em; width: 100%;}
+.order_center .search_wrap {display: flex; flex-direction: column; gap: 1em; width: 100%; padding-right: 0.5em;}
 .order_center .search_wrap > ul.flex {width: 100%; justify-content: space-between}
 .order_center .search_wrap > ul.flex > li {display: flex; align-items: center; flex: auto;;}
 .order_center .search_wrap > ul.flex > li .custom-select {flex: 1;}
@@ -28,7 +28,7 @@
 
 /* center_map */
 .contents .center_map {display: flex; gap: 2em; justify-content: center;}
-.contents .center_map > div.map {display: block; width: 497px; min-height: 658px; background: url(../img/center_map.svg) no-repeat 50% 50%; background-size: cover; position: relative;}
+.contents .center_map > div.map {display: block; width: 497px; background: url(../img/center_map.svg) no-repeat 0 0; background-size: 100%; position: relative; flex-shrink: 0;}
 
 /* .map_point */
 .contents .center_map > div.map .map_point_wrap,
@@ -167,10 +167,23 @@
 .map_cn.mcn_06 {left: 44px; top: 422px;}
 .map_cn.mcn_07 {left: 79px; top: 593px;}
 
-.contents .center_map > div.center_info {width: calc(100% - 497px - 2em); max-width: 50em; position: relative; overflow: hidden;}
+.contents .center_map > div.center_info {width: calc(100% - 497px - 2em); max-width: 50em; position: relative; overflow: hidden; flex-shrink: 0; display: flex; flex-direction: column; gap: 1em;}
+.contents .center_map > div.center_info .search_wrap {display: flex; flex-direction: column; gap: 1em;}
+.contents .center_map > div.center_info .search_wrap > li {display: flex; gap: 0.5em; align-items: center;}
+.contents .center_map > div.center_info .search_wrap > li .txt_tit {width: 6em; flex-shrink: 0;}
+.contents .center_map > div.center_info .search_wrap > li input {border: 1px solid var(--border-gray); flex-grow: 1; padding: 0.5em; border-radius: 0.5em; text-overflow: ellipsis;}
+.contents .center_map > div.center_info .search_wrap > li .select-box {display: block; width: 100%; background-color: #fff; position: relative;}
+.contents .center_map > div.center_info .search_wrap > li .select-box .cni_tit {display: flex; justify-content: space-between; padding: 0.5em; border-radius: 0.5em; gap: 0.5em; color: #999;border: 1px solid var(--border-gray); border-radius: 0.5em; font-size: 0.875em;}
+.contents .center_map > div.center_info .search_wrap > li .select-box .cni_tit img {width: 1em;}
+.contents .center_map > div.center_info .search_wrap > li .select-box .cni_info {display: none; flex-direction: column; gap: 0.5em; position: absolute; background-color: #fff; width: 100%; z-index: 10; border: 1px solid var(--border-gray); border-radius:  0 0 0.5em 0.5em; border-top: 0;}
+.contents .center_map > div.center_info .search_wrap > li .select-box .cni_info li p {color: #999; display: block; padding: 0.5em; transition: 0.3s all; font-size: 0.875em;}
+.contents .center_map > div.center_info .search_wrap > li .select-box .cni_info li:hover p {background-color: var(--border-gray); color: var(--basic-black);}
+.contents .center_map > div.center_info .search_wrap > li .select-box.on .cni_tit {border-radius: 0.5em 0.5em 0 0; border-bottom: 0;}
+.contents .center_map > div.center_info .search_wrap > li .select-box.on .cni_info {display: flex;}
+
 .contents .center_map > div.center_info > .flex {display: flex; gap: 1em; overflow-y: scroll; padding-right: 0.5em; width: 100%; height: 658px; flex-direction: column;}
-.contents .center_map > div.center_info > .flex > li {width: 100%; display: block; border-radius: 0.5em; border: 1px solid var(--border-gray)}
-.contents .center_map > div.center_info > .flex > li > .cni_tit {display: flex; width: 100%; position: relative; padding: 1em; justify-content: space-between; align-self: center; font-size: 1em; cursor: pointer;}
+.contents .center_map > div.center_info > .flex > li {width: 100%; display: block; border-radius: 0.5em; border: 1px solid var(--border-gray);}
+.contents .center_map > div.center_info > .flex > li > .cni_tit {display: flex; width: 100%; position: relative; padding: 0.5em; justify-content: space-between; align-self: center; font-size: 1em; cursor: pointer;}
 .contents .center_map > div.center_info > .flex > li > .cni_tit img {width: 1em;}
 .contents .center_map > div.center_info > .flex > li.open > .cni_tit img {transform: rotate(-180deg);}
 
@@ -183,7 +196,7 @@
 
 
 .grid_table .gh,
-.grid_table .gc li {grid-template-columns: 1.5em 7em 7em 7em 7em 15em 7em 7em 5em 7em 15em;}
+.grid_table .gc li {grid-template-columns: 1.5em 7em 7em 5em 7em 5em 7em 5em auto;}
 
 .grid_table .gc > li p.st_order {border-radius: 0.75em; padding: 0.5em; display: block; text-align: center;}
 .grid_table .gc > li p.st_order.sto_01 {background-color: var(--sub02-color); color: #fff;}
@@ -192,6 +205,16 @@
 .grid_table .gc > li p.st_order.sto_04 {background-color: var(--red-color); color: #fff;}
 .grid_table .gc > li p.st_order.sto_05 {border: 1px solid var(--border-gray); background-color: var(--border-gray);}
 .grid_table .gc > li p.st_order.sto_06 {background-color: var(--main-color); color: #fff;}
+
+.ope_wrap {display: flex; flex-direction: column; gap: 0.5em; flex-direction: row; justify-content: center;}
+.ope_wrap > li {flex: 1; padding: 0.5em; border-radius: 0.875em; font-size: 0.875em; color: #b6b5b5; border: 1px solid var(--border-gray); text-align: center;}
+.ope_wrap > li.check {color:#fff;}
+.ope_wrap > li.ope_ing.check {border-color: #1a8d70; background-color: #1a8d70;}
+.ope_wrap > li.ope_pre.check {border-color: #92c29c; background-color: #92c29c;}
+.ope_wrap > li.ope_end.check {border-color: #aeaeae; background-color: #aeaeae;}
+
+.control_box > div {align-items: center;}
+.grade {display: flex; flex-direction: row; gap: 0.5em; justify-content: center; align-items: center ; font-size: 0.875em;}
 
 @media screen and (max-width: 1640px) {
     .contents .sub_top {display: grid; grid-template-columns: repeat(4, 1fr); grid-template-areas: "st_01 st_02 st_02 st_03 " "st_01 st_04 st_05 st_06";}
@@ -214,6 +237,8 @@
 @media screen and (max-width: 1270px) {
 
     .order_center .search_wrap > ul.flex {flex-direction: column;}
+
+    .notice {font-size: 0.75em;}
 }
 
 @media screen and (max-width: 1170px) {
