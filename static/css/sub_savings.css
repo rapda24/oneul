@@ -37,7 +37,7 @@
 .savings_data > p {flex: 1;}
 
 .s_id {display: flex; flex-direction: column; gap: 0.5em;}
-.s_id > .flex {color: var(--mid-black);}
+.s_id > .flex {color: var(--mid-black); justify-content: center; gap: 0.25em;}
 
 .filebox .upload-name {width: 100%;}
 

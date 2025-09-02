@@ -11,7 +11,7 @@
 .r_banner .tit_r label {display: flex; gap: 0.5em; font-size: 0.875em; color: var(--mid-black);}
 .r_banner .grid {display: grid; gap: var(--pd-common); grid-template-columns: 40% calc(60% - 20px); width: 100%;}
 .r_banner .grid .img_wrap {display: flex; width: 100%; border-radius: 1.5em; background-color: #f7f7f7; align-items: flex-start; overflow: hidden;}
-.r_banner .grid .img_wrap img {height: 100%;}
+.r_banner .grid .img_wrap img {height: auto; width: 100%;}
 .r_banner .grid .img_wrap.no_img {flex-direction: column;  align-items: center; justify-content: center; gap: var(--pd-common); padding: 0.5em;}
 .r_banner .grid .button_wrap {justify-content: flex-end; position: relative;}
 

@@ -13,6 +13,7 @@
 
 .search_wrap .grid > li p.txt_tit {width: 7em;}
 
+.search_wrap.sw_01 {flex-grow: 1;}
 .search_wrap.sw_01 .grid > li.flex {display: flex; gap: 1em;}
 .search_wrap.sw_01 .grid > li.flex > div {flex: 1; display: flex; gap: 1em; align-items: center;}
 .search_wrap.sw_01 .grid > li.flex > div.btn_date_wrap > button {flex: 1;}

@@ -29,7 +29,7 @@
 .grid_table .gh,
 .grid_table .gc > li {grid-template-columns: 1.5em 10% 10% 5em 7em 10% 15% 7em 5em auto; width: 100%; min-width: 1200px;}
 .grid_table .grade {display: flex; gap: 0.5em; color: var(--mid-black); align-self: center; font-size: 0.875em; justify-content: center;}
-.grid_table .button_wrap {gap: 0.5em; display: flex;}
+.grid_table .button_wrap {gap: 0.5em; display: flex; justify-content: center;}
 .grid_table .button_wrap > button {flex: 1; width: auto;}
 .section_grid .grid_table .button_wrap > button {width: fit-content; flex: unset;}
 .grid_table .gc > li p {gap: unset;}

@@ -78,7 +78,7 @@
 
 .adj_order .icon {padding: 0.25em 0.25em; height: 1em;}
 
-.notice p {text-align: left;}
+.notice p {text-align: left; display: inline-block; vertical-align: middle;}
 
 @media screen and (max-width: 1330px){
     .category_detail .cate_top .set_dpo > li {flex-direction: column;}
