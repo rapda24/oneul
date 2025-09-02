@@ -1,1 +1,12 @@
 @charset "UTF-8";
+
+body {background-color: #fff;}
+
+.box {width: 600px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center;}
+.box > * {text-align: center;}
+.box dt {padding: 0.5em; background-color: #ddd; border: 1px solid #ddd;}
+.box ul {display: flex; flex-direction: column; border: 1px solid #ddd;}
+.box ul li {border-bottom: 1px solid #ddd;}
+.box ul li:last-child {border-bottom: 0px;}
+.box ul li a {display: block; width: 100%; padding: 0.5em;}
+.box ul li a:hover {background-color: var(--main-color); color:#fff;}
