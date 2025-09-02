@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .popup {position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.3); align-items: center; justify-content: center; z-index: 100; display: none;}
 .popup.open {display: flex;}
 
@@ -499,3 +501,18 @@ p.unit_price::after {content: '원';}
 
 
 .popup .popup_box .content .con_02 .grid_table .gc > li {min-width: unset;}
+
+
+
+/* 보드미 등록 */
+.pop_rbodeumi .tit .tit_l .icon {width: 1.5em; height: 1.5em; border-radius: 50%; background-color: var(--sub01-color); padding: 0.25em;}
+.pop_rbodeumi .content .input_wrap {display: flex; flex-direction: column; gap: 1em;}
+.pop_rbodeumi .content .input_wrap .flex.a_bd {flex-grow: 1;}
+.pop_rbodeumi .content .input_wrap .flex.a_bd  p {width: 5em; flex-shrink: 0; color:#999;}
+.pop_rbodeumi .content .input_wrap .flex.a_bd  input {flex-grow: 1; color:#666;}
+
+
+@media screen and (max-width: 1220px) {
+    .pop_rbodeumi .content ul .btn,
+    .custom-select .select-box span {font-size: 0.875em;}
+}

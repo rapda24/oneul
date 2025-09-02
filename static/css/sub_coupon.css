@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .contents {overflow: hidden;}
 .contents .sub_top {grid-template-columns: 28% 28% 28% auto;}
 .contents .sub_top > div.st_03 {border-right: unset;}

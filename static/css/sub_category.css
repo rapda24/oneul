@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .section_wrap {display: flex; flex-direction: row; overflow-y: auto; height: 100%;}
 .section_wrap > section {overflow: hidden;; flex-direction: column; gap: var(--gap-common);}
 

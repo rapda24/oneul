@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .contents {overflow: hidden;}
 .contents .sub_top {grid-template-columns: repeat(4, 1fr);}
 .contents .sub_top > div.st_03 {border-right: unset;}

@@ -54,8 +54,9 @@ body {background-color: #f4f4f4; width: 100%; min-width: 1024px; margin: 0 auto;
 .btn_submit,
 .btn:hover{color: #fff; background-color: var(--main-color); border-color: var(--main-color);}
 .btn_cs1 {color: #fff; background-color: var(--sub01-color); border-color: var(--sub01-color);}
-.btn_cs2{color: #fff; background-color: var(--sub02-color); border-color: var(--sub02-color);}
+.btn_cs2{color: #fff!important; background-color: var(--sub02-color); border-color: var(--sub02-color);}
 .btn_cs3{color: #fff; background-color: #84daff; border-color: #84daff;}
+.btn_mc{color: #fff!important; background-color: var(--main-color); border-color: var(--main-color);}
 .btn_cancel {background-color: var(--red-color); color: #fff;}
 
 .btn_cs1:hover,
@@ -63,7 +64,8 @@ body {background-color: #f4f4f4; width: 100%; min-width: 1024px; margin: 0 auto;
 .btn_cs3:hover,
 .btn_cancel:hover,
 .btn_cm:hover,
-.btn_submit:hover {border-color: var(--light-black); color: #fff; background-color: var(--light-black);}
+.btn_submit:hover,
+.btn_mc:hover {border-color: var(--light-black); color: #fff; background-color: var(--light-black);}
 
 /* icon */
 .icon {display: flex; width: 1em; align-items: center; justify-content: center; align-self: center; flex-shrink: 0;}

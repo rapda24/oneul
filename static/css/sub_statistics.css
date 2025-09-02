@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 
 .main_area {display: grid; grid-template-columns: 1fr 1fr 1fr 300px; grid-template-areas: "stt_01 stt_01 stt_01 stt_03" "stt_02 stt_02 stt_02 stt_03" "stt_04 stt_04 stt_05 stt_05" "stt_06 stt_06 stt_07 stt_07";}
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .contents .sub_top {grid-template-columns: 28% 28% 28% auto;}
 .contents .sub_top > div.st_03 {border-right: unset;}
 .contents .sub_top > div.st_04 {justify-content: flex-end; padding-right: unset;}

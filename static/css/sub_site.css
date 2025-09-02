@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .search_wrap .grid {grid-template-columns: repeat(4, 1fr);}
 .search_wrap .grid > li p.txt_tit {width: 6.5em;}
 .search_wrap .grid > li .custom-select {flex-grow: 1;}

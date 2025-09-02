@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .contents > .section_wrap {overflow-y: scroll;}
 
 .setting .contents section {display: flex; padding: var(--pd-common); flex-direction: column; gap: var(--gap-common);}

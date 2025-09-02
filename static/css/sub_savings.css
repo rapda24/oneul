@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .contents .sub_top {grid-template-columns: repeat(2, 1fr);}
 
 .control_wrap {display: flex; gap: var(--gap-common);}

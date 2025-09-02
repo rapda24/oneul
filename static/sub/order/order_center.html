@@ -228,19 +228,23 @@
                                     </li>
                                     <li>
                                         <p class="txt_tit">지역검색</p>
-                                        <div class="select-box">
-                                            <p class="cni_tit">전체<img src="../../../static/img/icon_down.svg"></p>
-                                            <ul class="cni_info">
-                                                <li class=""><p>서울특별시</p></li>
-                                                <li class=""><p>경기도</p></li>
-                                                <li class=""><p>강원도</p></li>
-                                                <li class=""><p>경상남도</p></li>
-                                                <li class=""><p>경상북도</p></li>
-                                                <li class=""><p>전라남도</p></li>
-                                                <li class=""><p>전라북도</p></li>
-                                                <li class=""><p>제주도</p></li>
+                                        <div class="custom-select">
+                                            <div class="select-box">
+                                                <span>전체</span><img src="../../../static/img/icon_down.svg" />
+                                            </div>
+                                            <ul class="options-list">
+                                                <li class="option" data-value="1">전체</li>
+                                                <li class="option" data-value="2">서울특별시</li>
+                                                <li class="option" data-value="3">경기도</li>
+                                                <li class="option" data-value="4">강원도</li>
+                                                <li class="option" data-value="5">경상남도</li>
+                                                <li class="option" data-value="6">경상북도</li>
+                                                <li class="option" data-value="7">전라남도</li>
+                                                <li class="option" data-value="8">전라북도</li>
+                                                <li class="option" data-value="9">제주도</li>
                                             </ul>
                                         </div>
+
                                     </li>
                                 </ul>
                                 <ul class="flex">
@@ -414,8 +418,8 @@
                         <section class="section_grid">
                             <div class="control_box">
                                 <div class="control_l">
-                                    <button class="btn_cs1 btn">보드미등록</button>
-                                    <button class="btn">선택 보드미 알림톡 발송</button>
+                                    <button class="btn_cs1 btn btn_rbodeumi">보드미등록</button>
+                                    <button class="btn btn_st">선택 보드미 알림톡 발송</button>
                                     <p class="notice">
                                         <span class="icon"><img src="../../../static/img/icon_expoint.svg" /></span> 보드미 아이디 클릭 시 보드미 관리자 계정으로 접속할 수 있습니다. </p>
                                 </div>
@@ -444,6 +448,7 @@
         loadComponent('grid_bodeumiist', 'grid_bodeumiist.html');
     </script>
     <script src="../../js/common.js"></script>
+    <script src="../../js/popup.js"></script>
     <script src="../../js/order.js"></script>
 
 </body>

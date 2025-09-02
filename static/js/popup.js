@@ -110,8 +110,40 @@ $(document).on('click', '.btn_dpp', function (e) {
     $('.pop_dpp').addClass('open'); 
 });
 
+$(document).on('click', '.btn_rbodeumi', function (e) {
+    $('.pop_rbodeumi').addClass('open'); 
+});
+
 /* 팝업 제거 */
 
 $(document).on('click', '.btn_close, .btn_submit', function () {
     $(this).closest('.popup').removeClass('open');
+});
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+    // 드롭다운 열기/닫기
+    $('.popup .select-box .cni_tit').click(function(e){
+        e.stopPropagation();
+        $('.select-box').not($(this).parent()).removeClass('on'); // 다른 select 닫기
+        $(this).parent('.select-box').toggleClass('on');
+    });
+
+    // 옵션 클릭 시 값 넣기
+    $('.popup .select-box .cni_info li').click(function(){
+        let selectedText = $(this).text();
+        $(this).parents('.select-box').find('.cni_tit').html(selectedText + ' <img src="../../../static/img/icon_down.svg">');
+        $(this).parents('.select-box').removeClass('on');
+    });
+
+    // 바깥 클릭 시 닫기
+    $(document).click(function(){
+        $('.select-box').removeClass('on');
+    });
 });

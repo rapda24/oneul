@@ -29,7 +29,7 @@
 
 </head>
 
-<body class="main">
+<body class="main main_02">
     <div class="wrap">
 
         <header class="header" id="header"></header>
@@ -279,28 +279,37 @@
                     </section>
     
     
-                    <div class="m05">
-                        <section class="m_bnr">
-                            <dd class="s_tit" lang="en">Banner</dd>
-                            <p>노출 <span lang="en">5</span>건 / 미노출 <span lang="en">2</span>건</p>
-                            <a href="static/sub/banner/banner.html" class="btn btn_rs">배너관리 </a>
-                        </section>
-                        <section class="m_coupon ">
-                            <dd class="s_tit" lang="en">Coupon</dd>
-                            <p>발급중 <span lang="en">10</span>개 / 사용 <span lang="en">550</span>개</p>
-                            <a href="static/sub/coupon/coupon.html" class="btn btn_rs">쿠폰관리 </a>
-                        </section>
-                        <section class="m_review">
-                            <dd class="s_tit" lang="en">Review</dd>
-                            <p>전체 <span lang="en">15,000</span>건</p>
-                            <a href="static/sub/review/review.html" class="btn btn_rs">리뷰관리 </a>
-                        </section>
-                        <section class="m_event txt_w">
-                            <dd class="s_tit" lang="en">Event</dd>
-                            <p>노출 <span lang="en">6</span>건 / 미노출 <span>0</span>건</p>
-                            <a href="static/sub/event/event.html" class="btn btn_rs">이벤트관리 </a>
-                        </section>
-                    </div>
+                    <section class="m05">
+                        <dd class="s_tit"><img src="static/img/icon_bodeumi_wh.svg" /> <b>보드미</b>현황</dd>
+                        <div class="s_con">
+                            <ul>
+                                <li>
+                                    <span class="icon"><img src="static/img/bodeumi_01.svg" /></span>
+                                    <p>운행중 보드미</p>
+                                    <dd lang="en">134<span>개</span></dd>
+                                </li>
+                                <li>
+                                    <span class="icon"><img src="static/img/bodeumi_02.svg" /></span>
+                                    <p>운행 준비중</p>
+                                    <dd lang="en">10<span>개</span></dd>
+                                </li>
+                                <li>
+                                    <span class="icon"><img src="static/img/bodeumi_03.svg" /></span>
+                                    <p>운행 종료</p>
+                                    <dd lang="en">23<span>개</span></dd>
+                                </li>
+                            </ul>
+                            <div class="notice">
+                                <span class="icon"><img src="static/img/icon_notice_bl.svg" /></span>
+                                <p>총 보드미 <b>167</b>개 운영중 / <b>12</b>개 운영준비중</p>
+                            </div>
+                            <ul>
+                                <li><a href="static/sub/order/order_center.html" class="btn btn_rs btn_cs3">보드미 관리</a></li>
+                                <li><a href="static/sub/order/order_center.html" class="btn btn_rs btn_cs3">보드미 운영 정보</a></li>
+                                <li><a href="#none" class="btn btn_rs btn_cs3 btn_rbodeumi">보드미 등록</a></li>
+                            </ul>
+                        </div>
+                    </section>
     
     
                     <section class="m06">
@@ -420,7 +429,7 @@
     <script src="static/js/popup.js"></script>
     <script>
         /* header와 aside 로드 */
-        loadComponent('header', 'static/layout/header.html');
+        loadComponent('header', 'static/layout/header_02.html');
         loadComponent('aside', 'static/layout/aside.html');
         loadComponent('popup', 'static/layout/popup_sub.html');
         loadComponent('tab_history', 'static/layout/tab_history.html');
