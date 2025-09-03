@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 
-.container {height: calc(100dvh - (var(--gap-common) * 3) - 78px);} /* 78px은 header의 높이 */
+.container {height: calc(100dvh - (var(--gap-common) * 3) - 96px);} /* 78px은 header의 높이 */
 
 /* header */
 .header {display: block; width: 100%; background-color: #fff; padding: 1.25em 0; border-radius: 1.5em; box-shadow: var(--st-sd);}
