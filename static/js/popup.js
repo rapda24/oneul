@@ -125,19 +125,20 @@ $(document).on('click', '.btn_close, .btn_submit', function () {
 
 
 
-
-
 $(document).ready(function(){
     // 드롭다운 열기/닫기
     $('.popup .select-box .cni_tit').click(function(e){
+        e.preventDefault();
         e.stopPropagation();
         $('.select-box').not($(this).parent()).removeClass('on'); // 다른 select 닫기
         $(this).parent('.select-box').toggleClass('on');
     });
 
     // 옵션 클릭 시 값 넣기
-    $('.popup .select-box .cni_info li').click(function(){
-        let selectedText = $(this).text();
+    $('.popup .select-box .cni_info li').click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        let selectedText = $(this).text().trim();
         $(this).parents('.select-box').find('.cni_tit').html(selectedText + ' <img src="../../../static/img/icon_down.svg">');
         $(this).parents('.select-box').removeClass('on');
     });
