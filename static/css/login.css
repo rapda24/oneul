@@ -6,8 +6,9 @@ body.login .wrap {display: flex; justify-content: center; align-items: center; w
 
 /* logo_wrap */
 .logo_wrap {display: flex; flex-direction: column;}
-.logo_wrap h1 {display: block; text-align: center; font-size: 5em; font-weight: normal;}
-.logo_wrap p {display: flex; justify-content: center; gap: 0.5em;}
+.logo_wrap h1 {display: block; text-align: center; font-weight: normal;}
+.logo_wrap h1 img {height: 5em;}
+.logo_wrap p {display: flex; justify-content: center; gap: 0.5em; padding-top: 1em;}
 .logo_wrap b {display: inline-block;}
 
 /* login_wrap */
