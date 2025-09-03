@@ -10,8 +10,8 @@
 .contents .sub_top > div.st_01 {border-right: unset;}
 
 
-.order_center .contents .sub_top {grid-template-columns: repeat(5, 1fr); grid-template-areas: "st_01 st_02 st_03 st_04 st_05";}
-.order_center .contents .sub_top > div.st_01 {border-right: 1px solid var(--border-gray);}
+.bodeumi .contents .sub_top {grid-template-columns: repeat(5, 1fr); grid-template-areas: "st_01 st_02 st_03 st_04 st_05";}
+.bodeumi .contents .sub_top > div.st_01 {border-right: 1px solid var(--border-gray);}
 
 .search_wrap .grid > li {display: flex; align-items: center;}
 .search_wrap .grid > li .input_wrap {display: flex; gap: 0.5em; align-self: center;}
@@ -19,10 +19,10 @@
 .search_wrap .grid > li .notice {flex-grow: 1;}
 
 
-.order_center .search_wrap {display: flex; flex-direction: column; gap: 1em; width: 100%; padding-right: 0.5em;}
-.order_center .search_wrap > ul.flex {width: 100%; justify-content: space-between}
-.order_center .search_wrap > ul.flex > li {display: flex; align-items: center; flex: auto;;}
-.order_center .search_wrap > ul.flex > li .custom-select {flex: 1;}
+.bodeumi .search_wrap {display: flex; flex-direction: column; gap: 1em; width: 100%; padding-right: 0.5em;}
+.bodeumi .search_wrap > ul.flex {width: 100%; justify-content: space-between}
+.bodeumi .search_wrap > ul.flex > li {display: flex; align-items: center; flex: auto;;}
+.bodeumi .search_wrap > ul.flex > li .custom-select {flex: 1;}
 .search_wrap .flex > li p.txt_tit {width: 4.5em;}
 .custom-datepicker > .flex {width: 100%;}
 
@@ -33,6 +33,11 @@
 /* .map_point */
 .contents .center_map > div.map .map_point_wrap,
 .contents .center_map > div.map .map_cn_wrap {display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+
+.contents .center_map > div.map .map_point_tit {display: flex; flex-direction: column; gap: 0.5em; width: fit-content; position: absolute; left: 0; top: 0;;}
+.contents .center_map > div.map .map_point_tit > li {width: fit-content; display: flex; gap: 0.5em; color: #999; font-size: 0.875em}
+
 .contents .center_map > div.map .map_point_wrap .map_point {width: 20px; height: 20px; background: url(../img/map_point.svg) no-repeat 50% 50%; background-size: cover; position: absolute; cursor: pointer;  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15); border-radius: 50%;}
 .contents .center_map > div.map .map_point_wrap .map_point.op {background: url(../img/map_point_op.svg) no-repeat 50% 50%;}
 .contents .center_map > div.map .map_point_wrap .map_point.opp {background: url(../img/map_point_opp.svg) no-repeat 50% 50%;}
@@ -189,7 +194,10 @@
 
 
 .grid_table .gh,
-.grid_table .gc li {grid-template-columns: 1.5em 7em 7em 5em 7em 5em 7em 5em auto;}
+.grid_table .gc li {grid-template-columns: 1.5em 7em 7em 5em 7em 15em 7em 5em 5em 7em auto;}
+
+.bodeumi .grid_table .gh,
+.bodeumi .grid_table .gc li {grid-template-columns: 1.5em 10em 10em 5em 10em 5em 10em 5em auto;}
 
 .grid_table .gc > li p.st_order {border-radius: 0.75em; padding: 0.5em; display: block; text-align: center;}
 .grid_table .gc > li p.st_order.sto_01 {background-color: var(--sub02-color); color: #fff;}
@@ -212,8 +220,8 @@
 @media screen and (max-width: 1640px) {
     .contents .sub_top {display: grid; grid-template-columns: repeat(4, 1fr); grid-template-areas: "st_01 st_02 st_02 st_03 " "st_01 st_04 st_05 st_06";}
 
-    .order_center .contents .sub_top {grid-template-columns: repeat(3, 1fr); grid-template-areas: "st_01 st_02 st_03 " "st_01 st_04 st_05";}
-    .order_center .contents .sub_top > div:last-child {padding-right: 0;}
+    .bodeumi .contents .sub_top {grid-template-columns: repeat(3, 1fr); grid-template-areas: "st_01 st_02 st_03 " "st_01 st_04 st_05";}
+    .bodeumi .contents .sub_top > div:last-child {padding-right: 0;}
 
     .contents .sub_top > div.st_03 {border-right: 0; padding-right: 0;}
     .contents .sub_top > div.st_06 {padding-right: 0;}
@@ -232,7 +240,7 @@
 
 @media screen and (max-width: 1270px) {
 
-    .order_center .search_wrap > ul.flex {flex-direction: column;}
+    .bodeumi .search_wrap > ul.flex {flex-direction: column;}
 
     .notice {font-size: 0.75em;}
 }
@@ -240,7 +248,7 @@
 @media screen and (max-width: 1170px) {
     .contents .center_map > div.center_info > .flex > li > .cni_tit {font-size: 0.875em;}
     .contents .center_map > div.center_info > .flex > li > .cni_info p {font-size: 0.75em;}
-    .order_center .search_wrap .flex {flex-direction: column;}
+    .bodeumi .search_wrap .flex {flex-direction: column;}
 
     .contents .center_map {flex-direction: column;}
     .contents .center_map > div.map {margin: 0 auto;}

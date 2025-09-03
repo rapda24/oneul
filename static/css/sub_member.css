@@ -27,8 +27,8 @@
 .search_wrap.sw_02 .excel_wrap .filebox input {border: unset; padding: unset; font-size: 0.875em; line-height: 1;}
 .search_wrap.sw_02 .excel_wrap label {width: 80px;}
 
-.grid_table .gh,
-.grid_table .gc > li {grid-template-columns: 1.5em 10% 10% 5em 7em 10% 15% 7em 5em auto; width: 100%; min-width: 1200px;}
+.section_grid .grid_table .gh,
+.section_grid .grid_table .gc > li {grid-template-columns: 1.5em 10% 10% 5em 7em 10% 15% 7em 5em auto; width: 100%; min-width: 1200px;}
 .grid_table .grade {display: flex; gap: 0.5em; color: var(--mid-black); align-self: center; font-size: 0.875em; justify-content: center;}
 .grid_table .button_wrap {gap: 0.5em; display: flex; justify-content: center;}
 .grid_table .button_wrap > button {flex: 1; width: auto;}

@@ -270,7 +270,7 @@ p.unit_price::after {content: '원';}
 .popup.pop_imb .content > div {display: flex; flex-direction: column; gap: 0.5em;}
 .popup.pop_imb .content > div > .tit {justify-content: space-between; align-items: center;}
 .popup.pop_imb .content > div > .tit > .tit_l {align-items: center;}
-.popup.pop_imb .content > div > .tit > .tit_l .icon {width: 1.5em; height: 1.5em; padding: 0.25em; background-color: var(--main-color); border-radius: 50%;}
+.popup.pop_imb .content > div > .tit > .tit_l .icon {width: 1.5em; height: 1.5em; padding: 0.25em; background-color: var(--sub01-color); border-radius: 50%;}
 .popup.pop_imb .input_wrap {display: flex; flex-direction: column; gap: 0.5em;}
 .popup.pop_imb .input_wrap > li > div {flex-grow: 1;}
 

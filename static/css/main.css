@@ -2,7 +2,7 @@
 
 .wrap {height: 100dvh; width: 100%; overflow: hidden;}
 
-.main_area {flex-grow: 1; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 20% 18% 20% auto; gap: var(--gap-common); grid-template-areas: "m01 m01 m05" "m02 m02 m05" "m02 m02 m06" "m03 m04 m07"; overflow-y: scroll; overflow-x:hidden; margin-top: var(--gap-common); height: calc(100% - 36px - var(--gap-common));}
+.main_area {flex-grow: 1; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 20% 19% 19% auto; gap: var(--gap-common); grid-template-areas: "m01 m01 m05" "m02 m02 m05" "m02 m02 m06" "m03 m04 m07"; overflow-y: scroll; overflow-x:hidden; margin-top: var(--gap-common); height: calc(100% - 36px - var(--gap-common));}
 .contents section > div {display: flex; flex-direction: column; justify-content: center; align-items: center; flex-grow: 1; flex-wrap: wrap; gap: 1em; border-right: 1px solid var(--border-gray);}
 .contents section > div:last-child {border: 0px;}
 .contents section > div dd.s_tit {display: flex; gap: 0.5em; align-items: center; flex-wrap: wrap;}
