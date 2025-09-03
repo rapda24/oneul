@@ -362,12 +362,18 @@ p.unit_price::after {content: '원';}
 .popup.pop_dpd .con_05,
 .popup.pop_dpd .con_06,
 .popup.pop_dpd .con_05 .input_wrap,
+.popup.pop_dpd .con_07,
+.popup.pop_dpd .con_07 .input_wrap,
 .popup.pop_rdpd .con_01,
 .popup.pop_rdpd .con_01 .input_wrap,
 .popup.pop_rdpd .con_03,
 .popup.pop_rdpd .con_04,
 .popup.pop_rdpd .con_05,
 .popup.pop_rdpd .con_06,
+.popup.pop_rdpd .con_07,
+.popup.pop_rdpd .con_07 .input_wrap,
+.popup.pop_dpd .con_07 .con_box,
+.popup.pop_rdpd .con_07 .con_box,
 .popup.pop_rdpd .con_05 .input_wrap {display: flex; flex-direction: column; gap: 0.5em;}
 .popup.pop_dpd .con_01 .input_wrap p,
 .popup.pop_dpd .con_05 .input_wrap p,
@@ -468,6 +474,9 @@ p.unit_price::after {content: '원';}
 .popup.pop_dpd .con_06 .img_wrap li::after,
 .popup.pop_rdpd .con_06 .img_wrap li::after {content: ''; z-index: 1; width: 1em; height: 1em; border-radius: 50%; display: block; top: -0.5em; right: -0.5em; position: absolute; background: url(../img/icon_sclose.svg) no-repeat 50% 50%; }
 
+
+.popup.pop_rdpd .con_07 .calendar_time,
+.popup.pop_dpd .con_07 .calendar_time {font-size: 0.875em; width: 8em; flex-shrink: 0; flex-grow: unset;text-align: center;}
 
 /* popup_04 */
 .popup.popup_04 .popup_box .content {height: auto; overflow-y: scroll;}
