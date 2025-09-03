@@ -3,15 +3,28 @@ document.addEventListener('componentLoaded', (event) => {
     if (event.detail === 'aside') {
         console.log('Aside loaded, applying features...');
         
-        // aside 메뉴의 클릭 이벤트 처리
         $('aside li a').on('click', function (e) {
-            // e.preventDefault() 제거하여 기본 동작(페이지 이동)을 막지 않음
-            e.stopPropagation();  // 이벤트 전파 방지 (서브 메뉴 클릭 시 상위 메뉴 클릭 방지)
+    e.stopPropagation();
 
-            const $li = $(this).closest('li');
-            $li.addClass('active').siblings().removeClass('active');
-            $('aside').toggleClass('open', $li.hasClass('has_sub'));
-        });
+    const $a  = $(this);
+    const $li = $a.closest('li');
+    const href = ($a.attr('href') || '').trim();
+
+    const isToggleLink =
+        $li.hasClass('has_sub') || href === '' || href === '#' || href === 'javascript:void(0)';
+
+    if (isToggleLink) {
+        e.preventDefault(); // ← 토글 링크는 기본 이동 막기
+        $li.addClass('active').siblings().removeClass('active');
+        $('aside').toggleClass('open', $li.hasClass('has_sub'));
+        return;
+    }
+
+    // 여기까지 오면 실제 이동 링크: 기본 동작 허용(페이지 전환)
+    $li.addClass('active').siblings().removeClass('active');
+    $('aside').removeClass('open');
+});
+
 
         // nav_close 클릭 시 aside 메뉴 닫기/열기
         $('.nav_close').on('click', function () {
