@@ -18,38 +18,89 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">관심마켓</p>
             <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
+        <!-- 상품 검색 -->
+        <div class="searchbar-box">
+            <div class="inner">
                 <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
                 </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
-                </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
-                </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
+            </div>
+        </div>
+        <!-- 주변 매장 list -->
+        <section class="pb50">
+            <div class="inner">
+                <ul class="market-list flex justify-between">
+                    <li class="flex justify-between">
+                        <a href="#"></a>
+                        <div class="img-box"><img src="./asset/images/market_img05.jpg" alt="미소마트"></div>
+                        <div class="txt-box flex">
+                            <div class="txt-head flex align-start justify-between">
+                                <p class="name fs48 fw700"><span class="market-name">미소마트</span></p>
+                                <button class="btn btn-like heart-b active"></button>
+                            </div>
+                            <div class="txt-body">
+                                <p class="location fs33">300m</p>
+                                <p class="address mt20 fs33">서울시 금천구 시흥대로59길 10</p>
+                                <p class="flex mt20">
+                                    <span class="score-area star-score4"><em class="star-img">별점 4점</em><span class="hidden">5점 만점</span></span><span class="fs33">(20)</span>
+                                </p>
+                            </div>
+                            <div class="txt-foot">
+                                <p class="fs30"><span class="market-label white bg-green">픽업</span><span class="market-label white bg-green">배송</span></p>
+                                <p class="category mt20 fs33">과일, 채소, 수산물</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex justify-between">
+                        <a href="#"></a>
+                        <div class="img-box"><img src="./asset/images/market_img06.jpg" alt="부용마트"></div>
+                        <div class="txt-box flex">
+                            <div class="txt-head flex align-start justify-between">
+                                <p class="name fs48 fw700"><span class="market-name">부용마트</span></p>
+                                <button class="btn btn-like heart-b active"></button>
+                            </div>
+                            <div class="txt-body">
+                                <p class="location fs33">600m</p>
+                                <p class="address mt20 fs33">서울시 동작구 신대방1가길 19</p>
+                                <p class="flex mt20">
+                                    <span class="score-area star-score5"><em class="star-img">별점 5점</em><span class="hidden">5점 만점</span></span><span class="fs33">(8)</span>
+                                </p>
+                            </div>
+                            <div class="txt-foot">
+                                <p class="fs30"><span class="market-label black bg-yellowish">픽업</span></p>
+                                <p class="category mt20 fs33">과일, 채소, 정육, 수산물</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex justify-between">
+                        <a href="#"></a>
+                        <div class="img-box"><img src="./asset/images/market_img07.jpg" alt="미스터마트"></div>
+                        <div class="txt-box flex">
+                            <div class="txt-head flex align-start justify-between">
+                                <p class="name fs48 fw700"><span class="market-name">미스터마트</span></p>
+                                <button class="btn btn-like heart-b active"></button>
+                            </div>
+                            <div class="txt-body">
+                                <p class="location fs33">1.5km</p>
+                                <p class="address mt20 fs33">서울시 동작구 신대방1가길 19</p>
+                                <p class="flex mt20">
+                                    <span class="score-area star-score0"><em class="star-img">별점 0점</em><span class="hidden">5점 만점</span></span><span class="fs33">(0)</span>
+                                </p>
+                            </div>
+                            <div class="txt-foot">
+                                <p class="fs30"><span class="market-label black bg-yellow">배송</span></p>
+                                <p class="category mt20 fs33">과일, 채소, 정육, 수산물, 가공식품</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
-                </div>
             </div>
         </section>
     </div>
@@ -92,6 +143,7 @@
                 <li>
                     <a href="#" class="gnb-tit after white fs50 fw500">카테고리</a>
                     <ul class="sub-menu">
+                        <li><a href="#" class="white fs40 fw300">전체상품</a></li>
                         <li><a href="#" class="white fs40 fw300">과일</a></li>
                         <li><a href="#" class="white fs40 fw300">채소</a></li>
                         <li><a href="#" class="white fs40 fw300">육류</a></li>
@@ -155,7 +207,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#" class="gnb-tit white fs50 fw500">관심매장</a>
+                    <a href="#" class="gnb-tit white fs50 fw500">관심마켓</a>
                 </li>
                 <li>
                     <a href="#" class="gnb-tit white fs50 fw500">Mr.공구</a>

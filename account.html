@@ -8,9 +8,11 @@
     <title>PAPAMARKET</title>
     <link rel="stylesheet" href="./asset/css/reset.css">
     <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/nice-select.css">
     <link rel="stylesheet" href="./asset/css/style.css">
     <script src="./asset/js/jquery-3.6.1.js"></script>
     <script src="./asset/js/swiper-bundle.min.js"></script>
+    <script src="./asset/js/jquery.nice-select.min.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -18,37 +20,50 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">계좌 입력</p>
             <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
+        <!-- 상품 검색 -->
+        <div class="searchbar-box">
+            <div class="inner">
                 <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
                 </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
+            </div>
+        </div>
+        <!-- 계좌 입력 -->
+        <h3 class="hidden">계좌 입력</h3>
+        <section class="pb100">
+            <div class="inner">
+                <!-- 은행명 -->
+                <label for="bank-name" class="input-label mb30 fs42">은행명</label>
+                <select name="" id="bank-name" class="select-custom fs36 wide">
+                    <option value="">은행을 선택해 주세요.</option>
+                    <option value="">우리은행</option>
+                    <option value="">IBK기업은행</option>
+                    <option value="">KB국민은행</option>
+                    <option value="">NH농협은행</option>
+                    <option value="">하나은행</option>
+                    <option value="">신한은행</option>
+                    <option value="">우체국</option>
+                </select>
+                <!-- 예금주 -->
+                <label for="name" class="input-label mt50 mb30 fs42">예금주</label>
+                <div class="input-row bg-white">
+                    <input type="text" id="name" class="inp fs36" placeholder="예금주를 입력해주세요.">
                 </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
+                <!-- 계좌번호 -->
+                <label for="tel" class="input-label mt50 mb30 fs42">계좌번호</label>
+                <div class="input-row bg-white">
+                    <input type="tel" id="tel" class="inp fs36" placeholder="계좌번호를 입력해주세요.">
                 </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
-                </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
+                <!-- 버튼 영역 -->
+                <div class="btn-wrap mt200">
+                    <button class="btn btn-wide white fs50 fw500 bg-green">확인</button>
                 </div>
             </div>
         </section>
@@ -221,5 +236,9 @@
         </div>
     </div>
     <script src="./asset/js/ui.js"></script>
+    <script>
+        /* select custom */
+        $(".select-custom").niceSelect();
+    </script>
 </body>
 </html>

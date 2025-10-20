@@ -8,9 +8,11 @@
     <title>PAPAMARKET</title>
     <link rel="stylesheet" href="./asset/css/reset.css">
     <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/nice-select.css">
     <link rel="stylesheet" href="./asset/css/style.css">
     <script src="./asset/js/jquery-3.6.1.js"></script>
     <script src="./asset/js/swiper-bundle.min.js"></script>
+    <script src="./asset/js/jquery.nice-select.min.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -18,38 +20,153 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">과일</p>
             <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
+        <!-- 상품 검색 -->
+        <div class="searchbar-box">
+            <div class="inner">
                 <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
                 </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
-                </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
-                </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
+            </div>
+        </div>
+        <!-- 상품 목록 -->
+        <section class="product-list-wrap pb30">
+            <div class="inner">
+                <!-- 카테고리 -->
+                <ul class="category-list flex fs33">
+                    <li><a href="#">전체상품</a></li>
+                    <li><a href="#" class="active">과일</a></li>
+                    <li><a href="#">채소</a></li>
+                    <li><a href="#">육류</a></li>
+                    <li><a href="#">수산물</a></li>
+                    <li><a href="#">가공식품</a></li>
                 </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
+                <!-- 정렬 -->
+                <div class="flex align-center justify-between mt40 mb50">
+                    <p class="sort-tit fs36">원하시는 상품을 확인하세요!</p>
+                    <select id="" name="" class="select-custom sort-select fs33">
+                        <option value="">파파 추천순</option>
+                        <option value="">판매량순</option>
+                        <option value="">낮은 가격순</option>
+                        <option value="">높은 가격순</option>
+                        <option value="">높은 별점순</option>
+                        <option value="">신상품순</option>
+                        <option value="">후기 많은순</option>
+                    </select>
                 </div>
+                <!-- 상품 리스트 -->
+                <ul class="product-list flex justify-between">
+                    <li class="soldout">
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="./asset/images/product_img17.jpg" alt="국내산 샤인머스켓 특산품 2kg">
+                            </a>
+                            <div class="basket-box flex">
+                                <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <a href="#">
+                                <p class="name black fs36">국내산 샤인머스켓 특산품 2kg</p>
+                                <p class="price black fs36 fw700">15,900원</p>
+                            </a>
+                            <span class="label white fs30 bg-gray3">품절</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="./asset/images/product_img05.jpg" alt="감귤 500g">
+                            </a>
+                            <div class="basket-box flex">
+                                <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <a href="#">
+                                <p class="name black fs36">감귤 500g</p>
+                                <p class="price black fs36 fw700">4,000원</p>
+                                <span class="label fs30 bg-yellowish">새벽배송</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="./asset/images/product_img02.jpg" alt="국내산 대추 방울 토마토 500g">
+                            </a>
+                            <div class="basket-box flex">
+                                <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <a href="#">
+                                <p class="name black fs36">국내산 대추 방울 토마토 500g</p>
+                                <p class="price black fs36 fw700">6,900원</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="./asset/images/product_img06.jpg" alt="미국산 레몬 2입">
+                            </a>
+                            <div class="basket-box flex">
+                                <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <a href="#">
+                                <p class="name black fs36">미국산 레몬 2입</p>
+                                <p class="price black fs36 fw700">2,200원</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="./asset/images/product_img14.jpg" alt="[제스프리] 그린키위 9-10입">
+                            </a>
+                            <div class="basket-box flex">
+                                <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <a href="#">
+                                <p class="name black fs36">[제스프리] 그린키위 9-10입</p>
+                                <p class="price black fs36 fw700">8,200원</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="./asset/images/product_img01.jpg" alt="[제스프리] 골드키위 8-10입">
+                            </a>
+                            <div class="basket-box flex">
+                                <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">13</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <a href="#">
+                                <p class="name black fs36">[제스프리] 골드키위 8-10입</p>
+                                <p class="price black fs36 fw700">10,700원</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </div>
@@ -221,5 +338,26 @@
         </div>
     </div>
     <script src="./asset/js/ui.js"></script>
+    <script>
+        /* category-list fixed */
+        const headerOH = $("header").outerHeight();
+        const categoryOH = $(".category-list").outerHeight();
+        const categoryT = $(".category-list").offset().top - headerOH;
+
+        $(window).scroll(function(){
+            const scrollT = $(this).scrollTop();
+
+            if(scrollT >= categoryT){
+                $(".category-list").addClass("fixed");
+                $(".product-list-wrap").css("padding-top", categoryOH);
+            } else {
+                $(".category-list").removeClass("fixed");
+                $(".product-list-wrap").css("padding-top", "0px");
+            }
+        });
+
+        /* select custom */
+        $(".select-custom").niceSelect();
+    </script>
 </body>
 </html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>PAPAMARKET</title>
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <script src="./asset/js/jquery-3.6.1.js"></script>
+    <script src="./asset/js/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1 class="hidden">PAPAMARKET</h1>
+        <div class="inner flex align-center justify-between">
+            <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">쿠폰</p>
+        </div>
+    </header>
+    <!-- content -->
+    <div class="content">
+        <!-- 쿠폰 -->
+        <section class="coupon-wrap pt36 pb100">
+            <div class="inner">
+                <!-- 할인 쿠폰 -->
+                <h5 class="fs45 fw700">할인 쿠폰</h5>
+                <div class="coupon-box flex justify-between mt50 pb80">
+                    <div class="coupon coupon-download">
+                        <a href="#">
+                            <p>
+                                <span class="tit black fs42 fw700">5천원 쿠폰</span>
+                                <span class="txt gray2 fs30">5만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">발급받기</span>
+                        </a>
+                    </div>
+                    <div class="coupon coupon-download">
+                        <a href="#">
+                            <p>
+                                <span class="tit black fs42 fw700">1천원 쿠폰</span>
+                                <span class="txt gray2 fs30">2만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">발급받기</span>
+                        </a>
+                    </div>
+                    <div class="coupon completed">
+                        <a href="#">
+                            <input type="radio" name="coupon" id="coupon1" class="design-inp" title="선택"><label for="coupon1" class="coupon-label">선택</label></span>
+                            <p>
+                                <span class="tit black fs42 fw700">1천원 쿠폰</span>
+                                <span class="txt gray2 fs30">2만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">발급완료</span>
+                        </a>
+                    </div>
+                    <div class="coupon completed">
+                        <a href="#">
+                            <input type="radio" name="coupon" id="coupon2" class="design-inp" title="선택"><label for="coupon2" class="coupon-label">선택</label></span>
+                            <p>
+                                <span class="tit black fs42 fw700">2천원 쿠폰</span>
+                                <span class="txt gray2 fs30">3만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">발급완료</span>
+                        </a>
+                    </div>
+                    <div class="coupon not">
+                        <a href="#">
+                            <input type="radio" name="coupon" id="coupon3" class="design-inp" title="선택 불가" disabled><label for="coupon3" class="coupon-label">선택 불가</label></span>
+                            <p>
+                                <span class="tit black fs42 fw700">5천원 쿠폰</span>
+                                <span class="txt gray2 fs30">5만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">사용불가</span>
+                        </a>
+                    </div>
+                    <div class="coupon not">
+                        <a href="#">
+                            <input type="radio" name="coupon" id="coupon4" class="design-inp" title="선택 불가" disabled><label for="coupon4" class="coupon-label">선택 불가</label></span>
+                            <p>
+                                <span class="tit black fs42 fw700">1천원 쿠폰</span>
+                                <span class="txt gray2 fs30">2만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">사용불가</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 중복 쿠폰 -->
+                <h5 class="fs45 fw700">중복 쿠폰</h5>
+                <div class="coupon-box flex justify-between mt50">
+                    <div class="coupon completed">
+                        <a href="#">
+                            <input type="radio" name="duplicateCoupon" id="duplicateCoupon1" class="design-inp" title="선택"><label for="duplicateCoupon1" class="coupon-label">선택</label></span>
+                            <p>
+                                <span class="tit black fs42 fw700">1천원 쿠폰</span>
+                                <span class="txt gray2 fs30">2만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">발급완료</span>
+                        </a>
+                        <span class="txt-use white fs30 bg-green">부용마트 사용가능</span>
+                    </div>
+                    <div class="coupon completed">
+                        <a href="#">
+                            <input type="radio" name="duplicateCoupon" id="duplicateCoupon2" class="design-inp" title="선택"><label for="duplicateCoupon2" class="coupon-label">선택</label></span>
+                            <p>
+                                <span class="tit black fs42 fw700">2천원 쿠폰</span>
+                                <span class="txt gray2 fs30">3만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">발급완료</span>
+                        </a>
+                        <span class="txt-use white fs30 bg-green">부용마트 사용가능</span>
+                    </div>
+                    <div class="coupon not">
+                        <a href="#">
+                            <input type="radio" name="duplicateCoupon" id="duplicateCoupon3" class="design-inp" title="선택 불가" disabled><label for="duplicateCoupon3" class="coupon-label">선택 불가</label></span>
+                            <p>
+                                <span class="tit black fs42 fw700">5천원 쿠폰</span>
+                                <span class="txt gray2 fs30">5만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">사용불가</span>
+                        </a>
+                        <span class="txt-use white fs30 bg-green">부용마트 사용가능</span>
+                    </div>
+                    <div class="coupon not">
+                        <a href="#">
+                            <input type="radio" name="duplicateCoupon" id="duplicateCoupon4" class="design-inp" title="선택 불가"disabled><label for="duplicateCoupon4" class="coupon-label">선택 불가</label></span>
+                            <p>
+                                <span class="tit black fs42 fw700">1천원 쿠폰</span>
+                                <span class="txt gray2 fs30">2만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">사용불가</span>
+                        </a>
+                        <span class="txt-use white fs30 bg-green">부용마트 사용가능</span>
+                    </div>
+                </div>
+                <!-- 쿠폰 주의사항 -->
+                <a href="#" class="more-tit black mt100 fs36">쿠폰 주의사항</a>
+                <div class="more-content normal" aria-hidden="true">
+                    <div class="mt30">
+                        <ul class="bar-list fs33 fw300">
+                            <li>추천 등급 쿠폰은 매달 발급되며, 당월만 사용 가능합니다.</li>
+                            <li>사용 기간이 만료된 쿠폰은 복구되지 않습니다.</li>
+                            <li>쿠폰과 적립금은 중복 사용 가능하며, 쿠폰 적용 가능 금액은 할인 전 금액으로 적용됩니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-wrap mt100">
+                    <button class="btn btn-wide white fs50 fw500 bg-green">선택완료</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- footer -->
+    <footer>
+        <!-- 고객센터 안내 -->
+        <div class="cs-info inner txt-center">
+            <h2 class="fs45 fw700">고객센터</h2>
+            <p class="fs33"><span>상담시간 : 10시-17시 (주말, 공휴일 휴무)</span> <span>점심 시간 : 12시-13시</span></p>
+            <div class="flex justify-center">
+                <a href="tel:1544-1541" class="btn btn-tel black fs33 bg-white">1544-1541</a>
+                <a href="#" class="btn btn-talk white fs33 bg-green">채널톡 상담</a>
+            </div>
+        </div>
+        <!-- 하단 메뉴 -->
+        <div class="footer-menu flex align-center justify-between bg-green">
+            <a href="#" class="btn btn-home home-w">홈</a>
+            <button class="btn btn-menu menu-w">메뉴 열기</button>
+            <a href="#" class="btn btn-customer customer-w">마이페이지</a>
+            <a href="#" class="btn btn-location location-f">위치기반</a>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+    </footer>
+    <!-- gnb-menu -->
+    <div class="gnb-menu" aria-hidden="true">
+        <div class="menu-body">
+            <button class="btn-gnb-close">메뉴 닫기</button>
+            <!-- 상품 검색 -->
+            <div class="searchbar-box">
+                <div class="input-row">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
+                </div>
+            </div>
+            <!-- gnb -->
+            <ul class="gnb">
+                <li>
+                    <a href="#" class="gnb-tit after white fs50 fw500">카테고리</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="white fs40 fw300">과일</a></li>
+                        <li><a href="#" class="white fs40 fw300">채소</a></li>
+                        <li><a href="#" class="white fs40 fw300">육류</a></li>
+                        <li><a href="#" class="white fs40 fw300">수산물</a></li>
+                        <li><a href="#" class="white fs40 fw300">가공식품</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="gnb-tit white fs50 fw500">내주변 슈퍼마켓</a>
+                    <!-- Slider main container -->
+                    <div class="gnb-around-list-slide around-list-slide swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="#" class="box">
+                                    <p class="fs55">미소<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">300m</p>
+                                    <button class="btn btn-like heart-w"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box sale">
+                                    <p class="fs55">부용<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">600m</p>
+                                    <button class="btn btn-like heart-w active"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box">
+                                    <p class="fs55">미스터<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">1.5km</p>
+                                    <button class="btn btn-like heart-w active"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box sale">
+                                    <p class="fs55">파파<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">3km</p>
+                                    <button class="btn btn-like heart-w"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box">
+                                    <p class="fs55">미스터<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">600m</p>
+                                    <button class="btn btn-like heart-w"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="gnb-tit white fs50 fw500">관심매장</a>
+                </li>
+                <li>
+                    <a href="#" class="gnb-tit white fs50 fw500">Mr.공구</a>
+                </li>
+                <li>
+                    <a href="#" class="gnb-tit after white fs50 fw500">커뮤니티</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="white fs40 fw300">구매후기</a></li>
+                        <li><a href="#" class="white fs40 fw300">문의하기</a></li>
+                        <li><a href="#" class="white fs40 fw300">공지사항</a></li>
+                        <li><a href="#" class="white fs40 fw300">이벤트</a></li>
+                    </ul>
+                </li>
+                <li class="margin">
+                    <a href="#" class="gnb-tit white fs50 fw500">고객센터</a>
+                    <div class="cs-info flex">
+                        <a href="tel:1544-1541" class="btn btn-tel black fs33 bg-white">1544-1541</a>
+                        <a href="#" class="btn btn-talk black fs33 bg-white">채널톡 상담</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- gnb-banner -->
+            <div class="gnb-banner-wrap">
+                <!-- Slider main container -->
+                <div class="gnb-banner-slide swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner01_330x150.jpg" alt="친구 초대하고 쿠폰 받아가세요">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner02_330x150.jpg" alt="파파마켓 신규회원 3,000원 적립금 지급">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner03_330x150.jpg" alt="친구 초대하고 쿠폰 받아가세요">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner04_330x150.jpg" alt="파파마켓 신규회원 3,000원 적립금 지급">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner05_330x150.jpg" alt="친구 초대하고 쿠폰 받아가세요">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- gnb-foot-menu -->
+            <ul class="gnb-foot-menu flex align-center">
+                <li><a href="#" class="white fs36">파파마켓 소개</a></li>
+                <li><a href="#" class="white fs36">이용 안내</a></li>
+                <li><a href="#" class="white fs36">입점 문의</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 팝업 -->
+    <div class="popup popup-normal">
+        <div class="popup-body bg-green">
+            <button class="btn btn-popup-close">팝업 닫기</button>
+            <div class="txt-wrap txt-center">
+                <p class="txt white fs50 fw500">쿠폰이 발급되었습니다.</p>
+            </div>
+            <div class="btn-wrap flex justify-between">
+                <button class="btn white fs42 fw500">확인</button>
+            </div>
+        </div>
+    </div>
+    <script src="./asset/js/ui.js"></script>
+    <script>
+        /* 더보기 */
+        var moreInfo = $(".more-tit");
+        var i;
+    
+        for (i = 0; i < moreInfo.length; i++) {
+            moreInfo[i].addEventListener("click", function(e) {
+                e.preventDefault();
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                    $(panel).attr("aria-hidden", "true");
+                } else {
+                    $(panel).attr("aria-hidden", "false");
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+        /* 팝업 열기 */
+        $(".coupon-download").click(function(e) {
+            e.preventDefault();
+            
+            $(".popup").show();
+            $("body").addClass("no-scroll");
+        });
+
+        /* 팝업 닫기 */
+        $(".btn-popup-close").click(function () {
+            $(this).parents(".popup").hide();
+            $("body").removeClass("no-scroll");
+        });
+        $(".popup").click(function(e){
+            if( !$(".popup").has(e.target).length ) {
+                $(this).hide();
+                $("body").removeClass("no-scroll");
+            } 
+        });
+    </script>
+</body>
+</html>

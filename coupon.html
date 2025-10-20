@@ -18,37 +18,109 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">쿠폰</p>
             <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
+        <!-- 상품 검색 -->
+        <div class="searchbar-box">
+            <div class="inner">
                 <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
                 </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
+            </div>
+        </div>
+        <!-- 쿠폰 -->
+        <section class="coupon-wrap pb100">
+            <div class="pt20 pb60 bb10-edeae2 txt-center">
+                <h4 class="fs42 fw400">쿠폰</h4>
+                <p class="point mt27 fs57 fw500">3장</p>
+                <p class="txt mt27 gray fs30 fw300">15일 이내 소멸 예정 쿠폰이 없습니다.</p>
+            </div>
+            <div class="inner pt70">
+                <!-- 발급 가능 쿠폰 -->
+                <h5 class="fs45 fw700">발급 가능 쿠폰</h5>
+                <div class="coupon-box flex justify-between mt50 pb80">
+                    <div class="coupon coupon-download">
+                        <a href="#">
+                            <p>
+                                <span class="tit black fs42 fw700">5천원 쿠폰</span>
+                                <span class="txt gray2 fs30">5만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">발급받기</span>
+                        </a>
+                    </div>
+                    <div class="coupon coupon-download">
+                        <a href="#">
+                            <p>
+                                <span class="tit black fs42 fw700">1천원 쿠폰</span>
+                                <span class="txt gray2 fs30">2만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">발급받기</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
+                <!-- 발급된 쿠폰 -->
+                <h5 class="fs45 fw700">발급된 쿠폰</h5>
+                <div class="coupon-box flex justify-between mt50">
+                    <div class="coupon completed">
+                        <a href="#">
+                            <p>
+                                <span class="tit black fs42 fw700">1천원 쿠폰</span>
+                                <span class="txt gray2 fs30">2만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">발급완료</span>
+                        </a>
+                    </div>
+                    <div class="coupon completed">
+                        <a href="#">
+                            <p>
+                                <span class="tit black fs42 fw700">2천원 쿠폰</span>
+                                <span class="txt gray2 fs30">3만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">발급완료</span>
+                        </a>
+                    </div>
+                    <div class="coupon completed">
+                        <a href="#">
+                            <p>
+                                <span class="tit black fs42 fw700">1천원 쿠폰</span>
+                                <span class="txt gray2 fs30">2만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">발급완료</span>
+                        </a>
+                        <span class="txt-use white fs30 bg-green">부용마트 사용가능</span>
+                    </div>
+                    <div class="coupon completed">
+                        <a href="#">
+                            <p>
+                                <span class="tit black fs42 fw700">2천원 쿠폰</span>
+                                <span class="txt gray2 fs30">3만원 이상 사용 가능</span>
+                                <span class="date gray2 fs30">(2022-11-01 ~ 2022-11-30)</span>
+                            </p>
+                            <span class="state fs36 fw500">발급완료</span>
+                        </a>
+                        <span class="txt-use white fs30 bg-green">부용마트 사용가능</span>
+                    </div>
                 </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
-                </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
+                <!-- 쿠폰 주의사항 -->
+                <a href="#" class="more-tit black mt100 fs36">쿠폰 주의사항</a>
+                <div class="more-content normal" aria-hidden="true">
+                    <div class="mt30">
+                        <ul class="bar-list fs33 fw300">
+                            <li>추천 등급 쿠폰은 매달 발급되며, 당월만 사용 가능합니다.</li>
+                            <li>사용 기간이 만료된 쿠폰은 복구되지 않습니다.</li>
+                            <li>쿠폰과 적립금은 중복 사용 가능하며, 쿠폰 적용 가능 금액은 할인 전 금액으로 적용됩니다.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -220,6 +292,59 @@
             </ul>
         </div>
     </div>
+    <!-- 팝업 -->
+    <div class="popup popup-normal">
+        <div class="popup-body bg-green">
+            <button class="btn btn-popup-close">팝업 닫기</button>
+            <div class="txt-wrap txt-center">
+                <p class="txt white fs50 fw500">쿠폰이 발급되었습니다.</p>
+            </div>
+            <div class="btn-wrap flex justify-between">
+                <button class="btn white fs42 fw500">확인</button>
+            </div>
+        </div>
+    </div>
     <script src="./asset/js/ui.js"></script>
+    <script>
+        /* 더보기 */
+        var moreInfo = $(".more-tit");
+        var i;
+    
+        for (i = 0; i < moreInfo.length; i++) {
+            moreInfo[i].addEventListener("click", function(e) {
+                e.preventDefault();
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                    $(panel).attr("aria-hidden", "true");
+                } else {
+                    $(panel).attr("aria-hidden", "false");
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+        /* 팝업 열기 */
+        $(".coupon-download").click(function(e) {
+            e.preventDefault();
+            
+            $(".popup").show();
+            $("body").addClass("no-scroll");
+        });
+
+        /* 팝업 닫기 */
+        $(".btn-popup-close").click(function () {
+            $(this).parents(".popup").hide();
+            $("body").removeClass("no-scroll");
+        });
+        $(".popup").click(function(e){
+            if( !$(".popup").has(e.target).length ) {
+                $(this).hide();
+                $("body").removeClass("no-scroll");
+            } 
+        });
+    </script>
 </body>
 </html>

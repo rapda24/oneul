@@ -8,9 +8,11 @@
     <title>PAPAMARKET</title>
     <link rel="stylesheet" href="./asset/css/reset.css">
     <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/nice-select.css">
     <link rel="stylesheet" href="./asset/css/style.css">
     <script src="./asset/js/jquery-3.6.1.js"></script>
     <script src="./asset/js/swiper-bundle.min.js"></script>
+    <script src="./asset/js/jquery.nice-select.min.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -18,37 +20,77 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">배송 조회</p>
             <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
-                <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+        <section class="pb100">
+            <div class="order-box bt10-edeae2 bb10-edeae2">
+                <!-- 주문번호 -->
+                <dl class="box-head flex align-center fs42">
+                    <dt>주문번호</dt>
+                    <dd>20221025-000671</dd>
+                </dl>
+                <div class="box-body">
+                    <div class="box">
+                        <div class="product-info flex align-center">
+                            <div class="product-img"><img src="./asset/images/product_img05.jpg" alt="[물가안정 행사] 감귤 500g*2SET"></div>
+                            <div class="product-txt">
+                                <p class="sub fs33 fw500">미스터아빠</p>
+                                <p class="name fs36">[물가안정 행사] 감귤 500g*2SET</p>
+                                <div class="flex align-center mt6">
+                                    <p class="mr20 fs36">CJ대한통운 / 123456789123</p>
+                                    <a href="#" class="btn btn-copy white fs33 bg-green">복사</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
-                </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
-                </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
-                </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
+            </div>
+            <!-- 배송 조회 -->
+            <div class="deilvery-current pt80 pb100">
+                <div class="inner">
+                    <ul class="current-list fs36">
+                        <li class="on">
+                            <div class="info-current">
+                                <div class="flex"><p class="txt-location">서울구로</p><p class="info-state">배송완료</p></div>
+                                <p class="txt-time mt20">11/14(월) 11:12</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-current">
+                                <div class="flex"><p class="txt-location">서울구로</p><p class="info-state">배송출발 (배송예정시간 : 15~17시)</p></div>
+                                <p class="txt-time mt20">11/14(월) 11:12</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-current">
+                                <div class="flex"><p class="txt-location">구로</p><p class="info-state">간선하차</p></div>
+                                <p class="txt-time mt20">11/14(월) 11:12</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-current">
+                                <div class="flex"><p class="txt-location">군포HUB</p><p class="info-state">간선상차</p></div>
+                                <p class="txt-time mt20">11/14(월) 11:12</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-current">
+                                <div class="flex"><p class="txt-location">기흥A</p><p class="info-state">간선상차</p></div>
+                                <p class="txt-time mt20">11/14(월) 11:12</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-current">
+                                <div class="flex"><p class="info-state">배송시작</p></div>
+                                <p class="txt-time mt20">11/14(월) 11:12</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="noti-txt mt80 gray3 fs33">배송 추적 서비스를 통해 제공받는 정보로 실 배송 현황과 차이가 있을 수 있습니다.</p>
                 </div>
             </div>
         </section>
@@ -220,6 +262,62 @@
             </ul>
         </div>
     </div>
+    <!-- 구매 확정 팝업 -->
+    <div class="popup popup-normal2">
+        <div class="popup-body bg-green">
+            <button class="btn btn-popup-close">팝업 닫기</button>
+            <div class="txt-wrap txt-center">
+                <p class="txt mb80 white fs50 fw500">구매확정 하시겠습니까?</p>
+                <p class="txt white fs42"><img src="./asset/images/common/ico_membership_plant02.png" alt="구매등급" class="ico-membership mr15"><strong class="fw500">Lv.2</strong> 지금까지 <span>14,860</span>원 쌓였어요!</p>
+                <div class="progress mt30 bg-white">
+                    <div class="progress-bar bg-yellowish"></div>
+                </div>
+            </div>
+            <div class="btn-wrap flex justify-between">
+                <button class="btn white fs42 fw500 btn-close">취소</button>
+                <button class="btn white fs42 fw500">확인</button>
+            </div>
+        </div>
+    </div>
     <script src="./asset/js/ui.js"></script>
+    <script>
+        /* 더보기 */
+        var moreTit = $(".more-tit");
+        var i;
+    
+        for (i = 0; i < moreTit.length; i++) {
+            moreTit[i].addEventListener("click", function(e) {
+                e.preventDefault();
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                    $(panel).attr("aria-hidden", "true");
+                } else {
+                    $(panel).attr("aria-hidden", "false");
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+        /* 팝업 열기 */
+        $(".btn-popup").click(function() {
+            $(".popup").show();
+            $("body").addClass("no-scroll");
+        });
+
+        /* 팝업 닫기 */
+        $(".btn-popup-close, .btn-close").click(function () {
+            $(this).parents(".popup").hide();
+            $("body").removeClass("no-scroll");
+        });
+        $(".popup").click(function(e){
+            if( !$(".popup").has(e.target).length ) {
+                $(this).hide();
+                $("body").removeClass("no-scroll");
+            } 
+        });
+    </script>
 </body>
 </html>

@@ -18,37 +18,90 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">나의 후기</p>
             <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
+        <!-- 상품 검색 -->
+        <div class="searchbar-box">
+            <div class="inner">
+                <div class="input-row">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
+                </div>
+            </div>
+        </div>
+        <!-- 후기 작성 -->
         <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
-                <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+            <div class="order-box bt10-edeae2">
+                <dl class="box-head flex align-center fs42">
+                    <dt>주문번호</dt>
+                    <dd>20221025-000671</dd>
+                </dl>
+                <div class="box-body">
+                    <div class="box">
+                        <div class="product-info flex align-center">
+                            <div class="product-img"><img src="./asset/images/market_img06.jpg" alt=""></div>
+                            <div class="product-txt">
+                                <p class="market-name fs42 fw500">부용마트</p>
+                                <p class="address mt20 fs33">서울시 동작구 신대방1가길 19</p>
+                                <p class="mt20 fs30"><span class="market-label white bg-green">픽업</span><span class="market-label white bg-green">배송</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
-                </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
-                </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
-                </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
+            </div>
+            <div class="write-form review-write pt100 pb100 bt10-edeae2">
+                <div class="inner">
+                    <h3 class="fs42 fw400 txt-center">이용하신 마켓은 어떠셨나요?</h3>
+                    <!-- 별점 -->
+                    <div class="score-area flex align-center justify-center">
+                        <button class="btn btn-star">1점</button>
+                        <button class="btn btn-star">2점</button>
+                        <button class="btn btn-star">3점</button>
+                        <button class="btn btn-star">4점</button>
+                        <button class="btn btn-star">5점</button>
+                    </div>
+                    <!-- 내용 -->
+                    <div class="write-box input-row">
+                        <textarea name="" id="" class="inp fs36" cols="30" rows="10" placeholder="후기 작성시 300P를 지급해드립니다."></textarea>
+                        <span class="txt-total fs36"><em class="txt-count"></em></span>
+                    </div>
+                    <!-- 사진 -->
+                    <ul class="photo-upload flex pt50">
+                        <li>
+                            <button class="btn btn-delete">첨부 파일 삭제</button>
+                            <div>
+                                <img src="./asset/images/product_img05.jpg" alt="">
+                                <input type="file" name="" id="btnPhoto" class="inp-file">
+                                <label for="btnPhoto" class="label-btn"></label>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="file" name="" id="btnPhoto" class="inp-file">
+                                <label for="btnPhoto" class="label-btn"></label>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="file" name="" id="btnPhoto" class="inp-file">
+                                <label for="btnPhoto" class="label-btn"></label>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="file" name="" id="btnPhoto" class="inp-file">
+                                <label for="btnPhoto" class="label-btn"></label>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- 버튼 영역 -->
+                    <div class="btn-wrap mt80">
+                        <button class="btn btn-wide white fs50 fw500 bg-green">등록하기</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -221,5 +274,23 @@
         </div>
     </div>
     <script src="./asset/js/ui.js"></script>
+    <script>
+        /* 별점 */
+        $(".btn-star").click(function(){
+            $(this).parent().children(".btn-star").removeClass("active");
+            $(this).addClass("active").prevAll(".btn-star").addClass("active");
+        });
+
+        /* textarea 글자수 세기 */
+        $(".write-box textarea").keyup(function (e) {
+            let content = $(this).val();
+
+            if (content.length == 0 || content == '') {
+                $(".txt-count").hide().text('0자');
+            } else {
+                $(".txt-count").show().text(content.length + "자");
+            }
+        });
+    </script>
 </body>
 </html>

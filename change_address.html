@@ -18,37 +18,73 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
-            <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
+            <p class="black fs50 fw700">배송지 변경</p>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
-                <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+        <!-- 배송지 변경 -->
+        <h3 class="hidden">배송지 변경</h3>
+        <section class="order-wrap">
+            <!-- 현재 주소 -->
+            <div class="pt80 pb80 bt10-edeae2 bb10-edeae2">
+                <div class="inner">
+                    <a href="#" class="more-tit big-more-tit flex align-center justify-between">
+                        <h5 class="black fs48 fw700">현재 주소</h5>
+                        <p class="flex align-center justify-end black fs36"><span class="mr20 fw700 noEllipsis">우리집</span><span class="ellipsis">서울 구로구 디지털로 30길 28 마리오타워 8층 811호 미스터아빠</span></p>
+                    </a>
+                    <div class="more-content">
+                        <div class="address-box pt50">
+                            <h6 class="flex align-center mb30 fs42 fw700">우리집<span class="label white fs33 fw400 bg-green">기본배송지</span></h6>
+                            <p class="address mb30 fs42">서울 구로구 디지털로 30길 28 마리오타워 8층 811호 미스터아빠</p>
+                            <p class="fs36">김가인 010-1234-1234</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
+            </div>
+            <!-- 변경할 주소 -->
+            <div>
+                <div class="inner">
+                    <h5 class="black pt80 pb50 fs48 fw400"><strong class="fw700">변경할 주소</strong>를 선택해 주세요.</h5>
                 </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
+                <div class="address-box pt50 pb50 bt2-edeae2">
+                    <a href="#"></a>
+                    <div class="inner">
+                        <div class="flex align-center justify-between mb30">
+                            <div class="flex align-center">
+                                <h6 class="fs42 fw700">우리집</h6>
+                                <span class="label white fs33 bg-green">기본배송지</span>
+                            </div>
+                            <div class="btn-wrap flex align-center justify-between">
+                                <a class="btn gray fs33 bg-lightGray">수정</a>
+                                <button class="btn btn-delete gray fs33 bg-lightGray">삭제</button>
+                            </div>
+                        </div>
+                        <p class="address mb30 fs42">서울 구로구 디지털로 30길 28 마리오타워 8층 811호 미스터아빠</p>
+                        <p class="fs36">김가인 010-1234-1234</p>
+                    </div>
                 </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
-                </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
+                <div class="address-box pt50 pb50 bt2-edeae2">
+                    <a href="#"></a>
+                    <div class="inner">
+                        <div class="flex align-center justify-between mb30">
+                            <div class="flex align-center">
+                                <h6 class="fs42 fw700">사무실</h6>
+                            </div>
+                            <div class="btn-wrap flex align-center justify-between">
+                                <a class="btn gray fs33 bg-lightGray">수정</a>
+                                <button class="btn btn-delete gray fs33 bg-lightGray">삭제</button>
+                            </div>
+                        </div>
+                        <p class="address mb30 fs42">서울 구로구 디지털로 30길 28 마리오타워 8층 811호 미스터아빠</p>
+                        <p class="fs36">김가인 010-1234-1234</p>
+                    </div>
+                </div>
+                 <!-- 버튼 영역 -->
+                 <div class="btn-wrap pt100 pb100 bt2-edeae2">
+                    <div class="inner">
+                        <button class="btn btn-wide white fs50 fw500 bg-green">주소 추가</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -220,6 +256,58 @@
             </ul>
         </div>
     </div>
+    <!-- 삭제 팝업 -->
+    <div class="popup popup-normal popup-delete">
+        <div class="popup-body bg-green">
+            <button class="btn btn-popup-close">팝업 닫기</button>
+            <div class="txt-wrap txt-center">
+                <p class="txt white fs50 fw500">삭제하시겠습니까?</p>
+            </div>
+            <div class="btn-wrap flex justify-between">
+                <button class="btn white fs42 fw500 btn-close">취소</button>
+                <button class="btn white fs42 fw500">확인</button>
+            </div>
+        </div>
+    </div>
     <script src="./asset/js/ui.js"></script>
+    <script>
+        /* 더보기 */
+        var moreTit = $(".more-tit");
+        var i;
+    
+        for (i = 0; i < moreTit.length; i++) {
+            moreTit[i].addEventListener("click", function(e) {
+                e.preventDefault();
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                    $(panel).attr("aria-hidden", "true");
+                } else {
+                    $(panel).attr("aria-hidden", "false");
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+        /* 삭제 팝업 열기 */
+        $(".btn-delete").click(function() {
+            $(".popup-delete").show();
+            $("body").addClass("no-scroll");
+        });
+
+        /* 팝업 닫기 */
+        $(".btn-popup-close, .btn-close").click(function () {
+            $(this).parents(".popup").hide();
+            $("body").removeClass("no-scroll");
+        });
+        $(".popup").click(function(e){
+            if( !$(".popup").has(e.target).length ) {
+                $(this).hide();
+                $("body").removeClass("no-scroll");
+            } 
+        });
+    </script>
 </body>
 </html>

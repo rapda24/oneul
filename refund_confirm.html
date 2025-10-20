@@ -18,37 +18,115 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">반품/교환 접수</p>
             <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
+        <!-- 상품 검색 -->
+        <div class="searchbar-box">
+            <div class="inner">
                 <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
                 </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
+            </div>
+        </div>
+        <!-- 반품/교환 접수 -->
+        <h3 class="hidden">반품/교환 접수</h3>
+        <section class="reception-wrap">
+            <div class="inner">
+                <!-- 접수 단계 -->
+                <ol class="reception-step flex align-center justify-between fs42">
+                    <li>접수유형</li>
+                    <li>정보입력</li>
+                    <li class="active">정보확인</li>
+                    <li>접수완료</li>
+                </ol>
+            </div>
+            <!-- 상품 박스 -->
+            <div class="order-box mt80 bt10-edeae2 bb10-edeae2">
+                <a href="#"></a>
+                <!-- 주문번호 -->
+                <dl class="box-head flex align-center fs42">
+                    <dt>주문번호</dt>
+                    <dd>20221025-000671</dd>
+                </dl>
+                <!-- 새벽배송 -->
+                <div class="box-body pt50 pb50">
+                    <h6 class="green fs42 fw500">새벽배송</h6>
+                    <div class="box flex align-start justify-between pb0">
+                        <div class="product-info flex align-start">
+                            <div class="product-img"><img src="./asset/images/product_img05.jpg" alt="[물가안정 행사] 감귤 500g*2SET"></div>
+                            <div class="product-txt">
+                                <p class="sub fs33 fw500">미스터아빠</p>
+                                <p class="name fs36">[물가안정 행사] 감귤 500g*2SET</p>
+                                <p class="option fs36">기본옵션<span class="slash">/</span>1개</p>
+                            </div>
+                        </div>
+                        <p class="price fs39 fw500">5,600원</p>
+                    </div>
                 </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
+            </div>
+            <!-- 반품 사유 -->
+            <div class="confirm-box pt50 pb50 bb10-edeae2">
+                <div class="inner">
+                    <div class="flex align-center justify-between">
+                        <h5 class="fs36 fw700">반품 사유</h5>
+                        <p class="txt fs36">단순 변심</p>
+                    </div>
+                    <!-- 상품 수거 방법 -->
+                    <div class="flex align-center justify-between mt40">
+                        <h5 class="fs36 fw700">상품 수거 방법</h5>
+                        <p class="txt fs36">구매자 접수</p>
+                    </div>
+                    <!-- 반품 예상 금액 -->
+                    <a href="#" class="more-tit sm-more-tit flex align-center justify-between mt40">
+                        <h6 class="black fs36 fw700">반품 예상 금액</h6>
+                        <p class="green fs36 fw500">8,984원</p>
+                    </a>
+                    <div class="more-content fs33">
+                        <dl class="flex align-center justify-between mt40">
+                            <dt class="gray3">상품 금액</dt>
+                            <dd class="green">5,600원</dd>
+                        </dl>
+                        <dl class="flex align-center justify-between mt40">
+                            <dt class="gray3">상품 할인</dt>
+                            <dd class="green">-0원</dd>
+                        </dl>
+                        <dl class="flex align-center justify-between mt40">
+                            <dt class="gray3">적립금 선할인</dt>
+                            <dd class="green">-56원</dd>
+                        </dl>
+                        <dl class="flex align-center justify-between mt40">
+                            <dt class="gray3">보유 적립금 사용</dt>
+                            <dd class="green">-560원</dd>
+                        </dl>
+                        <dl class="flex align-center justify-between mt40">
+                            <dt class="gray3">배송비</dt>
+                            <dd class="green">4,000원</dd>
+                        </dl>
+                    </div>
+                    <!-- 반품 비용 -->
+                    <div class="flex align-center justify-between mt40">
+                        <h5 class="fs36 fw700">반품 비용</h5>
+                        <div class="flex align-center">
+                            <p class="txt mr15 green fs36 fw500">4,000원(쇼핑몰 계좌 송금)</p>
+                            <button class="btn btn-copy white fs36 bg-green">계좌 복사</button>
+                        </div>
+                    </div>
+                    <!-- 환불 수단 -->
+                    <div class="flex align-center justify-between mt40">
+                        <h5 class="fs36 fw700">환불 수단</h5>
+                        <p class="txt green fs36 fw500">신한카드(49**)</p>
+                    </div>
                 </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
-                </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
+            </div>
+            <!-- 버튼 영역 -->
+            <div class="btn-wrap pt100 pb100">
+                <div class="inner">
+                    <button class="btn btn-wide white fs50 fw500 bg-green">반품 접수</button>
                 </div>
             </div>
         </section>
@@ -221,5 +299,26 @@
         </div>
     </div>
     <script src="./asset/js/ui.js"></script>
+    <script>
+        /* 더보기 */
+        var moreTit = $(".more-tit");
+        var i;
+    
+        for (i = 0; i < moreTit.length; i++) {
+            moreTit[i].addEventListener("click", function(e) {
+                e.preventDefault();
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                    $(panel).attr("aria-hidden", "true");
+                } else {
+                    $(panel).attr("aria-hidden", "false");
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 </html>

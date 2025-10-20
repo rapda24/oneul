@@ -18,37 +18,76 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
-            <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
+            <p class="black fs50 fw700">주소 추가</p>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
+        <!-- 주소 추가 -->
+        <h3 class="hidden">주소 추가</h3>
+        <section class="pt36 pb100">
+            <div class="inner">
+                <!-- 이름 -->
+                <label for="name" class="input-label mb30 fs42">이름</label>
                 <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+                    <input type="text" id="name" class="inp fs36" placeholder="수령인을 입력해주세요.">
+                </div>
+                <!-- 배송지명 -->
+                <label for="name" class="input-label mt100 mb30 fs42">배송지명</label>
+                <div class="input-row">
+                    <input type="text" id="name" class="inp fs36" placeholder="배송지명을 입력해주세요.">
+                </div>
+                <!-- 휴대전화번호 -->
+                <label for="tel" class="input-label mt100 mb30 fs42">휴대전화번호</label>
+                <div class="input-row">
+                    <input type="tel" id="tel" class="inp fs36" placeholder="휴대전화번호를 입력해주세요.">
+                </div>
+                <!-- 전화번호 -->
+                <label for="nmbr" class="input-label mt100 mb30 fs42">전화번호</label>
+                <div class="input-area flex justify-between">
+                    <select name="" id="nmbr" class="black fs36">
+                        <option value="">02</option>
+                        <option value="">051</option>
+                        <option value="">053</option>
+                        <option value="">032</option>
+                        <option value="">062</option>
+                        <option value="">042</option>
+                        <option value="">052</option>
+                        <option value="">044</option>
+                        <option value="">031</option>
+                        <option value="">033</option>
+                        <option value="">043</option>
+                        <option value="">041</option>
+                        <option value="">063</option>
+                        <option value="">061</option>
+                        <option value="">054</option>
+                        <option value="">055</option>
+                        <option value="">064</option>
+                    </select>
+                    <span class="bar"></span>
+                    <div class="input-row">
+                        <input type="tel" id="lastNmbr" class="inp fs36" placeholder="전화번호를 입력해주세요.">
+                    </div>
+                </div>
+                <span class="checkbox-row mt30"><input type="checkbox" name="" id="noNmbr" class="design-inp" title="없음"><label for="noNmbr" class="fs42">없음</label></span>
+                <!-- 주소 -->
+                <label for="address" class="input-label mt100 mb30 fs42">주소</label>
+                <div class="zip-code-area input-area flex justify-between">
+                    <div class="input-row">
+                        <input type="text" id="address" class="inp fs36" placeholder="우편번호">
+                    </div>
+                    <button class="btn gray fs36">주소검색</button>
                 </div>
                 <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
+                    <input type="text" class="inp fs36" placeholder="기본주소">
                 </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
+                <div class="input-row">
+                    <input type="text" class="inp fs36" placeholder="상세주소를 입력해주세요.">
                 </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
-                </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
+                <span class="checkbox-row mt30"><input type="checkbox" name="" id="defaultAddress" class="design-inp" title="기본배송지로 설정 "><label for="defaultAddress" class="fs42">기본배송지로 설정 </label></span>
+                <!-- 버튼 영역 -->
+                <div class="btn-wrap mt100">
+                    <button class="btn btn-wide white fs50 fw500 bg-green">완료</button>
                 </div>
             </div>
         </section>
@@ -221,5 +260,21 @@
         </div>
     </div>
     <script src="./asset/js/ui.js"></script>
+    <script>
+        /* 전화번호 */
+        $("#noNmbr").click(function(){
+            noNmbr();
+        });
+
+        function noNmbr() {
+            if($("#noNmbr").is(":checked")) {
+                document.getElementById("nmbr").disabled = true;
+                document.getElementById("lastNmbr").disabled = true;
+            } else {
+                document.getElementById("nmbr").disabled = false;
+                document.getElementById("lastNmbr").disabled = false;
+            }
+        }
+    </script>
 </body>
 </html>

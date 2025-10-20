@@ -18,37 +18,67 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
-            <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
+            <p class="black fs50 fw700">회원 정보 수정</p>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
+        <!-- 회원 정보 수정 -->
+        <h3 class="hidden">회원 정보 수정</h3>
+        <section class="pt36 pb100">
+            <div class="inner">
+                <!-- 이름 -->
+                <label for="name" class="input-label mb30 fs42">이름</label>
                 <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+                    <input type="text" id="name" class="inp fs36" placeholder="김민정">
+                </div>
+                <!-- 사업자등록번호 -->
+                <label for="bsnsLcnmb" class="input-label mt100 mb30 fs42">사업자등록번호</label>
+                <div class="input-area flex justify-between">
+                    <div class="input-row">
+                        <input type="text" id="bsnsLcnmb" class="inp fs36" placeholder="1234-456-789">
+                    </div>
+                    <button class="btn gray fs36">변경</button>
+                </div>
+                <!-- 휴대전화번호 -->
+                <label for="tel" class="input-label mt100 mb30 fs42">휴대전화번호</label>
+                <div class="input-area flex justify-between">
+                    <div class="input-row">
+                        <input type="tel" id="tel" class="inp fs36" placeholder="010-1234-5678">
+                    </div>
+                    <button class="btn gray fs36">전송</button>
+                </div>
+                <div class="input-area flex justify-between">
+                    <div class="input-row">
+                        <input type="tel" class="inp fs36" placeholder="인증번호를 입력해주세요.">
+                    </div>
+                    <button class="btn gray fs36">확인</button>
+                </div>
+                <!-- 주소 -->
+                <label for="address" class="input-label mt100 mb30 fs42">주소</label>
+                <div class="zip-code-area input-area flex justify-between">
+                    <div class="input-row">
+                        <input type="text" id="address" class="inp fs36" placeholder="08389">
+                    </div>
+                    <button class="btn gray fs36">주소검색</button>
                 </div>
                 <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
+                    <input type="text" class="inp fs36" placeholder="서울시 구로구 디지털로 30길 28">
                 </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
+                <div class="input-row">
+                    <input type="text" class="inp fs36" placeholder="마리오타워 801호">
                 </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
-                </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
+                <!-- 새 비밀번호 -->
+                <label for="pw" class="input-label mt100 mb30 fs42">새 비밀번호</label>
+                <div class="input-row">
+                    <input type="password" id="pw" class="inp inp-pw fs36" placeholder="숫자, 영문, 특수문자 조합 최소 6자~16자">
+                </div>
+                <div class="input-row">
+                    <input type="password" id="pwChk" class="inp inp-pw fs36" placeholder="비밀번호 재입력">
+                </div>
+                <!-- 버튼 영역 -->
+                <div class="btn-wrap mt100">
+                    <button class="btn btn-wide white fs50 fw500 bg-green">저장</button>
                 </div>
             </div>
         </section>
@@ -221,5 +251,20 @@
         </div>
     </div>
     <script src="./asset/js/ui.js"></script>
+    <script>
+        /* 비밀번호 재입력 확인 */
+        $('.inp-pw').keyup(function(){
+            let pw = $("#pw").val();
+            let pwChk = $("#pwChk").val();
+            
+            if (pw != "" || pwChk != ""){
+                if (pw == pwChk){
+                    $("#pwChk").addClass('match');
+                } else {
+                    $("#pwChk").removeClass('match');
+                }
+            }
+        });
+    </script>
 </body>
 </html>

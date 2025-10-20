@@ -8,9 +8,11 @@
     <title>PAPAMARKET</title>
     <link rel="stylesheet" href="./asset/css/reset.css">
     <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/jquery.timepicker.min.css">
     <link rel="stylesheet" href="./asset/css/style.css">
     <script src="./asset/js/jquery-3.6.1.js"></script>
     <script src="./asset/js/swiper-bundle.min.js"></script>
+    <script src="./asset/js/jquery.timepicker.min.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -18,37 +20,127 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
-            <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
+            <p class="black fs50 fw700">마켓 정보 수정</p>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
-                <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+        <!-- 마켓 정보 수정 -->
+        <h3 class="hidden">마켓 정보 수정</h3>
+        <section class="market-edit pt36 pb100">
+            <div class="inner">
+                <!-- 사업장 전화번호 -->
+                <label for="bsnsNmbr" class="input-label mb30 fs42">사업장 전화번호</label>
+                <div class="input-area flex justify-between">
+                    <select name="" id="bsnsNmbr" class="black fs36">
+                        <option value="">02</option>
+                        <option value="">051</option>
+                        <option value="">053</option>
+                        <option value="">032</option>
+                        <option value="">062</option>
+                        <option value="">042</option>
+                        <option value="">052</option>
+                        <option value="">044</option>
+                        <option value="">031</option>
+                        <option value="">033</option>
+                        <option value="">043</option>
+                        <option value="">041</option>
+                        <option value="">063</option>
+                        <option value="">061</option>
+                        <option value="">054</option>
+                        <option value="">055</option>
+                        <option value="">064</option>
+                    </select>
+                    <span class="bar"></span>
+                    <div class="input-row">
+                        <input type="tel" class="inp fs36" placeholder="1234-5678">
+                    </div>
+                </div>
+                <!-- 주소 -->
+                <label for="address" class="input-label mt100 mb30 fs42">주소</label>
+                <div class="zip-code-area input-area flex justify-between">
+                    <div class="input-row">
+                        <input type="text" id="address" class="inp fs36" placeholder="08389">
+                    </div>
+                    <button class="btn gray fs36">주소검색</button>
                 </div>
                 <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
+                    <input type="text" class="inp fs36" placeholder="서울시 구로구 디지털로 30길 28">
                 </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
+                <div class="input-row">
+                    <input type="text" class="inp fs36" placeholder="마리오타워 801호">
                 </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
+                <!-- 영업시간 -->
+                <label for="" class="input-label mt100 mb30 fs42">영업시간</label>
+                <div class="open-hour-area">
+                    <div class="day-week-box flex align-center justify-between">
+                        <button class="btn"><span class="fs36">일</span></button>
+                        <button class="btn active"><span class="fs36">월</span></button>
+                        <button class="btn active"><span class="fs36">화</span></button>
+                        <button class="btn active"><span class="fs36">수</span></button>
+                        <button class="btn active"><span class="fs36">목</span></button>
+                        <button class="btn active"><span class="fs36">금</span></button>
+                        <button class="btn"><span class="fs36">토</span></button>
+                    </div>
+                    <div class="time-box input-row flex align-center justify-between mt30">
+                        <input type="text" class="timepicker inp fs36 txt-center" placeholder="00:00">
+                        <span class="gray fs65">~</span>
+                        <input type="text" class="timepicker inp fs36 txt-center" placeholder="00:00">
+                    </div>
+                </div>
+                <!-- 요일 추가 -->
+                <div class="open-hour-area">
+                    <div class="day-week-box flex align-center justify-between">
+                        <button class="btn"><span class="fs36">일</span></button>
+                        <button class="btn disabled"><span class="fs36">월</span></button>
+                        <button class="btn disabled"><span class="fs36">화</span></button>
+                        <button class="btn disabled"><span class="fs36">수</span></button>
+                        <button class="btn disabled"><span class="fs36">목</span></button>
+                        <button class="btn disabled"><span class="fs36">금</span></button>
+                        <button class="btn"><span class="fs36">토</span></button>
+                    </div>
+                    <div class="time-box input-row flex align-center justify-between mt30">
+                        <input type="text" class="timepicker inp fs36 txt-center" placeholder="00:00">
+                        <span class="gray fs65">~</span>
+                        <input type="text" class="timepicker inp fs36 txt-center" placeholder="00:00">
+                    </div>
+                </div>
+                <!-- 요일 추가 버튼 -->
+                <div class="btn btn-normal btn-add mt100 white fs36 bg-green txt-center">요일 추가</div>
+                <!-- 사진 -->
+                <label for="btnPhoto" class="input-label mt100 mb30 fs42">사진</label>
+                <ul class="photo-upload flex justify-between">
+                    <li>
+                        <button class="btn btn-delete">첨부 파일 삭제</button>
+                        <div>
+                            <img src="./asset/images/product_img05.jpg" alt="">
+                            <input type="file" name="" id="btnPhoto" class="inp-file">
+                            <label for="btnPhoto" class="label-btn"></label>
+                        </div>
+                        <span class="label gray fs36 bg-lightGray">대표</span>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="file" name="" id="btnPhoto" class="inp-file">
+                            <label for="btnPhoto" class="label-btn"></label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="file" name="" id="btnPhoto" class="inp-file">
+                            <label for="btnPhoto" class="label-btn"></label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="file" name="" id="btnPhoto" class="inp-file">
+                            <label for="btnPhoto" class="label-btn"></label>
+                        </div>
+                    </li>
                 </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
+                <!-- 버튼 영역 -->
+                <div class="btn-wrap mt100">
+                    <button class="btn btn-wide white fs50 fw500 bg-green">저장</button>
                 </div>
             </div>
         </section>
@@ -221,5 +313,17 @@
         </div>
     </div>
     <script src="./asset/js/ui.js"></script>
+    <script>
+        /* 영업시간 요일 선택 */
+        $(".day-week-box .btn").on("click", function(){
+            $(this).toggleClass("active");
+        });
+
+        /* 영업시간 시간 선택 */
+        $("input.timepicker").timepicker({
+            timeFormat: 'HH:mm',
+            dynamic: false,
+        });
+    </script>
 </body>
 </html>

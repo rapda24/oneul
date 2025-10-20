@@ -18,39 +18,55 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">입점 문의</p>
             <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
+        <!-- 상품 검색 -->
+        <div class="searchbar-box">
+            <div class="inner">
                 <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
-                </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
-                </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
-                </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
-                </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
                 </div>
             </div>
+        </div>
+        <!-- 입점 문의 -->
+        <h3 class="hidden">입점 문의</h3>
+        <section class="partner-wrap">
+            <div class="inner pb150 txt-center">
+                <h5 class="intro-txt fs42 fw500">귀사의 경쟁력있고 신선한 품질의 상품을<br>파파마켓에서 선보이세요.</h5>
+                <div class="txt-box mt80 pt70 pb70 bg-lightGray">
+                    <p class="txt fs33">아빠가 자녀에게 주고싶은 것을 찾듯,<br>파파마켓은 늘 진실된 마음으로 다가갑니다.<br>당신이 신중히 고른 품질 좋은 제품을 우리 아이들에게<br>전달되기까지 파파마켓은 노력합니다.</p>
+                </div>
+                <!-- 버튼 영역 -->
+                <div class="btn-wrap mt100">
+                    <button class="btn btn-wide white fs42 fw400 bg-green">입점 상담 신청하기</button>
+                </div>
+            </div>
+            <!-- 입점 상담 내역 -->
+            <div class="pb35 bb10-edeae2">
+                <div class="inner flex justify-between">
+                    <h5 class="fs36 fw700">입점 상담 내역</h5>
+                    <p class="gray fs33">총 1건</p>
+                </div>
+            </div>
+            <ul class="list pb100">
+                <li>
+                    <a href="#">
+                        <p class="date gray fs36">2022-10-20</p>
+                        <p class="tit mt30 black fs36"><b class="fw700">[미소마켓]</b> 과일, 야채 전문점 미소마켓 입점신청합니다.</p>
+                    </a>
+                </li>
+            </ul>
+            <!-- 없을 때 -->
+            <!-- <div class="no-list pt150 pb150">
+                <div class="inner">
+                    <p class="fs33">작성하신 글이 없습니다.</p>
+                </div>
+            </div> -->
         </section>
     </div>
     <!-- footer -->

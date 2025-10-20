@@ -18,38 +18,152 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">Mr.공구</p>
             <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
+        <!-- 상품 검색 -->
+        <div class="searchbar-box">
+            <div class="inner">
                 <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
                 </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
-                </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
-                </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
+            </div>
+        </div>
+        <!-- 상품 list -->
+        <section class="pb30">
+            <div class="inner">
+                <ul class="product-list together-list flex justify-between">
+                    <li>
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="./asset/images/product_img24.jpg" alt="만나 마운틴 바나나 1kg">
+                            </a>
+                            <div class="basket-box flex">
+                                <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                            </div>
+                            <div class="txt-box flex align-center justify-between bg-yellow">
+                                <p class="participation fs24"><span class="fs30 fw700">37</span>/<span>100개</span></p>
+                                <p class="txt fs24 fw700">3일 후 종료</p>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <a href="#">
+                                <p class="name black fs36">만나 마운틴 바나나 1kg</p>
+                                <p class="price black fs36 fw700">4,200원 <span class="cost gray fs30 fw400 line-through">4,900원</span></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="./asset/images/product_img22.jpg" alt="국내산 창녕 햇양파 1kg">
+                            </a>
+                            <div class="basket-box flex">
+                                <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                            </div>
+                            <div class="txt-box flex align-center justify-between bg-yellow">
+                                <p class="participation fs24"><span class="fs30 fw700">25</span>/<span>1,000개</span></p>
+                                <p class="txt fs24 fw700">10일 후 종료</p>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <a href="#">
+                                <p class="name black fs36">국내산 창녕 햇양파 1kg</p>
+                                <p class="price black fs36 fw700">2,900원 <span class="cost gray fs30 fw400 line-through">3,700원</span></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="./asset/images/product_img13.jpg" alt="황토밭 밤고구마 (특사이즈) 2kg">
+                            </a>
+                            <div class="basket-box flex">
+                                <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                            </div>
+                            <div class="txt-box flex align-center justify-between bg-green">
+                                <p class="participation fs24"><span class="fs30 fw700">32</span>/<span>500개</span></p>
+                                <p class="txt fs24 fw700">11일 후 종료</p>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <a href="#">
+                                <p class="name black fs36">황토밭 밤고구마 (특사이즈) 2kg</p>
+                                <p class="price black fs36 fw700">11,300원 <span class="cost gray fs30 fw400 line-through">12,300원</span></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="./asset/images/product_img07.jpg" alt="국내산 무농약 깻잎 60g">
+                            </a>
+                            <div class="basket-box flex">
+                                <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                            </div>
+                            <div class="txt-box flex align-center justify-between bg-green">
+                                <p class="participation fs24"><span class="fs30 fw700">27</span>/<span>150개</span></p>
+                                <p class="txt fs24 fw700">13일 후 종료</p>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <a href="#">
+                                <p class="name black fs36">국내산 무농약 깻잎 60g</p>
+                                <p class="price black fs36 fw700">2,500원 <span class="cost gray fs30 fw400 line-through">2,900원</span></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="./asset/images/product_img08.jpg" alt="국내산 함안 가지 3입">
+                            </a>
+                            <div class="basket-box flex">
+                                <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                            </div>
+                            <div class="txt-box flex align-center justify-between bg-green">
+                                <p class="participation fs24"><span class="fs30 fw700">32</span>/<span>300개</span></p>
+                                <p class="txt fs24 fw700">14일 후 종료</p>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <a href="#">
+                                <p class="name black fs36">국내산 함안 가지 3입</p>
+                                <p class="price black fs36 fw700">3,700원 <span class="cost gray fs30 fw400 line-through">4,900원</span></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="end">
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="./asset/images/product_img10.jpg" alt="국내산 부산 강동 대파 1단 900g">
+                            </a>
+                            <div class="basket-box flex">
+                                <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                            </div>
+                            <div class="txt-box flex align-center justify-between bg-green">
+                                <p class="participation fs24"><span class="fs30 fw700">27</span>/<span>50개</span></p>
+                                <p class="txt fs24 fw700">공구 종료</p>
+                            </div>
+                        </div>
+                        <div class="product-txt">
+                            <a href="#">
+                                <p class="name black fs36">국내산 부산 강동 대파 1단 900g</p>
+                                <p class="price black fs36 fw700">2,500원 <span class="cost gray fs30 fw400 line-through">4,900원</span></p>
+                            </a>
+                        </div>
+                    </li>
                 </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
-                </div>
             </div>
         </section>
     </div>

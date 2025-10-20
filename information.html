@@ -18,37 +18,44 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">이용 안내</p>
             <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
+        <!-- 상품 검색 -->
+        <div class="searchbar-box">
+            <div class="inner">
                 <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
                 </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
+            </div>
+        </div>
+        <!-- 이용 안내 -->
+        <h3 class="hidden">이용 안내</h3>
+        <section class="pb100">
+            <div class="inner">
+                <!-- 회원/등급혜택 -->
+                <h5 class="mb30 green fs48 fw700">회원/등급혜택</h5>
+                <div class="information-txt-box bg-lightGray">
+                    <p class="txt fs36">파파마켓에 회원가입을 하시면 게시판 이용 및 등급에 따른 각종 할인쿠폰과 적립금, 이벤트 혜택을 받으실 수 있습니다. 쿠폰과 적립금은 로그인하신 후 마이페이지에서 확인하실 수 있습니다.</p>
                 </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
+                <!-- 주문/결제 -->
+                <h5 class="mt80 mb30 green fs48 fw700">주문/결제</h5>
+                <div class="information-txt-box bg-lightGray">
+                    <p class="txt fs36">파파마켓에 회원가입을 하시면 게시판 이용 및 등급에 따른 각종 할인쿠폰과 적립금, 이벤트 혜택을 받으실 수 있습니다. 쿠폰과 적립금은 로그인하신 후 마이페이지에서 확인하실 수 있습니다.</p>
                 </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
-                </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
+                <!-- 배송/픽업 -->
+                <h5 class="mt80 mb30 green fs48 fw700">배송/픽업</h5>
+                <div class="information-txt-box bg-lightGray">
+                    <p class="txt fs36">파파마켓에 회원가입을 하시면 게시판 이용 및 등급에 따른 각종 할인쿠폰과 적립금, 이벤트 혜택을 받으실 수 있습니다. 쿠폰과 적립금은 로그인하신 후 마이페이지에서 확인하실 수 있습니다.</p>
+                </div>
+                <!-- 취소/반품/교환 -->
+                <h5 class="mt80 mb30 green fs48 fw700">취소/반품/교환</h5>
+                <div class="information-txt-box bg-lightGray">
+                    <p class="txt fs36">주문취소는 배송 단계별로 방법이 상이합니다. [결제대기], [결제완료], [상품준비중] 상태일 경우에만 주문취소가 가능합니다.</p>
                 </div>
             </div>
         </section>

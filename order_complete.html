@@ -18,37 +18,132 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">주문 완료</p>
             <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
+        <!-- 상품 검색 -->
+        <div class="searchbar-box">
+            <div class="inner">
                 <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
                 </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
+            </div>
+        </div>
+        <!-- 주문 완료 -->
+        <h3 class="hidden">주문 완료</h3>
+        <section class="order-wrap pb100">
+            <!-- 주문이 완료되었습니다. -->
+            <div class="txt-box pb100 txt-center">
+                <div class="inner">
+                    <h5 class="fs48">주문이 완료 되었습니다.</h5>
+                    <p class="txt mt30 fs42">상품 품절 시 자동 주문 취소됩니다.</p>
                 </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
+            </div>
+            <!-- 배송지 -->
+            <div class="pt80 pb80 bt10-edeae2 bb10-edeae2">
+                <div class="inner">
+                    <a href="#" class="more-tit big-more-tit flex align-center justify-between">
+                        <h5 class="black fs48 fw700">배송지</h5>
+                        <p class="flex align-center justify-end black fs36"><span class="mr20 fw700 noEllipsis">우리집 우리집</span><span class="ellipsis">서울 구로구 디지털로 30길 28 마리오타워 8층 811호 미스터아빠</span></p>
+                    </a>
+                    <div class="more-content">
+                        <div class="address-box pt50">
+                            <div class="flex align-center justify-between mb30">
+                                <h6 class="fs42 fw700">우리집</h6>
+                                <a href="#" class="btn btn-change white fs33 bg-green">변경</a>
+                            </div>
+                            <p class="address mb30 fs42">서울 구로구 디지털로 30길 28 마리오타워 8층 811호 미스터아빠</p>
+                            <p class="fs36">김가인 010-1234-1234</p>
+                        </div>
+                    </div>
                 </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
-                </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
+            </div>
+            <!-- 주문 상품 -->
+            <div class="order-product-box pt80 pb80 bb10-edeae2">
+                <div class="inner">
+                    <a href="#" class="more-tit big-more-tit flex align-center justify-between">
+                        <h5 class="black fs48 fw700">주문 상품</h5>
+                        <p class="flex align-center justify-end black fs36"><span class="fw700 ellipsis">[물가안정 행사] 감귤 500g*2SET</span><span class="noEllipsis">외 2건</span></p>
+                    </a>
+                    <div class="more-content">
+                        <div class="order-box">
+                            <!-- 새벽배송 -->
+                            <div class="box-body pt50 pb50 px0">
+                                <h6 class="green fs42 fw500">새벽배송</h6>
+                                <div class="box flex align-start justify-between pb0">
+                                    <div class="product-info flex align-start">
+                                        <div class="product-img"><img src="./asset/images/product_img05.jpg" alt="[물가안정 행사] 감귤 500g*2SET"></div>
+                                        <div class="product-txt">
+                                            <p class="sub fs33 fw500">미스터아빠</p>
+                                            <p class="name fs36">[물가안정 행사] 감귤 500g*2SET</p>
+                                            <p class="option fs36">기본옵션<span class="slash">/</span>1개</p>
+                                        </div>
+                                    </div>
+                                    <p class="price fs39 fw500">5,600원</p>
+                                </div>
+                            </div>
+                            <!-- 배송 -->
+                            <div class="box-body pt50 pb50 px0">
+                                <h6 class="green fs42 fw500">배송</h6>
+                                <div class="box flex align-start justify-between pb0">
+                                    <div class="product-info flex align-start">
+                                        <div class="product-img"><img src="./asset/images/product_img09.jpg" alt="[해미래] 절단 갈치 200g"></div>
+                                        <div class="product-txt">
+                                            <p class="sub fs33 fw500">미스터아빠</p>
+                                            <p class="name fs36">[해미래] 절단 갈치 200g + 200g + 200g + 200g + 200g</p>
+                                            <p class="option fs36">기본옵션<span class="slash">/</span>1개</p>
+                                        </div>
+                                    </div>
+                                    <p class="price fs39 fw500">112,500원</p>
+                                </div>
+                            </div>
+                            <!-- 픽업 -->
+                            <div class="box-body pt50 px0">
+                                <h6 class="green fs42 fw500">픽업</h6>
+                                <div class="box flex align-start justify-between pb0">
+                                    <div class="product-info flex align-start">
+                                        <div class="product-img"><img src="./asset/images/product_img09.jpg" alt="[해미래] 절단 갈치 200g"></div>
+                                        <div class="product-txt">
+                                            <p class="sub fs33 fw500">미스터아빠</p>
+                                            <p class="name fs36">[해미래] 절단 갈치 200g</p>
+                                            <p class="option fs36">기본옵션<span class="slash">/</span>1개</p>
+                                            <p class="txt gray3 fs36">11.18(금) 12:00~18:00</p>
+                                        </div>
+                                    </div>
+                                    <p class="price fs39 fw500">112,500원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 결제 금액 -->
+            <div class="pt80 pb80 bb10-edeae2">
+                <div class="inner">
+                    <div class="flex align-center justify-between">
+                        <h5 class="fs48 fw700">결제 금액</h5>
+                        <p class="fs48 fw700">17,558원</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 결제 정보 -->
+            <div class="payment-information pt80 pb80">
+                <div class="inner">
+                    <div class="flex align-center justify-between">
+                        <h5 class="fs48 fw700">결제 정보</h5>
+                        <p class="fs42">국민카드(11**) / 일시불</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 버튼 영역 -->
+            <div class="inner">
+                <div class="btn-wrap flex align-center justify-between txt-center">
+                    <a href="#" class="btn w460 green fs50 bg-white">주문 상세보기</a>
+                    <a href="#" class="btn w460 white fs50 bg-green">홈으로 가기</a>
                 </div>
             </div>
         </section>
@@ -221,5 +316,26 @@
         </div>
     </div>
     <script src="./asset/js/ui.js"></script>
+    <script>
+        /* 더보기 */
+        var moreTit = $(".more-tit");
+        var i;
+    
+        for (i = 0; i < moreTit.length; i++) {
+            moreTit[i].addEventListener("click", function(e) {
+                e.preventDefault();
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                    $(panel).attr("aria-hidden", "true");
+                } else {
+                    $(panel).attr("aria-hidden", "false");
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 </html>

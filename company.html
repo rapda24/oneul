@@ -18,38 +18,51 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">파파마켓 소개</p>
             <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
+        <!-- 상품 검색 -->
+        <div class="searchbar-box">
+            <div class="inner">
                 <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
                 </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
-                </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
-                </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
+            </div>
+        </div>
+        <!-- 파파마켓 소개 -->
+        <h3 class="hidden">파파마켓 소개</h3>
+        <section class="company-wrap pb100">
+            <img src="./asset/images/company/visual_img.jpg" alt="" class="visual-img">
+            <div class="inner pt100">
+                <!-- 파파마켓은 이렇게 시작되었습니다. -->
+                <h4 class="fs70 fw700">파파마켓은<br>이렇게<br>시작되었습니다.</h4>
+                <p class="txt mt100 fs33">우리 근처에는 신선한 식품을 판매하는 많은 마켓이 있습니다.<br>온라인으로 구매하고 택배로 받는 것이 마트에 가는 것보다 당연해진 시기에 어떻게 하면 우리 근처의 상권을 살리며 저렴하게 구매할 수 있을까?<br>우리는 고민했습니다. 그렇게 파파마켓이 시작되었습니다.</p>
+                <p class="txt mt50 fs33">비싼 식자재만이 좋은 음식일 것이라고 막연하게 생각하는 소비자에게는 사장님들이 신중히 고르고 파파마켓이 검수한 좋은 제품을,<br>좋은 제품을 신중히 고른 마켓 사장님들께는 안정적인 판매 활로를 찾아드리고 싶었습니다.</p>
+                <!-- 고객과 마켓 사이를 연결하다 -->
+                <h4 class="mt250 mb100 fs70 fw700">고객과<br>마켓 사이를<br>연결하다</h4>
+                <img src="./asset/images/company/connect_img.png" alt="quality, discount, service">
+                <p class="txt mt80 fs33">비싼 식자재만이 좋은 음식일 것이라고 막연하게 생각하는 소비자에게는 사장님들이 신중히 고르고 파파마켓이 검수한 좋은 제품을 저렴한 가격에 안정적인 서비스로 제공해드리고 싶었습니다.</p>
+                <!-- 내 주변 마켓부터 파파마켓의 제품까지 한눈에 -->
+                <h4 class="mt250 mb70 fs70 fw700">내 주변 마켓부터<br>파파마켓의 제품까지<br>한눈에</h4>
+                <img src="./asset/images/company/map_img.png" alt="">
+                <p class="txt mt70 fs33">집 근처 마트 이곳저곳을 돌아다닐 필요가 없습니다.<br>우리 삶의 가장 중요한 요소인 식사 재료를 가장 신선하고<br>저렴하게 파파마켓에서 한눈에 보실 수 있도록 담았습니다.</p>
+                <!-- 아빠의 마음으로 안전한 파파마켓 -->
+                <h4 class="mt250 mb70 fs70 fw700">아빠의 마음으로<br>안전한<br>파파마켓</h4>
+                <img src="./asset/images/company/market_img.png" alt="">
+                <p class="txt mt70 fs33">자녀에게 좋은 식품을 먹이고 싶은 아빠의 마음,<br>파파마켓은 안전하고 바른 식품을 제공하는 신선 전문 쇼핑몰입니다.</p>
+                <!-- 회사 소개 -->
+                <ul class="bar-list mt100 fs33">
+                    <li class="txt">회사명 : 주식회사 미스터아빠</li>
+                    <li class="txt">대표자 : 서준렬</li>
+                    <li class="txt">사업자번호 : 448-87-01721</li>
+                    <li class="txt">주소 : 경상남도 창원시 마산회원구 매서읍 유통단지로 33, 창원원예농협</li>
+                    <li class="txt">사업분야 :  도매 및 소매업, 축산, 청과물, 전자상거래 소매업 등</li>
+                    <li class="txt">주요서비스 : 농산, 수산, 건어물, 축산, 밀키트 상품에 대한 온라인 쇼핑몰 및 오프라인 푸드마켓</li>
                 </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
-                </div>
             </div>
         </section>
     </div>

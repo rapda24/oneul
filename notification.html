@@ -18,39 +18,87 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
-            <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
+            <p class="black fs50 fw700">알림설정</p>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
-                <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
-                </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
-                </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
-                </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
-                </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
-                </div>
-            </div>
+        <!-- 알림설정 -->
+        <section class="mypage-wrap pt27">
+            <ul class="mypage-menu setting-menu notification-menu">
+                <li>
+                    <a href="#" class="flex align-center justify-between">
+                        <div class="txt-box">
+                            <p class="tit black fs42">주문·배송</p>
+                            <p class="txt mt27 gray3 fs30">주문, 배송, 반품, 교환, 취소</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex align-center justify-between">
+                        <div class="txt-box">
+                            <p class="tit black fs42">후기</p>
+                            <p class="txt mt27 gray3 fs30">작성 가능한 후기, 랭킹상승</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex align-center justify-between">
+                        <div class="txt-box">
+                            <p class="tit black fs42">고객센터</p>
+                            <p class="txt mt27 gray3 fs30">문의 내역 확인, 서비스평가</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex align-center justify-between">
+                        <div class="txt-box">
+                            <p class="tit black fs42">판매자샵</p>
+                            <p class="txt mt27 gray3 fs30">찜한 판매자샵 소식</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </a>
+                </li>
+                <li class="bb10-edeae2">
+                    <a href="#" class="flex align-center justify-between">
+                        <div class="txt-box">
+                            <p class="tit black fs42">개인맞춤 쇼핑혜택</p>
+                            <p class="txt mt27 gray3 fs30">광고성 푸시 소식</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </a>
+                </li>
+                <li class="bb0">
+                    <a href="#" class="flex align-center justify-between">
+                        <div class="txt-box">
+                            <p class="tit black fs42">SMS 수신동의</p>
+                            <p class="txt mt27 gray3 fs30">주문확인, 픽업시간 안내 및 입금확인 안내</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </a>
+                </li>
+            </ul>
         </section>
     </div>
     <!-- footer -->

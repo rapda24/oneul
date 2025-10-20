@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>PAPAMARKET</title>
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/nice-select.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <script src="./asset/js/jquery-3.6.1.js"></script>
+    <script src="./asset/js/swiper-bundle.min.js"></script>
+    <script src="./asset/js/jquery.nice-select.min.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1 class="hidden">PAPAMARKET</h1>
+        <div class="inner flex align-center justify-between">
+            <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">과일</p>
+            <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
+        </div>
+    </header>
+    <!-- content -->
+    <div class="content">
+        <!-- 상품 검색 -->
+        <div class="searchbar-box">
+            <div class="inner">
+                <div class="input-row">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
+                </div>
+            </div>
+        </div>
+        <!-- 상품 상세 정보 -->
+        <h3 class="hidden">상품 상세 정보</h3>
+        <section class="product-detail-wrap">
+            <!-- 상품 이미지 -->
+            <div class="product-img">
+                <!-- Slider main container -->
+                <div class="product-img-slide swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./asset/images/product_img05_big.jpg" alt="[물가안정 행사] 감귤 500g*2SET"></div>
+                        <div class="swiper-slide"><img src="./asset/images/product_img05.jpg" alt="감귤 500g"></div>
+                        <div class="swiper-slide"><img src="./asset/images/product_img06.jpg" alt=""></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- 상품 이름, 가격 등 -->
+            <div class="product-info-box pt80 pb80">
+                <div class="inner">
+                    <span class="label fs36 bg-yellowish">새벽배송</span>
+                    <p class="sub-tit gray fs36">찬 바람이 불면 생각나는 새콤달콤한 감귤</p>
+                    <p class="name fs54">[물가안정 행사] 감귤 500g*2SET</p>
+                    <p class="cost gray fs36 line-through">8,000원</p>
+                    <div class="flex fs54 fw700"><p class="sale mr15 green">30%</p><p class="price">5,600원</p></div>
+                </div>
+            </div>
+            <!-- 등급혜택, 배송안내, 교환/환불 안내 -->
+            <div class="shop-info-box pt80 pb80 bt10-edeae2">
+                <div class="inner">
+                    <ul class="shop-info-list">
+                        <li>
+                            <p class="tit ico-benefit fs40">등급혜택</p>
+                            <a href="#" class="txt btn-more mt30 black fs33">사용 가능한 쿠폰 모두 보기</a>
+                            <div class="more-content normal" aria-hidden="true">
+                                <div class="mt20">
+                                    <ul class="coupon-list">
+                                        <li class="flex align-center justify-between">
+                                            <p class="coupon-name fs36">추천등급 5천원 쿠폰</p>
+                                            <p class="coupon-txt gray2 fs30">２만원 이상 사용 가능</p>
+                                            <a href="#" class="btn white fs30 bg-green btn-coupon">발급받기</a>
+                                        </li>
+                                        <li class="flex align-center justify-between">
+                                            <p class="coupon-name fs36">추천등급 1천원 쿠폰</p>
+                                            <p class="coupon-txt gray2 fs30">２만원 이상 사용 가능</p>
+                                            <a href="#" class="btn white fs30 bg-gray2">발급완료</a>
+                                        </li>
+                                        <li class="flex align-center justify-between">
+                                            <p class="coupon-name fs36">추천등급 2천원 쿠폰</p>
+                                            <p class="coupon-txt gray2 fs30">3만원 이상 사용 가능</p>
+                                            <a href="#" class="btn white fs30 bg-gray2">발급완료</a>
+                                        </li>
+                                        <li class="flex align-center justify-between">
+                                            <p class="coupon-name fs36">추천등급 5천원 쿠폰</p>
+                                            <p class="coupon-txt gray2 fs30">5만원 이상 사용 가능</p>
+                                            <a href="#" class="btn white fs30 bg-gray2">발급완료</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="tit ico-delivery fs40">배송안내</p>
+                            <a href="#" class="txt btn-more mt30 black fs33">새벽배송 / 일반배송</a>
+                            <div class="more-content normal" aria-hidden="true">
+                                <div class="mt20">
+                                    <dl>
+                                        <dt class="green fs36 fw700">새벽배송</dt>
+                                        <dd class="fs33"><b class="fw700">오늘 오후 2시</b>까지 주문 완료하시면<br><b class="fw700">다음날 오전 7시</b> 이전에 배송해드립니다.</dt>
+                                        <dt class="green fs36 fw700">일반배송</p>
+                                        <dd class="fs33"><b class="fw700">오늘 오후 2시</b>까지 주문 완료하시면<br><b class="fw700">다음날 저녁</b>에 배송해드립니다.</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <p class="txt mt20 fs33">배송비 4,000원 (30,000원 이상 무료)</p>
+                        </li>
+                        <li>
+                            <a href="#" class="tit ico-receipt btn-more black fs40">교환/환불 안내</a>
+                            <div class="more-content normal" aria-hidden="true">
+                                <div class="mt20">
+                                    <dl>
+                                        <dt class="green fs36 fw700">수령 즉시 상품을 반드시 확인하시기 바랍니다.</dt>
+                                        <dd class="fs33">구입하신 상품 중 품질에 이상이 있는 상품을 구입하신 고객님께서는 [주문번호], [성함], [연락처]와 함께 [송장], [상품리스트], [박스안 상품] 3가지 사진을 첨부하여 카카오톡 1:1 채팅 또는 1:1 문의 주시길 바랍니다. 자세한 사항은 아래 내용을 참고하시기 바랍니다.</dd>
+                                        <dt class="green fs36 fw700">상품 일부 이상 시</dt>
+                                        <dd class="fs33">문제가 발생된 만큼 부분환불 해드립니다.</dd>
+                                        <dt class="green fs36 fw700">상품 전체 이상 시</dt>
+                                        <dd class="fs33">100% 전액 환불 해드리거나 재배송 해드립니다.</dd>
+                                        <dt class="green fs36 fw700">교환/환불 불가사항</dt>
+                                        <dd class="fs33">
+                                            <p>전자상거래소비자보호에 관한 법률에 의거하여, 냉장/냉동/신선제품은 재판매가 불가한 제품의 특성상 아래의 사유로 인한 반품/교환/환불은 불가함을 양해바랍니다.</p>
+                                            <ul class="bar-list">
+                                                <li>맛이나 향 등 개인취향으로 인한 구매자의 단순변심으로 인한 반품 / 교환</li>
+                                                <li>상품을 개봉하여 상품가치가 훼손된 경우</li>
+                                                <li>구매자의 주소 및 연락처 오기대로 인한 오배송의 경우</li>
+                                                <li>판매자 협의 없이 임의로 폐기, 반송할 경우에는 환불, 재배송 처리 불가</li>
+                                                <li class="red-txt">
+                                                    <p class="red-txt">상품수령 24시간 경과 후 문의시 처리 불가</p>
+                                                    <p class="black">바나나, 망고 등 열대과일의 경우는 후숙기간을 감안하여 상품 수령 후 36시간 경과 후 문의시 처리 불가함을 양해바랍니다. (또한 열대과일은 냉장보관시 상품 변질이 되며, 이 경우는 처리가 불가함을 유의바랍니다.)</p>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                        <dt class="green fs36 fw700">사진 촬영 가이드</dt>
+                                        <dd class="fs33">
+                                            <p>이상이 있을 경우 아래와 같이 촬영하여 1:1 문의로 접수 바랍니다.</p>
+                                            <ul class="img-list flex">
+                                                <li><img src="./asset/images/product/poto_guide01.png" alt="택배 박스에 붙어 있는 운송장"></li>
+                                                <li><img src="./asset/images/product/poto_guide02.png" alt="택배상자 내/외부"></li>
+                                                <li><img src="./asset/images/product/poto_guide03.png" alt="문제 있는 제품"></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 상품 정보 -->
+            <div class="product-detail-box pt80 pb80 bt10-edeae2">
+                <div class="inner">
+                    <dl class="flex fs33">
+                        <dt>용량</dt>
+                        <dd>500g</dd>
+                    </dl>
+                    <dl class="flex fs33">
+                        <dt>원산지</dt>
+                        <dd>국내산</dd>
+                    </dl>
+                    <dl class="flex fs33">
+                        <dt>보관방법</dt>
+                        <dd>상온보관/냉장보관</dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- 함께 본 상품 -->
+            <div class="more-product-box pt80 pb80 bt10-edeae2">
+                <div class="inner">
+                    <div class="tit-wrap flex justify-between">
+                        <h4 class="fs42 fw300">함께 본 상품</h4>
+                        <a href="#" class="btn-more black fs36">전체보기</a>
+                    </div>
+                    <!-- Slider main container -->
+                    <div class="product-slide swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./asset/images/product_img01.jpg" alt="[제스프리] 골드키위 8-10입">
+                                    </a>
+                                    <div class="basket-box flex">
+                                        <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                        <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                                    </div>
+                                </div>
+                                <div class="product-txt">
+                                    <a href="#">
+                                        <p class="name black fs36">[제스프리] 골드키위 8-10입</p>
+                                        <p class="price black fs36 fw700">10,700원</p>
+                                    </a>
+                                    <span class="label fs30 bg-yellowish">새벽배송</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./asset/images/product_img02.jpg" alt="국내산 대추 방울 토마토 500g">
+                                    </a>
+                                    <div class="basket-box flex">
+                                        <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                        <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                                    </div>
+                                </div>
+                                <div class="product-txt">
+                                    <a href="#">
+                                        <p class="name black fs36">국내산 대추 방울 토마토 500g</p>
+                                        <p class="price black fs36 fw700">6,900원</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./asset/images/product_img03.jpg" alt="국내산 한돈 갈매기살 300g">
+                                    </a>
+                                    <div class="basket-box flex">
+                                        <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                        <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                                    </div>
+                                </div>
+                                <div class="product-txt">
+                                    <a href="#">
+                                        <p class="name black fs36">국내산 한돈 갈매기살 300g</p>
+                                        <p class="price black fs36 fw700">15,800원</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 상품 상세 -->
+            <div class="desc-detail pt146 pb80">
+                <ul class="detail-tab flex align-center justify-center fs36 bt10-edeae2">
+                    <li><a href="#" class="active">상품정보</a></li>
+                    <li><a href="#">후기<span>(76)</span></a></li>
+                    <li><a href="#">문의<span>(12)</span></a></li>
+                </ul>
+                <div class="tab-content txt-center">
+                    <div class="inner">
+                        <div class="holder"><img src="./asset/images/product_detail.jpg" alt="언제 먹어도 맛있는 새콤달콤 감귤"><img src="./asset/images/product_detail.jpg" alt="언제 먹어도 맛있는 새콤달콤 감귤"></div>
+                        <a href="#" class="btn btn-more white fs40 bg-green">상품정보 더보기</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="tab-btn-box fs48 bt10-edeae2">
+                <li><a href="#">후기<span>(76)</span></a></li>
+                <li><a href="#">문의<span>(12)</span></a></li>
+            </ul>
+            <!-- fixed-btn-wrap -->
+            <div class="fixed-btn-wrap">
+                <!-- 상품 옵션 선택 -->
+                <div class="product-option bg-lightGray">
+                    <button class="btn btn-option-close">상품 옵션 닫기</button>
+                    <div class="option-body">
+                        <div>
+                            <!-- 옵션 선택 없을 시 -->
+                            <div class="purchase-option no-option">
+                                <div class="box bg-white">
+                                    <p class="option-name mb30 fs42">[물가안정 행사] 감귤 500g*2SET 500g*2SET 500g*2SET</p>
+                                    <div class="flex align-center justify-between">
+                                        <div class="counter-box"><button class="plus btn bg-green"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn bg-green"><span class="blind">빼기</span></button></div>
+                                        <p class="price fs42">5,600원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 옵션 선택 있을 시 -->
+                            <!-- <div class="purchase-option">
+                                <select id="" name="" class="select-custom product-option-select fs42 wide">
+                                    <option value="">옵션을 선택하세요.</option>
+                                    <option value="">[물가안정행사] 감귤500g</option>
+                                    <option value="">[물가안정행사] 감귤500g *2SET</option>
+                                    <option value="">[물가안정 행사] 감귤 500g*2SET 500g*2SET 500g*2SET</option>
+                                    <option value="">[물가안정행사] 감귤500g *3SET</option>
+                                    <option value="">[물가안정행사] 감귤500g *4SET</option>
+                                </select>
+                                <div class="box bg-white">
+                                    <button class="btn btn-purchase-option-close">구매 옵션 닫기</button>
+                                    <p class="option-name mb30 fs42">[물가안정 행사] 감귤 500g*2SET 500g*2SET 500g*2SET</p>
+                                    <div class="flex align-center justify-between">
+                                        <div class="counter-box"><button class="plus btn bg-green"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn bg-green"><span class="blind">빼기</span></button></div>
+                                        <p class="price fs42">5,600원</p>
+                                    </div>
+                                </div>
+                                <div class="box bg-white">
+                                    <button class="btn btn-purchase-option-close">구매 옵션 닫기</button>
+                                    <p class="option-name mb30 fs42">[물가안정 행사] 감귤 500g*2SET 500g</p>
+                                    <div class="flex align-center justify-between">
+                                        <div class="counter-box"><button class="plus btn bg-green"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn bg-green"><span class="blind">빼기</span></button></div>
+                                        <p class="price fs42">5,600원</p>
+                                    </div>
+                                </div>
+                                <div class="box bg-white">
+                                    <button class="btn btn-purchase-option-close">구매 옵션 닫기</button>
+                                    <p class="option-name mb30 fs42">[물가안정 행사] 감귤 500g*2SET 500g*3SET</p>
+                                    <div class="flex align-center justify-between">
+                                        <div class="counter-box"><button class="plus btn bg-green"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn bg-green"><span class="blind">빼기</span></button></div>
+                                        <p class="price fs42">5,600원</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="option-foot flex align-center justify-between">
+                        <p class="fs42">총 수량 <span class="green fw700">1</span>개</p>
+                        <p class="all-price green fs48 fw700">5,600원</p>
+                    </div>
+                </div>
+                <!-- 장바구니, 구매하기 버튼 -->
+                <div class="inner flex align-center justify-between">
+                    <button class="btn w460 green fs50 bg-white btn-cart">장바구니</button>
+                    <button class="btn w460 white fs50 bg-green btn-option">구매하기</button>
+                </div>
+                <!-- 재입고 알림, 품절 버튼 -->
+                <!-- <div class="inner flex align-center justify-between">
+                    <button class="btn btn-alert w460 green fs50 bg-white">재입고 알림</button>
+                    <button class="btn w460 white fs50 bg-gray3">품절</button>
+                </div> -->
+            </div>
+        </section>
+    </div>
+    <!-- footer -->
+    <footer>
+        <!-- 고객센터 안내 -->
+        <div class="cs-info inner txt-center">
+            <h2 class="fs45 fw700">고객센터</h2>
+            <p class="fs33"><span>상담시간 : 10시-17시 (주말, 공휴일 휴무)</span> <span>점심 시간 : 12시-13시</span></p>
+            <div class="flex justify-center">
+                <a href="tel:1544-1541" class="btn btn-tel black fs33 bg-white">1544-1541</a>
+                <a href="#" class="btn btn-talk white fs33 bg-green">채널톡 상담</a>
+            </div>
+        </div>
+        <!-- 하단 메뉴 -->
+        <div class="footer-menu flex align-center justify-between bg-green">
+            <a href="#" class="btn btn-home home-w">홈</a>
+            <button class="btn btn-menu menu-w">메뉴 열기</button>
+            <a href="#" class="btn btn-customer customer-w">마이페이지</a>
+            <a href="#" class="btn btn-location location-f">위치기반</a>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+    </footer>
+    <!-- gnb-menu -->
+    <div class="gnb-menu" aria-hidden="true">
+        <div class="menu-body">
+            <button class="btn-gnb-close">메뉴 닫기</button>
+            <!-- 상품 검색 -->
+            <div class="searchbar-box">
+                <div class="input-row">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
+                </div>
+            </div>
+            <!-- gnb -->
+            <ul class="gnb">
+                <li>
+                    <a href="#" class="gnb-tit after white fs50 fw500">카테고리</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="white fs40 fw300">과일</a></li>
+                        <li><a href="#" class="white fs40 fw300">채소</a></li>
+                        <li><a href="#" class="white fs40 fw300">육류</a></li>
+                        <li><a href="#" class="white fs40 fw300">수산물</a></li>
+                        <li><a href="#" class="white fs40 fw300">가공식품</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="gnb-tit white fs50 fw500">내주변 슈퍼마켓</a>
+                    <!-- Slider main container -->
+                    <div class="gnb-around-list-slide around-list-slide swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="#" class="box">
+                                    <p class="fs55">미소<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">300m</p>
+                                    <button class="btn btn-like heart-w"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box sale">
+                                    <p class="fs55">부용<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">600m</p>
+                                    <button class="btn btn-like heart-w active"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box">
+                                    <p class="fs55">미스터<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">1.5km</p>
+                                    <button class="btn btn-like heart-w active"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box sale">
+                                    <p class="fs55">파파<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">3km</p>
+                                    <button class="btn btn-like heart-w"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box">
+                                    <p class="fs55">미스터<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">600m</p>
+                                    <button class="btn btn-like heart-w"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="gnb-tit white fs50 fw500">관심매장</a>
+                </li>
+                <li>
+                    <a href="#" class="gnb-tit white fs50 fw500">Mr.공구</a>
+                </li>
+                <li>
+                    <a href="#" class="gnb-tit after white fs50 fw500">커뮤니티</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="white fs40 fw300">구매후기</a></li>
+                        <li><a href="#" class="white fs40 fw300">문의하기</a></li>
+                        <li><a href="#" class="white fs40 fw300">공지사항</a></li>
+                        <li><a href="#" class="white fs40 fw300">이벤트</a></li>
+                    </ul>
+                </li>
+                <li class="margin">
+                    <a href="#" class="gnb-tit white fs50 fw500">고객센터</a>
+                    <div class="cs-info flex">
+                        <a href="tel:1544-1541" class="btn btn-tel black fs33 bg-white">1544-1541</a>
+                        <a href="#" class="btn btn-talk black fs33 bg-white">채널톡 상담</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- gnb-banner -->
+            <div class="gnb-banner-wrap">
+                <!-- Slider main container -->
+                <div class="gnb-banner-slide swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner01_330x150.jpg" alt="친구 초대하고 쿠폰 받아가세요">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner02_330x150.jpg" alt="파파마켓 신규회원 3,000원 적립금 지급">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner03_330x150.jpg" alt="친구 초대하고 쿠폰 받아가세요">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner04_330x150.jpg" alt="파파마켓 신규회원 3,000원 적립금 지급">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner05_330x150.jpg" alt="친구 초대하고 쿠폰 받아가세요">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- gnb-foot-menu -->
+            <ul class="gnb-foot-menu flex align-center">
+                <li><a href="#" class="white fs36">파파마켓 소개</a></li>
+                <li><a href="#" class="white fs36">이용 안내</a></li>
+                <li><a href="#" class="white fs36">입점 문의</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 팝업 -->
+    <div class="popup popup-normal">
+        <div class="popup-body bg-green">
+            <button class="btn btn-popup-close">팝업 닫기</button>
+            <div class="txt-wrap txt-center">
+                <p class="txt white fs50 fw500">쿠폰이 발급되었습니다.</p>
+            </div>
+            <div class="btn-wrap flex justify-between">
+                <button class="btn white fs42 fw500">확인</button>
+            </div>
+        </div>
+    </div>
+    <script src="./asset/js/ui.js"></script>
+    <script>
+        /* product-img-slide */
+        const productImgSlide = new Swiper(".product-img-slide", {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            }
+        });
+
+        /* 더보기 */
+        var shopInfoMore = $(".shop-info-box .btn-more");
+        var i;
+    
+        for (i = 0; i < shopInfoMore.length; i++) {
+            shopInfoMore[i].addEventListener("click", function(e) {
+                e.preventDefault();
+                this.parentElement.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                    $(panel).attr("aria-hidden", "true");
+                } else {
+                    $(panel).attr("aria-hidden", "false");
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+        /* 함께 본 상품 */
+        const productSlide = new Swiper(".product-slide", {
+            loop: false,
+            slidesPerView: 2.1,
+            spaceBetween: m40,
+            breakpoints: {
+                320:  {
+                    slidesPerView: 2.227271,
+                    spaceBetween: m40,
+                },
+                1080:  {
+                    slidesPerView: 2.227271,
+                    spaceBetween: 40,
+                }
+            }
+        });
+
+        /* detail-tab fixed */
+        const headerOH = $("header").outerHeight();
+        const detailtabT = $(".detail-tab").offset().top - headerOH;
+
+        $(window).scroll(function(){
+            const scrollT = $(this).scrollTop();
+
+            if(scrollT >= detailtabT){
+                $(".detail-tab").addClass("fixed");
+            } else {
+                $(".detail-tab").removeClass("fixed");
+            }
+        });
+
+        /* 상품정보 더보기 */
+        const m1324 = 1324 / 1080 * windowWidth;
+        const holderH = $(".holder").height();
+        
+        if(holderH > m1324) {
+            $(".holder").css("height", m1324 + "px");
+            $(".desc-detail .btn-more").css("display", "flex");
+        } else {
+            $(".holder").css("height", "auto");
+            $(".desc-detail .btn-more").css("display", "none");
+        }
+
+        $(".desc-detail .btn-more").on("click",function(e){
+            e.preventDefault();
+            $(this).toggleClass("active");
+            if($(this).hasClass("active")) {
+                $(this).text("상품정보 접기");
+                $(".holder").css("height", "auto");
+            } else {
+                $(this).text("상품정보 더보기");
+                $(".holder").css("height", m1324 + "px");
+            }
+        });
+
+        /* select custom */
+        $(".select-custom").niceSelect();
+
+        /* 상품 옵션 열기 */
+        $(".btn-cart").click(function(){
+            $(".product-option").show().addClass("active");
+            $(".btn-option").text('바로구매');
+            $("body").addClass("no-scroll");
+        });
+        $(".btn-option").click(function(){
+            $(".product-option").show().addClass("active");
+            $(this).text('바로구매');
+            $("body").addClass("no-scroll");
+        });
+
+        /* 상품 옵션 닫기 */
+        $(".btn-option-close").click(function (){
+            $(this).parents(".product-option").hide().removeClass("active");
+            $(".btn-option").text('구매하기');
+            $("body").removeClass("no-scroll");
+        });
+        $(".product-option").click(function(e){
+            if(!$(".product-option").has(e.target).length){
+                $(this).hide().removeClass("active");
+                $(".btn-option").text('구매하기');
+                $("body").removeClass("no-scroll");
+            }
+        });
+
+        /* 상품 옵션 열린 상태에서 gnb-menu 닫을 시 */
+        $(".gnb-menu").click(function(e){
+            if(!$(".gnb-menu").has(e.target).length){
+                if($(".product-option").hasClass("active")){
+                    $("body").addClass("no-scroll");
+                }
+            }
+        });
+
+        /* 팝업 열기 */
+        $(".btn-coupon").click(function(e){
+            e.preventDefault();
+
+            $(".popup").show();
+            $("body").addClass("no-scroll");
+        });
+
+        /* 팝업 닫기 */
+        $(".btn-popup-close").click(function(){
+            $(this).parents(".popup").hide();
+            $("body").removeClass("no-scroll");
+        });
+        $(".popup").click(function(e){
+            if(!$(".popup").has(e.target).length){
+                $(this).hide();
+                $("body").removeClass("no-scroll");
+            } 
+        });
+
+        /* footer addClass */
+        $("footer .cs-info").addClass("pb170");
+    </script>
+</body>
+</html>

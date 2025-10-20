@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>PAPAMARKET</title>
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <script src="./asset/js/jquery-3.6.1.js"></script>
+    <script src="./asset/js/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1 class="hidden">PAPAMARKET</h1>
+        <div class="inner flex align-center justify-between">
+            <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">마이페이지</p>
+            <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
+        </div>
+    </header>
+    <!-- content -->
+    <div class="content">
+        <!-- 상품 검색 -->
+        <div class="searchbar-box">
+            <div class="inner">
+                <div class="input-row">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
+                </div>
+            </div>
+        </div>
+        <!-- 마이페이지 -->
+        <section class="mypage-wrap">
+            <div class="inner">
+                <div class="profile-info flex align-center justify-between mb80">
+                    <span class="profile-img"><img src="./asset/images/common/membership_plant03.png" alt=""><button class="btn btn-photo">프로필 사진 변경하기</button></span>
+                    <div class="profile-txt">
+                        <div class="flex align-end">
+                            <p class="name fs36"><strong class="fs48 fw500">김민정</strong>님</p>
+                            <a class="btn grade grade-buy white fs33 active">구매 Lv.3</a><a class="btn grade grade-recommend white fs33">추천 Lv.1</a>
+                        </div>
+                        <p class="level-txt fs36">138,000원 추가 구매 시 <strong class="green fw500">Lv.4</strong> 달성!</p>
+                        <div class="progress bg-yellowish">
+                            <div class="progress-bar bg-green" style="width: 69%"></div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="box-list flex align-center justify-between mb80">
+                    <li>
+                        <a href="#" class="flex align-center justify-center">
+                            <div class="txt-center">
+                                <p class="tit gray fs36">최근 주문 내역</p>
+                                <p class="black fs54">2</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex align-center justify-center">
+                            <div class="txt-center">
+                                <p class="tit gray fs36">적립금</p>
+                                <p class="black fs54">5,000원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex align-center justify-center">
+                            <div class="txt-center">
+                                <p class="tit gray fs36">쿠폰</p>
+                                <p class="black fs54">3장</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mypage-menu">
+                    <li>
+                        <a href="#" class="flex align-center justify-between">
+                            <p class="tit black fs42">회원 등급 안내</p><span class="ico-more"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex align-center justify-between">
+                            <p class="tit black fs42">최근 주문 내역</p><span class="ico-more"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex align-center justify-between">
+                            <p class="tit black fs42">후기 관리</p><span class="ico-more"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex align-center justify-between">
+                            <p class="tit black fs42">취소/반품/교환</p><span class="ico-more"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex align-center justify-between">
+                            <p class="tit black fs42">내 문의 내역</p><span class="ico-more"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex align-center justify-between">
+                            <p class="tit black fs42">내 정보 수정</p><span class="ico-more"></span>
+                        </a>
+                    </li>
+                    <li class="member-code-box flex align-center justify-between">
+                        <p class="tit fs42">회원코드</p>
+                        <div class="flex align-center">
+                            <p class="member-code fs42">3FA6QW</p>
+                            <button class="btn-copy black fs28">복사</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 추천 상품 -->
+        <section class="more-product-box pt100 pb100">
+            <div class="inner">
+                <div class="tit-wrap flex justify-between">
+                    <h4 class="fs48 fw300">이 상품 어때요? <b class="fw700">추천 상품</b></h4>
+                    <a href="#" class="btn-more black fs36">전체보기</a>
+                </div>
+                <!-- Slider main container -->
+                <div class="product-slide swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="product-img">
+                                <a href="#">
+                                    <img src="./asset/images/product_img01.jpg" alt="[제스프리] 골드키위 8-10입">
+                                </a>
+                                <div class="basket-box flex">
+                                    <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                    <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                                </div>
+                            </div>
+                            <div class="product-txt">
+                                <a href="#">
+                                    <p class="name black fs36">[제스프리] 골드키위 8-10입</p>
+                                    <p class="price black fs36 fw700">10,700원</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-img">
+                                <a href="#">
+                                    <img src="./asset/images/product_img02.jpg" alt="국내산 대추 방울 토마토 500g">
+                                </a>
+                                <div class="basket-box flex">
+                                    <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                    <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                                </div>
+                            </div>
+                            <div class="product-txt">
+                                <a href="#">
+                                    <p class="name black fs36">국내산 대추 방울 토마토 500g</p>
+                                    <p class="price black fs36 fw700">6,900원</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-img">
+                                <a href="#">
+                                    <img src="./asset/images/product_img03.jpg" alt="국내산 한돈 갈매기살 300g">
+                                </a>
+                                <div class="basket-box flex">
+                                    <div class="counter-box bg-green"><button class="plus btn"><span class="blind">더하기</span></button><span class="num">1</span><button class="minus btn"><span class="blind">빼기</span></button></div>
+                                    <a href="#" class="btn btn-basket basket-w bg-green">장바구니에 담기</a>
+                                </div>
+                            </div>
+                            <div class="product-txt">
+                                <a href="#">
+                                    <p class="name black fs36">국내산 한돈 갈매기살 300g</p>
+                                    <p class="price black fs36 fw700">15,800원</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- footer -->
+    <footer>
+        <!-- 고객센터 안내 -->
+        <div class="cs-info inner txt-center">
+            <h2 class="fs45 fw700">고객센터</h2>
+            <p class="fs33"><span>상담시간 : 10시-17시 (주말, 공휴일 휴무)</span> <span>점심 시간 : 12시-13시</span></p>
+            <div class="flex justify-center">
+                <a href="tel:1544-1541" class="btn btn-tel black fs33 bg-white">1544-1541</a>
+                <a href="#" class="btn btn-talk white fs33 bg-green">채널톡 상담</a>
+            </div>
+        </div>
+        <!-- 하단 메뉴 -->
+        <div class="footer-menu flex align-center justify-between bg-green">
+            <a href="#" class="btn btn-home home-w">홈</a>
+            <button class="btn btn-menu menu-w">메뉴 열기</button>
+            <a href="#" class="btn btn-customer customer-w">마이페이지</a>
+            <a href="#" class="btn btn-location location-f">위치기반</a>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+    </footer>
+    <!-- gnb-menu -->
+    <div class="gnb-menu" aria-hidden="true">
+        <div class="menu-body">
+            <button class="btn-gnb-close">메뉴 닫기</button>
+            <!-- 상품 검색 -->
+            <div class="searchbar-box">
+                <div class="input-row">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
+                </div>
+            </div>
+            <!-- gnb -->
+            <ul class="gnb">
+                <li>
+                    <a href="#" class="gnb-tit after white fs50 fw500">카테고리</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="white fs40 fw300">과일</a></li>
+                        <li><a href="#" class="white fs40 fw300">채소</a></li>
+                        <li><a href="#" class="white fs40 fw300">육류</a></li>
+                        <li><a href="#" class="white fs40 fw300">수산물</a></li>
+                        <li><a href="#" class="white fs40 fw300">가공식품</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="gnb-tit white fs50 fw500">내주변 슈퍼마켓</a>
+                    <!-- Slider main container -->
+                    <div class="gnb-around-list-slide around-list-slide swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="#" class="box">
+                                    <p class="fs55">미소<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">300m</p>
+                                    <button class="btn btn-like heart-w"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box sale">
+                                    <p class="fs55">부용<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">600m</p>
+                                    <button class="btn btn-like heart-w active"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box">
+                                    <p class="fs55">미스터<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">1.5km</p>
+                                    <button class="btn btn-like heart-w active"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box sale">
+                                    <p class="fs55">파파<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">3km</p>
+                                    <button class="btn btn-like heart-w"></button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="box">
+                                    <p class="fs55">미스터<br>마트</p>
+                                </a>
+                                <div class="flex align-center justify-between">
+                                    <p class="location white fs30">600m</p>
+                                    <button class="btn btn-like heart-w"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="gnb-tit white fs50 fw500">관심매장</a>
+                </li>
+                <li>
+                    <a href="#" class="gnb-tit white fs50 fw500">Mr.공구</a>
+                </li>
+                <li>
+                    <a href="#" class="gnb-tit after white fs50 fw500">커뮤니티</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="white fs40 fw300">구매후기</a></li>
+                        <li><a href="#" class="white fs40 fw300">문의하기</a></li>
+                        <li><a href="#" class="white fs40 fw300">공지사항</a></li>
+                        <li><a href="#" class="white fs40 fw300">이벤트</a></li>
+                    </ul>
+                </li>
+                <li class="margin">
+                    <a href="#" class="gnb-tit white fs50 fw500">고객센터</a>
+                    <div class="cs-info flex">
+                        <a href="tel:1544-1541" class="btn btn-tel black fs33 bg-white">1544-1541</a>
+                        <a href="#" class="btn btn-talk black fs33 bg-white">채널톡 상담</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- gnb-banner -->
+            <div class="gnb-banner-wrap">
+                <!-- Slider main container -->
+                <div class="gnb-banner-slide swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner01_330x150.jpg" alt="친구 초대하고 쿠폰 받아가세요">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner02_330x150.jpg" alt="파파마켓 신규회원 3,000원 적립금 지급">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner03_330x150.jpg" alt="친구 초대하고 쿠폰 받아가세요">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner04_330x150.jpg" alt="파파마켓 신규회원 3,000원 적립금 지급">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./asset/images/event_banner05_330x150.jpg" alt="친구 초대하고 쿠폰 받아가세요">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- gnb-foot-menu -->
+            <ul class="gnb-foot-menu flex align-center">
+                <li><a href="#" class="white fs36">파파마켓 소개</a></li>
+                <li><a href="#" class="white fs36">이용 안내</a></li>
+                <li><a href="#" class="white fs36">입점 문의</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./asset/js/ui.js"></script>
+    <script>
+        /* 회원 등급 */
+        const $gradeBuy = $(".btn.grade-buy");
+        const $gradeRecommend = $(".btn.grade-recommend");
+        const $profileImg = $(".profile-img img");
+        const $levelTxt = $(".level-txt");
+        const $progressBar = $(".progress-bar");
+        
+        $gradeBuy.on("click",function(e){
+            e.preventDefault();
+
+            $(this).addClass("active");
+            $(this).siblings().removeClass("active");
+            $profileImg.attr("src", "./asset/images/common/membership_plant03.png");
+            $levelTxt.html("138,000원 추가 구매 시 <strong class='green fw500'>Lv.4</strong> 달성!");
+            $progressBar.css("width", "69%");
+        });
+
+        $gradeRecommend.on("click",function(e){
+            e.preventDefault();
+
+            $(this).addClass("active");
+            $(this).siblings().removeClass("active");
+            $profileImg.attr("src", "./asset/images/common/membership_person01.png");
+            $levelTxt.html("1명이 추천 시 <strong class='green fw500'>Lv.2</strong> 달성!");
+            $progressBar.css("width", "0%");
+        });
+
+
+        /* 추천 상품 */
+        const productSlide = new Swiper(".product-slide", {
+            loop: false,
+            slidesPerView: 2.1,
+            spaceBetween: m40,
+            breakpoints: {
+                320:  {
+                    slidesPerView: 2.227271,
+                    spaceBetween: m40,
+                },
+                1080:  {
+                    slidesPerView: 2.227271,
+                    spaceBetween: 40,
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -18,39 +18,94 @@
         <h1 class="hidden">PAPAMARKET</h1>
         <div class="inner flex align-center justify-between">
             <a href="#" class="btn btn-back bg-white">뒤로 가기</a>
+            <p class="black fs50 fw700">적립금</p>
             <a href="#" class="btn btn-basket basket-b bg-white">장바구니 <span>25</span></a>
         </div>
     </header>
     <!-- content -->
     <div class="content">
-        <!-- 로그인 -->
-        <h3 class="hidden">로그인</h3>
-        <section>
-            <div class="login-box">
-                <h4 class="logo mb80 txt-center"><img src="./asset/images/common/logo_g@2x.png" alt="PAPAMARKET"></h4>
+        <!-- 상품 검색 -->
+        <div class="searchbar-box">
+            <div class="inner">
                 <div class="input-row">
-                    <input type="text" class="inp fs36" placeholder="아이디를 입력해주세요.">
-                </div>
-                <div class="input-row">
-                    <input type="password" class="inp fs36" placeholder="비밀번호를 입력해주세요.">
-                </div>
-                <div class="flex align-center mt30">
-                    <span class="checkbox-row"><input type="checkbox" name="" id="saveId" class="design-inp" title="아이디 저장"><label for="saveId" class="label-checkbox fs42">아이디 저장</label></span>
-                    <span class="checkbox-row ml99"><input type="checkbox" name="" id="autoLogin" class="design-inp" title="자동 로그인"><label for="autoLogin" class="label-checkbox fs42">자동 로그인</label></span>
-                </div>
-                <button class="btn btn-normal btn-login white fs36 fw500 bg-green">로그인</button>
-                <ul class="info-user-menu flex align-center justify-center mb80 fs36">
-                    <li><a href="#" class="black">아이디 찾기</a></li>
-                    <li><a href="#" class="black">비밀번호 찾기</a></li>
-                    <li><a href="#" class="black">회원가입</a></li>
-                </ul>
-                <div class="social-login">
-                    <button class="btn btn-kakao fs36">카카오 로그인</button>
-                    <button class="btn btn-naver fs36">네이버 로그인</button>
-                    <button class="btn btn-google fs36">구글 로그인</button>
-                    <button class="btn btn-apple fs36">Apple로 로그인</button>
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="원하시는 상품을 검색하세요!" class="inp fs35" title="원하시는 상품을 검색하세요!">
                 </div>
             </div>
+        </div>
+        <!-- 포인트 -->
+        <section class="point-wrap pb100">
+            <div class="pt20 pb60 bb10-edeae2 txt-center">
+                <h4 class="fs42 fw400">적립금</h4>
+                <p class="point mt27 fs57 fw500">5,000원</p>
+                <p class="txt mt27 gray fs30 fw300">15일 이내 소멸 예정 적립금 : <strong class="fw400">5,000원</strong></p>
+            </div>
+            <div class="inner">
+                <div class="flex align-end pt70 pb45">
+                    <h5 class="tit fs45 fw700">사용 내역</h5>
+                    <p class="txt ml30 gray fs30 fw300">최근 6개월 이력만 조회 가능합니다.</p>
+                </div>
+                <!-- 카테고리 -->
+                <ul class="category-list flex fs33">
+                    <li><a href="#" class="active">15일</a></li>
+                    <li><a href="#">1개월</a></li>
+                    <li><a href="#">3개월</a></li>
+                    <li><a href="#">6개월</a></li>
+                </ul>
+            </div>
+            <!-- 목록 -->
+            <ul class="normal-list point-list">
+                <li>
+                    <div class="flex justify-between">
+                        <p class="tit fs42">구매 시 선사용</p>
+                        <p class="fs42">-3,800원</p>
+                    </div>
+                    <div class="flex justify-between mt27">
+                        <p class="fs33">2022.11.08</p>
+                        <p class="fs33">5,000원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex justify-between">
+                        <p class="tit fs42">구매 적립 예정</p>
+                        <p class="fs42">3,800원</p>
+                    </div>
+                    <div class="flex justify-between mt27">
+                        <p class="fs33">2022.11.08</p>
+                        <p class="fs33">8,800원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex justify-between">
+                        <p class="tit fs42">블랙프라이데이 특별 적립금</p>
+                        <p class="fs42">5,000원</p>
+                    </div>
+                    <div class="flex justify-between mt27">
+                        <p class="fs33">2022.11.01 ~ 2022.11.15</p>
+                        <p class="fs33">5,000원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex justify-between">
+                        <p class="tit fs42">기간 만료 소멸</p>
+                        <p class="fs42">-3,000원</p>
+                    </div>
+                    <div class="flex justify-between mt27">
+                        <p class="fs33">2022.11.01</p>
+                        <p class="fs33">0원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex justify-between">
+                        <p class="tit fs42">깜짝 적립금</p>
+                        <p class="fs42">3,000원</p>
+                    </div>
+                    <div class="flex justify-between mt27">
+                        <p class="fs33">2022.10.01 ~ 2022.10.31</p>
+                        <p class="fs33">3,000원</p>
+                    </div>
+                </li>
+            </ul>
         </section>
     </div>
     <!-- footer -->
