@@ -1,47 +1,606 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
     <title>오늘보듬</title>
-
-    <!-- 메타태그 -->
-    <meta name="viewport" content="widdh=device-widdh, initial-scale=1.0 maximum-scale=1.5">
-
-    <meta name="keyword" content="오늘보듬">
-    <meta name="description" content="오늘보듬">
-
-
-    <!-- css -->
-    <link rel="stylesheet " href="static/css/reset.css" />
-    <link rel="stylesheet " href="static/css/swiper.css" />
-    <link rel="stylesheet " href="static/css/font.css" />
-    <link rel="stylesheet " href="static/css/common.css" />
-    <link rel="stylesheet " href="static/css/layout.css" />
-    <link rel="stylesheet " href="static/css/list.css" />
-
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?famsily=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <style>
+        .index-wrap {
+            padding: 6.481vw 0;
+        }
+        h1 {
+            margin-bottom: 6.481vw;
+            font-size: 7.222vw;
+            letter-spacing: -0.06em;
+        }
+        .scroll-table-wrap {
+            position: relative;
+            max-width: 800px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling:touch;
+        }
+        .scroll-table-wrap::-webkit-scrollbar {
+            display:none;
+        }
+        .scroll-table-wrap > div {
+            width: 150%;
+        }
+        table {
+            width: 100%;
+            border: 2px solid #222;
+        }
+        table th,
+        table td {
+            padding: 2.778vw 2.222vw 2.222vw;
+            font-size: 3.333vw;
+            line-height: 1.2em;
+            vertical-align: middle;
+            word-break: keep-all;
+        }
+        table th {
+            color: #fff;
+            background-color: #222;
+            border-left: 1px solid #fff;
+        }
+        table td {
+            background-color: #fff;
+            border: 1px solid #222;
+            border-right: 0;
+        }
+        table td a {
+            color: #428c75;
+        }
+        table .bl0 {
+            border-left: 0;
+        }
+        @media screen and (min-width: 768px) {
+            .index-wrap {
+                padding: 30px 0;
+            }
+            h1 {
+                margin-bottom: 30px;
+                font-size: 52px;
+            }
+            table th,
+            table td {
+                padding: 10px 8px 8px;
+                font-size: 14px;
+            }
+            .scroll-table-wrap > div {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
-
-<body class="list">
-    <div class="wrap">
-
-        <div class="container">
-            <div class="contents">
-
-                <div class="box">
-                    <dt>페이지 리스트</dt>
-                    <ul>
-                    </ul>
+<body>
+    <div class="index-wrap">
+        <div class="inner">
+            <h1>오늘보듬 리스트</h1>
+            <div class="scroll-table-wrap">
+                <div>
+                    <table>
+                        <caption>오늘보듬 리스트</caption>
+                        <colgroup>
+                            <col style="width: 45%">
+                            <col style="width: 15%">
+                            <col style="width: 40%">
+                        </colgroup>
+                        <thead>
+                            <th scope="col" class="bl0">화면 ID</th>
+                            <th scope="col">구분</th>
+                            <th scope="col">비고</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="bl0"><a href="./main.html">메인</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./login.html">로그인</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./find_id.html">아이디 찾기</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./find_id_b.html">아이디 찾기 - 사업자회원/입점마켓</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./find_pw.html">비밀번호 찾기</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./join.html">회원가입</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./join_b.html">회원가입 - 사업자회원</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./join_m.html">회원가입 - 입점마켓</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./search.html">검색</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./search_results.html">검색 결과</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./">위치기반</a></td>
+                                <td class="txt-center"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./event.html">이벤트</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./event_view.html">이벤트 - 배너 클릭</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./market_favorite.html">관심매장</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./market.html">주변 매장</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./market_list.html">주변 매장 - 상세페이지</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./market_product_detail.html">픽업 가능 상품 상세페이지</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./product_detail.html">배송 상품 상세페이지</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./best_list.html">베스트상품</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./new_list.html">신상품</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./together.html">공구</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./together_product_detail.html">공구 상품 상세페이지</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./recommend.html">매장별 추천 상품</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./recommend_list.html">매장별 추천 상품 리스트</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./product_list.html">상품 리스트</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./cart.html">장바구니</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./use_coupon.html">쿠폰(쿠폰 사용)</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./order.html">결제</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./change_address.html">배송지 변경</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./add_address.html">주소 추가</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./interestfree.html">무이자 할부 혜택</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./account.html">계좌 입력</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./order_complete.html">주문 사용자</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./order_complete_passbook.html">주문 사용자 - 무통장 입금</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./delivery.html">배송 조회</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./order_detail_list.html">상세 주문 내역</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./review.html">상품 후기</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./qna.html">상품 문의</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./qna_write.html">상품 문의 - 문의하기</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./faq.html">문의하기 - 자주 묻는 질문 / 내 문의 내역</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./qna_view.html">내 문의 내역 - 상세페이지</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./my_qna_write.html">내 문의 내역 - 문의하기</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./notice.html">공지사항</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./notice_view.html">공지사항 - 상세페이지</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./mypage.html">마이페이지</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./mypage_m.html">입점마켓 마이페이지</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./order_list.html">최근 주문 내역</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./point.html">적립금</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./coupon.html">쿠폰</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./membership.html">회원 등급 안내 - 구매등급별 혜택 / 추천등급별 혜택</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./my_review.html">나의 후기 - 작성 가능한 후기 / 작성한 후기</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./review_write.html">후기 작성</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./market_review_write.html">마켓 후기 작성</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./cnrlist.html">취소/반품/교환</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./cancellation_detail_list.html">취소 상세 내역</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./refund_detail_list.html">반품 상세 내역</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./exchange_detail_list.html">교환 상세 내역</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./cancellation_reception.html">취소 접수</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./cancellation_info.html">취소 접수 - 취소 정보</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./cancellation_complete.html">취소 접수 - 접수 사용자</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./reception.html">반품/교환 접수</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./refund_info.html">반품 접수 - 반품 정보</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./refund_confirm.html">반품 접수 - 정보 확인</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./refund_complete.html">반품 접수 - 접수 사용자</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./exchange_info.html">교환 접수 - 교환 정보</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./exchange_confirm.html">교환 접수 - 정보 확인</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./exchange_complete.html">교환 접수 - 접수 사용자</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./setting.html">내 정보 수정</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./confirm_pw.html">회원 정보 수정 - 비밀번호 확인</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./market_edit.html">마켓 정보 수정</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./member_edit.html">회원 정보 수정 - 개인회원</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./member_edit_b.html">회원 정보 수정 - 사업자회원</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./member_edit_m.html">회원 정보 수정 - 입점마켓</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./change_pw.html">비밀번호 변경</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./notification.html">알림 설정</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./leave.html">회원탈퇴</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./company.html">오늘보듬 소개</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./information.html">이용 안내</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./partner.html">입점 문의</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="bl0"><a href="./partner_write.html">입점 상담 신청하기</a></td>
+                                <td class="txt-center">사용자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="login.html">로그인</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="index.html">메인_보드미관리자</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="index_02.html">메인_통합관리자</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="static/sub/order/bodeumi.html">보드미 관리</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="static/sub/order/order_all.html">주문 관리</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="static/sub/member/member_all.html">회원 관리</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="static/sub/product/product.html">상품 관리</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="static/sub/category/category.html">카테고리 관리</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="static/sub/product/product_main.html">메인 상품 관리</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="static/sub/banner/banner.html">배너 관리</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="static/sub/coupon/coupon.html">쿠폰 관리</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="static/sub/review/review.html">리뷰 관리</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="static/sub/savings/savings.html">적립금 관리</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="static/sub/event/event.html">이벤트 관리</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="static/sub/statistics/statistics.html">통계</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="static/sub/setting/setting.html">설정</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="b10"><a href="static/sub/setting/setting_01.html">기본 설정</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                                <td class="b10"><a href="static/sub/member/member_grade.html">회원 등급 관리</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                                <td class="b10"><a href="static/sub/setting/setting_03.html">적립금 설정</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                                <td class="b10"><a href="static/sub/setting/setting_04.html">예치금 설정</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                                <td class="b10"><a href="static/sub/setting/setting_05.html">회원 가입 항목 설정</a></td>
+                                <td class="txt-center">관리자</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
-
 </html>
